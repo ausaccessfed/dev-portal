@@ -1,7 +1,6 @@
 ---
 layout: page
 title: How to connect
-permalink: /about
 nav_order: 2
 has_children: true
 ---
