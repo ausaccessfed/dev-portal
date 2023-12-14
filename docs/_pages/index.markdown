@@ -4,6 +4,7 @@
 
 layout: home
 title: Home
+permalink: /
 nav_order: 1
 ---
 # Connect your services to the AAF
@@ -33,7 +34,7 @@ There are three ways to connect to the federation
 - OIDC
 - Rapid Connect
 
-Click [here]({% link connect.markdown %}) to read more.
+Click [here]({% link _pages/connect.markdown %}) to read more.
 
 ```mermaid
 flowchart RL

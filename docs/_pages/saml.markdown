@@ -1,6 +1,7 @@
 ---
 layout: page
 title: SAML
+permalink: /saml/
 nav_order: 1
 parent: How to connect
 ---

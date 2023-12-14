@@ -1,6 +1,7 @@
 ---
 layout: page
 title: How to connect
+permalink: /connect/
 nav_order: 2
 has_children: true
 ---
@@ -9,7 +10,7 @@ has_children: true
 Choose which protocol your service will use to connect.
 
 <span class="fs-5">
-[SAML >]({% link methods/saml.markdown %}){: .btn .btn-blue .mb-4 .mt-8 .d-block .text-center}
+[SAML >]({% link _pages/saml.markdown %}){: .btn .btn-blue .mb-4 .mt-8 .d-block .text-center}
 </span>
 
     Feature-rich
@@ -19,7 +20,7 @@ Choose which protocol your service will use to connect.
 
 
 <span class="fs-5">
-[OpenID Connect >]({% link methods/oidc.markdown %}){: .btn .btn-blue .mb-4 .mt-8 .d-block .text-center}
+[OpenID Connect >]({% link _pages/oidc.markdown %}){: .btn .btn-blue .mb-4 .mt-8 .d-block .text-center}
 </span>
 
     Recommended for most connections
@@ -28,7 +29,7 @@ Choose which protocol your service will use to connect.
 
 
 <span class="fs-5">
-[Rapid Connect >]({% link methods/rapidconnect.markdown %}){: .btn .btn-blue .mb-4 .mt-8 .d-block .text-center}
+[Rapid Connect >]({% link _pages/rapidconnect.markdown %}){: .btn .btn-blue .mb-4 .mt-8 .d-block .text-center}
 </span>
 
     Narrow feature set
