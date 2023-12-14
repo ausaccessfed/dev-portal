@@ -21,14 +21,17 @@ The test federation is open to anyone and there is no cost involved. Anyone can 
 
 ### Production Federation
 
-To participate in the production federation you must subscribe to the federation. Details on how to do this are available here:https://aaf.edu.au/subscribe/who.html
+To participate in the production federation you must subscribe to the federation. Details on how to do this are 
+available on the [AAF website][aaf-website].
+
+[aaf-website]: https://aaf.edu.au/subscribe/who.html
 
 ### Connection Methods
 
 There are three ways to connect to the federation
-*     SAML
-*     OIDC
-*     Rapid Connect
+- SAML
+- OIDC
+- Rapid Connect
 
 ```mermaid
 flowchart RL

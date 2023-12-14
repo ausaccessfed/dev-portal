@@ -61,6 +61,8 @@ search:
   # Supports true or false (default)
   button: false
 
+nav_external_links_new_tab: true
+
 # Footer content
 # appears at the bottom of every page's main content
 
