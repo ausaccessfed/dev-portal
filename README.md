@@ -4,12 +4,12 @@
 Developers should be working on macOS. If this doesn't describe you, modify the below accordingly.
 
 ### Prerequisites
-Install [Jekyll](https://jekyllrb.com/docs/installation/macos). Since Jekyll is a Ruby gem, it relies on the installation of
-- Homebrew
-- Ruby
-- Ruby version manager (such as rbenv or chruby)
+Install [Jekyll](https://jekyllrb.com/docs/installation/macos). Since Jekyll is a Ruby gem, it relies on the 
+installation of Ruby and a Ruby version manager (such as [rbenv](https://github.com/rbenv/rbenv) or [chruby](https://github.com/postmodern/chruby)).
 
-The Jekyll docs have detailed instructions on how to install all of these development tools along with Jekyll.
+The Jekyll docs have detailed instructions on how to install Ruby along with Jekyll.
+
+Install [Bundler](https://bundler.io/)
 
 ### Setup
 1. Open a terminal
