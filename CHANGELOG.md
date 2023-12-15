@@ -11,4 +11,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
-- Feat/1 Add basic features.[#1](https://github.com/ausaccessfed/dev-portal/pull/1)
+- Add basic features.[#1](https://github.com/ausaccessfed/dev-portal/pull/1)
+
+### Fixed
+
+- Upgrade dependencies.[#2](https://github.com/ausaccessfed/dev-portal/pull/2)
