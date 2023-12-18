@@ -79,7 +79,7 @@ footer_content: "Copyright &copy; 2023 The Australian Access Federation."
 
 
 # Build settings
-theme: just-the-docs
+remote_theme: just-the-docs
 plugins:
   - jekyll-feed
 
