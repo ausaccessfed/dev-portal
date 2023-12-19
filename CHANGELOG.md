@@ -12,6 +12,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ### Added
 
 - Add basic features.[#1](https://github.com/ausaccessfed/dev-portal/pull/1)
+- Add rapid connect documentation.[#4](https://github.com/ausaccessfed/dev-portal/pull/4)
 
 ### Fixed
 
