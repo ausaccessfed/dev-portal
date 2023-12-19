@@ -32,6 +32,7 @@ Choose which protocol your service will use to connect.
 [Rapid Connect >]({% link _pages/rapidconnect.markdown %}){: .btn .btn-blue .mb-4 .mt-8 .d-block .text-center}
 </span>
 
+    A JSON Web Token authentication option
     Narrow feature set
     Few open-source libraries
     Simple
