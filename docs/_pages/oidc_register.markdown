@@ -26,10 +26,11 @@ To register a new **OIDC RP** please visit:
 
 and select the **Register a New Service**. The following information is required:
 
-1. Client Name - a descriptive name for the service.
-2. Description -a meaningful description to help users of this service understand its purpose
-3. Organisation - responsible for the operation of the service, must be an AAF subscriber.
-4. Redirect URL - The endpoint which will receive the OIDC responses from AAF. Additional redirect URIs can be added after registration via the client details page.
+1. Client Name - a descriptive name for the service
+2. Description - a meaningful description to help users of this service understand its purpose
+3. Organisation - responsible for the operation of the service, must be an AAF subscriber
+4. Redirect URL - the endpoint which will receive the OIDC responses from AAF. Additional redirect URIs can be added after registration via the client details page.
+5. Service URL - the primary URL of the application where users will initiate the authentication
 
 
 Click the **Register Service** to complete the registration step.

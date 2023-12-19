@@ -178,30 +178,3 @@ curl https://central.aaf.edu.au/.well-known/openid-configuration | jq
 [OpenID OIDC Overview](https://openid.net/specs/openid-connect-core-1_0.html#Overview)
 
 [OpenID OIDC Terminology](https://openid.net/specs/openid-connect-core-1_0.html#Terminology)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
-	
-	
-	
-
-
-
-	
-	
-	
-	
-	
