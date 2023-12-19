@@ -77,9 +77,16 @@ footer_content: "Copyright &copy; 2023 The Australian Access Federation."
 #last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
 #last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https://ruby-doc.org/stdlib-2.7.0/libdoc/time/rdoc/Time.html
 
+callouts:
+  warning:
+    title: Warning
+    color: red
+  note:
+    title: Note
+    color: yellow
 
 # Build settings
-remote_theme: just-the-docs
+remote_theme: just-the-docs/just-the-docs@v0.7.0
 plugins:
   - jekyll-feed
 

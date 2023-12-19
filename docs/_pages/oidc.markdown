@@ -4,29 +4,8 @@ title: OpenID Connect
 permalink: /oidc/
 nav_order: 2
 parent: How to connect
-callouts:
-  highlight:
-    title: Highlight
-    color: yellow
-
+has_children: true
 ---
-
-<h1>Benefits</h1>
-<div class="bg-grey-lt-000">
-<h2>Easy to Deploy</h2>
-
-
-<h2>Wide Language Support</h2>
-
-
-<h2>Low Code</h2>
-
-
-<h2>Easy to Test</h2>
-
-</div>
-
-<hr>
 
 # Documentation
 ## Overview
@@ -34,14 +13,13 @@ callouts:
 The **AAF** supports **OpenID Connect (OIDC)** connectivity and operates an OpenID Provider (OP) which authenticates 
 users who have an account at any **AAF** subscriber **Identity Provider (IdP)**. This service is a production choice 
 available to AAF subscribers to connect their OIDC services to the Federation. This is an maturing service and at 
-this stage only supports a subset of attributes/claims (**for attribute requirements outside this range, please 
-contact us to discuss**).
+this stage only supports a subset of attributes/claims. For attribute requirements outside this range, [please contact us to discuss](mailto:support@aaf.edu.au).
 
 To get started, visit
 
--  [Our test federation](https://manager.test.aaf.edu.au/oidc)
+-  [Our test federation](https://manager.test.aaf.edu.au/oidc){: .btn }
 
--  [Our production federation](https://manager.aaf.edu.au/oidc)
+-  [Our production federation](https://manager.aaf.edu.au/oidc){: .btn }
 
 ## Attributes / Claims
 
@@ -62,51 +40,149 @@ These are the attributes/claims Central can provide to an RP currently:
 | eduperson_scoped_affiliation | Returns the users eduperson_scoped_affiliation  value                                                                                   |
 | schac_home_organization      | Returns the users schac_home_organization value                                                                                         |
 
-> {: .highlight }
-   Note: A claim for a user will only be provided if their home organisation provides the specific attribute. For 
-> example most universities will NOT provide phone numbers for their users.
+{: .note}
+A claim for a user will only be provided if their home organisation provides the specific attribute. For example most universities will NOT provide phone numbers for their users.
+
+## [Register your OpenID Connect Service]({% link _pages/oidc_register.markdown %})
+
+## Skipping AAF Discovery Service
+
+AAF's implementation of OpenID Connect allows service admins to configure their service to skip discovery service and login directly through a specified IdP.
 
 
-## Details
-
-Before registering an **OIDC** service, deployers must have sufficient experience in undertaking *OIDC* integration 
-work 
-to create their own **Relying Party (RP)** components with minimal help from the AAF technical team. There are several 
-open-source libraries which implement most of the RP requirements in several languages, [GitHub](https://github.com) 
-is an excellent 
-resource, as is the [OpenID Foundation](https://openid.net/developers/libraries/). The AAF does not offer support or 
-advice in this area, and the choice depends on the subscriber’s strengths and existing knowledge of OIDC integration.
+### Getting started
 
 
-The **AAF OP** satisfies the **OIDC** conformance testing framework and passes the Authorization Code flow. The **AAF** 
-monitors the **OP** during business hours and responds to service interruption issues promptly.
+Find the entityID of the IdP that you wish to directly login through. This can be done by looking through the AAF metadata or your own registrations.
 
-To register a new **OIDC RP** please visit:
+[Test Metadata](https://md.aaf.edu.au/){: .btn }
 
-[AAF Production environment](https://manager.aaf.edu.au/oidc/clients/new){: .btn .btn-blue .text-center }
-
-[AAF Test environment](https://manager.test.aaf.edu.au/oidc/clients/new){: .btn .btn-blue .text-center }
-
-and select the **Register a New Service**. The following information is required:
-
-1. Client Name - a descriptive name for the service.
-2. Description -a meaningful description to help users of this service understand its purpose 
-3. Organisation - responsible for the operation of the service, must be an AAF subscriber.
-4. Redirect URL - The endpoint which will receive the OIDC responses from AAF. Additional redirect URIs can be added after registration via the client details page.
+[Production Metadata](https://md.test.aaf.edu.au/){: .btn }
 
 
-Click the **Resister Service** to complete the registration step.
+For Example, the AAF Virtual Home: https://vho.aaf.edu.au/idp/shibboleth
 
 
-Next you will be provided the Client ID and Secret used by your **RP** service that is generated during the registration process.
+### Sending the request
 
-> {: .highlight }
-Note: You only have one opportunity to copy the Secret, it cannot be recovered later. You can however generate a new secret later.
 
-Verify the details are correct, then hit the Active button.
+To enable SkipDS you'll need to be able to add `extra authorization params`  to the initial request to the 
+authorisation endpoint. If you are unable to do so, currently you cannot enable skipDS for your service. (**Note**: we are working on a solution for this).
 
-    In the test federation your service will be available to use immediately
-    In production, the service MUST be approved by your organisation and the AAF before it will be available for use.
+
+Add the new param `entityID=<idp-entityID>` where the entityID has been URL encoded.
+
+
+Example:
+
+```
+GET /oidc/authorize?
+client_id=123456789&
+redirect_uri=https://example.com/aaf/callback&
+nonce=123456&
+state=6789&
+entityID=https://vho.aaf.edu.au/idp/shibboleth
+```
+
+This only affects the initial stage of the OIDC flow, it is possible to setup multiple `login` buttons with their own entityID set, allowing you to limit your service to as many or few IdPs as you want.
+
+
+## Openid Configuration
+
+The **AAF OIDC** service supports querying the **OP** Configuration Information endpoint to retrieve the features and 
+capabilities of the **OIDC** service. The **AAF OP** provides two endpoints, one for **Production Federation** and one 
+for **Test Federation**, respectively:
+
+- [Production Federation](https://central.aaf.edu.au/.well-known/openid-configuration)
+
+- [Test Federation](https://central.test.aaf.edu.au/.well-known/openid-configuration)
+
+
+Details for the **Production Federation** are here:
+
+```
+curl https://central.aaf.edu.au/.well-known/openid-configuration | jq
+{
+  "issuer": "https://central.aaf.edu.au",
+  "authorization_endpoint": "https://central.aaf.edu.au/oidc/authorize",
+  "token_endpoint": "https://central.aaf.edu.au/oidc/token",
+  "jwks_uri": "https://central.aaf.edu.au/oidc/jwks",
+  "id_token_signing_alg_values_supported": [
+    "RS256"
+  ],
+  "subject_types_supported": [
+    "public"
+  ],
+  "response_types_supported": [
+    "code"
+  ],
+  "scopes_supported": [
+    "profile",
+    "email",
+    "phone",
+    "eduperson_affiliation",
+    "eduperson_scoped_affiliation",
+    "eduperson_entitlement",
+    "eduperson_principal_name",
+    "eduperson_assurance",
+    "eduperson_orcid",
+    "schac_home_organization",
+    "aueduperson",
+    "openid"
+  ],
+  "userinfo_endpoint": "https://central.aaf.edu.au/oidc/userinfo",
+  "claim_types_supported": [
+    "normal"
+  ],
+  "claims_supported": [],
+  "claims_locales_supported": [
+    "en"
+  ],
+  "claims_parameter_supported": false,
+  "display_values_supported": [
+    "page"
+  ],
+  "grant_types_supported": [
+    "authorization_code"
+  ],
+  "op_policy_uri": "https://central.aaf.edu.au/central/documentation/policy",
+  "op_tos_uri": "https://central.aaf.edu.au/central/documentation/tos",
+  "request_parameter_supported": false,
+  "request_uri_parameter_supported": false,
+  "require_request_uri_registration": true,
+  "response_modes_supported": [
+    "query"
+  ],
+  "service_documentation": "https://central.aaf.edu.au/oidc/documentation",
+  "token_endpoint_auth_methods_supported": [
+    "client_secret_basic",
+    "client_secret_post"
+  ],
+  "ui_locales_supported": [
+    "en"
+  ],
+  "userinfo_signing_alg_values_supported": [
+    "RS256"
+  ]
+}
+```
+
+## Links
+
+[AAF Production OIDC Provider](https://central.aaf.edu.au/.well-known/openid-configuration)
+
+[AAF Test OIDC Provider](https://central.test.aaf.edu.au/.well-known/openid-configuration)
+
+[OpenID OIDC Developer Libraries](https://openid.net/developers/libraries/)
+
+[OpenID OIDC Overview](https://openid.net/specs/openid-connect-core-1_0.html#Overview)
+
+[OpenID OIDC Terminology](https://openid.net/specs/openid-connect-core-1_0.html#Terminology)
+
+
+
+
+
 
 
 
