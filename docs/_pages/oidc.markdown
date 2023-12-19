@@ -10,35 +10,35 @@ has_children: true
 # Documentation
 ## Overview
 
-The **AAF** supports **OpenID Connect (OIDC)** connectivity and operates an OpenID Provider (OP) which authenticates 
+The **AAF** supports **OpenID Connect (OIDC)** connectivity and operates an **OpenID Provider (OP)** which authenticates 
 users who have an account at any **AAF** subscriber **Identity Provider (IdP)**. This service is a production choice 
 available to AAF subscribers to connect their OIDC services to the Federation. This is an maturing service and at 
 this stage only supports a subset of attributes/claims. For attribute requirements outside this range, [please contact us to discuss](mailto:support@aaf.edu.au).
 
 To get started, visit
 
--  [Our test federation](https://manager.test.aaf.edu.au/oidc){: .btn }
+-  [Our test federation](https://manager.test.aaf.edu.au/oidc/clients/new)
 
--  [Our production federation](https://manager.aaf.edu.au/oidc){: .btn }
+-  [Our production federation](https://manager.aaf.edu.au/oidc/clients/new)
 
 ## Attributes / Claims
 
 
 These are the attributes/claims Central can provide to an RP currently:
 
-| Supported Scopes             | Claims                                                                                                                                  |
-|------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| openid                       | Returns the sub claim, which uniquely identifies the user. In an ID Token, iss, aud, exp, iat, and at_hash claims will also be present. |
-| profile                      | Returns claims that represent basic profile information, including name, family_name, given_name and preferred_username.                |
-| email                        | Returns the email claim, which contains the user's email address.                                                                       |
-| phone                        | Returns the phone_number of the user. Not many AAF IdPs will return this value.                                                         |
-| aueduperson                  | Returns the users au_edu_person_shared_token value                                                                                      |
-| eduperson_affiliation        | Returns the users eduperson_affiliation value                                                                                           |
-| eduperson_assurance          | Returns the users eduperson_assurance  value                                                                                            |
-| eduperson_orcid              | Returns the users eduperson_orcid  value                                                                                                |
-| eduperson_principal_name     | Returns the users eduperson_principal_name  value                                                                                       |
-| eduperson_scoped_affiliation | Returns the users eduperson_scoped_affiliation  value                                                                                   |
-| schac_home_organization      | Returns the users schac_home_organization value                                                                                         |
+| Supported Scopes             | Claims                                                                                                                                                                                                                                                              |
+|------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| openid                       | Returns the sub claim, which uniquely identifies the user. In an ID Token, iss, aud, exp, iat, and at_hash claims will also be present.                                                                                                                             |
+| profile                      | Returns claims that represent basic profile information, including name, [family_name](https://validator.aaf.edu.au/documentation/attributes/oid:2.5.4.4), [given_name](https://validator.aaf.edu.au/documentation/attributes/oid:2.5.4.42) and preferred_username. |
+| email                        | Returns the email claim, which contains the user's [email address](https://validator.aaf.edu.au/documentation/attributes/oid:0.9.2342.19200300.100.1.3).                                                                                                            |
+| phone                        | Returns the [phone_number](https://validator.aaf.edu.au/documentation/attributes/oid:2.5.4.20) of the user. Not many AAF IdPs will return this value.                                                                                                               |
+| aueduperson                  | Returns the users [au_edu_person_shared_token](https://validator.aaf.edu.au/documentation/attributes/oid:1.3.6.1.4.1.27856.1.2.5) value                                                                                                                             |
+| eduperson_affiliation        | Returns the users [eduperson_affiliation](https://validator.aaf.edu.au/documentation/attributes/oid:1.3.6.1.4.1.5923.1.1.1.1) value                                                                                                                                 |
+| eduperson_assurance          | Returns the users [eduperson_assurance](https://validator.aaf.edu.au/documentation/attributes/oid:1.3.6.1.4.1.5923.1.1.1.11) value                                                                                                                                  |
+| eduperson_orcid              | Returns the users [eduperson_orcid](https://validator.aaf.edu.au/documentation/attributes/oid:1.3.6.1.4.1.5923.1.1.1.16) value                                                                                                                                      |
+| eduperson_principal_name     | Returns the users [eduperson_principal_name](https://validator.aaf.edu.au/documentation/attributes/oid:1.3.6.1.4.1.5923.1.1.1.6) value                                                                                                                              |
+| eduperson_scoped_affiliation | Returns the users [eduperson_scoped_affiliation](https://validator.aaf.edu.au/documentation/attributes/oid:1.3.6.1.4.1.5923.1.1.1.9) value                                                                                                                          |
+| schac_home_organization      | Returns the users [schac_home_organization](https://validator.aaf.edu.au/documentation/attributes/oid:1.3.6.1.4.1.25178.1.2.9) value                                                                                                                                |
 
 {: .note}
 A claim for a user will only be provided if their home organisation provides the specific attribute. For example most universities will NOT provide phone numbers for their users.
