@@ -4,6 +4,7 @@ title: SAML
 permalink: /saml/
 nav_order: 1
 parent: How to connect
+has_children: true
 ---
 
 # Documentation
@@ -37,41 +38,47 @@ architecture:
 The **Shibboleth Wiki** provides installation and configuration information for **Shibboleth Service Provider (SP)** on 
 the following platforms:
 
-- RedHat/CentOS versions 6, 7 or 8 with Apache 2.2, 2.4 or FastCGI; and 
-- Windows 2008 and later with Apache 2.2, 2.4 or IIS; 
-- additional information on building packages from source for other RPM-supporting Linux versions.
+> - RedHat/CentOS versions 6, 7 or 8 with Apache 2.2, 2.4 or FastCGI; and 
+> - Windows 2008 and later with Apache 2.2, 2.4 or IIS; 
+> - additional information on building packages from source for other RPM-supporting Linux versions.
 
 
 The **Shibboleth Consortium** has considerably streamlined the **SP** installation process for Linux and Apache, and 
 this guide reflects that approach. Other combinations of platform and web server require additional steps to install 
 the **SP**, configure the web server and protect content. For these, links in this guide will refer deployers to 
-additional **Shibboleth documentation**. All links in this guide are collated in the Links Section at the end.
+additional **Shibboleth documentation**. 
 
-The **AAF** provides two Federations to subscribing organisations: **TEST** and **PRODUCTION**. Membership of the 
-**AAF** is an essential condition for adding services to the **PRODUCTION** Federation. Details on joining the **AAF** 
-are found [here](https://support.aaf.edu.au/support/solutions/folders/19000155992). 
+{: .note}
+All links in this guide are collated on the [Links Page]({% link _pages/saml_links.markdown %}).
+
+The **AAF** provides two Federations to subscribing organisations: 
+- **TEST** 
+- **PRODUCTION** 
+
+Membership of the **AAF** is an essential condition for adding services to the **PRODUCTION** Federation. [Details on joining the **AAF** are found here](https://support.aaf.edu.au/support/solutions/folders/19000155992). 
 
 ## Shibboleth Guides
 
 The key to deploying federated services is understanding **Shibboleth** and **SAML**, how the required components 
 interact, and details on session cookies and the terminology in use. The following articles serve as an introduction to these topics:
 
-- [Describes the interaction between **Identity Provider (IdP)** and **SP**](https://wiki.shibboleth.net/confluence/display/CONCEPT/FlowsAndConfig)
-- [Describes the Application Model](https://wiki.shibboleth.net/confluence/display/SP3/ApplicationModel)
-- [Describes Application Integration](https://wiki.shibboleth.net/confluence/display/SP3/ApplicationIntegration)
-- Starting point for installation on Linux, Windows and Mac:
-  - [System Requirements](https://wiki.shibboleth.net/confluence/display/SP3/SystemRequirements)
-  - [Installation](https://wiki.shibboleth.net/confluence/display/SP3/Installation)
-- [SP Configuration elements and components](https://wiki.shibboleth.net/confluence/display/SP3/SPConfig)
+> - [Describes the interaction between **Identity Provider (IdP)** and **SP**](https://wiki.shibboleth.net/confluence/display/CONCEPT/FlowsAndConfig)
+> - [Describes the Application Model](https://wiki.shibboleth.net/confluence/display/SP3/ApplicationModel)
+> - [Describes Application Integration](https://wiki.shibboleth.net/confluence/display/SP3/ApplicationIntegration)
+
+> - Starting point for installation on Linux, Windows and Mac:
+>     - [System Requirements](https://wiki.shibboleth.net/confluence/display/SP3/SystemRequirements)
+>     - [Installation](https://wiki.shibboleth.net/confluence/display/SP3/Installation)
+
+> - [SP Configuration elements and components](https://wiki.shibboleth.net/confluence/display/SP3/SPConfig)
 
 ## Details
 
 The following is a sequence of steps to protect a service (in this instance, a simple PHP script) by deploying a 
 **Shibboleth SP** with Apache running on Linux.
 
-
 For supported Linux distributions, the **Shibboleth Consortium** provides a web service which generates the 
-appropriate package management configuration file. This service is available [here](https://shibboleth.net/downloads/service-provider/RPMS/).
+appropriate package management configuration file. [Read about this service](https://shibboleth.net/downloads/service-provider/RPMS/).
 
 
 Copy the configuration into a file in the repository directory, on CentOS/RedHat for example, the file can be labelled `/etc/yum.repos.d/shibboleth.repo`
@@ -82,8 +89,9 @@ Install **Shibboleth**, Apache and the SSL libraries for the architecture of the
 
 `$> yum install httpd.x86_64 mod_ssl.x86_64 shibboleth.x86_64 PHP.x86_64 -y`
 
-An outline for installing the **Shibboleth SP** on other web platforms is available in the [**Shibboleth Wiki**](https://wiki.shibboleth.net/confluence/display/SP3/GettingStarted https://wiki.shibboleth.net/confluence/display/SP3/WebServers)
+An outline for installing the **Shibboleth SP** on other web platforms is available in the [**Shibboleth Wiki.**](https://wiki.shibboleth.net/confluence/display/SP3/GettingStarted https://wiki.shibboleth.net/confluence/display/SP3/WebServers)
 
+{: .note }
 At this point in the deployment process, determine which federation the application will join: **TEST** or 
 **PRODUCTION**. This choice influences which metadata distribution service to connect and which **Federation Manager 
 (FM)** will process the **SP Registration**. 
@@ -102,7 +110,9 @@ entityID** value to identify and locate the IdP’s service end-points in the Fe
 including a service’s **hostname** in the **entityID** value ensures a globally unique value. **Shibboleth** is very 
 configurable and can operate in a multi-domain environment. A web server may have several virtual hosts, and an application may span several physical hosts, all protected by one or more instances of Shibboleth.
 
-Choose wisely! Once registered and in-use, any change to an **entityID** value disrupts a web service’s availability.
+{: .note }
+**Choose wisely!** Once registered and in-use, any change to an **entityID** value disrupts a web service’s 
+availability.
 
 For Linux, edit the configuration file **/etc/shibboleth/shibboleth2.xml**, and for Windows locate the shibboleth2.xml 
 file within the installation directory. Locate the **ApplicationDefaults** element. Update the default value for 
@@ -113,9 +123,9 @@ only include those attributes which are the primary identifiers in the web appli
 extent, unique among SSO tools because it does not require that **REMOTE_USER** contains a value, even if a user has 
 authenticated. Details on the configurable options within the **`<ApplicationDefaults>`** element are available here:
 
-[ApplicationDefaults](https://wiki.shibboleth.net/confluence/display/SP3/ApplicationDefaults)
-
-[AttributeAccess](https://wiki.shibboleth.net/confluence/display/SP3/AttributeAccess)
+> - [ApplicationDefaults](https://wiki.shibboleth.net/confluence/display/SP3/ApplicationDefaults)
+>
+> - [AttributeAccess](https://wiki.shibboleth.net/confluence/display/SP3/AttributeAccess)
 
 #### 2.2 `<Sessions>` Element
 
@@ -131,8 +141,7 @@ The **`<Sessions>`** and its child **`<Handler>`** elements control SSO and prov
 Enabling these items contributes to the overall security of the web application, though the **checkAddress** setting 
 will be a source of errors in a NAT or proxy environment. Replacing checkAddress with **consistentAddress** may reduce 
 those issues however, the best approach is to avoid combining a NAT or a proxy service with a web application 
-protected by a Shibboleth **SP**. Details on the **`<Sessions>`** element configurable options are available here: 
-[Sessions](https://wiki.shibboleth.net/confluence/display/SP3/Sessions).
+protected by a Shibboleth **SP**. [Read details on the **`<Sessions>`** element configurable options](https://wiki.shibboleth.net/confluence/display/SP3/Sessions).
 
 #### 2.3 `<SSO>` Element
 
@@ -141,22 +150,23 @@ The **`<SSO>`** element enables and configures single sign-on and sets the choic
 settings **discoveryProtocol** and **discoveryURL** provide access to a discovery service which offers a list of all 
 the participating **IdPs**.
 
-To configure the service to use the Federation, remove the entityID setting and value pair: **entityID="https://idp.example.org/idp/shibboleth"**.
+To configure the service to use the Federation, remove the entityID setting and value pair:
+>   `entityID="https://idp.example.org/idp/shibboleth"`
 
 Update the **discoveryURL** configuration value so the **`<SSO>`** element has the following contents:
 
 ```xml
 <SSO
-discoveryProtocol="SAMLDS"
-discoveryURL="https://ds.test.aaf.edu.au/discovery/DS">
-SAML2
+  discoveryProtocol="SAMLDS"
+  discoveryURL="https://ds.test.aaf.edu.au/discovery/DS">
+    SAML2
 </SSO>
 ```
 
 When connecting the service to the **PRODUCTION** Federation, use the following value instead: 
-**discoveryURL="https://ds.aaf.edu.au/discovery/DS"**
+>   `discoveryURL="https://ds.aaf.edu.au/discovery/DS"`
 
-Details on the **`<SSO>`** element configurable options are available [here](https://wiki.shibboleth.net/confluence/display/SP3/SSO).
+[Read the details on the **`<SSO>`** element configurable options](https://wiki.shibboleth.net/confluence/display/SP3/SSO).
 
 #### 2.4 `<MetadataProvider>` Element
 
@@ -177,12 +187,18 @@ Locate the **`<MetadataProvider>`** elements and identify, via the comments and 
 element which controls the “remote supply of **"signed metadata"** which also caches a copy locally. To enable this 
 element, remove the enclosing comment delimiters `<!--` and `-->`.
 
-Since this demonstration service will be available to the **TEST Federation**, replace the URL value with [**TEST Federation** metadata source URL](https://md.test.aaf.edu.au/aaf-test-metadata.xml). If a service is production-ready, 
-use the [**PRODUCTION Federation** metadata source URL](https://md.aaf.edu.au/aaf-test-metadata.xml).
+Since this demonstration service will be available to the **TEST Federation**, replace the URL value with the **TEST 
+Federation** metadata source URL:
+
+[https://md.test.aaf.edu.au/aaf-test-metadata.xml](https://md.test.aaf.edu.au/aaf-test-metadata.xml). 
+
+If a service is production-ready, use the **PRODUCTION Federation** metadata source URL:
+
+[https://md.aaf.edu.au/aaf-test-metadata.xml](https://md.aaf.edu.au/aaf-test-metadata.xml).
 
 Replace the certificate setting value with the following string aaf-metadata-certificate.pem, and download the AAF signing certificate with the following command:
 
-`$> curl https://md.aaf.edu.au/aaf-metadata-certificate.pem --output /etc/shibboleth/aaf-metadata-certificate.pem`
+    $> curl https://md.aaf.edu.au/aaf-metadata-certificate.pem --output /etc/shibboleth/aaf-metadata-certificate.pem
 
 **PRODUCTION** and **TEST** Metadata are signed by the same certificate.
 
@@ -202,20 +218,24 @@ The **`<MetadataProvider>`** element should now have the same content as the fol
 ```
 
 Though a standard Shibboleth **SP** install creates two certificate pairs, one for signing and one for encryption, 
-the **AAF Service Provider Registration Form** only requests one public key certificate. For a deployer, the choices 
-available are to:
+the **AAF Service Provider Registration Form** only requests one public key certificate. 
 
-1. add the other public key certificate to the FR once access is granted, or 
+For a deployer, the choices available are to:
+
+1. add the other public key certificate to the FM once access is granted, or 
 2. use the same key pairs for both functions within the SP configuration. 
 
 
-Pick an option and copy the public certificate for later use during the registration process. Keep the private keys secure!
+Pick an option and copy the public certificate for later use during the registration process. 
+
+{: .note }
+Keep the private keys secure!
 
 Details on the **`<MetadataProvider>`** elements configurable options are available here:
 
-[MetadataProvider](https://wiki.shibboleth.net/confluence/display/SP3/MetadataProvider)
+- [MetadataProvider](https://wiki.shibboleth.net/confluence/display/SP3/MetadataProvider)
 
-[XMLMetadataProvider](https://wiki.shibboleth.net/confluence/display/SP3/XMLMetadataProvider)
+- [XMLMetadataProvider](https://wiki.shibboleth.net/confluence/display/SP3/XMLMetadataProvider)
 
 
 #### 2.5 Review the SP attribute-filter.xml file
@@ -248,23 +268,24 @@ Shibboleth.
         RedirectMatch 301 (.*) https://sp-example.uni.edu.au$1
     </VirtualHost>
 
-Details on the configuration options for Apache are available here:
+> Details on the configuration options for Apache are available here:
+>
+>  - [https://httpd.apache.org/docs/2.4/](https://httpd.apache.org/docs/2.4/)
+>  
+>  - [https://httpd.apache.org/docs/current/sections.html](https://httpd.apache.org/docs/current/sections.html)
+>  
+>  - [https://wiki.shibboleth.net/confluence/display/SP3/Apache](https://wiki.shibboleth.net/confluence/display/SP3/Apache)
+>  
+>  - [https://wiki.shibboleth.net/confluence/display/SP3/WebServers](https://wiki.shibboleth.net/confluence/display/SP3/WebServers)
+>  
+>  - [https://wiki.shibboleth.net/confluence/display/SP3/Clustering](https://wiki.shibboleth.net/confluence/display/SP3/Clustering)
+>  
+>  - [https://wiki.shibboleth.net/confluence/display/SP3/OneOrMany](https://wiki.shibboleth.net/confluence/display/SP3/OneOrMany)
 
-[https://httpd.apache.org/docs/2.4/](https://httpd.apache.org/docs/2.4/)
 
-[https://httpd.apache.org/docs/current/sections.html](https://httpd.apache.org/docs/current/sections.html)
-
-[https://wiki.shibboleth.net/confluence/display/SP3/Apache](https://wiki.shibboleth.net/confluence/display/SP3/Apache)
-
-[https://wiki.shibboleth.net/confluence/display/SP3/WebServers](https://wiki.shibboleth.net/confluence/display/SP3/WebServers)
-
-[https://wiki.shibboleth.net/confluence/display/SP3/Clustering](https://wiki.shibboleth.net/confluence/display/SP3/Clustering)
-
-[https://wiki.shibboleth.net/confluence/display/SP3/OneOrMany](https://wiki.shibboleth.net/confluence/display/SP3/OneOrMany)
-
-Details on the configuration options for IIS are available here:
-
-[https://wiki.shibboleth.net/confluence/display/SP3/IIS](https://wiki.shibboleth.net/confluence/display/SP3/IIS)
+> Details on the configuration options for IIS are available here:
+>
+> - [https://wiki.shibboleth.net/confluence/display/SP3/IIS](https://wiki.shibboleth.net/confluence/display/SP3/IIS)
 
 ### 4 Configure the application
 
@@ -285,15 +306,32 @@ and add the following PHP script to the file. This script is the Shibboleth prot
 Using the system tools, start or restart the Apache and Shibboleth services. For Linux these are: httpd and shibd.
 
 The shibd service creates its own logs in **/var/log/shibboleth**. These are the most important logs for debugging 
-anything regarding the **SP** and most problems manifest here rather than in the web server logs. Details on the 
-configurable options are available [here](https://wiki.shibboleth.net/confluence/display/SP3/Logging).
+anything regarding the **SP** and most problems manifest here rather than in the web server logs. 
+
+> [Read details on the available configurable options](https://wiki.shibboleth.net/confluence/display/SP3/Logging).
 
 To check the services are active, use the following command to retrieve the Shibboleth service status from the host’s console.
 
-`$> curl https://localhost/Shibboleth.sso/Status --insecure`
+    `$> curl https://localhost/Shibboleth.sso/Status --insecure`
 
 If the Shibboleth and Apache services start correctly, the web server will respond with a Status Handler report 
 containing the current time (GMT) and the operational status of the **SP** instance. The `<Status Handler>` is only 
 accessible from a remote client by updating the **shibboleth2.xml** file and adding the client IP address to the 
-**ACL** parameter within the **`<Handler type=”Status”>`** located within the <Sessions> element. The **ACL** is restrictive by default since the SP can reveal sensitive information about the host and software 
-versions in use. Details on the configurable options are available [here](https://shibboleth.atlassian.net/wiki/spaces/SP3/pages/2065334870/Status+Handler).
+**ACL** parameter within the **`<Handler type=”Status”>`** located within the <Sessions> element. The ACL is 
+restrictive by default since the SP can reveal sensitive information about the host and software 
+versions in use. 
+
+> [Read details on the available configurable options](https://shibboleth.atlassian.net/wiki/spaces/SP3/pages/2065334870/Status+Handler)
+
+### 6. [Register your service]({% link _pages/saml_register.markdown %})
+
+### 7. Test access to protected content 
+
+To test access to protected content, an active account at an existing subscriber with an **IdP** is necessary. The 
+**IdP** must exist within the same Federation (**TEST** or **PRODUCTION**) as the deployed service. Access the **PHP** 
+script within the protected directory **/secure** with a web browser. The **PHP** script will report values for those 
+attributes which the **attribute-map.xml** configuration enables and the **Apache** session environment.
+
+
+
+
