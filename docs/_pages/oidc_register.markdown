@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Register your service
-nav_order: 1
+nav_order: 2
 parent: OpenID Connect
 grand_parent: How to connect
 ---
