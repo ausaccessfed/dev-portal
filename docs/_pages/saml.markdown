@@ -20,7 +20,7 @@ to one of the supported platforms and the installation and/or configuration of t
     - open firewall port HTTPS/443 that permits inbound and outbound traffic,
     - NTP service and active time synchronisation - SAML transactions are time-sensitive,
     - allocation of a DNS name for the service,
-    - where available, SELinux is disabled, as it may interfere with communication between the Apache web server and
+    - where available, SELinux is disabled, as it may interfere with communication between the Apache web server and 
 the Shibboleth process.
 
 
@@ -72,7 +72,7 @@ interact, and details on session cookies and the terminology in use. The followi
 
 > - [SP Configuration elements and components](https://wiki.shibboleth.net/confluence/display/SP3/SPConfig)
 
-## Details
+## Example: Simple PHP Server installed on Linux
 
 The following is a sequence of steps to protect a service (in this instance, a simple PHP script) by deploying a 
 **Shibboleth SP** with Apache running on Linux.
@@ -112,7 +112,7 @@ configurable and can operate in a multi-domain environment. A web server may hav
 
 {: .note }
 **Choose wisely!** Once registered and in-use, any change to an **entityID** value disrupts a web service’s 
-availability.
+availability and breaks the targeted/persistent ID generation, so any changes are discouraged.
 
 For Linux, edit the configuration file **/etc/shibboleth/shibboleth2.xml**, and for Windows locate the shibboleth2.xml 
 file within the installation directory. Locate the **ApplicationDefaults** element. Update the default value for 
@@ -133,17 +133,31 @@ The **`<Sessions>`** and its child **`<Handler>`** elements control SSO and prov
 **`<Sessions>`** element settings with the following values.
 
 ```xml
-<Sessions lifetime="28800" timeout="3600" relayState="ss:mem" 
+<Sessions lifetime="28800" timeout="3600" relayState="cookie" 
      checkAddress="true" handlerSSL="true" cookieProps="https" 
      redirectLimit="none">
 ```
 
 Enabling these items contributes to the overall security of the web application, though the **checkAddress** setting 
 will be a source of errors in a NAT or proxy environment. Replacing checkAddress with **consistentAddress** may reduce 
-those issues however, the best approach is to avoid combining a NAT or a proxy service with a web application 
+those issues, however, the best approach is to avoid combining a NAT or a proxy service with a web application 
 protected by a Shibboleth **SP**. [Read details on the **`<Sessions>`** element configurable options](https://wiki.shibboleth.net/confluence/display/SP3/Sessions).
 
-#### 2.3 `<SSO>` Element
+#### 2.3 `<StorageService>` Element
+
+The `<StorageService>` element configures the component used for persistent storage of information by the shibd 
+daemon across requests, and in some cases, restart of the software. Update the `<StorageService>` with the following 
+values.
+
+```xml
+    <StorageService type="Memory" id="memory" />
+    <ReplayCache StorageService="memory" />
+    <ArtifactMap StorageService="memory" />
+```
+
+[Read the details on the **`<StorageService>`** element configurable options](https://shibboleth.atlassian.net/wiki/spaces/SP3/pages/2065334626/StorageService).
+
+#### 2.4 `<SSO>` Element
 
 The **`<SSO>`** element enables and configures single sign-on and sets the choice of authentication protocols. The 
 **entityID** configuration item sets the default **IdP** for user authentication. In a Federation, the use of the 
@@ -168,7 +182,7 @@ When connecting the service to the **PRODUCTION** Federation, use the following 
 
 [Read the details on the **`<SSO>`** element configurable options](https://wiki.shibboleth.net/confluence/display/SP3/SSO).
 
-#### 2.4 `<MetadataProvider>` Element
+#### 2.5 `<MetadataProvider>` Element
 
 The **`<MetadataProvider>`** element provides the core functionality which establishes the trust relationships with 
 subscriber **IdPs**. Without metadata, **SPs** and **IdPs** will not be able to participate in the Federation, nor interact 
@@ -238,7 +252,7 @@ Details on the **`<MetadataProvider>`** elements configurable options are availa
 - [XMLMetadataProvider](https://wiki.shibboleth.net/confluence/display/SP3/XMLMetadataProvider)
 
 
-#### 2.5 Review the SP attribute-filter.xml file
+#### 2.6 Review the SP attribute-filter.xml file
 
 For this demonstration, the uncommented default attributes are sufficient. A deployer selects those attributes a web 
 application receives and configures the SP accordingly by updating the attribute-map.xml file. The attribute-map.xml 
