@@ -2,7 +2,7 @@
 layout: page
 title: Example Ruby code
 permalink: /rapidconnect_ruby/
-nav_order: 1
+nav_exclude: true
 parent: Rapid Connect
 grand_parent: How to connect
 ---

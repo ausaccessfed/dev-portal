@@ -77,13 +77,18 @@ Before you get started with AAF Rapid Connect, you MUST meet all the following h
 2. The organisation which owns the service you're registering must be an existing AAF subscriber.
 3. You must have an existing account with an AAF connected Identity Provider which you use to access AAF services.
 
-### AAF Examples
+### Examples
 
+#### 1. **Code**
 The following AAF developed example code may assist your understanding when writing your own integration code:
 
 - [Ruby](/rapidconnect_ruby/#ruby-example-of-aaf-jwt-code)
 - [Python](/rapidconnect_python/#python-example-of-aaf-jwt-code)
 - [PHP](/rapidconnect_php/#php-example-of-aaf-jwt-code)
+
+#### 2. **AAF Rapid Connect - Ruby Sample App**
+For a more developed example, [refer to this Ruby sample application](https://github.com/ausaccessfed/rapidconnect-sample-ruby). It is provided purely for illustrative 
+purposes. It should be noted that the code presented here should not be used as a base to build your application, but is provided to give you an idea of the concepts behind connecting a service, so you can pick it apart (everybody’s requirements are different and just cutting and pasting the code won’t generally work if you decide to do that). No effort has been made to audit the code's security, or make it production-ready.
 
 ---
 ### 1. Select a JWT library

@@ -2,7 +2,7 @@
 layout: page
 title: Example PHP code
 permalink: /rapidconnect_php/
-nav_order: 3
+nav_exclude: true
 parent: Rapid Connect
 grand_parent: How to connect
 ---

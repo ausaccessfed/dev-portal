@@ -2,7 +2,7 @@
 layout: page
 title: Example Python code
 permalink: /rapidconnect_python/
-nav_order: 2
+nav_exclude: true
 parent: Rapid Connect
 grand_parent: How to connect
 ---
