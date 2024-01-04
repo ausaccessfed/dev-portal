@@ -39,9 +39,7 @@ If authentication is successful, you will be returned to the **Register a New Se
 
 **If you're registering in the production federation**
 
-Once submitted the AAF will review and contact you with any questions. You should expect a response via email within 
-2 business days which will include a unique URL within AAF Rapid Connect for your application to start the 
-authentication process as we discussed in [Standard Flow](/rapidconnect/#standard-flow).
+Once submitted the AAF will review and contact you with any questions. You should expect a response via email within 2 business days which will include a unique URL within AAF Rapid Connect for your application to start the authentication process as we discussed in [Standard Flow](/rapidconnect/#standard-flow).
 
 **If you're registering in the test federation**
 
