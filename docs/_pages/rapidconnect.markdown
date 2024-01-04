@@ -7,23 +7,6 @@ parent: How to connect
 has_children: true
 ---
 
-<h1>Benefits</h1>
-<div class="bg-grey-lt-000">
-<h2>Easy to Deploy</h2>
-With Rapid Connect, you can deploy your services anywhere. Connect on-premise services, or use cloud providers like AWS, Azure, Google, or Heroku.
-
-<h2>Wide Language Support</h2>
-Rapid Connect integrates natively into commonly used development languages like Python, PHP, Java, and Ruby.
-
-<h2>Low Code</h2>
-With Rapid Connect, you can set up authentication in as few as 20 lines of Ruby. Implementations in other languages are similarly slim.
-
-<h2>Easy to Test</h2>
-Connect your service to our test environment, straight away, for free. There's no need to wait for an approval process.
-</div>
-
-<hr>
-
 # Documentation
 ## Overview
 
