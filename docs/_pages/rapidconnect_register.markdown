@@ -7,8 +7,9 @@ grand_parent: How to connect
 ---
 
 # Register your service
+---
 
-To register a new service please visit: 
+To register a **new service** please visit the AAF Rapid Connect website in the: 
 
 > [AAF Test Federation](https://manager.test.aaf.edu.au/rapid_connect/services/new){: .btn }
 > 
@@ -28,7 +29,7 @@ If authentication is successful, you will be returned to the **Register a New Se
 
 ![Register new rapid connect service](/assets/images/register-new-rapid-connect-service.png)
 
-To complete registration please provide the following information:
+**To complete registration please provide the following information:**
 
 1. Name - A descriptive name for your service.
 2. URL - The primary URL of your application which users would enter into the browser to visit your application. This value is provided to your application as the **aud** claim.

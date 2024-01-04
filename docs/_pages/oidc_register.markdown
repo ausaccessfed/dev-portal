@@ -7,6 +7,7 @@ grand_parent: How to connect
 ---
 
 # Register your service
+---
 
 Before registering an **OIDC** service, deployers must have sufficient experience in undertaking **OIDC** 
 integration work to create their own **Relying Party (RP)** components with minimal help from the **AAF technical 
@@ -36,7 +37,7 @@ If authentication is successful, you will be returned to the **Register a New Se
 
 ![Register new service](/assets/images/register-new-service.png)
 
-To complete registration please provide the following information:
+**To complete registration please provide the following information:**
 
 1. Name - A descriptive name for the service.
 2. Description - A meaningful description to help users of this service understand its purpose.
