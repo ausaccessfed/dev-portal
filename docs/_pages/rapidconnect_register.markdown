@@ -9,7 +9,7 @@ grand_parent: How to connect
 # Register your service
 ---
 
-To register a **new service** please visit the AAF Rapid Connect website in the: 
+To register a **new service** please visit: 
 
 > [AAF Test Federation](https://manager.test.aaf.edu.au/rapid_connect/services/new){: .btn }
 > 
