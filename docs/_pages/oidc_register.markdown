@@ -38,8 +38,7 @@ If authentication is successful, you will be returned to the **Register a New Se
 1. Name - A descriptive name for the service.
 2. Description - A meaningful description to help users of this service understand its purpose.
 3. URL - The primary URL of your application where users will initiate the authentication.
-4. Redirect URL - The endpoint which will receive the OIDC responses from AAF. Additional redirect URIs can be added 
-   after registration via the client details page.
+4. Redirect URL - The endpoint which will receive the OIDC responses from AAF. Additional redirect URIs can be added after registration via the client details page.
 5. Organisation - Responsible for the operation of the service, must be an **AAF** subscriber.
 
 Click **Register Service** to complete the registration step.
