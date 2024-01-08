@@ -85,7 +85,7 @@ Copy the configuration into a file in the repository directory, on CentOS/RedHat
 
 ### 1. Install Shibboleth
 
-Install **Shibboleth**, Apache and the SSL libraries for the architecture of the OS: x86_64 or i386, to ensure the installation of the appropriate versions of mod_shib.so and other pluggable modules. This demonstration will use Shibboleth SP 3.1.x, Apache 2.4 and the current SSL libraries, and PHP (currently 5.4) to demonstrate the protection of a simple application and passing user attributes to the application.
+Install **Shibboleth**, Apache and the SSL libraries for the architecture of the OS: x86_64 or i386, to ensure the installation of the appropriate versions of mod_shib.so and other pluggable modules. This demonstration will use Shibboleth SP 3.1.x, Apache 2.4 and the current SSL libraries, and PHP to demonstrate the protection of a simple application and passing user attributes to the application.
 
 `$> yum install httpd.x86_64 mod_ssl.x86_64 shibboleth.x86_64 PHP.x86_64 -y`
 
