@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Register your service
-nav_order: 1
+nav_order: 4
 parent: Rapid Connect
 grand_parent: How to connect
 ---
@@ -15,7 +15,7 @@ To complete registration please provide:
 
 1. Organisation - The AAF subscribed organisation which is sponsoring this service.
 2. Name - A descriptive name for your service.
-3. URL - The primary URL of your application which users would enter in the browser to visit your application. This value is provided to your application as the **aud** claim.
+3. URL - The primary URL of your application which users would enter into the browser to visit your application. This value is provided to your application as the **aud** claim.
 4. Callback URL - The secure URL within your application that AAF Rapid Connect should POST completed responses to. We described this endpoint as part of the integration steps above.
 5. Secret - Must be random and securely stored by the service. This value should never be publicly disclosed and is used by the service to verify signed tokens from AAF Rapid Connect. We generated this as part of the Integration Steps shown above.
 

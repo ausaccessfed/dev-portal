@@ -7,23 +7,6 @@ parent: How to connect
 has_children: true
 ---
 
-<h1>Benefits</h1>
-<div class="bg-grey-lt-000">
-<h2>Easy to Deploy</h2>
-With Rapid Connect, you can deploy your services anywhere. Connect on-premise services, or use cloud providers like AWS, Azure, Google, or Heroku.
-
-<h2>Wide Language Support</h2>
-Rapid Connect integrates natively into commonly used development languages like Python, PHP, Java, and Ruby.
-
-<h2>Low Code</h2>
-With Rapid Connect, you can set up authentication in as few as 20 lines of Ruby. Implementations in other languages are similarly slim.
-
-<h2>Easy to Test</h2>
-Connect your service to our test environment, straight away, for free. There's no need to wait for an approval process.
-</div>
-
-<hr>
-
 # Documentation
 ## Overview
 
@@ -88,19 +71,24 @@ Timestamps are defined by the specification as `IntDate` values, which are a JSO
 ## Integrating with AAF Rapid Connect
 ### Before you get started
 
-Before you get started with AAF Rapid Connect, you MUST meet all of the following high level requirements:
+Before you get started with AAF Rapid Connect, you MUST meet all the following high level requirements:
 
 1. You MUST be using HTTPS on your webserver for all JWT related endpoints. You SHOULD be using HTTPS for your entire application.
 2. The organisation which owns the service you're registering must be an existing AAF subscriber.
-3. You must have an existing account with AAF connected Identity Provider which you use to access AAF services.
+3. You must have an existing account with an AAF connected Identity Provider which you use to access AAF services.
 
-### AAF Examples
+### Examples
 
+#### 1. **Code**
 The following AAF developed example code may assist your understanding when writing your own integration code:
 
-- [Ruby](https://gist.github.com/bradleybeddoes/6154072)
-- [Python](https://gist.github.com/bradleybeddoes/5b64a39e96298b4811d7)
-- [PHP](https://gist.github.com/bradleybeddoes/7051824753235cde90b8)
+- [Ruby](/rapidconnect_ruby/#ruby-example-of-aaf-jwt-code)
+- [Python](/rapidconnect_python/#python-example-of-aaf-jwt-code)
+- [PHP](/rapidconnect_php/#php-example-of-aaf-jwt-code)
+
+#### 2. **AAF Rapid Connect - Ruby Sample App**
+For a more developed example, [refer to this Ruby sample application](https://github.com/ausaccessfed/rapidconnect-sample-ruby). It is provided purely for illustrative 
+purposes. It should be noted that the code presented here should not be used as a base to build your application, but is provided to give you an idea of the concepts behind connecting a service, so you can pick it apart (everybody’s requirements are different and just cutting and pasting the code won’t generally work if you decide to do that). No effort has been made to audit the code's security, or make it production-ready.
 
 ---
 ### 1. Select a JWT library

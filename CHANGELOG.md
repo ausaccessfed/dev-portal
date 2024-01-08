@@ -22,3 +22,4 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Use remote theme.[#3](https://github.com/ausaccessfed/dev-portal/pull/3)
 - Update Just the Docs version.[#5](https://github.com/ausaccessfed/dev-portal/pull/5)
 - Add links to Central attributes/claims table.[#7](https://github.com/ausaccessfed/dev-portal/pull/7) 
+- Update Rapid Connect docs.[#11](https://github.com/ausaccessfed/dev-portal/pull/11)
