@@ -31,7 +31,7 @@ Use your Organisation credentials to sign in to Federation Manager (Test or Prod
 
 If authentication is successful, you will be returned to the **Register a New Service** page:
 
-![Register new service](/assets/images/register-new-service.png)
+![Register new service](/assets/images/register-new-oidc-service.png)
 
 **To complete registration please provide the following information:**
 
