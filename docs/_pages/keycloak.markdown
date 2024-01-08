@@ -69,7 +69,8 @@ If you click on the 'Identity providers' option (in the left-hand menu bar), you
 
 ![OpenID connect provider](/assets/images/new-identity-provider.png)
 
-* When signing in, you will now see the option to sign in with 'oidc' (or whatever `alias` you chose to identify your identity provider).
+* When next signing in, you will see the option to sign in with 'oidc' (or whatever `alias` you chose to identify 
+  your identity provider).
 * Click on 'oidc'.
 
 ![Sign in with oidc](/assets/images/sign-in-with-oidc.png)
