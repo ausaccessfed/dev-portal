@@ -16,10 +16,15 @@ available to AAF subscribers to connect their OIDC services to the Federation. T
 this stage only supports a subset of attributes/claims. For attribute requirements outside this range, [please contact us to discuss](mailto:support@aaf.edu.au).
 
 To get started, visit
-
--  [Our test federation](https://manager.test.aaf.edu.au/oidc/clients/new)
-
--  [Our production federation](https://manager.aaf.edu.au/oidc/clients/new)
+> <span class="fs-5">
+ > [AAF Test Federation](https://manager.test.aaf.edu.au/oidc/clients/new){: .btn }
+ > </span>
+>
+> or
+>
+> <span class="fs-5">
+> [AAF Production Federation](https://manager.aaf.edu.au/oidc/clients/new){: .btn }
+> </span>
 
 ## Attributes / Claims
 

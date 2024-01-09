@@ -25,3 +25,4 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Add links to Central attributes/claims table.[#7](https://github.com/ausaccessfed/dev-portal/pull/7)
 - Update Rapid Connect docs.[#11](https://github.com/ausaccessfed/dev-portal/pull/11)
 - Update registration documentation.[#10](https://github.com/ausaccessfed/dev-portal/pull/10)
+- Update general formatting.[#13](https://github.com/ausaccessfed/dev-portal/pull/13)
