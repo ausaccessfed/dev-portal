@@ -34,7 +34,7 @@ There are three ways to connect to the federation
 - OIDC
 - Rapid Connect
 
-Click [here]({% link _pages/connect.markdown %}) to read more.
+Learn more by reading our [Connection Methods]({% link _pages/connect.markdown %}).
 
 ```mermaid
 flowchart RL
@@ -54,4 +54,4 @@ flowchart RL
     style id3 fill:#CBC3E3,stroke:#333
     style id4 fill:#f96,stroke:#333
 ```
-Figure 1. Connection Methods
+Figure 1. AAF Connection Methods
