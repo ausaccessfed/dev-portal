@@ -1,9 +1,8 @@
 ---
 layout: page
-title: Register your service
+title: OpenID Connect
 nav_order: 1
-parent: OpenID Connect
-grand_parent: How to connect
+parent: Connect a New Service
 ---
 
 # Register your service
@@ -15,11 +14,11 @@ The **AAF OpenID Provider (OP)** satisfies the **OIDC** conformance testing fram
 
 To register a new **OIDC RP** please visit:
 
-> [AAF Test Federation](https://manager.test.aaf.edu.au/oidc/clients/new){: .btn }
+> [AAF Test Federation](https://manager.test.aaf.edu.au/oidc/clients/new)
 > 
 > or
 > 
-> [AAF Production Federation](https://manager.aaf.edu.au/oidc/clients/new){: .btn }
+> [AAF Production Federation](https://manager.aaf.edu.au/oidc/clients/new)
 
 You will be prompted to select your Organisation as shown below. Then click 'Continue to your organisation'.
 

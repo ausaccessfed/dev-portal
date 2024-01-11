@@ -1,9 +1,8 @@
 ---
 layout: page
-title: Register your service
-nav_order: 4
-parent: Rapid Connect
-grand_parent: How to connect
+title: Rapid Connect
+nav_order: 2
+parent: Connect a New Service
 ---
 
 # Register your service

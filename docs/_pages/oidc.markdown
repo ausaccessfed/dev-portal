@@ -2,9 +2,8 @@
 layout: page
 title: OpenID Connect
 permalink: /oidc/
-nav_order: 2
-parent: How to connect
-has_children: true
+nav_order: 1
+parent: Connection Methods
 ---
 
 # Documentation

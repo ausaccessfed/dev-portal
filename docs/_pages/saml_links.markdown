@@ -1,9 +1,8 @@
 ---
 layout: page
 title: Links
-nav_order: 2
-parent: SAML
-grand_parent: How to connect
+nav_order: 4
+parent: Connection Methods
 ---
 
 

@@ -1,9 +1,8 @@
 ---
 layout: page
-title: Register your service
-nav_order: 1
-parent: SAML
-grand_parent: How to connect
+title: SAML
+nav_order: 3
+parent: Connect a New Service
 ---
 
 # Register your service

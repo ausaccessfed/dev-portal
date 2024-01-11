@@ -1,6 +1,6 @@
 ---
 layout: page
-title: How to connect
+title: Connection Methods
 permalink: /connect/
 nav_order: 2
 has_children: true
