@@ -58,7 +58,11 @@ If authentication is successful, you will be taken to the **Federation Manager D
 
 ![FM Dashboard](/assets/images/FM-dashboard.png)
 
-- Choose the protocol with which you would like to connect your service, i.e. OpenID Connect, Rapid Connect or SAML.
+- Click on the protocol with which you would like to connect your service, i.e. OpenID Connect, Rapid Connect or SAML.
 
 ![Connect service](/assets/images/connect-service.png)
 
+---
+# Help
+
+To get help with registering a service, email [AAF support](mailto:support@aaf.edu.au).

@@ -5,26 +5,10 @@ nav_order: 2
 parent: Connect a New Service
 ---
 
-# Register your service
+# Register a Rapid Connect Service
 ---
 
-To register a **new service** please visit: 
-
-> [AAF Test Federation](https://manager.test.aaf.edu.au/rapid_connect/services/new){: .btn }
-> 
-> or
-> 
-> [AAF Production Federation](https://manager.aaf.edu.au/rapid_connect/services/new){: .btn } 
-
-You will be prompted to select your Organisation as shown below. Then click 'Continue to your organisation'.
-
-![Select Organisation](/assets/images/sign-in-to-org-FM.png)
-
-Use your Organisation credentials to sign in to Federation Manager (Test or Production).
-
-![Sign in to FM](/assets/images/sign-in-to-FM.png)
-
-If authentication is successful, you will be returned to the **Register a New Service** page:
+Once you have clicked on 'OpenID Connect' on the ['Connect a New Service'](connect_service/#connect-a-new-service) page, you will then be taken to the **Register a New Service** page:
 
 ![Register new rapid connect service](/assets/images/register-new-rapid-connect-service.png)
 
@@ -43,7 +27,3 @@ Once submitted the AAF will review and contact you with any questions. You shoul
 **If you're registering in the test federation**
 
 Your application will be automatically approved. The completion screen will show the unique URL for your application to initiate login. You can use this immediately with your application to start the authentication process as we discussed in [Standard Flow](/rapidconnect/#standard-flow).
-
-# Help
-
-To get help with AAF Rapid Connect, email [AAF support](mailto:support@aaf.edu.au).
