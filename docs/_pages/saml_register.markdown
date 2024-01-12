@@ -8,7 +8,10 @@ parent: Connect a New Service
 # Register a SAML Service
 ---
 
-A deployed Shibboleth **SP** only becomes useful after registering the **SP** in a Federation. The following steps show how to register an **SP**
+A deployed Shibboleth **SP** only becomes useful after registering the **SP** in a Federation. The following steps show how to register an **SP**.
+
+---
+If you have not done so already, please [log in to Federation Manager](connect_service/#getting-started) to get started.
 
 Once you have clicked on 'SAML' on the ['Connect a New Service'](connect_service/#connect-a-new-service) page, you will then be taken to the **Register a SAML Service Provider** page:
 
@@ -19,6 +22,7 @@ There are two methods for providing the **SAML** details for the new service: au
 ### Automatic Method (top section of form)
 > Available to **SPs** operating with [Shibboleth](https://www.shibboleth.net/) or [SimpleSAMLPHP](https://simplesamlphp.org/) and relies on these products responding on their default metadata endpoints.
 
+**To complete registration please provide the following information:**
 1. Select the Organisation under which the **SP** will be registered.
 2. Enter your service's metadata.
 3. Click 'Register'.
@@ -26,11 +30,12 @@ There are two methods for providing the **SAML** details for the new service: au
 ### Manual Method (bottom section of form)
 > Manually requires the deployer to complete the following fields with the necessary information and assumes that the deployer is familiar with the **SAML** end-points for their service.
 
+**To complete registration please provide the following information:**
 1. Name - a service name
 2. Description - a description of the service
 3. Entity ID - the service's entity ID
 4. URL - the service's landing page URL
-5. Assertion consumer service URL -
+5. Assertion consumer service URL - the endpoint provided by the SP where SAML responses are posted.
 6. Discovery response URL -
    > For Test:
    >

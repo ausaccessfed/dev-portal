@@ -12,9 +12,9 @@ parent: Connection Methods
 
   > ## AAF Federations - for registering new services
   >
-  > - [PRODUCTION](https://manager.aaf.edu.au/federationregistry/)
+  > - [PRODUCTION](https://manager.aaf.edu.au/welcome)
   >
-  > - [TEST](https://manager.test.aaf.edu.au/federationregistry/)
+  > - [TEST](https://manager.test.aaf.edu.au/welcome)
 
 > ## Shibboleth SP3
 > 

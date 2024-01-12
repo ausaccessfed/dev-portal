@@ -7,6 +7,7 @@ parent: Connect a New Service
 
 # Register a Rapid Connect Service
 ---
+If you have not done so already, please [log in to Federation Manager](connect_service/#getting-started) to get started.
 
 Once you have clicked on 'OpenID Connect' on the ['Connect a New Service'](connect_service/#connect-a-new-service) page, you will then be taken to the **Register a New Service** page:
 
@@ -20,10 +21,13 @@ Once you have clicked on 'OpenID Connect' on the ['Connect a New Service'](conne
 4. Secret - Must be random and securely stored by the service. This value should never be publicly disclosed and is used by the service to verify signed tokens from AAF Rapid Connect. We generated this as part of the [Integration Steps](/rapidconnect/#2-create-a-secret).
 5. Organisation - The AAF subscribed organisation which is sponsoring this service.
 
-**If you're registering in the production federation**
+Click **Register Service** to complete the registration step.
 
-Once submitted the AAF will review and contact you with any questions. You should expect a response via email within 2 business days which will include a unique URL within AAF Rapid Connect for your application to start the authentication process as we discussed in [Standard Flow](/rapidconnect/#standard-flow).
-
+---
 **If you're registering in the test federation**
 
 Your application will be automatically approved. The completion screen will show the unique URL for your application to initiate login. You can use this immediately with your application to start the authentication process as we discussed in [Standard Flow](/rapidconnect/#standard-flow).
+
+**If you're registering in the production federation**
+
+Once submitted, the AAF will review and contact you with any questions. You should expect a response via email within 2 business days which will include a unique URL within AAF Rapid Connect for your application to start the authentication process as we discussed in [Standard Flow](/rapidconnect/#standard-flow).
