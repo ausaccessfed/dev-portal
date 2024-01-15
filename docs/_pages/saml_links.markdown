@@ -1,9 +1,8 @@
 ---
 layout: page
 title: Links
-nav_order: 2
-parent: SAML
-grand_parent: How to connect
+nav_order: 4
+parent: Connection Methods
 ---
 
 
@@ -13,9 +12,9 @@ grand_parent: How to connect
 
   > ## AAF Federations - for registering new services
   >
-  > - [PRODUCTION](https://manager.aaf.edu.au/federationregistry/)
+  > - [PRODUCTION](https://manager.aaf.edu.au/welcome)
   >
-  > - [TEST](https://manager.test.aaf.edu.au/federationregistry/)
+  > - [TEST](https://manager.test.aaf.edu.au/welcome)
 
 > ## Shibboleth SP3
 > 

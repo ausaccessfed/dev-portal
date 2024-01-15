@@ -2,9 +2,8 @@
 layout: page
 title: SAML
 permalink: /saml/
-nav_order: 1
-parent: How to connect
-has_children: true
+nav_order: 3
+parent: Connection Methods
 ---
 
 # Documentation
