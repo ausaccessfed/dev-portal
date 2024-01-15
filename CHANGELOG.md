@@ -16,6 +16,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Add oidc documentation.[#6](https://github.com/ausaccessfed/dev-portal/pull/6)
 - Add saml documentation.[#8](https://github.com/ausaccessfed/dev-portal/pull/8)
 - Add keycloak documentation.[#9](https://github.com/ausaccessfed/dev-portal/pull/9)
+- Add verifID documentation.[#15](https://github.com/ausaccessfed/dev-portal/pull/15)
 
 ### Fixed
 
