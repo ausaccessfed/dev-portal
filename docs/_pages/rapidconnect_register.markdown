@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Rapid Connect
-nav_order: 2
+nav_order: 4
 parent: Connect a New Service
 ---
 
@@ -28,6 +28,6 @@ Click **Register Service** to complete the registration step.
 
 Your application will be automatically approved. The completion screen will show the unique URL for your application to initiate login. You can use this immediately with your application to start the authentication process as we discussed in [Standard Flow](/rapidconnect/#standard-flow).
 
-**If you're registering in the production federation**
+---
 
-Once submitted, the AAF will review and contact you with any questions. You should expect a response via email within 2 business days which will include a unique URL within AAF Rapid Connect for your application to start the authentication process as we discussed in [Standard Flow](/rapidconnect/#standard-flow).
+## Up Next: [Register a SAML Service](saml_register)

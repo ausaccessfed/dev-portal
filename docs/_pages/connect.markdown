@@ -1,13 +1,14 @@
 ---
 layout: page
-title: Connection Methods
+title: Connection Types
 permalink: /connect/
 nav_order: 2
 has_children: true
 ---
-# Connection Methods
+# Connection Types
 
-Choose which protocol your service will use to connect.
+Choose which protocol your service will use to connect. Each protocol has its own benefits and drawbacks and the 
+choice will depend on your organisation's requirements and preferences.
 
 <span class="fs-5">
 [OpenID Connect >]({% link _pages/oidc.markdown %}){: .btn .btn-blue .mb-4 .mt-8 .d-block .text-center}

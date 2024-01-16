@@ -3,7 +3,7 @@ layout: page
 title: Rapid Connect
 permalink: /rapidconnect/
 nav_order: 2
-parent: Connection Methods
+parent: Connection Types
 ---
 
 # Documentation

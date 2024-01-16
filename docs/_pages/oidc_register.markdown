@@ -1,7 +1,7 @@
 ---
 layout: page
 title: OpenID Connect
-nav_order: 1
+nav_order: 3
 parent: Connect a New Service
 ---
 
@@ -33,11 +33,8 @@ Next you will be provided with the Identifier and Secret used by your **RP** ser
 {: .note }
 You only have one opportunity to copy the Secret, it cannot be recovered later. You can however generate a new secret later.
 
+**Your service is now available to use immediately in the Test Federation.**
+
 ---
-**If you're registering in the test federation**
 
-Your service will be available to use immediately.
-
-**If you're registering in the production federation**
-
-The service MUST be approved by your organisation and the AAF before it will be available for use.
+## Up Next: [Register a Rapid Connect Service](rapidconnect_register)

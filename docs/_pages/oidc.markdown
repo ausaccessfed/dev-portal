@@ -3,7 +3,7 @@ layout: page
 title: OpenID Connect
 permalink: /oidc/
 nav_order: 1
-parent: Connection Methods
+parent: Connection Types
 has_children: true
 ---
 
@@ -12,22 +12,10 @@ has_children: true
 
 The **AAF** supports **OpenID Connect (OIDC)** connectivity and operates an **OpenID Provider (OP)** which authenticates 
 users who have an account at any **AAF** subscriber **Identity Provider (IdP)**. This service is a production choice 
-available to AAF subscribers to connect their OIDC services to the Federation. This is an maturing service and at 
+available to AAF subscribers to connect their OIDC services to the Federation. This is a maturing service and at 
 this stage only supports a subset of attributes/claims. For attribute requirements outside this range, [please contact us to discuss](mailto:support@aaf.edu.au).
 
-To get started, visit
-> <span class="fs-5">
- > [AAF Test Federation](https://manager.test.aaf.edu.au/oidc/clients/new){: .btn }
- > </span>
->
-> or
->
-> <span class="fs-5">
-> [AAF Production Federation](https://manager.aaf.edu.au/oidc/clients/new){: .btn }
-> </span>
-
 ## Attributes / Claims
-
 
 These are the attributes/claims Central can provide to an RP currently:
 

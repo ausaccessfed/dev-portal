@@ -3,7 +3,7 @@ layout: page
 title: Verifid
 permalink: /verifid/
 nav_order: 4
-parent: Connection Methods
+parent: Connection Types
 ---
 
 # Documentation
@@ -17,9 +17,9 @@ The keywords "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SH
 | 2018-05-16 | Initial version                                                                |
 | 2018-11-15 | Added staff verification <br> Added client-side discovery support              |
 | 2018-12-10 | Expanded verification to full set of affiliation values                        |
- | 2019-11-01 | Modified to new VerifID branding                                               |
- | 2020-11-10 | Add User-Agent header requirement                                              |
- | 2020-11-11 | Explicitly detail need to percent encode any request value that contains a URL |
+| 2019-11-01 | Modified to new VerifID branding                                               |
+| 2020-11-10 | Add User-Agent header requirement                                              |
+| 2020-11-11 | Explicitly detail need to percent encode any request value that contains a URL |
 
 
 ## Overview

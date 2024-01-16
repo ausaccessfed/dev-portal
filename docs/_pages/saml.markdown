@@ -3,7 +3,7 @@ layout: page
 title: SAML
 permalink: /saml/
 nav_order: 3
-parent: Connection Methods
+parent: Connection Types
 ---
 
 # Documentation

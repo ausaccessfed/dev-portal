@@ -1,0 +1,47 @@
+---
+layout: page
+title: Log in to Federation Manager
+nav_order: 2
+parent: Connect a New Service
+---
+
+# Login to Federation Manager
+
+This section will show you how to authenticate to the AAF Federation Manager Dashboard (Test) to register a new service.
+
+- To access Federation Manager, please visit: [AAF Test Federation](https://manager.test.aaf.edu.au)
+
+You will be taken to the Federation Manager Welcome page.
+
+- Click on 'Login with the Australian Access Federation' to continue.
+
+![Log in to FM](/assets/images/FM-login.png)
+
+
+You will be prompted to select your Organisation as shown below.
+
+- Then click 'Continue to your organisation'.
+
+![Select Organisation](/assets/images/sign-in-to-org-FM.png)
+
+- Use your Organisation credentials to sign in to Federation Manager (Test).
+
+![Sign in to FM](/assets/images/sign-in-to-FM.png)
+
+If authentication is successful, you will be taken to the **Federation Manager Dashboard** page.
+
+![FM Dashboard](/assets/images/FM-dashboard.png)
+
+## Connect a New Service
+
+- Once you have logged in to the Federation Manager Dashboard (Test), click on 'Connect a service'.
+
+![FM Dashboard](/assets/images/FM-dashboard.png)
+
+- Click on the protocol with which you would like to connect your service, i.e. OpenID Connect, Rapid Connect or SAML.
+
+![Connect service](/assets/images/connect-service.png)
+
+---
+
+## Up Next: [Register an OpenID Connect Service](oidc_register)
