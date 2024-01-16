@@ -4,6 +4,7 @@ title: OpenID Connect
 permalink: /oidc/
 nav_order: 1
 parent: Connection Methods
+has_children: true
 ---
 
 # Documentation

@@ -3,7 +3,7 @@ layout: page
 title: Verifid
 permalink: /verifid/
 nav_order: 4
-parent: How to connect
+parent: Connection Methods
 ---
 
 # Documentation
