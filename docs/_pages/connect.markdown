@@ -53,3 +53,7 @@ choice will depend on your organisation's requirements and preferences.
 
 *Drawbacks*
 - Complex
+
+<span class="fs-5">
+[VerifID >]({% link _pages/verifid.markdown %}){: .btn .btn-blue .mb-4 .mt-8 .d-block .text-center}
+</span>

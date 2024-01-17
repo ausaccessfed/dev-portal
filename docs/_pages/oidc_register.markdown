@@ -8,6 +8,8 @@ has_children: true
 
 # Register an OpenID Connect Service
 ---
+
+{: .note}
 Before registering an **OIDC** service, deployers must have sufficient experience in undertaking **OIDC** integration work to create their own **Relying Party (RP)** components with minimal help from the **AAF technical team**. There are several open-source libraries which implement most of the **RP** requirements in several languages, [GitHub](https://github.com) is an excellent resource, as is the [OpenID Foundation](https://openid.net/developers/libraries/). The **AAF** does not offer support or advice in this area, and the choice depends on the subscriber’s strengths and existing knowledge of **OIDC** integration.
 
 The **AAF OpenID Provider (OP)** satisfies the **OIDC** conformance testing framework and passes the Authorization Code flow. The **AAF** monitors the **OP** during business hours and responds to service interruption issues promptly.

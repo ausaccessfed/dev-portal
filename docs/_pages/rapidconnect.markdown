@@ -55,15 +55,17 @@ Therefore, while JWTs can do some of the things SAML assertions do, JWTs are not
 
 The following claims are provided by AAF Rapid Connect:
 
- - **iss**: Identifies the principal that issued the JWT. For AAF Rapid Connect this is always https://rapid.aaf.edu.au in the production environment, and https://rapid.test.aaf.edu.au in the test environment.
- - **iat**: Identifies the time at which the JWT was issued.
- - **jti**: Provides a unique identifier for the JWT that can be used to prevent the JWT from being replayed.
- - **nbf**: Identifies the time before which the JWT MUST NOT be accepted for processing.
- - **exp**: Identifies the expiration time on or after which the JWT MUST NOT be accepted for processing.
- - **typ**: Declare a type for the contents of this JWT Claims Set in an application-specific manner in contexts where this is useful to the application.
- - **aud**: Identifies the audiences that the JWT is intended for. Each principal intended to process the JWT MUST identify itself with a value in audience claim. For Rapid Connect this is the value of your application's primary URL (provided as part of service registration).
- - **sub**: Identifies the principal that is the subject of the JWT. For Rapid Connect this is the same value supplied as edupersontargetedid within https://aaf.edu.au/attributes as documented below.
- - **https://aaf.edu.au/attributes**: Contains a set of personally identifiable information associated with sub as provided by the remote AAF connected identity provider.
+| Claim                         | Definition                                                                                                                                                                                                                                                               |
+|:------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| iss                           | Identifies the principal that issued the JWT. For AAF Rapid Connect this is always https://rapid.aaf.edu.au in the production environment, and https://rapid.test.aaf.edu.au in the test environment.                                                                    |
+| iat                           | Identifies the time at which the JWT was issued.                                                                                                                                                                                                                         |
+| jti                           | Provides a unique identifier for the JWT that can be used to prevent the JWT from being replayed.                                                                                                                                                                        |
+| nbf                           | Identifies the time before which the JWT MUST NOT be accepted for processing.                                                                                                                                                                                            |
+| exp                           | Identifies the expiration time on or after which the JWT MUST NOT be accepted for processing.                                                                                                                                                                            |
+| typ                           | Declare a type for the contents of this JWT Claims Set in an application-specific manner in contexts where this is useful to the application.                                                                                                                            |
+| aud                           | Identifies the audiences that the JWT is intended for. Each principal intended to process the JWT MUST identify itself with a value in audience claim. For Rapid Connect this is the value of your application's primary URL (provided as part of service registration). |
+| sub                           | Identifies the principal that is the subject of the JWT. For Rapid Connect this is the same value supplied as edupersontargetedid within https://aaf.edu.au/attributes as documented below.                                                                              |
+ | https://aaf.edu.au/attributes | Contains a set of personally identifiable information associated with sub as provided by the remote AAF connected identity provider.                                                                                                                                     |
 
 Timestamps are defined by the specification as `IntDate` values, which are a JSON numeric value representing the number of seconds from 1970-01-01T0:0:0Z UTC until the specified UTC date/time.
 

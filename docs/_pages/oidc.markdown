@@ -4,7 +4,6 @@ title: OpenID Connect
 permalink: /oidc/
 nav_order: 1
 parent: Connection Types
-has_children: true
 ---
 
 # Documentation
@@ -35,8 +34,6 @@ These are the attributes/claims Central can provide to an RP currently:
 
 {: .note}
 A claim for a user will only be provided if their home organisation provides the specific attribute. For example most universities will NOT provide phone numbers for their users.
-
-## [Register your OpenID Connect Service]({% link _pages/oidc_register.markdown %})
 
 ## Skipping AAF Discovery Service
 
