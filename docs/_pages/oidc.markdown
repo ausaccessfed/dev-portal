@@ -159,15 +159,3 @@ curl https://central.aaf.edu.au/.well-known/openid-configuration | jq
   ]
 }
 ```
-
-## Links
-
-[AAF Production OIDC Provider](https://central.aaf.edu.au/.well-known/openid-configuration)
-
-[AAF Test OIDC Provider](https://central.test.aaf.edu.au/.well-known/openid-configuration)
-
-[OpenID OIDC Developer Libraries](https://openid.net/developers/libraries/)
-
-[OpenID OIDC Overview](https://openid.net/specs/openid-connect-core-1_0.html#Overview)
-
-[OpenID OIDC Terminology](https://openid.net/specs/openid-connect-core-1_0.html#Terminology)

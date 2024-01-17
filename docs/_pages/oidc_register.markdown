@@ -3,6 +3,7 @@ layout: page
 title: OpenID Connect
 nav_order: 3
 parent: Connect a New Service
+has_children: true
 ---
 
 # Register an OpenID Connect Service
@@ -12,7 +13,7 @@ Before registering an **OIDC** service, deployers must have sufficient experienc
 The **AAF OpenID Provider (OP)** satisfies the **OIDC** conformance testing framework and passes the Authorization Code flow. The **AAF** monitors the **OP** during business hours and responds to service interruption issues promptly.
 
 ---
-If you have not done so already, please [log in to Federation Manager](connect_service/#getting-started) to get started.
+If you have not done so already, please [log in to Federation Manager](login) to get started.
 
 Once you have clicked on 'OpenID Connect' on the ['Connect a New Service'](connect_service/#connect-a-new-service) page, you will then be taken to the **Register a New Service** page:
 

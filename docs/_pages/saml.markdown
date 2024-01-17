@@ -48,7 +48,7 @@ the **SP**, configure the web server and protect content. For these, links in th
 additional **Shibboleth documentation**. 
 
 {: .note}
-All links in this guide are collated on the [Links Page]({% link _pages/saml_links.markdown %}).
+All links in this guide are collated on the [Links Page]({% link _pages/links.markdown %}).
 
 The **AAF** provides two Federations to subscribing organisations: 
 - **TEST** 

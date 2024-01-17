@@ -3,7 +3,7 @@ layout: page
 title: Connect via Keycloak
 nav_order: 2
 parent: OpenID Connect
-grand_parent: Connection Types
+grand_parent: Connect a New Service
 ---
 
 # Documentation
