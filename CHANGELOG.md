@@ -28,3 +28,4 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update registration documentation.[#10](https://github.com/ausaccessfed/dev-portal/pull/10)
 - Update general formatting.[#13](https://github.com/ausaccessfed/dev-portal/pull/13)
 - Consolidate log in details.[#14](https://github.com/ausaccessfed/dev-portal/pull/14)
+- Restructure docs into tutorial layout.[#16](https://github.com/ausaccessfed/dev-portal/pull/16)
