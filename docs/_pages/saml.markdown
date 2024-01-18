@@ -3,7 +3,7 @@ layout: page
 title: SAML
 permalink: /saml/
 nav_order: 3
-parent: Connection Methods
+parent: Connection Types
 ---
 
 # Documentation
@@ -48,7 +48,7 @@ the **SP**, configure the web server and protect content. For these, links in th
 additional **Shibboleth documentation**. 
 
 {: .note}
-All links in this guide are collated on the [Links Page]({% link _pages/saml_links.markdown %}).
+All links in this guide are collated on the [Links Page]({% link _pages/links.markdown %}).
 
 The **AAF** provides two Federations to subscribing organisations: 
 - **TEST** 
@@ -336,7 +336,9 @@ versions in use.
 
 > [Read details on the available configurable options](https://shibboleth.atlassian.net/wiki/spaces/SP3/pages/2065334870/Status+Handler)
 
-### 6. [Register your service]({% link _pages/saml_register.markdown %})
+{: .next_steps }
+Once you have completed the SAML configuration, you are ready to connect your service!
+<br><br> Head over to [Connect a New Service](/new_service) and follow the steps to authenticate to Federation Manager (Test) after which you can [register your new SAML service](/new_service/saml_register).
 
 ### 7. Test access to protected content 
 

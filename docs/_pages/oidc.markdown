@@ -3,32 +3,20 @@ layout: page
 title: OpenID Connect
 permalink: /oidc/
 nav_order: 1
-parent: Connection Methods
+parent: Connection Types
 ---
 
 # Documentation
 ## Overview
 
-The **AAF** supports **OpenID Connect (OIDC)** connectivity and operates an **OpenID Provider (OP)** which authenticates 
-users who have an account at any **AAF** subscriber **Identity Provider (IdP)**. This service is a production choice 
-available to AAF subscribers to connect their OIDC services to the Federation. This is an maturing service and at 
-this stage only supports a subset of attributes/claims. For attribute requirements outside this range, [please contact us to discuss](mailto:support@aaf.edu.au).
+The **AAF** supports **OpenID Connect (OIDC)** connectivity and operates an **OpenID Provider (OP)** which authenticates users who have an account at any **AAF** subscriber **Identity Provider (IdP)**. This service is a production choice available to AAF subscribers to connect their OIDC services to the Federation. 
 
-To get started, visit
-> <span class="fs-5">
- > [AAF Test Federation](https://manager.test.aaf.edu.au/oidc/clients/new){: .btn }
- > </span>
->
-> or
->
-> <span class="fs-5">
-> [AAF Production Federation](https://manager.aaf.edu.au/oidc/clients/new){: .btn }
-> </span>
+{: .note}
+This is a maturing service and at this stage only supports a subset of attributes/claims. For attribute requirements outside this range, [please contact us to discuss](mailto:support@aaf.edu.au).
 
 ## Attributes / Claims
 
-
-These are the attributes/claims Central can provide to an RP currently:
+These are the attributes/claims Central can provide to a Relying Party (RP) currently:
 
 | Supported Scopes             | Claims                                                                                                                                                                                                                                                              |
 |------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -46,8 +34,6 @@ These are the attributes/claims Central can provide to an RP currently:
 
 {: .note}
 A claim for a user will only be provided if their home organisation provides the specific attribute. For example most universities will NOT provide phone numbers for their users.
-
-## [Register your OpenID Connect Service]({% link _pages/oidc_register.markdown %})
 
 ## Skipping AAF Discovery Service
 
@@ -97,9 +83,9 @@ The **AAF OIDC** service supports querying the **OP** Configuration Information 
 capabilities of the **OIDC** service. The **AAF OP** provides two endpoints, one for **Production Federation** and one 
 for **Test Federation**, respectively:
 
-- [Production Federation](https://central.aaf.edu.au/.well-known/openid-configuration)
-
 - [Test Federation](https://central.test.aaf.edu.au/.well-known/openid-configuration)
+
+- [Production Federation](https://central.aaf.edu.au/.well-known/openid-configuration)
 
 
 Details for the **Production Federation** are here:
@@ -171,14 +157,7 @@ curl https://central.aaf.edu.au/.well-known/openid-configuration | jq
 }
 ```
 
-## Links
-
-[AAF Production OIDC Provider](https://central.aaf.edu.au/.well-known/openid-configuration)
-
-[AAF Test OIDC Provider](https://central.test.aaf.edu.au/.well-known/openid-configuration)
-
-[OpenID OIDC Developer Libraries](https://openid.net/developers/libraries/)
-
-[OpenID OIDC Overview](https://openid.net/specs/openid-connect-core-1_0.html#Overview)
-
-[OpenID OIDC Terminology](https://openid.net/specs/openid-connect-core-1_0.html#Terminology)
+{: .next_steps }
+Once you have completed the Openid configuration, you are ready to connect your service! 
+<br><br> Head over to [Connect a New Service](/new_service) and follow the steps to authenticate to 
+Federation Manager (Test) after which you can [register your new OIDC service](/new_service/oidc_register).

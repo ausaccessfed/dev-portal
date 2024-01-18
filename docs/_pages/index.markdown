@@ -11,30 +11,29 @@ nav_order: 1
 
 ## Overview
  
-There are a number of ways to connect your service to the federation technically. This site provides the 
-documentation on how to connect your service to the AAF.
+There are a number of ways to connect your service to the federation technically. This site provides documentation and tutorials on how to connect your service to the AAF.
 
 The AAF provides two Federations, a Test Federation and a Production Federation.
 
-### Test Federation
-
-The test federation is open to anyone and there is no cost involved. Anyone can use the test environment for developing and testing their integrations.
-
-### Production Federation
-
-To participate in the production federation you must subscribe to the federation. Details on how to do this are 
-available on the [AAF website][aaf-website].
+>### Test Federation
+>
+>The test federation is open to anyone and there is no cost involved. Anyone can use the test environment for developing and testing their integrations. The enclosed tutorials are based on using the test environment.
+>
+>### Production Federation
+>
+>To participate in the production federation you must subscribe to the federation. Details on how to do this are available on the [AAF website][aaf-website].
 
 [aaf-website]: https://aaf.edu.au/subscribe/who.html
 
-### Connection Methods
+### Connection Types
 
-There are three ways to connect to the federation
+There are several ways to connect to the federation
 - SAML
 - OIDC
 - Rapid Connect
+- VerifID
 
-Learn more by reading our [Connection Methods]({% link _pages/connect.markdown %}).
+Learn more by reading our [Connection Types]({% link _pages/connect.markdown %}).
 
 ```mermaid
 flowchart RL
@@ -49,9 +48,11 @@ flowchart RL
     B[Shibboleth] --> id3(AAF)
     C[SimpleSAML php] --> id3(AAF)
     id4[Rapid Connect] ---> id3(AAF)
+    id5[VerifID] ---> id3(AAF)
     style id1 fill:#f96,stroke:#333
     style id2 fill:#f96,stroke:#333
     style id3 fill:#CBC3E3,stroke:#333
     style id4 fill:#f96,stroke:#333
+    style id5 fill:#f96,stroke:#333
 ```
 Figure 1. AAF Connection Methods
