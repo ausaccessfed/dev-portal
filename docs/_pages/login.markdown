@@ -6,7 +6,7 @@ nav_order: 2
 parent: Connect a New Service
 ---
 
-# Login to Federation Manager
+# Log in to Federation Manager
 
 This section will show you how to authenticate to the AAF Test Federation Manager Dashboard to register a new service.
 
