@@ -1,18 +1,18 @@
 ---
 layout: page
 title: Connect a New Service
+permalink: /new_service/
 nav_order: 3
 has_children: true
 ---
 
 # Welcome
 
-Welcome to the AAF Connect a New Service Series. In this series, we've put together all the tutorials that you will 
-need to connect a new service (using OpenID Connect, Rapid Connect, SAML or VerifID) to the AAF.
+Welcome to the AAF Connect a New Service Series. In this series, we've put together all the tutorials that you will need to connect a new service (using OpenID Connect, Rapid Connect, SAML or VerifID) to the AAF.
 
 ## What you'll learn
 - How to authenticate to Federation Manager (Test)
-- How to register a new service using available protocols (OpenID Connect, Rapid Connect, SAML, VerifID)
+- How to register a new service with AAF using available protocols (OpenID Connect, Rapid Connect, SAML, VerifID)
 - How to register a new service using OpenID Connect (OIDC) and Keycloak
 
 
@@ -20,6 +20,11 @@ need to connect a new service (using OpenID Connect, Rapid Connect, SAML or Veri
 
 - AAF login credentials
 - Experience undertaking integration work
+
+<br>
+
+{: .next_steps }
+[Continue to Overview](/new_service/overview)
 
 
 

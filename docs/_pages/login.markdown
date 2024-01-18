@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Log in to Federation Manager
+permalink: /new_service/login
 nav_order: 2
 parent: Connect a New Service
 ---
@@ -42,9 +43,9 @@ If authentication is successful, you will be taken to the **Federation Manager D
 
 ![Connect service](/assets/images/connect-service.png)
 
-
-On the next page, you will learn how to register an OpenID Connect service in the Test Federation.
-
 ---
 
-## Up Next: [Register an OpenID Connect Service](oidc_register)
+{: .next_steps }
+On the next page, you will learn how to [Register an OpenID Connect Service](oidc_register) in the Test Federation.
+<br><br>
+Or, click here for [Rapid Connect](rapidconnect_register) or [SAML](saml_register) service registration instructions.

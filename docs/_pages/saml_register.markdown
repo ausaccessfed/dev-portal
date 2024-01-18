@@ -1,6 +1,7 @@
 ---
 layout: page
 title: SAML
+permalink: /new_service/saml_register
 nav_order: 5
 parent: Connect a New Service
 ---
@@ -13,7 +14,7 @@ A deployed Shibboleth **SP** only becomes useful after registering the **SP** in
 ---
 If you have not done so already, please [log in to Federation Manager](connect_service/#getting-started) to get started.
 
-Once you have clicked on 'SAML' on the ['Connect a New Service'](connect_service/#connect-a-new-service) page, you will then be taken to the **Register a SAML Service Provider** page:
+Once you have clicked on 'SAML' on the ['Connect a New Service'](https://manager.test.aaf.edu.au/connected_services/new) page, you will then be taken to the **Register a SAML Service Provider** page:
 
 ![Register new saml service](/assets/images/register-new-saml-service.png)
 
@@ -46,10 +47,15 @@ There are two methods for providing the **SAML** details for the new service: au
    > https://ds.aaf.edu.au/discovery/aaf
 
 7. Signing certificate - Provide the contents of the public key certificate created by the Shibboleth installation, this is not the web server SSL public certificate.
-8. Select those attributes that the application requires. The selection of attributes should match those attributes enabled in the **attribute-map.xml** file. If following the instructions for the [Simple PHP Server installed on Linux example](/saml/#example-simple-php-server-installed-on-linux), the default Shibboleth installation enables the attributes **eppn** and **affiliation**.
 
-9. Click 'Register'.
+<br>
 
-## Review by AAF
-- Await review by the **AAF** support team, who will be in touch with the deployer, whose details were supplied at the top of the form.
-- On approval, the service is registered in the **Federation** and metadata generated for inclusion in the **AAF Metadata** file, which is refreshed every few hours.
+- Select those attributes that the application requires. The selection of attributes should match those attributes enabled in the **attribute-map.xml** file. If following the instructions for the [Simple PHP Server installed on Linux example](/saml/#example-simple-php-server-installed-on-linux), the default Shibboleth installation enables the attributes **eppn** and **affiliation**.
+
+- Click **Register** to complete the registration step.
+
+---
+
+{: .next_steps }
+Await review by the **AAF Support team**, who will be in touch with the deployer, whose details were supplied at the top of the form.
+<br><br>On approval, the service is registered in the **Federation** and metadata generated for inclusion in the **AAF Metadata** file, which is refreshed every few hours.

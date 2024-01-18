@@ -1,6 +1,7 @@
 ---
 layout: page
 title: OpenID Connect
+permalink: /new_service/oidc_register
 nav_order: 3
 parent: Connect a New Service
 has_children: true
@@ -17,7 +18,7 @@ The **AAF OpenID Provider (OP)** satisfies the **OIDC** conformance testing fram
 ---
 If you have not done so already, please [log in to Federation Manager](login) to get started.
 
-Once you have clicked on 'OpenID Connect' on the ['Connect a New Service'](connect_service/#connect-a-new-service) page, you will then be taken to the **Register a New Service** page:
+Once you have clicked on 'OpenID Connect' on the ['Connect a New Service'](https://manager.test.aaf.edu.au/connected_services/new) page, you will then be taken to the **Register a New Service** page:
 
 ![Register new service](/assets/images/register-new-oidc-service.png)
 
@@ -29,15 +30,17 @@ Once you have clicked on 'OpenID Connect' on the ['Connect a New Service'](conne
 4. Redirect URL - The endpoint which will receive the OIDC responses from AAF. Additional redirect URIs can be added after registration via the client details page.
 5. Organisation - Responsible for the operation of the service, must be an **AAF** subscriber.
 
-Click **Register Service** to complete the registration step.
+
+- Click **Register Service** to complete the registration step.
 
 Next you will be provided with the Identifier and Secret used by your **RP** service that is generated during the registration process.
 
-{: .note }
+{: .warning }
 You only have one opportunity to copy the Secret, it cannot be recovered later. You can however generate a new secret later.
 
-**Your service is now available to use immediately in the Test Federation.**
+{: .next_steps }
+Your service is now available to use immediately in the Test Federation.
 
 ---
 
-## Up Next: [Register a Rapid Connect Service](rapidconnect_register)
+## Up Next: [Register an OpenID Connect Service using Keycloak](keycloak)

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Connect via Keycloak
+permalink: /new_service/oidc_register/keycloak
 nav_order: 2
 parent: OpenID Connect
 grand_parent: Connect a New Service
@@ -89,3 +90,6 @@ This will take you to the AAF Discovery Service (known as AAF Central).
 * If authentication is successful, you will be taken back to your Keycloak account console.
 
 ![New user account](/assets/images/new-user-account.png)
+
+
+## Up Next: [Register a Rapid Connect Service](/new_service/rapidconnect_register)

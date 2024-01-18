@@ -185,3 +185,9 @@ The JWT claim **sub** and the **https://aaf.edu.au/attributes** claim's **eduper
 
 The value of **sub/edupersontargetedid** is not able to correlate a user between services. For more details see 
 http://wiki.aaf.edu.au/tech-info/attributes/edupersontargetedid.
+
+---
+
+{: .next_steps }
+Once you have completed the Rapid Connect configuration, you are ready to connect your service!
+<br><br> Head over to [Connect a New Service](/new_service) and follow the steps to authenticate to Federation Manager (Test) after which you can [register your new Rapid Connect service](/new_service/rapidconnect_register).

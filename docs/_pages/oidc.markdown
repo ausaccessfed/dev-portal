@@ -9,14 +9,14 @@ parent: Connection Types
 # Documentation
 ## Overview
 
-The **AAF** supports **OpenID Connect (OIDC)** connectivity and operates an **OpenID Provider (OP)** which authenticates 
-users who have an account at any **AAF** subscriber **Identity Provider (IdP)**. This service is a production choice 
-available to AAF subscribers to connect their OIDC services to the Federation. This is a maturing service and at 
-this stage only supports a subset of attributes/claims. For attribute requirements outside this range, [please contact us to discuss](mailto:support@aaf.edu.au).
+The **AAF** supports **OpenID Connect (OIDC)** connectivity and operates an **OpenID Provider (OP)** which authenticates users who have an account at any **AAF** subscriber **Identity Provider (IdP)**. This service is a production choice available to AAF subscribers to connect their OIDC services to the Federation. 
+
+{: .note}
+This is a maturing service and at this stage only supports a subset of attributes/claims. For attribute requirements outside this range, [please contact us to discuss](mailto:support@aaf.edu.au).
 
 ## Attributes / Claims
 
-These are the attributes/claims Central can provide to an RP currently:
+These are the attributes/claims Central can provide to a Relying Party (RP) currently:
 
 | Supported Scopes             | Claims                                                                                                                                                                                                                                                              |
 |------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -83,9 +83,9 @@ The **AAF OIDC** service supports querying the **OP** Configuration Information 
 capabilities of the **OIDC** service. The **AAF OP** provides two endpoints, one for **Production Federation** and one 
 for **Test Federation**, respectively:
 
-- [Production Federation](https://central.aaf.edu.au/.well-known/openid-configuration)
-
 - [Test Federation](https://central.test.aaf.edu.au/.well-known/openid-configuration)
+
+- [Production Federation](https://central.aaf.edu.au/.well-known/openid-configuration)
 
 
 Details for the **Production Federation** are here:
@@ -156,3 +156,8 @@ curl https://central.aaf.edu.au/.well-known/openid-configuration | jq
   ]
 }
 ```
+
+{: .next_steps }
+Once you have completed the Openid configuration, you are ready to connect your service! 
+<br><br> Head over to [Connect a New Service](/new_service) and follow the steps to authenticate to 
+Federation Manager (Test) after which you can [register your new OIDC service](/new_service/oidc_register).
