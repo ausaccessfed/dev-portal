@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Log in to Federation Manager
+title: Log into Federation Manager
 permalink: /new_service/login
 nav_order: 2
 parent: Connect a New Service
 ---
 
-# Login to Federation Manager
+# Log into Federation Manager
 
 This section will show you how to authenticate to the AAF Test Federation Manager Dashboard to register a new service.
 
@@ -16,7 +16,7 @@ You will be taken to the Federation Manager Welcome page.
 
 - Click the 'Login with the Australian Access Federation' button to continue.
 
-![Log in to FM](/assets/images/FM-login.png)
+![Log into FM](/assets/images/FM-login.png)
 
 
 You will be prompted to select your Organisation as shown below.
