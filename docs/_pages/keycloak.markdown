@@ -29,7 +29,8 @@ The instructions below detail the configuration of AAF as an Identity Provider t
 
 ## 1. Get Started
 
-* If you are using Keycloak for the first time, [please refer to their documentation](https://www.keycloak.org/documentation) to get started. Otherwise, if you are already using Keycloak, log into the Keycloak admin console. In a local development environment, it is located at `http://localhost:8080/admin`.
+* If you are using Keycloak for the first time, [please refer to their documentation](https://www.keycloak.org/documentation) to get started. 
+* Otherwise, if you are already using Keycloak on a container platform, log into the Keycloak admin console. In a local development environment, it is located at `http://localhost:8080/admin`.
 
 ![Keycloak Sign In Page](/assets/images/keycloak-signin-page.png)
 
@@ -73,11 +74,12 @@ Keep the Keycloak admin console page open as you will need to enter the `Client 
 
 ![Keycloak service](/assets/images/keycloak-service.png)
 
-* Copy and paste these items into the `Client ID` and `Client Secret` fields, respectively, within the 'OpenID Connect settings' section of Keycloak.
+* Copy these items to your clipboard and head back over to Keycloak.
+* Paste these items into the `Client ID` and `Client Secret` fields, respectively, within the 'OpenID Connect settings' section of the Keycloak console.
 
 ![Oidc provider secret](/assets/images/keycloak-add-oidc-provider-secret.png)
 
-The other mandatory fields are the `Discovery Endpoint` and `Client Assertion Signature Algorithm`.
+The other mandatory fields in this section are the `Discovery Endpoint` and `Client Assertion Signature Algorithm`.
 * The `Discovery Endpoint` will be: `https://central.test.aaf.edu.au/.well-known/openid-configuration`
 * The `Client Assertion Signature Algorithm` will be 'RS256' as it is the currently recommended algorithm when signing JWTs. If no algorithm is specified, Keycloak will default to RS256 in the case of a JWT signed with a private key.
 * Click 'Add'.
@@ -109,6 +111,14 @@ This will take you to the AAF Discovery Service (known as AAF Central).
 * If authentication is successful, you will be taken back to your Keycloak account console.
 
 ![New user account](/assets/images/new-user-account.png)
+
+* To confirm the status of the authentication events, head back over to your connected service in Federation Manager (Test). The latest authentication events will be displayed on the right side of the service window. A successful authentication event should have the status 'Completed'.
+* If the event status indicates 'Failed', please check that the entered fields are correct and try again. 
+
+![Confirm authentication](/assets/images/keycloak-authentication.png)
+
+{: .next_steps }
+Your service is now available to use immediately in the Test Federation.
 
 
 ## Up Next: [Register a Rapid Connect Service](/new_service/rapidconnect_register)
