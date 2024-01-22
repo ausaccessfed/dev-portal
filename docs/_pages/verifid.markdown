@@ -100,8 +100,7 @@ linkStyle 7 stroke-width:4px,stroke:blue
 
 ## Appendix B: Technical Specification
 
-The interaction used between the Subscriber and VerifID is the Authorization Code Grant(1) as defined by the OAuth 2.
-0 specification (RFC 6749).
+The interaction used between the Subscriber and VerifID is the Authorization Code Grant(1) as defined by the OAuth 2.0 specification (RFC 6749).
 
 Unless explicitly described as optional, **all** parameters are required (i.e. no parameters are optional) in all request and response payloads. This includes parameters which are described by the OAuth 2.0 specification as optional.
 
@@ -174,7 +173,7 @@ Optional parameters:
 
 ### Verification response
 
-After authenticating to their Organisation via the VerifID Service Operator federation, the result of Verification will be a “protected resource”4 as described in the OAuth 2.0 specification. An authorization response shall be returned by redirecting the User’s browser to the Client’s redirect_uri, with query parameters: 
+After authenticating to their Organisation via the VerifID Service Operator federation, the result of Verification will be a “protected resource”(4) as described in the OAuth 2.0 specification. An authorization response shall be returned by redirecting the User’s browser to the Client’s redirect_uri, with query parameters: 
 
 ```
 [redirect_uri]?code=AUTHORIZATION_CODE&
