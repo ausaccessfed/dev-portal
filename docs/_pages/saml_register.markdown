@@ -12,7 +12,7 @@ parent: Connect a New Service
 A deployed Shibboleth **SP** only becomes useful after registering the **SP** in a Federation. The following steps show how to register an **SP**.
 
 ---
-If you have not done so already, please [log in to Federation Manager](connect_service/#getting-started) to get started.
+If you have not done so already, please [log in to Federation Manager (Test)](login) to get started.
 
 Once you have clicked on 'SAML' on the ['Connect a New Service'](https://manager.test.aaf.edu.au/connected_services/new) page, you will then be taken to the **Register a SAML Service Provider** page:
 

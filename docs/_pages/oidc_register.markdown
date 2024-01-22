@@ -16,7 +16,8 @@ Before registering an **OIDC** service, deployers must have sufficient experienc
 The **AAF OpenID Provider (OP)** satisfies the **OIDC** conformance testing framework and passes the Authorization Code flow. The **AAF** monitors the **OP** during business hours and responds to service interruption issues promptly.
 
 ---
-If you have not done so already, please [log into Federation Manager](/new_service/login) to get started.
+
+If you have not done so already, please [log into Federation Manager (Test)](/new_service/login) to get started.
 
 Once you have clicked on 'OpenID Connect' on the ['Connect a New Service'](https://manager.test.aaf.edu.au/connected_services/new) page in Federation Manager, you will then be taken to the **Register a New Service** page:
 
