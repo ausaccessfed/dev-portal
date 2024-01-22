@@ -81,7 +81,7 @@ Keep the Keycloak admin console page open as you will need to enter the `Client 
 
 The other mandatory fields in this section are the `Discovery Endpoint` and `Client Assertion Signature Algorithm`.
 * The `Discovery Endpoint` will be: `https://central.test.aaf.edu.au/.well-known/openid-configuration`
-* The `Client Assertion Signature Algorithm` will be 'RS256' as it is the currently recommended algorithm when signing JWTs. If no algorithm is specified, Keycloak will default to RS256 in the case of a JWT signed with a private key.
+* The `Client Assertion Signature Algorithm` will be 'RS256' as it is the currently available algorithm when signing JWTs. If no algorithm is specified, Keycloak will default to RS256 in the case of a JWT signed with a private key.
 * Click 'Add'.
 
 You will see the new identity provider settings (as shown below).

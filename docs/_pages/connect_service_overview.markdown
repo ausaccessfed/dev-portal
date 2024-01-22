@@ -33,4 +33,4 @@ If your organisation is not AAF enabled, please visit [AAF Support](https://supp
 
 {: .next_steps }
 <br>
-Continue to [Log in to Federation Manager](/new_service/login)
+Continue to [Log into Federation Manager](/new_service/login)
