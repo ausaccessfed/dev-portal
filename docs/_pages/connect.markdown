@@ -47,8 +47,8 @@ Choose which protocol your service will use to connect. Each protocol has its ow
 - [x] Feature-rich
 - [x] Many open-source libraries
 - [x] Allows participation in eduGAIN
-- [x] Use the SAML protocols which are implemented using [Shibboleth](https://www.shibboleth.net/) or [SimpleSAMLphp](https://simplesamlphp.org/)
-  as open source options
+- [x] Uses the SAML protocols which are implemented using [Shibboleth](https://www.shibboleth.net/) or 
+  [SimpleSAMLphp](https://simplesamlphp.org/) as open source options
 
 *Drawbacks*
 - Complex
@@ -56,3 +56,7 @@ Choose which protocol your service will use to connect. Each protocol has its ow
 <span class="fs-5">
 [VerifID >]({% link _pages/verifid.markdown %}){: .btn .btn-blue .mb-4 .mt-8 .d-block .text-center}
 </span>
+
+- [x] Verifies a user based on their organisational affiliation
+- [x] Provides an API for user verification
+- [x] Based in Kotlin

@@ -303,3 +303,7 @@ On the topic of what criteria define each type of user, the eduPerson schema als
 VerifID supplies a boolean value (i.e. true/false) for each Affiliation that forms part of a Verification. Any value which is “true” corresponds to an Affiliation which was present in the User’s set of attributes, and any value which is “false” corresponds to an Affiliation which was not present. VerifID does not augment or derive Affiliations, and instead presents them exactly as they were received from the Organisation.
 
 It should be noted that Affiliation information may change depending on an institution's policies and procedures. The status and accuracy of this information is outside of the VerifID Service Operator’s control. 
+
+{: .next_steps }
+Once you have completed the VerifID configuration, you are ready to connect your service!
+<br><br> Head over to [Connect a New Service](/new_service) and follow the steps to [register your new VerifID service](/new_service/verifid_register).

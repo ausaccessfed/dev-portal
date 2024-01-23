@@ -8,9 +8,18 @@ parent: Connect a New Service
 
 # Register a Rapid Connect Service
 ---
-If you have not done so already, please [log in to Federation Manager (Test)](login) to get started.
 
-Once you have clicked on 'Rapid Connect' on the ['Connect a New Service'](https://manager.test.aaf.edu.au/connected_services/new) page, you will then be taken to the **Register a New Service** page:
+# What you'll learn
+
+- How to connect a new Rapid Connect service in the AAF Test Federation
+
+# What you'll need
+
+- AAF login credentials
+
+If you have not done so already, please [log into Federation Manager (Test)](login) to get started.
+
+Once you have clicked on 'Rapid Connect' on the ['Connect a New Service'](https://manager.test.aaf.edu.au/connected_services/new) page in Federation Manager, you will then be taken to the **Register a New Service** page:
 
 ![Register new rapid connect service](/assets/images/register-new-rapid-connect-service.png)
 

@@ -261,7 +261,7 @@ data the **SP** consumes from the **IdPs**.
 The deployer will also need to register those attributes in FM. Details on the **attribute filter** configurable 
 options are available here: [XMLAttributeExtractor](https://wiki.shibboleth.net/confluence/display/SP3/XMLAttributeExtractor).
 
-### 3 Configure Apache
+### 3. Configure Apache
 
 The default Apache installation creates a self-signed certificate which is sufficient for this demonstration. A 
 production-ready deployment requires a CA-issued SSL certificate and a review of the Apache configuration files for 
@@ -300,7 +300,7 @@ Shibboleth.
 >
 > - [https://wiki.shibboleth.net/confluence/display/SP3/IIS](https://wiki.shibboleth.net/confluence/display/SP3/IIS)
 
-### 4 Configure the application
+### 4. Configure the application
 
 The Shibboleth installation will create the **secure** directory in Apache’s **DocumentRoot** directory and protect 
 that directory with a **`<Location>`** directive in the **conf.d/shib.conf** file. Create a PHP file in the **secure** directory 
@@ -314,7 +314,7 @@ and add the following PHP script to the file. This script is the Shibboleth prot
     <?php foreach ($_SERVER as $key => $value) {
        print $key."=>".$value."<br>";} ?> <br/>
 
-### 5 Start services and check logs
+### 5. Start services and check logs
 
 Using the system tools, start or restart the Apache and Shibboleth services. For Linux these are: httpd and shibd.
 
@@ -338,7 +338,10 @@ versions in use.
 
 {: .next_steps }
 Once you have completed the SAML configuration, you are ready to connect your service!
-<br><br> Head over to [Connect a New Service](/new_service) and follow the steps to authenticate to Federation Manager (Test) after which you can [register your new SAML service](/new_service/saml_register).
+<br><br> 
+
+### 6. Connect your service
+Head over to [Connect a New Service](/new_service) and follow the steps to authenticate to Federation Manager (Test) after which you can [register your new SAML service](/new_service/saml_register).
 
 ### 7. Test access to protected content 
 
