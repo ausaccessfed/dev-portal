@@ -53,6 +53,26 @@ assertions, but rather as a token format to be used when ease of implementation 
 4. AAF Rapid Connect will validate the user's identity information and generate a unique and signed JWT (JWS) for your application using the secret you define when you register your service.
 5. The generated JWT (JWS) will be sent via HTTP POST to the callback endpoint for your application which you define when you register your service.
 
+```mermaid
+sequenceDiagram
+    participant web as Web Browser
+    participant app_pub as Application - Public content
+    participant auth as Authentication Page with <br/> unique Rapid Connect URL
+    participant app_priv as Application - Private content
+
+    Note over web,app_priv: The user must be logged in to access private content
+    web->>+auth: Logs in to Identity Provider using credentials
+
+    auth->>-web: JWT sent via HTTP Post. Successfully logged in
+
+    Note over web,app_priv: When the user is authenticated, they can now access private content
+    
+    %%{init:{'theme':'default'}}%%
+    %%{init:{'themeCSS':'.messageLine0:nth-of-type(1) { stroke: red; }; .messageLine0:nth-of-type(2) { stroke: green; };'}}%%
+ ```
+
+Figure 1. Performing authentication
+
 ## Provided claims
 
 The following claims are provided by AAF Rapid Connect:
