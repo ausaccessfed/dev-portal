@@ -51,6 +51,10 @@ Therefore, while JWTs can do some of the things SAML assertions do, JWTs are not
 4. AAF Rapid Connect will validate the user's identity information and generate a unique and signed JWT (JWS) for your application using the secret you define when you register your service.
 5. The generated JWT (JWS) will be sent via HTTP POST to the callback endpoint for your application which you define when you register your service.
 
+![JWT authentication](/assets/images/jwt-authentication.png)
+
+**Figure 1.** Rapid Connect JWT Authentication
+
 ## Provided claims
 
 The following claims are provided by AAF Rapid Connect:
