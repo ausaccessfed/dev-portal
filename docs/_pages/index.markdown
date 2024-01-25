@@ -35,24 +35,5 @@ There are several ways to connect to the federation
 
 Learn more by reading our [Connection Types]({% link _pages/connect.markdown %}).
 
-```mermaid
-flowchart RL
-    id1[SAML] --> B(Shibboleth)
-    id1[SAML] --> C(SimpleSAML php)
-    D[Keycloak] ---> id2(OIDC)
-    E[Cognito] ---> id2(OIDC)
-    F[Apache OIDC Plugin] ---> id2(OIDC)
-    G[Open Source OIDC Plugin] ---> id2(OIDC)
-    H[Other Third Party Vendors] ---> id2(OIDC)
-    id2[OIDC] ---> id3(AAF)
-    B[Shibboleth] --> id3(AAF)
-    C[SimpleSAML php] --> id3(AAF)
-    id4[Rapid Connect] ---> id3(AAF)
-    id5[VerifID] ---> id3(AAF)
-    style id1 fill:#f96,stroke:#333
-    style id2 fill:#f96,stroke:#333
-    style id3 fill:#CBC3E3,stroke:#333
-    style id4 fill:#f96,stroke:#333
-    style id5 fill:#f96,stroke:#333
-```
+
 Figure 1. AAF Connection Methods

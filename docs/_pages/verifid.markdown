@@ -52,29 +52,7 @@ The primary interaction of this service requires a User who is accessing a web-b
 
 1. The Verification result is parsed and the Client can use the data within to determine the User’s Affiliation values.
 
-```mermaid
-flowchart TD
-id1[Client] --->|2a. Verification Request - redirect| id2[User Agent - Web Browser]
-id2 --->|2b. Verification Request - redirect| id3[Verifid]
-id3 --->|3. Interactive authentication <br> via VerifID Service <br> Operator's federation| id4((SAML Federation))
-id4 --->|3. Interactive authentication <br> via VerifID Service <br> Operator's federation| id3[Verifid]
-id3 --->|4a. Verification Response - redirect| id2[User Agent - Web Browser]
-id2 --->|4b. Verification Response - redirect| id1[Client]
-id3 --->|5. Retrieve access token| id1[Client]
-id3 --->|6. Retrieve verification result| id1[Client]
-style id1 fill:#f96,stroke:#333
-style id2 fill:#f96,stroke:#333
-style id3 fill:#f96,stroke:#333
-style id4 fill:#CBC3E3,stroke:#333
-linkStyle 0 stroke-width:4px,stroke:green
-linkStyle 1 stroke-width:4px,stroke:green
-linkStyle 2 stroke-width:4px,stroke:green
-linkStyle 3 stroke-width:4px,stroke:blue
-linkStyle 4 stroke-width:4px,stroke:blue
-linkStyle 5 stroke-width:4px,stroke:blue
-linkStyle 6 stroke-width:4px,stroke:blue
-linkStyle 7 stroke-width:4px,stroke:blue
-```
+
 
 **Figure 1.** Performing a Verification
 

@@ -29,10 +29,6 @@ github_username:  ausaccessfed
 logo: "/assets/images/aaflogo.png"
 favicon_ico: "/assets/images/favicon.ico"
 repository: ausaccessfed/dev-portal
-mermaid:
-  # Version of mermaid library
-  # Pick an available version from https://cdn.jsdelivr.net/npm/mermaid/
-  version: "9.1.3"
 
 # Enable or disable the site search
 # Supports true (default) or false
