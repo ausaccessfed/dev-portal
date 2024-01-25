@@ -52,7 +52,7 @@ The primary interaction of this service requires a User who is accessing a web-b
 
 1. The Verification result is parsed and the Client can use the data within to determine the User’s Affiliation values.
 
-
+![Perform verification](/assets/images/Perform-verification.png)
 
 **Figure 1.** Performing a Verification
 

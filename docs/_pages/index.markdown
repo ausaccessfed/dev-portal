@@ -35,5 +35,6 @@ There are several ways to connect to the federation
 
 Learn more by reading our [Connection Types]({% link _pages/connect.markdown %}).
 
+![Connection Types](/assets/images/Connection-types.png)
 
 Figure 1. AAF Connection Methods
