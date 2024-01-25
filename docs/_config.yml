@@ -71,7 +71,7 @@ include: [_pages]
 back_to_top: true
 back_to_top_text: "Back to top"
 
-footer_content: "Copyright &copy; 2023 The Australian Access Federation."
+footer_content: "Copyright &copy; 2024 The Australian Access Federation."
 
 # Footer last edited timestamp
 #last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
@@ -89,7 +89,6 @@ callouts:
     color: green
 
 # Build settings
-remote_theme: just-the-docs/just-the-docs@v0.7.0
 plugins:
   - jekyll-feed
 
