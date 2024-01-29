@@ -29,6 +29,7 @@ github_username:  ausaccessfed
 repository: ausaccessfed/dev-portal
 
 #nav_external_links_new_tab: true
+
 #include: [_pages]
 
 # Build settings
