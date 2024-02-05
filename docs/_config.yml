@@ -29,10 +29,7 @@ github_username:  ausaccessfed
 repository: ausaccessfed/dev-portal
 
 #nav_external_links_new_tab: true
-include: [_pages]
-
-sass:
- sass_dir: _sass
+#include: [_pages]
 
 # Build settings
 plugins:
