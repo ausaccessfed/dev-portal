@@ -48,6 +48,48 @@ nav_order: 1
       </div>
       </div>
     </div>
+    {% comment %}
+    These cards are also rendered in javascript to handle the search form.
+    Any changes you make here should be replicated exactly to the showResults
+    function in /assets/javascript/main.js
+    {% endcomment %}
+    <div id="tutorial-list" class="card-group pt-3 px-0">
+      {% include tutorials.html %}
+      {% for tutorial in all_tutorials %}
+      <div class="card-container col-md-6 col-lg-4 m-lg-0 py-3">
+        <a class="card-tut-link" href="{{ tutorial.label | relative_url }}">
+          <div class="card shadow h-100">
+            <div class="card-header text-light bg-dark">
+              <div class="card-category">
+                <small class="title text-uppercase">{{ tutorial.level }}</small>
+                {% if tutorial.level == "Series" -%}
+                <img src="{{ '/assets/images/series-badge.svg' | relative_url }}" class="series float-right" alt="Nectar Series">
+                {% endif -%}
+              </div>
+              <h5 class="card-title mb-0">{{ tutorial.title }}</h5>
+            </div>
+            <div class="card-body">
+              <small class="text-muted">{{ tutorial.published | date: "%-d %B %Y" }}</small>
+              <p class="card-text py-2">{{ tutorial.summary }}</p>
+            </div>
+            <div class="card-footer">
+              <div class="row no-gutters">
+                <div class="col-xs-auto">
+                  <small class="text-muted">Difficulty: </small>
+                  <span class="difficulty-indicator difficulty-indicator-{{ tutorial.difficulty }}">
+                      {{ tutorial.difficulty }} out of 5
+                    </span>
+                </div>
+                <div class="col text-right">
+                  <small class="text-muted">Duration: {{ tutorial.duration }} minutes</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      {% endfor %}
+    </div>
   </div>
   <section class="footer-callout bg-primary py-5 mt-5">
     <div class="container">

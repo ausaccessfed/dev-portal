@@ -1,51 +1,8 @@
 ---
-layout: page
-title: Connect via Keycloak
-permalink: /new_service/oidc_register/keycloak
-nav_order: 2
-parent: OpenID Connect
-grand_parent: Connect a New Service
+title: Add an identity provider
+order: 2
+duration: 3
 ---
-
-# Register an OIDC service with Keycloak
-
-[Keycloak](https://www.keycloak.org/) is an open source software solution that provides single sign on (SSO) access, allowing users to authenticate once to access multiple services. It also allows for single sign out, which means that users only have to sign out once for several services and/or applications that use Keycloak.
-
-Keycloak can also be used to authenticate users with existing OpenID Connect or SAML 2.0 Identity Providers. This can be done by configuring the Identity Provider through the Keycloak admin console.
-
-{: .note}
-The instructions below detail the configuration of AAF as an Identity Provider through Keycloak using the OpenID Connect v1.0 protocol. The process includes the registration of a new service in AAF Federation Manager (Test). Please refer to the documentation for [registering a new OpenID Connect service]({% link _pages/oidc_register.markdown %}).
-
-# What you'll learn
-
-- How to connect a new OpenID Connect service in the AAF Test Federation using Keycloak
-
-# What you'll need
-
-
-
-
-## 1. Get Started
-
-* If you are using Keycloak for the first time, [please refer to their documentation](https://www.keycloak.org/documentation) to get started. 
-* Otherwise, if you are already using Keycloak on a container platform, log into the Keycloak admin console. In a local development environment, it is located at `http://localhost:8080/admin`.
-
-![Keycloak Sign In Page](/assets/images/keycloak-signin-page.png)
-
-* Once signed in, click on 'master' (at the top of the left hand menu bar). 
-
-![Keycloak Master Page](/assets/images/keycloak-highlight-master.png)
-
-* Create a new realm where you would like to add AAF as an identity provider and in which you will manage your users, applications, roles and groups. To do this, click 'Create Realm'. 
-
-![Master Realm Page](/assets/images/keycloak-master-realm-page.png)
-
-* Select an appropriate `Realm name`. In this example, the new realm is called 'myrealm'.
-* Click 'Create'.
-
-![Create Realm Page](/assets/images/keycloak-create-realm.png)
-
-## 2. Add an Identity Provider
 
 * Once in the selected realm (in this example, it is 'myrealm'), click on 'Identity providers' (at the bottom of the left hand menu bar).
 
@@ -112,6 +69,3 @@ This will take you to the AAF Discovery Service (known as AAF Central).
 
 {: .next_steps }
 Your service is now available to use immediately in the Test Federation.
-
-
-## Up Next: [Register a Rapid Connect Service](/new_service/rapidconnect_register)
