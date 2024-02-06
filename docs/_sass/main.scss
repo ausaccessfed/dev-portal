@@ -35,6 +35,24 @@ header {
   padding: 40px 60px 40px 40px;
 }
 
+/*
+ * Search
+ */
+#search-clear {
+  display: none;
+  color: white;
+  border-color: #c6c6c6 !important; // Same as form-control default state
+}
+
+#search-input.form-control {
+  &:focus {
+    outline: 0 !important;
+    border-color: #c6c6c6; // Same as form-control default state
+    box-shadow: none;
+  }
+}
+
+
 .footer-callout {
   background-color: #f2f2f2;
   .container {
