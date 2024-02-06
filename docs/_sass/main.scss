@@ -1,0 +1,96 @@
+$baseurl: "{{ site.baseurl }}";
+
+html,
+body {
+  // overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+main {
+  min-height: 65vh;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6,
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Figtree', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.nav-link {
+  text-transform: uppercase;
+}
+
+/*
+ * Header
+ */
+header {
+  background-color: #969696;
+  background-image: url("AAF-cover.jpg");
+  background-size: cover;
+  padding-bottom: 600px;
+  margin-bottom: 10px;
+}
+
+.banner-hero-card {
+  background: #ffffff;
+  padding: 40px 60px 40px 40px;
+}
+
+/*
+ * Search
+ */
+#search-clear {
+  display: none;
+  color: white;
+  border-color: #c6c6c6 !important; // Same as form-control default state
+}
+
+#search-input.form-control {
+  &:focus {
+    outline: 0 !important;
+    border-color: #c6c6c6; // Same as form-control default state
+    box-shadow: none;
+  }
+}
+
+
+.footer-callout {
+  background-color: #f2f2f2;
+  .container {
+    margin-top: -100px;
+  }
+}
+
+/*
+ * Footer
+ */
+.footer {
+  padding: 24px 0;
+  .footer-text {
+    a {
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
+    }
+    ul {
+      list-style: none;
+    }
+  }
+  h4 {
+    text-transform:  uppercase;
+    &:after {
+      content: "";
+      background: #fff;
+      height: 2px;
+      display: block;
+      margin-top: 10px;
+      max-width: 50px;
+    }
+  }
+  .footer-links {
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}
