@@ -54,3 +54,21 @@ exclude:
    - vendor/cache/
    - vendor/gems/
    - vendor/ruby/
+
+# New tutorials should be added by running:
+#   $ rake tutorial "My tutorial title"
+collections:
+connect-with-keycloak:
+    output: true
+    permalink: /:collection/:name
+    title: Connect with Keycloak
+    summary: A tutorial for Connect with Keycloak
+    category: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
+    tags:
+      - tutorial
+    difficulty: 1 # number from 1 to 5
+    duration: 10 # number of minutes
+    status: draft # draft or published
+    published: 2024-02-06
+    author: Your Name <your.name@email.domain>
+
