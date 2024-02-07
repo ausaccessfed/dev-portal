@@ -22,7 +22,9 @@ The instructions below detail the configuration of AAF as an Identity Provider t
 
 # What you'll need
 
-
+- A container platform on which to run Keycloak, e.g. Docker, Podman, OpenJDK, etc.
+- Knowledge running a container platform in a local development environment
+- AAF login credentials
 
 
 ## 1. Get Started
