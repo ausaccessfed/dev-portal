@@ -55,14 +55,25 @@ exclude:
    - vendor/gems/
    - vendor/ruby/
 
+defaults:
+ - scope:
+    path: ""
+    type: "tutorials"
+   values:
+    layout: "tutorial"
+ - scope:
+    path: ""
+   values:
+    layout: "default"
+
 # New tutorials should be added by running:
 #   $ rake tutorial "My tutorial title"
 collections:
-connect-with-keycloak:
+  connect-with-keycloak:
     output: true
     permalink: /:collection/:name
-    title: Connect with Keycloak
-    summary: A tutorial for Connect with Keycloak
+    title: Connecting with Keycloak
+    summary: A tutorial for Connecting with Keycloak
     category: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
     tags:
       - tutorial
