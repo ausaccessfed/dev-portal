@@ -66,6 +66,3 @@ This will take you to the AAF Discovery Service (known as AAF Central).
 * If authentication is successful, you will be taken back to your Keycloak account console.
 
 ![New user account](/assets/images/new-user-account.png)
-
-{: .next_steps }
-Your service is now available to use immediately in the Test Federation.
