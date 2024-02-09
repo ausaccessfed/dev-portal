@@ -44,25 +44,24 @@ plugins:
 # their entries' file path in the `include:` list.
 #
 exclude:
-   - .sass-cache/
-   - .jekyll-cache/
-   - gemfiles/
-   - Gemfile
-   - Gemfile.lock
-   - node_modules/
-   - vendor/bundle/
-   - vendor/cache/
-   - vendor/gems/
-   - vendor/ruby/
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+
+defaults:
+  - scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: tutorial
 
 # New tutorials should be added by running:
 #   $ rake tutorial "My tutorial title"
 collections:
-connect-with-keycloak:
+  connect-with-keycloak:
     output: true
     permalink: /:collection/:name
-    title: Connect with Keycloak
-    summary: A tutorial for Connect with Keycloak
+    title: Connecting with Keycloak
+    summary: A tutorial for Connecting with Keycloak
     category: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
     tags:
       - tutorial
@@ -70,5 +69,19 @@ connect-with-keycloak:
     duration: 10 # number of minutes
     status: draft # draft or published
     published: 2024-02-06
+    author: Your Name <your.name@email.domain>
+
+  connect-a-service:
+    output: true
+    permalink: /:collection/:name
+    title: Connect a service
+    summary: A tutorial for connecting a service
+    category: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
+    tags:
+      - tutorial
+    difficulty: 1 # number from 1 to 5
+    duration: 10 # number of minutes
+    status: draft # draft or published
+    published: 2024-02-09
     author: Your Name <your.name@email.domain>
 

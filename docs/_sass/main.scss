@@ -10,9 +10,9 @@ main {
 
 .h1, .h2, .h3, .h4, .h5, .h6,
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Figtree', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .nav-link {
@@ -24,15 +24,20 @@ h1, h2, h3, h4, h5, h6 {
  */
 header {
   background-color: #969696;
-  background-image: url("AAF-cover.jpg");
+  background-image: url("cover-image.png");
   background-size: cover;
-  padding-bottom: 600px;
-  margin-bottom: 10px;
+  padding-bottom: 200px;
+  margin-bottom: -200px;
 }
 
 .banner-hero-card {
-  background: #ffffff;
-  padding: 40px 60px 40px 40px;
+  background: #f8faf9;
+  padding: 40px 40px 40px 40px;
+  border-radius: 3px;
+}
+
+.image-credit {
+  font-size: 10px !important;
 }
 
 /*
@@ -90,6 +95,87 @@ header {
     a {
       color: #fff;
       text-decoration: none;
+    }
+  }
+}
+
+/*
+ * Sidebar
+ */
+.sidebar {
+  padding-top: 1.5rem;
+  font-size: 0.9em;
+  .list-group-item.active {
+    color: #000000;
+  }
+}
+
+/*
+ * Cards
+ */
+.card {
+  // min-width: 280px;
+}
+
+.card-container {
+  .card-header,
+  .card-body,
+  .card-footer {
+    padding: 0.75em;
+  }
+  a.card-tut-link {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+.card-category {
+  .series {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+/*
+ * Diffculty indicator
+ */
+.difficulty-indicator {
+  background-image: url("level-of-difficulty.svg");
+  background-position-y: 5px;
+  background-position-x: -75px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-left: 3px;
+  margin-right: -3px;
+  text-indent: -99999px;
+  width: 75px;
+}
+
+.difficulty-indicator-1 {
+  background-position-x: -60px;
+}
+.difficulty-indicator-2 {
+  background-position-x: -45px;
+}
+.difficulty-indicator-3 {
+  background-position-x: -30px;
+}
+.difficulty-indicator-4 {
+  background-position-x: -15px;
+}
+.difficulty-indicator-5 {
+  background-position-x: 0px;
+}
+
+/*
+ * Sidebar items
+ */
+/* https://stackoverflow.com/questions/40463542/how-to-make-vertical-lines-between-list-items-using-css */
+
+#up-next {
+  a {
+    &:hover {
+      color: #ffffff;
     }
   }
 }
