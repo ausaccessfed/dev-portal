@@ -24,16 +24,20 @@ h1, h2, h3, h4, h5, h6 {
  */
 header {
   background-color: #969696;
-  background-image: url("AAF-cover.jpg");
+  background-image: url("cover-image.png");
   background-size: cover;
-  padding-bottom: 600px;
-  margin-bottom: 10px;
+  padding-bottom: 200px;
+  margin-bottom: -200px;
 }
 
 .banner-hero-card {
   background: #f8faf9;
   padding: 40px 40px 40px 40px;
   border-radius: 3px;
+}
+
+.image-credit {
+  font-size: 10px !important;
 }
 
 /*
