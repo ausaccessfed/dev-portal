@@ -34,3 +34,4 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Consolidate log in details.[#14](https://github.com/ausaccessfed/dev-portal/pull/14)
 - Restructure docs into tutorial layout.[#16](https://github.com/ausaccessfed/dev-portal/pull/16)
 - Update keycloak documentation.[#17](https://github.com/ausaccessfed/dev-portal/pull/17)
+- Update changelog.[#23](https://github.com/ausaccessfed/dev-portal/pull/23)
