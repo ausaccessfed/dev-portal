@@ -18,7 +18,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Add keycloak documentation.[#9](https://github.com/ausaccessfed/dev-portal/pull/9)
 - Add verifID documentation.[#15](https://github.com/ausaccessfed/dev-portal/pull/15)
 - Structural changes.[#19](https://github.com/ausaccessfed/dev-portal/pull/19)
+- Further structural changes.[#20](https://github.com/ausaccessfed/20)
 - Add tutorial structure.[#21](https://github.com/ausaccessfed/dev-portal/pull/21)
+- Refine tutorial structure [#22](https://github.com/ausaccessfed/dev-portal/pull/22)
 
 ### Fixed
 
