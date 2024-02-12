@@ -61,7 +61,7 @@ collections:
     output: true
     permalink: /:collection/:name
     title: Connecting with Keycloak
-    summary: A tutorial for Connecting with Keycloak
+    summary: A tutorial for connecting with Keycloak
     category: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
     tags:
       - tutorial
@@ -83,5 +83,19 @@ collections:
     duration: 10 # number of minutes
     status: draft # draft or published
     published: 2024-02-09
+    author: Your Name <your.name@email.domain>
+
+  log-into-federation-manager:
+    output: true
+    permalink: /:collection/:name
+    title: Log into Federation Manager
+    summary: A tutorial for Logging into Federation Manager (Test)
+    category: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
+    tags:
+      - tutorial
+    difficulty: 1 # number from 1 to 5
+    duration: 10 # number of minutes
+    status: draft # draft or published
+    published: 2024-02-12
     author: Your Name <your.name@email.domain>
 
