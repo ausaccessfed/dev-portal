@@ -1,6 +1,5 @@
 FROM ruby:3.1-slim-bullseye as base
 
-# Combine apt-get update and apt-get install
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
     build-essential \
@@ -14,9 +13,8 @@ RUN bundle config --global frozen 1 && \
 # Copy entrypoint script
 COPY bin/entrypoint.sh /usr/local/bin/
 
-# Install specific version of jekyll
 RUN gem update --system && \
-    gem install jekyll:4.3.1 && \
+    gem install jekyll && \
     gem cleanup
 
 EXPOSE 4000
