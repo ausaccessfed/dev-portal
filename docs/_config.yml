@@ -89,7 +89,21 @@ collections:
     output: true
     permalink: /:collection/:name
     title: Log into Federation Manager
-    summary: A tutorial for Logging into Federation Manager (Test)
+    summary: A tutorial for logging into Federation Manager
+    category: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
+    tags:
+      - tutorial
+    difficulty: 1 # number from 1 to 5
+    duration: 10 # number of minutes
+    status: draft # draft or published
+    published: 2024-02-12
+    author: Your Name <your.name@email.domain>
+
+  openid-connect-integration:
+    output: true
+    permalink: /:collection/:name
+    title: OpenID Connect Integration
+    summary: A tutorial for OpenID Connect Integration
     category: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
     tags:
       - tutorial
