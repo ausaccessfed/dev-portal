@@ -4,7 +4,7 @@ order: 2
 duration: 1
 ---
 
-These are the attributes/claims Central can provide to a Relying Party (RP) currently:
+These are the attributes/claims our OpenID Provider (OP) can provide to a Relying Party (RP) currently:
 
 <table class="table table-striped">
   <thead>
@@ -61,6 +61,12 @@ claims will also be present.</td>
     </tr>
   </tbody>
 </table>
+<br>
 
-A claim for a user will only be provided if their home organisation provides the specific attribute. For example most universities will NOT provide phone numbers for their users.
+A claim for a user will only be provided if their home organisation provides the specific attribute. For example 
+most universities will *not* provide phone numbers for their users.
+{: .callout-info}
+
+This is a maturing service and at this stage only supports a subset of attributes/claims. For attribute 
+requirements outside this range, [please contact us to discuss](mailto:support@aaf.edu.au).
 {: .callout-info}

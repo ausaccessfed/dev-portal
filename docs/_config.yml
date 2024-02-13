@@ -102,7 +102,7 @@ collections:
   openid-connect-integration:
     output: true
     permalink: /:collection/:name
-    title: OpenID Connect Integration
+    title: Connecting with OpenID Connect
     summary: A tutorial for OpenID Connect Integration
     category: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
     tags:
