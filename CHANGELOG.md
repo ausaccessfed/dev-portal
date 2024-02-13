@@ -21,6 +21,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Further structural changes.[#20](https://github.com/ausaccessfed/20)
 - Add tutorial structure.[#21](https://github.com/ausaccessfed/dev-portal/pull/21)
 - Refine tutorial structure [#22](https://github.com/ausaccessfed/dev-portal/pull/22)
+- Populate FM and connect service tutorials [#26](https://github.com/ausaccessfed/dev-portal/pull/26)
 
 ### Fixed
 
