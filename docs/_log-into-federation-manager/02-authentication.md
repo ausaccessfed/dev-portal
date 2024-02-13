@@ -28,13 +28,3 @@ You will be prompted to select your Organisation as shown below.
 If authentication is successful, you will be taken to the **Federation Manager Dashboard** page.
 
 ![FM Dashboard](/assets/images/log-into-federation-manager/FM-dashboard.png)
-
-## Connect a New Service
-
-- Once you have logged in to the Federation Manager Dashboard (Test), click on 'Connect a service'.
-
-![FM Dashboard](/assets/images/log-into-federation-manager/FM-dashboard.png)
-
-- Click on the protocol with which you would like to connect your service, i.e. OpenID Connect, Rapid Connect or SAML.
-
-![Connect service](/assets/images/log-into-federation-manager/connect-service.png)

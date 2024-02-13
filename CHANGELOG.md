@@ -22,6 +22,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Add tutorial structure.[#21](https://github.com/ausaccessfed/dev-portal/pull/21)
 - Refine tutorial structure [#22](https://github.com/ausaccessfed/dev-portal/pull/22)
 - Populate FM and connect service tutorials [#26](https://github.com/ausaccessfed/dev-portal/pull/26)
+- Add openID connect tutorial.[#27](https://github.com/ausaccessfed/dev-portal/pull/27)
 
 ### Fixed
 

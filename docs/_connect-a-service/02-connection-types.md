@@ -15,7 +15,7 @@ connections</li>
         <li class="list-group-item"><i class="fa-regular fa-circle-check" style="color:green"></i> Feature-rich</li>
         <li class="list-group-item"><i class="fa-regular fa-circle-check" style="color:green"></i> Many open-source libraries</li>
       </ul>
-      <a href="#" class="btn btn-primary mt-4">Go somewhere</a>
+      <a href="/openid-connect-integration/01-overview" class="btn btn-primary mt-4">Learn more</a>
     </div>
 </div>
 
