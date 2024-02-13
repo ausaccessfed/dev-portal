@@ -52,7 +52,7 @@ order: 0
     <div id="tutorial-list" class="card-group pt-3 px-0">
       {% include tutorials.html %}
       {% for tutorial in all_tutorials %}
-      <div class="card-container col-md-6 col-lg-4 m-lg-3">
+      <div class="card-container col-md-6 col-lg-4 m-lg-0 py-3 px-3">
         <a class="card-tut-link" href="{{ tutorial.label | relative_url }}">
           <div class="card shadow h-100">
             <div class="card-header text-light bg-dark">
