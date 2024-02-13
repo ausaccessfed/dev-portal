@@ -33,14 +33,17 @@ Add the new param `entityID=<idp-entityID>` where the entityID has been URL enco
 
 **Example:**
 
-{% highlight ruby %}
+Note: Request paramaters should be URL encoded. Following is demonstration only
+{: .callout-info}
+
+```ruby
 GET /oidc/authorize?
     client_id=123456789&
     redirect_uri=https://example.com/aaf/callback&
     nonce=123456&
     state=6789&
     entityID=https://vho.aaf.edu.au/idp/shibboleth
-{% endhighlight %}
+```
+
 
 This only affects the initial stage of the OIDC flow, it is possible to set up multiple `login` buttons with their own entityID set, allowing you to limit your service to as many or few IdPs as you want.
-{: .callout-info}

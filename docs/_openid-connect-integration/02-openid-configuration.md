@@ -16,7 +16,7 @@ for **Test Federation**, respectively:
 <br>
 Details for the **Production Federation** are here:
 
-{% highlight shell %}
+```shell
 curl https://central.aaf.edu.au/.well-known/openid-configuration | jq
 
 {
@@ -82,4 +82,4 @@ curl https://central.aaf.edu.au/.well-known/openid-configuration | jq
     "RS256"
   ]
 }
-{% endhighlight %}
+```
