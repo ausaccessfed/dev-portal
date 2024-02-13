@@ -11,8 +11,6 @@ Welcome to the AAF Connect a New Service Series. In this series, we've put toget
 - How to register a new service with AAF using available protocols (OpenID Connect, Rapid Connect, SAML, VerifID)
 - How to register a new service using OpenID Connect (OIDC) and Keycloak
 
-
 ## What you'll need
-
 - AAF login credentials
 - Experience undertaking integration work

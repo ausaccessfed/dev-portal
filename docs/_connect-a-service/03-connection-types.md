@@ -1,6 +1,6 @@
 ---
 title: Connection Types
-order: 2
+order: 3
 duration: 1
 ---
 
@@ -15,7 +15,7 @@ connections</li>
         <li class="list-group-item"><i class="fa-regular fa-circle-check" style="color:green"></i> Feature-rich</li>
         <li class="list-group-item"><i class="fa-regular fa-circle-check" style="color:green"></i> Many open-source libraries</li>
       </ul>
-      <a href="#" class="btn btn-primary mt-4">Go somewhere</a>
+      <a href="#" class="btn btn-outline-primary mt-4">Go somewhere</a>
     </div>
 </div>
 
@@ -39,7 +39,7 @@ authentication in as few as 20 lines of Ruby. Implementations in other languages
       <li class="list-group-item"><i class="fa-regular fa-circle-xmark" style="color:red"></i> Few open-source libraries
       </li>
     </ul>
-    <a href="#" class="btn btn-primary mt-4">Go somewhere</a>
+    <a href="#" class="btn btn-outline-primary mt-4">Go somewhere</a>
   </div>
 </div>
 
@@ -54,6 +54,6 @@ authentication in as few as 20 lines of Ruby. Implementations in other languages
 protocols which are implemented using <a href="https://www.shibboleth.net/">Shibboleth</a> or <a href="https://simplesamlphp.org/">SimpleSAMLphp</a> as open source options</li>
         <li class="list-group-item"><i class="fa-regular fa-circle-xmark" style="color:red"></i> Complex</li>
       </ul>
-      <a href="#" class="btn btn-primary mt-4">Go somewhere</a>
+      <a href="#" class="btn btn-outline-primary mt-4">Go somewhere</a>
     </div>
 </div>
