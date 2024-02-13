@@ -1,6 +1,6 @@
 ---
 title: Openid Configuration
-order: 4
+order: 2
 duration: 1
 ---
 
@@ -82,5 +82,5 @@ Details for the **Production Federation** are here:
         "RS256"
       ]
     }
-    </code></pre>
+  </code></pre>
 </div>
