@@ -173,7 +173,7 @@ collections:
   verifid-integration:
     output: true
     permalink: /:collection/:name
-    title: Verifid Integration
+    title: VerifID Integration
     summary: A tutorial for Verifid Integration
     category: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
     tags:
