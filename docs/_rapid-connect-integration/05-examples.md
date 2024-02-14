@@ -11,7 +11,7 @@ integration code. We have provided code written in Ruby, Python and PHP.
 
 #### Ruby
 
-```shell
+```ruby
   require 'sinatra'
   require 'json'
   require 'json/jwt'
@@ -66,7 +66,7 @@ integration code. We have provided code written in Ruby, Python and PHP.
 <br>
 #### Python
 
-```shell
+```python
   import webapp2
   import os
   import jwt
@@ -145,7 +145,7 @@ integration code. We have provided code written in Ruby, Python and PHP.
 
 #### PHP
 
-```shell
+```php
   <?php
   
   use JWT\Authentication\JWT;
