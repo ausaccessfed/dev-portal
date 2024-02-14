@@ -169,3 +169,17 @@ collections:
     published: 2024-02-14
     author: Your Name <your.name@email.domain>
 
+  connect-a-saml-service:
+    output: true
+    permalink: /:collection/:name
+    title: Connect a SAML Service
+    summary: A tutorial for Connect a SAML Service
+    category: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
+    tags:
+      - tutorial
+    difficulty: 3 # number from 1 to 5
+    duration: 10 # number of minutes
+    status: draft # draft or published
+    published: 2024-02-14
+    author: Your Name <your.name@email.domain>
+
