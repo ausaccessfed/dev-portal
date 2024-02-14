@@ -169,3 +169,17 @@ collections:
     status: draft
     published: 2024-02-06
     author: Your Name <your.name@email.domain>
+
+  verifid-integration:
+    output: true
+    permalink: /:collection/:name
+    title: Verifid Integration
+    summary: A tutorial for Verifid Integration
+    category: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
+    tags:
+      - tutorial
+    difficulty: 1 # number from 1 to 5
+    duration: 10 # number of minutes
+    status: draft # draft or published
+    published: 2024-02-14
+    author: Your Name <your.name@email.domain>
