@@ -9,34 +9,29 @@ SOURCE = '.'
 CONFIG = {
   'layouts' => File.join(SOURCE, '_layouts'),
   'posts' => File.join(SOURCE, '_posts'),
-  'post_ext' => 'md'
+  'post_ext' => 'md',
 }.freeze
 
-# task :setup
 desc 'Set up environment'
 task :setup do
   system('bundle install --path vendor/bundle') or raise
-end
+end # task :setup
 
-# task :serve
 desc 'Build site'
 task :build do
   system('bundle exec jekyll build') or raise
-end
+end # task :serve
 
-# task :serve
 desc 'Launch preview environment'
 task :serve do
   system('bundle exec jekyll serve -H 0.0.0.0')
-end
+end # task :serve
 
-# task :preview
 desc 'Launch preview environment'
 task :preview do
   system('bundle exec jekyll serve')
-end
+end # task :preview
 
-# task :check
 desc 'Run check'
 task :check do
   system('bundle exec jekyll build') or raise
@@ -50,7 +45,7 @@ task :check do
             --assume_extension \
             --typhoeus_config '{ \"ssl_verifyhost\": 0, \"ssl_verifypeer\": false }' \
             --log-level debug ./_site")
-end
+end # task :check
 
 desc 'Create a new tutorial'
 task :tutorial do
@@ -129,7 +124,6 @@ task :tutorial do
     f.puts ''
   end
 
-  # task :test
   puts ''
   puts '----------------------------------------------------------------------'
   puts "A new skeleton tutorial has been created at _#{tutorial}, an"
@@ -138,7 +132,7 @@ task :tutorial do
   puts 'Please edit _config.yml and update the metadata for the new tutorial.'
   puts '----------------------------------------------------------------------'
   puts ''
-end
+end # task :test
 
 
 def ask(message, valid_options)
@@ -152,7 +146,7 @@ end
 
 def get_stdin(message)
   print message
-  $stdin.gets.chomp
+  STDIN.gets.chomp
 end
 
 # Load custom rake scripts

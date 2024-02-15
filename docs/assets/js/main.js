@@ -108,7 +108,7 @@ $(function() {
             var noResults = '<div class="card-container col-sm-12 col-md-8 offset-md-2 mb-5">';
             noResults += '  <div class="card shadow p-5 text-center">';
             noResults += '    <h3>No Matches</h3>';
-            noResults += '    <p>Can\'t find what you\'re looking for? Make a suggestion or ask our support team for help by submitting a <a href="https://support.ehelp.edu.au/support/tickets/new">support ticket</a>.</p>';
+            noResults += '    <p>Can\'t find what you\'re looking for? Make a suggestion or ask our support team for help by submitting a <a href="https://support.aaf.edu.au/support/home">support ticket</a>.</p>';
             noResults += '  </div>';
             noResults += '</div>';
             tutorialList.html(noResults);

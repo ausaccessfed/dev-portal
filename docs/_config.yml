@@ -54,6 +54,13 @@ defaults:
     values:
       layout: tutorial
 
+# Ordered by how they should appear in the curriculum list
+tutorial_categories:
+  - Setting up
+  - Connecting a Service
+  - Integration
+  - Identity Brokering
+
 # New tutorials should be added by running:
 #   $ rake tutorial "My tutorial title"
 collections:
@@ -62,7 +69,8 @@ collections:
     permalink: /:collection/:name
     title: Connecting with Keycloak
     summary: A tutorial for connecting with Keycloak
-    category: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
+    category: Identity Brokering
+    level: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
     tags:
       - tutorial
     difficulty: 1 # number from 1 to 5
@@ -76,7 +84,8 @@ collections:
     permalink: /:collection/:name
     title: Connect a service
     summary: A tutorial for connecting a service
-    category: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
+    category: Setting up
+    level: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
     tags:
       - tutorial
     difficulty: 1 # number from 1 to 5
@@ -90,7 +99,8 @@ collections:
     permalink: /:collection/:name
     title: Log into Federation Manager
     summary: A tutorial for logging into Federation Manager
-    category: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
+    category: Setting up
+    level: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
     tags:
       - tutorial
     difficulty: 1 # number from 1 to 5
@@ -104,7 +114,8 @@ collections:
     permalink: /:collection/:name
     title: Connecting with OpenID Connect
     summary: A tutorial for OpenID Connect Integration
-    category: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
+    category: Integration
+    level: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
     tags:
       - tutorial
     difficulty: 1 # number from 1 to 5
@@ -118,7 +129,8 @@ collections:
     permalink: /:collection/:name
     title: Rapid Connect Integration
     summary: A tutorial for Rapid Connect Integration
-    category: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
+    category: Integration
+    level: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
     tags:
       - tutorial
     difficulty: 1 # number from 1 to 5
@@ -132,10 +144,11 @@ collections:
     permalink: /:collection/:name
     title: SAML Integration
     summary: A tutorial for SAML Integration
-    category: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
+    category: Integration
+    level: Advanced # Beginner|Intermediate|Advanced|Series|Non-technical
     tags:
       - tutorial
-    difficulty: 1 # number from 1 to 5
+    difficulty: 3 # number from 1 to 5
     duration: 10 # number of minutes
     status: draft # draft or published
     published: 2024-02-13
@@ -146,7 +159,8 @@ collections:
     permalink: /:collection/:name
     title: Connect an OIDC Service
     summary: A tutorial for Connect an OIDC Service
-    category: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
+    category: Connecting a Service
+    level: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
     tags:
       - tutorial
     difficulty: 1 # number from 1 to 5

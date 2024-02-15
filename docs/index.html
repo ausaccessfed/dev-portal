@@ -21,15 +21,16 @@ order: 0
       <div class="col-md-6 offset-md-3">
       <div class="input-group shadow">
         <div class="input-group-prepend">
-          <button id="search-filter-button" class="btn btn-primary dropdown-toggle pb-3" type="button"
-                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Categories</button>
-          <div class="dropdown-menu search-filter-menu">
-            <a class="dropdown-item" href="#">All Categories</a>
-            <a class="dropdown-item" href="#">Beginner</a>
-            <a class="dropdown-item" href="#">Intermediate</a>
-            <a class="dropdown-item" href="#">Advanced</a>
-            <a class="dropdown-item" href="#">Non-technical</a>
-            <a class="dropdown-item" href="#">Series</a>
+          <div class="dropdown">
+            <button id="search-filter-button" class="btn btn-primary dropdown-toggle pb-3" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Categories</button>
+            <div class="dropdown-menu search-filter-menu">
+              <a class="dropdown-item" href="#">All Categories</a>
+              <a class="dropdown-item" href="#">Beginner</a>
+              <a class="dropdown-item" href="#">Intermediate</a>
+              <a class="dropdown-item" href="#">Advanced</a>
+              <a class="dropdown-item" href="#">Non-technical</a>
+              <a class="dropdown-item" href="#">Series</a>
+            </div>
           </div>
         </div>
         <input id="search-input" type="search" class="form-control py-2 border-right-0" placeholder="Search tutorials..." aria-label="Search tutorials">
@@ -59,13 +60,15 @@ order: 0
               <div class="card-category">
                 <small class="title text-uppercase">{{ tutorial.level }}</small>
                 {% if tutorial.level == "Series" -%}
-                <img src="{{ '/assets/images/aaflogog.png' | relative_url }}" class="series float-right" alt="AAF Series">
+                <img src="{{ '/assets/images/aaflogo.png' | relative_url }}" class="series float-right"
+                     alt="Nectar Series">
                 {% endif -%}
               </div>
               <h5 class="card-title mb-0">{{ tutorial.title }}</h5>
             </div>
             <div class="card-body">
               <small class="text-muted">{{ tutorial.published | date: "%-d %B %Y" }}</small>
+              <p class="card-text py-2">{{ tutorial.summary }}</p>
             </div>
             <div class="card-footer">
               <div class="row no-gutters">
