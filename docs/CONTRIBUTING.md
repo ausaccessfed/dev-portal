@@ -67,7 +67,6 @@ Then, you need to initiate the setup procedure, using:
 ```
 git review -s 
 ```
-Ensure your public key has also been added to your Gerrit profile (in settings), and the corresponding private key is also in your .ssh folder.
 
 ### Setting up a local development environment
 
