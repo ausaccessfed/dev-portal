@@ -48,7 +48,6 @@ You'll need some of your `git` skills with this.
 - Make the edits using your favourite markdown editor.
 - If you intend to add a whole new tutorial, use the instructions for [adding tutorials below](#adding-a-new-tutorial).
 - Commit your changes to your branch.
-- Preview your changes using the local preview server that you set up above.
 - When you are happy with your edits or additions, commit and send your changes.
 
 To send a review:
