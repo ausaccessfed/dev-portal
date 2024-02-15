@@ -40,12 +40,13 @@ collections:
     permalink: /:collection/:name
     title: Connecting with Keycloak
     summary: A tutorial for connecting with Keycloak
-    category: Beginner
+    category: TODO
+    level: Beginner
     tags:
-      - tutorial
+      - TODO
     difficulty: 1 
-    duration: 10 # number of minutes
-    status: draft # draft or published
+    duration: 10 
+    status: draft 
     published: 2024-02-06
     author: Your Name <your.name@email.domain>
 
@@ -54,13 +55,14 @@ collections:
     permalink: /:collection/:name
     title: Connect a service
     summary: A tutorial for connecting a service
-    category: Beginner
+    category: TODO
+    level: Beginner
     tags:
-      - tutorial
-    difficulty: 1 # number from 1 to 5
-    duration: 10 # number of minutes
-    status: draft # draft or published
-    published: 2024-02-09
+      - TODO
+    difficulty: 1
+    duration: 10
+    status: draft
+    published: 2024-02-06
     author: Your Name <your.name@email.domain>
 
   log-into-federation-manager:
@@ -68,13 +70,14 @@ collections:
     permalink: /:collection/:name
     title: Log into Federation Manager
     summary: A tutorial for logging into Federation Manager
-    category: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
+    category: TODO
+    level: Beginner
     tags:
-      - tutorial
-    difficulty: 1 # number from 1 to 5
-    duration: 10 # number of minutes
-    status: draft # draft or published
-    published: 2024-02-12
+      - TODO
+    difficulty: 1
+    duration: 10
+    status: draft
+    published: 2024-02-06
     author: Your Name <your.name@email.domain>
 
   openid-connect-integration:
@@ -82,11 +85,12 @@ collections:
     permalink: /:collection/:name
     title: Connecting with OpenID Connect
     summary: A tutorial for OpenID Connect Integration
-    category: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
+    category: TODO
+    level: Beginner
     tags:
-      - tutorial
-    difficulty: 1 # number from 1 to 5
-    duration: 10 # number of minutes
-    status: draft # draft or published
-    published: 2024-02-12
+      - TODO
+    difficulty: 1
+    duration: 10
+    status: draft
+    published: 2024-02-06
     author: Your Name <your.name@email.domain>
