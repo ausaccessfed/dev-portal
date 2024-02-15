@@ -182,19 +182,18 @@ code {
 #search-clear {
   display: none;
   color: red;
-  border-color: #c6c6c6 !important; // Same as form-control default state
+  padding-bottom: 1.1rem;
 }
 
 #search-input.form-control {
   &:focus {
     outline: 0 !important;
-    border-color: #c6c6c6; // Same as form-control default state
     box-shadow: none;
   }
 }
 
 /*
- * Diffculty indicator
+ * Difficulty indicator
  */
 .difficulty-indicator {
   background-image: url("level-of-difficulty.svg");
