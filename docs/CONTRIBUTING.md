@@ -1,7 +1,7 @@
 # Contributing
 
 Thanks for contributing to our `dev-portal tutorials` repository.
-Below are ways you can help make the Nectar tutorials better.
+Below are ways you can help make the dev-portal tutorials better.
 
 The easiest way for you to help us is by **raising an issue**, which will require a GitHub account.
 For amendments to the documentation, you will need to be familiar with general Git concepts and send your changes to our Gerrit review server for review.
