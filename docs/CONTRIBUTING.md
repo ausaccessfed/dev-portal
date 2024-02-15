@@ -9,7 +9,7 @@ If you'd like to commit substantial changes or even whole **new tutorials**, you
 
 ## Raise an issue
 
-The easiest way to help improve the Nectar tutorials is by raising an issue in our repository at https://github.com/NeCTAR-RC/tutorials.
+The easiest way to help improve the dev-portal tutorials is by raising an issue in our repository at https://github.com/ausaccessfed/dev-portal/issues.
 
 If you find an issues that needs to be resolved, please have a look through the [list of existing issues](https://github.com/ausaccessfed/dev-portal/issues) to see whether your issues hasn't already been reported.
 If it has, or a closely related issues exists, please add your comments to the existing issue.
