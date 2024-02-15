@@ -16,7 +16,7 @@ If it has, or a closely related issues exists, please add your comments to the e
 
 If your issue isn't already listed, then create a New Issue.
 Provide details of your suggestion and include the tutorial name and page to which your suggestion applies.
-One of our technical writers will review your suggestion and resolve it if they can.
+One of our technical team will review your suggestion and resolve it if they can.
 They may contact you if they need some more clarification.
 
 
