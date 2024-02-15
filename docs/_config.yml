@@ -94,3 +94,78 @@ collections:
     status: draft
     published: 2024-02-06
     author: Your Name <your.name@email.domain>
+  
+  rapid-connect-integration:
+    output: true
+    permalink: /:collection/:name
+    title: Rapid Connect Integration
+    summary: A tutorial for Rapid Connect Integration
+    category: TODO
+    level: Beginner
+    tags:
+      - TODO
+    difficulty: 1
+    duration: 10
+    status: draft
+    published: 2024-02-06
+    author: Your Name <your.name@email.domain>
+
+  saml-integration:
+    output: true
+    permalink: /:collection/:name
+    title: SAML Integration
+    summary: A tutorial for SAML Integration
+    category: TODO
+    level: Beginner
+    tags:
+      - TODO
+    difficulty: 1
+    duration: 10
+    status: draft
+    published: 2024-02-06
+    author: Your Name <your.name@email.domain>
+
+  connect-an-oidc-service:
+    output: true
+    permalink: /:collection/:name
+    title: Connect an OIDC Service
+    summary: A tutorial for Connect an OIDC Service
+    category: TODO
+    level: Beginner
+    tags:
+      - TODO
+    difficulty: 1
+    duration: 10
+    status: draft
+    published: 2024-02-06
+    author: Your Name <your.name@email.domain>
+
+  connect-a-rapid-connect-service:
+    output: true
+    permalink: /:collection/:name
+    title: Connect a Rapid Connect Service
+    summary: A tutorial for Connect a Rapid Connect Service
+    category: TODO
+    level: Beginner
+    tags:
+      - TODO
+    difficulty: 1
+    duration: 10
+    status: draft
+    published: 2024-02-06
+    author: Your Name <your.name@email.domain>
+
+  connect-a-saml-service:
+    output: true
+    permalink: /:collection/:name
+    title: Connect a SAML Service
+    summary: A tutorial for Connect a SAML Service
+    category: TODO
+    level: Advanced
+    tags:
+      - TODO
+    difficulty: 5
+    duration: 10
+    status: draft
+    published: 2024-02-06
+    author: Your Name <your.name@email.domain>
