@@ -32,7 +32,7 @@ For minor or substantial edits, you will need to clone the repsitory of the docu
 This can be done using the Git command:
 
 ```sh
-git clone https://github.com/NeCTAR-RC/tutorials.git
+git@github.com:ausaccessfed/dev-portal.git
 ```
 
 You're now ready to make changes.
