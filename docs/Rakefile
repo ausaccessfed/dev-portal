@@ -1,45 +1,38 @@
-# frozen_string_literal: true
-
 require 'rubygems'
 require 'rake'
 require 'yaml'
 require 'time'
 
-SOURCE = '.'
+SOURCE = "."
 CONFIG = {
-  'layouts' => File.join(SOURCE, '_layouts'),
-  'posts' => File.join(SOURCE, '_posts'),
-  'post_ext' => 'md'
-}.freeze
+  'layouts' => File.join(SOURCE, "_layouts"),
+  'posts' => File.join(SOURCE, "_posts"),
+  'post_ext' => "md",
+}
 
-# task :setup
-desc 'Set up environment'
+desc "Set up environment"
 task :setup do
-  system('bundle install --path vendor/bundle') or raise
-end
+  system("bundle install --path vendor/bundle") or raise
+end # task :setup
 
-# task :serve
-desc 'Build site'
+desc "Build site"
 task :build do
-  system('bundle exec jekyll build') or raise
-end
+  system("bundle exec jekyll build") or raise
+end # task :serve
 
-# task :serve
-desc 'Launch preview environment'
+desc "Launch preview environment"
 task :serve do
-  system('bundle exec jekyll serve -H 0.0.0.0')
-end
+  system("bundle exec jekyll serve -H 0.0.0.0")
+end # task :serve
 
-# task :preview
-desc 'Launch preview environment'
+desc "Launch preview environment"
 task :preview do
-  system('bundle exec jekyll serve')
-end
+  system("bundle exec jekyll serve")
+end # task :preview
 
-# task :check
-desc 'Run check'
+desc "Run check"
 task :check do
-  system('bundle exec jekyll build') or raise
+  system("bundle exec jekyll build") or raise
   system("bundle exec htmlproofer \
             --checks-to-ignore LinkCheck \
             --log-level debug ./_site") or raise
@@ -50,11 +43,11 @@ task :check do
             --assume_extension \
             --typhoeus_config '{ \"ssl_verifyhost\": 0, \"ssl_verifypeer\": false }' \
             --log-level debug ./_site")
-end
+end # task :check
 
-desc 'Create a new tutorial'
+desc "Create a new tutorial"
 task :tutorial do
-  abort('Error: tutorial title not given, or too many arguments.') if ARGV.length != 2
+  abort("Error: tutorial title not given, or too many arguments.") if ARGV.length != 2
   ARGV.each {|a| task a.to_sym do; end}
   title = ARGV[1]
   tutorial = ARGV[1].downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
@@ -112,7 +105,7 @@ task :tutorial do
   end
 
   puts '  ==> updating site configuration: _config.yml'
-  open('_config.yml', 'a') do |f|
+  open("_config.yml", 'a') do |f|
     f.puts "  #{tutorial}:"
     f.puts '    output: true'
     f.puts '    permalink: /:collection/:name'
@@ -129,16 +122,15 @@ task :tutorial do
     f.puts ''
   end
 
-  # task :test
   puts ''
-  puts '----------------------------------------------------------------------'
+  puts "----------------------------------------------------------------------"
   puts "A new skeleton tutorial has been created at _#{tutorial}, an"
   puts "images directory created at #{tutorial_images} and the"
-  puts 'the initial configuration added to the end of _config.yml.'
-  puts 'Please edit _config.yml and update the metadata for the new tutorial.'
-  puts '----------------------------------------------------------------------'
+  puts "the initial configuration added to the end of _config.yml."
+  puts "Please edit _config.yml and update the metadata for the new tutorial."
+  puts "----------------------------------------------------------------------"
   puts ''
-end
+end # task :test
 
 
 def ask(message, valid_options)
@@ -152,8 +144,8 @@ end
 
 def get_stdin(message)
   print message
-  $stdin.gets.chomp
+  STDIN.gets.chomp
 end
 
-# Load custom rake scripts
+#Load custom rake scripts
 Dir['_rake/*.rake'].each { |r| load r }

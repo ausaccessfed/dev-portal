@@ -1,8 +1,8 @@
 {% comment -%}
 This file can be included into other files to make the tutorials list variable
 available. The output should be:
-- 'Series' level first, ordered by difficulty
-- All other levels, ordered by difficulty
+  - 'Series' level first, ordered by difficulty
+  - All other levels, ordered by difficulty
 {% endcomment -%}
 
 {% assign series = site.collections | where_exp:"item","item.level == 'Series'" | where_exp:"item","item.title != nil" | sort: "difficulty" -%}
@@ -16,11 +16,11 @@ there
 {% endcomment -%}
 {% assign sorttutorials = "" | split: "" %}
 {% for category in site.tutorial_categories -%}
-{% for tutorial in nonseries -%}
-{% if tutorial.category == category -%}
-{% unless sorttutorials contains tutorial.category %}
-{% assign sorttutorials = sorttutorials | push: category %}
-{% endunless %}
-{% endif %}
-{% endfor %}
+  {% for tutorial in nonseries -%}
+    {% if tutorial.category == category -%}
+      {% unless sorttutorials contains tutorial.category %}
+        {% assign sorttutorials = sorttutorials | push: category %}
+      {% endunless %}
+    {% endif %}
+  {% endfor %}
 {% endfor %}

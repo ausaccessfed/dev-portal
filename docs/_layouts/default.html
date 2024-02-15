@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
-{% include head.html %}
-<body>
-{% include nav.html %}
-<main>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  {% include head.html %}
+  <body>
+    {% include nav.html %}
+
+    <main role="main" class="main-content">
     {{ content }}
-</main>
+    </main>
 
-{% include footer.html %}
+    {% include footer.html %}
 
-{% include js.html %}
-<script src="/assets/js/prism.js"></script>
-</body>
+    {% include js.html %}
+  </body>
 </html>

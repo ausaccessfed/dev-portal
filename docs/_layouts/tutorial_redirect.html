@@ -7,15 +7,15 @@ layout: none
 {% assign pages = site[name] | where_exp: "item", "item.order != null" | sort: "order" %}
 
 {% for link in pages %}
-{% if link.title == page.title %}
-{% unless forloop.first %}
-{% assign prev = tmpprev %}
-{% endunless %}
-{% unless forloop.last %}
-{% assign next = pages[forloop.index] %}
-{% endunless %}
-{% endif %}
-{% assign tmpprev = link %}
+  {% if link.title == page.title %}
+      {% unless forloop.first %}
+        {% assign prev = tmpprev %}
+            {% endunless %}
+        {% unless forloop.last %}
+            {% assign next = pages[forloop.index] %}
+        {% endunless %}
+      {% endif %}
+  {% assign tmpprev = link %}
 {% endfor %}
 
 {{ content }}

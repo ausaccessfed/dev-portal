@@ -3,7 +3,7 @@ layout: default
 title: Home
 order: 0
 ---
-<header class="pt-5">
+  <header class="pt-5">
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-12 col-lg-8 offset-lg-1 col-xl-5 offset-xl-1">
@@ -21,8 +21,7 @@ order: 0
       <div class="col-md-6 offset-md-3">
       <div class="input-group shadow">
         <div class="input-group-prepend">
-          <button id="search-filter-button" class="btn btn-primary dropdown-toggle pb-3" type="button"
-                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Categories</button>
+          <button id="search-filter-button" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Categories</button>
           <div class="dropdown-menu search-filter-menu">
             <a class="dropdown-item" href="#">All Categories</a>
             <a class="dropdown-item" href="#">Beginner</a>
@@ -39,63 +38,66 @@ order: 0
           </button>
         </div>
         <span class="input-group-append">
-          <div class="input-group-text bg-white border-left-0 rounded-right py-3"><i class="fa fa-search"></i></div>
+          <div class="input-group-text bg-white border-left-0 rounded-right"><i class="fa fa-search"></i></div>
         </span>
       </div>
       </div>
     </div>
+
     {% comment %}
-    These cards are also rendered in javascript to handle the search form.
-    Any changes you make here should be replicated exactly to the showResults
-    function in /assets/javascript/main.js
+      These cards are also rendered in javascript to handle the search form.
+      Any changes you make here should be replicated exactly to the showResults
+      function in /assets/javascript/main.js
     {% endcomment %}
     <div id="tutorial-list" class="card-group pt-3 px-0">
       {% include tutorials.html %}
       {% for tutorial in all_tutorials %}
-      <div class="card-container col-md-6 col-lg-4 m-lg-0 py-3 px-3">
-        <a class="card-tut-link" href="{{ tutorial.label | relative_url }}">
-          <div class="card shadow h-100">
-            <div class="card-header text-light bg-dark">
-              <div class="card-category">
-                <small class="title text-uppercase">{{ tutorial.level }}</small>
-                {% if tutorial.level == "Series" -%}
-                <img src="{{ '/assets/images/aaflogog.png' | relative_url }}" class="series float-right" alt="AAF Series">
-                {% endif -%}
+        <div class="card-container col-md-6 col-lg-4 m-lg-0 py-3">
+          <a class="card-tut-link" href="{{ tutorial.label | relative_url }}">
+            <div class="card shadow h-100">
+              <div class="card-header text-light bg-dark">
+                <div class="card-category">
+                  <small class="title text-uppercase">{{ tutorial.level }}</small>
+                  {% if tutorial.level == "Series" -%}
+                    <img src="{{ '/assets/images/series-badge.svg' | relative_url }}" class="series float-right" alt="Nectar Series">
+                  {% endif -%}
+                </div>
+                <h5 class="card-title mb-0">{{ tutorial.title }}</h5>
               </div>
-              <h5 class="card-title mb-0">{{ tutorial.title }}</h5>
-            </div>
-            <div class="card-body">
-              <small class="text-muted">{{ tutorial.published | date: "%-d %B %Y" }}</small>
-            </div>
-            <div class="card-footer">
-              <div class="row no-gutters">
-                <div class="col-xs-auto">
-                  <small class="text-muted">Difficulty: </small>
-                  <span class="difficulty-indicator difficulty-indicator-{{ tutorial.difficulty }}">
+              <div class="card-body">
+                <small class="text-muted">{{ tutorial.published | date: "%-d %B %Y" }}</small>
+                <p class="card-text py-2">{{ tutorial.summary }}</p>
+              </div>
+              <div class="card-footer">
+                <div class="row no-gutters">
+                  <div class="col-xs-auto">
+                    <small class="text-muted">Difficulty: </small>
+                    <span class="difficulty-indicator difficulty-indicator-{{ tutorial.difficulty }}">
                       {{ tutorial.difficulty }} out of 5
                     </span>
-                </div>
-                <div class="col text-right">
-                  <small class="text-muted">Duration: {{ tutorial.duration }} minutes</small>
+                  </div>
+                  <div class="col text-right">
+                    <small class="text-muted">Duration: {{ tutorial.duration }} minutes</small>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </a>
-      </div>
+          </a>
+        </div>
       {% endfor %}
     </div>
+
   </div>
+
   <section class="footer-callout bg-primary py-5">
     <div class="container">
-      <a class="image-credit"
-         href="https://www.freepik.com/free-photo/connect-overlay-word-young-people_3532787.htm#query=technology%20services&position=48&from_view=search&track=ais&uuid=c8d3327f-ab38-42a8-9c40-bb46cbe1ef4a">Image by rawpixel.com on Freepik</a>
       <div class="row">
         <div class="col-sm-12 col-lg-10 offset-lg-1">
           <div class="card text-center shadow">
             <div class="card-body px-lg-5">
-              <h2 class="my-3">There are several ways to connect to the federation</h2>
-              <a class="btn btn-outline-primary btn-lg mb-3" href="/">Learn More</a>
+              <h2 class="my-3">Need more help?</h2>
+              <h4 class="mb-4">Reach out to our friendly support team!</h4>
+              <a class="btn btn-outline-primary btn-lg mb-3" href="https://aaf.freshdesk.com/support/home/">Learn More</a>
             </div>
           </div>
         </div>

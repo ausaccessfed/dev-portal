@@ -1,0 +1,54 @@
+// Bootstrap overrides
+
+$font-family-sans-serif: 'Figtree', sans-serif;
+$font-family-base: 'Figtree', sans-serif;
+$font-size-base: 1rem;
+$form-label-font-weight: 600;
+
+// TODO change these to AAF colours
+// https://github.com/ausaccessfed/federationmanager/blob/master/app/frontend/stylesheets/tailwind.config.js
+// ARDC colours
+$ardc-blue:   #00A2C4;
+$ardc-pink:   #E51875;
+$ardc-orange: #faae1d;
+$ardc-purple: #8E489B;
+$ardc-grey:   #969696;
+
+// Override bootstrap colours
+$dark: #000000;
+$blue: $ardc-blue;
+$pink: $ardc-pink;
+$orange: $ardc-orange;
+$purple: $ardc-purple;
+$gray: $ardc-grey;
+
+$gray-100: #fcfcfc;
+$gray-200: #EEEEEE;
+$gray-300: #dddddd;
+$gray-400: #c6c6c6;
+$gray-500: #999999;
+$gray-600: #666666;
+$gray-700: #333333;
+$gray-800: #222222;
+$gray-900: #111111;
+
+$primary:       $orange;
+$secondary:     $gray;
+$success:       #62C400;
+$info:          $blue;
+$warning:       $orange;
+$danger:        $pink;
+
+$body-bg:                   $gray-100;
+$body-color:                $gray-900;
+$link-color:                $blue;
+
+$min-contrast-ratio: 1.5;
+//$component-active-bg: $ardc-purple;
+$navbar-brand-padding-y: 0;
+$input-btn-padding-y-lg: .75rem;
+$input-btn-padding-x-lg: 1.25rem;
+// Bootstrap shadows
+$enable-shadows: true;
+
+$spacer: 1.25rem;

@@ -1,48 +1,22 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you:
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+title: Nectar Research Cloud tutorials
+email: support@ehelp.edu.au
+description: Nectar Research Cloud tutorials
+baseurl:
+permalink: none
 
-title: AAF Dev Portal
-email: support.aaf.edu.au
-description: >- # this means to ignore newlines until "baseurl:"
-  Documentation for technical connection to the AAF
-baseurl: "" # the subpath of your site, e.g. /blog
-url: https://github.com/ausaccessfed/dev-portal
-twitter_username: ausaccessfed
-github_username:  ausaccessfed
-repository: ausaccessfed/dev-portal
-
-#nav_external_links_new_tab: true
-#include: [_pages]
+markdown: kramdown
 
 # Build settings
 plugins:
-  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-redirect-from
+
+repository: NeCTAR-RC/tutorials
+
+liquid:
+  error_mode: strict
 
 # Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -54,6 +28,10 @@ defaults:
     values:
       layout: tutorial
 
+# Ordered by how they should appear in the curriculum list
+tutorial_categories:
+  - Setting up prerequisites
+
 # New tutorials should be added by running:
 #   $ rake tutorial "My tutorial title"
 collections:
@@ -62,12 +40,13 @@ collections:
     permalink: /:collection/:name
     title: Connecting with Keycloak
     summary: A tutorial for connecting with Keycloak
-    category: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
+    category: TODO
+    level: Beginner
     tags:
-      - tutorial
-    difficulty: 1 # number from 1 to 5
-    duration: 10 # number of minutes
-    status: draft # draft or published
+      - TODO
+    difficulty: 1 
+    duration: 10 
+    status: draft 
     published: 2024-02-06
     author: Your Name <your.name@email.domain>
 
@@ -76,13 +55,14 @@ collections:
     permalink: /:collection/:name
     title: Connect a service
     summary: A tutorial for connecting a service
-    category: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
+    category: TODO
+    level: Beginner
     tags:
-      - tutorial
-    difficulty: 1 # number from 1 to 5
-    duration: 10 # number of minutes
-    status: draft # draft or published
-    published: 2024-02-09
+      - TODO
+    difficulty: 1
+    duration: 10
+    status: draft
+    published: 2024-02-06
     author: Your Name <your.name@email.domain>
 
   log-into-federation-manager:
@@ -90,13 +70,14 @@ collections:
     permalink: /:collection/:name
     title: Log into Federation Manager
     summary: A tutorial for logging into Federation Manager
-    category: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
+    category: TODO
+    level: Beginner
     tags:
-      - tutorial
-    difficulty: 1 # number from 1 to 5
-    duration: 10 # number of minutes
-    status: draft # draft or published
-    published: 2024-02-12
+      - TODO
+    difficulty: 1
+    duration: 10
+    status: draft
+    published: 2024-02-06
     author: Your Name <your.name@email.domain>
 
   openid-connect-integration:
@@ -104,27 +85,29 @@ collections:
     permalink: /:collection/:name
     title: Connecting with OpenID Connect
     summary: A tutorial for OpenID Connect Integration
-    category: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
+    category: TODO
+    level: Beginner
     tags:
-      - tutorial
-    difficulty: 1 # number from 1 to 5
-    duration: 10 # number of minutes
-    status: draft # draft or published
-    published: 2024-02-12
+      - TODO
+    difficulty: 1
+    duration: 10
+    status: draft
+    published: 2024-02-06
     author: Your Name <your.name@email.domain>
-
+  
   rapid-connect-integration:
     output: true
     permalink: /:collection/:name
     title: Rapid Connect Integration
     summary: A tutorial for Rapid Connect Integration
-    category: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
+    category: TODO
+    level: Beginner
     tags:
-      - tutorial
-    difficulty: 1 # number from 1 to 5
-    duration: 10 # number of minutes
-    status: draft # draft or published
-    published: 2024-02-12
+      - TODO
+    difficulty: 1
+    duration: 10
+    status: draft
+    published: 2024-02-06
     author: Your Name <your.name@email.domain>
 
   saml-integration:
@@ -132,13 +115,14 @@ collections:
     permalink: /:collection/:name
     title: SAML Integration
     summary: A tutorial for SAML Integration
-    category: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
+    category: TODO
+    level: Beginner
     tags:
-      - tutorial
-    difficulty: 1 # number from 1 to 5
-    duration: 10 # number of minutes
-    status: draft # draft or published
-    published: 2024-02-13
+      - TODO
+    difficulty: 1
+    duration: 10
+    status: draft
+    published: 2024-02-06
     author: Your Name <your.name@email.domain>
 
   connect-an-oidc-service:
@@ -146,13 +130,14 @@ collections:
     permalink: /:collection/:name
     title: Connect an OIDC Service
     summary: A tutorial for Connect an OIDC Service
-    category: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
+    category: TODO
+    level: Beginner
     tags:
-      - tutorial
-    difficulty: 1 # number from 1 to 5
-    duration: 10 # number of minutes
-    status: draft # draft or published
-    published: 2024-02-14
+      - TODO
+    difficulty: 1
+    duration: 10
+    status: draft
+    published: 2024-02-06
     author: Your Name <your.name@email.domain>
 
   connect-a-rapid-connect-service:
@@ -160,13 +145,14 @@ collections:
     permalink: /:collection/:name
     title: Connect a Rapid Connect Service
     summary: A tutorial for Connect a Rapid Connect Service
-    category: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
+    category: TODO
+    level: Beginner
     tags:
-      - tutorial
-    difficulty: 3 # number from 1 to 5
-    duration: 10 # number of minutes
-    status: draft # draft or published
-    published: 2024-02-14
+      - TODO
+    difficulty: 1
+    duration: 10
+    status: draft
+    published: 2024-02-06
     author: Your Name <your.name@email.domain>
 
   connect-a-saml-service:
@@ -174,12 +160,12 @@ collections:
     permalink: /:collection/:name
     title: Connect a SAML Service
     summary: A tutorial for Connect a SAML Service
-    category: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
+    category: TODO
+    level: Advanced
     tags:
-      - tutorial
-    difficulty: 3 # number from 1 to 5
-    duration: 10 # number of minutes
-    status: draft # draft or published
-    published: 2024-02-14
+      - TODO
+    difficulty: 5
+    duration: 10
+    status: draft
+    published: 2024-02-06
     author: Your Name <your.name@email.domain>
-
