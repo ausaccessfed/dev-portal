@@ -1,8 +1,12 @@
 ---
 ---
+
+$baseurl: "{{ site.baseurl }}";
+
 @import "main";
 @import 'external/font-awesome';
 @import "bootstrap-callouts";
+@import "typeahead";
 @import "prism.css";
 //@import "prism-dark.css";
 //@import "prism-twighlight.css";

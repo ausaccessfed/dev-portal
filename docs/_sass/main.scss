@@ -12,7 +12,30 @@ main {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Raleway', sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
+}
+
+.btn {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-width: 2px;
+}
+
+.btn-primary {
+  background-color: blue;
+  color: #000000;
+}
+
+.btn-link {
+  text-decoration: none;
+  color: darken(blue, 5%);
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+    color: darken(blue, 15%);
+  }
 }
 
 .nav-link {
@@ -31,30 +54,14 @@ header {
 }
 
 .banner-hero-card {
-  background: #f8faf9;
-  padding: 40px 40px 40px 40px;
-  border-radius: 3px;
+  background: #ffffff;
+  padding: 40px 60px 40px 40px;
 }
 
-.image-credit {
-  font-size: 10px !important;
-}
-
-/*
- * Search
- */
-#search-clear {
-  display: none;
-  color: white;
-  border-color: #c6c6c6 !important; // Same as form-control default state
-}
-
-#search-input.form-control {
-  &:focus {
-    outline: 0 !important;
-    border-color: #c6c6c6; // Same as form-control default state
-    box-shadow: none;
-  }
+#cloud-learning-img {
+  margin-top: -25px;
+  margin-right: -150px;
+  margin-bottom: -250px;
 }
 
 .footer-callout {
@@ -73,6 +80,7 @@ header {
     a {
       &:hover,
       &:focus {
+        color: pink;
         text-decoration: underline;
       }
     }
@@ -110,6 +118,38 @@ header {
   }
 }
 
+
+/*
+ * Utilities
+ */
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+pre {
+  background-color: #404040;
+  color: #ccc;
+}
+
+// No underline for list items or buttons
+code {
+  font-size: 80%;
+}
+
+/* Force consistent style for console code */
+.language-console {
+  .highlight {
+    pre, code, span {
+      color: #fff;
+    }
+  }
+}
+
 /*
  * Cards
  */
@@ -133,6 +173,23 @@ header {
   .series {
     width: 2rem;
     height: 2rem;
+  }
+}
+
+/*
+ * Search
+ */
+#search-clear {
+  display: none;
+  color: red;
+  border-color: #c6c6c6 !important; // Same as form-control default state
+}
+
+#search-input.form-control {
+  &:focus {
+    outline: 0 !important;
+    border-color: #c6c6c6; // Same as form-control default state
+    box-shadow: none;
   }
 }
 
@@ -176,6 +233,45 @@ header {
   a {
     &:hover {
       color: #ffffff;
+    }
+  }
+}
+
+.series-tutorial {
+  position: relative;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid yellow;
+  border-radius: 0.25rem;
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+  p {
+    margin-bottom: 0;
+    small {
+      font-weight: bold;
+      color: grey;
+    }
+  }
+  &.completed {
+    border: 1px solid rgba(0, 0, 0, 0.125);
+  }
+  span.tut-complete {
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    font-size: 16px;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 24px;
+    color: #fff;
+    background: green;
+    border-radius: 12px;
+    &:after {
+      font-family: 'Font Awesome 5 Free';
+      content: "\f00c";
     }
   }
 }
