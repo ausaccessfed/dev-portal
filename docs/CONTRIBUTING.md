@@ -1,6 +1,6 @@
 # Contributing
 
-Thanks for contributing to our `Nectar tutorials` repository.
+Thanks for contributing to our `dev-portal tutorials` repository.
 Below are ways you can help make the Nectar tutorials better.
 
 The easiest way for you to help us is by **raising an issue**, which will require a GitHub account.
