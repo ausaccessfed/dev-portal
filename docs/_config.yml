@@ -1,0 +1,92 @@
+title: Nectar Research Cloud tutorials
+email: support@ehelp.edu.au
+description: Nectar Research Cloud tutorials
+baseurl:
+permalink: none
+
+markdown: kramdown
+
+# Build settings
+plugins:
+  - jekyll-sitemap
+  - jekyll-redirect-from
+
+repository: NeCTAR-RC/tutorials
+
+liquid:
+  error_mode: strict
+
+# Exclude from processing.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+
+defaults:
+  - scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: tutorial
+
+# Ordered by how they should appear in the curriculum list
+tutorial_categories:
+  - Setting up prerequisites
+
+# New tutorials should be added by running:
+#   $ rake tutorial "My tutorial title"
+collections:
+  connect-with-keycloak:
+    output: true
+    permalink: /:collection/:name
+    title: Connecting with Keycloak
+    summary: A tutorial for connecting with Keycloak
+    category: Beginner
+    tags:
+      - tutorial
+    difficulty: 1 
+    duration: 10 # number of minutes
+    status: draft # draft or published
+    published: 2024-02-06
+    author: Your Name <your.name@email.domain>
+
+  connect-a-service:
+    output: true
+    permalink: /:collection/:name
+    title: Connect a service
+    summary: A tutorial for connecting a service
+    category: Beginner
+    tags:
+      - tutorial
+    difficulty: 1 # number from 1 to 5
+    duration: 10 # number of minutes
+    status: draft # draft or published
+    published: 2024-02-09
+    author: Your Name <your.name@email.domain>
+
+  log-into-federation-manager:
+    output: true
+    permalink: /:collection/:name
+    title: Log into Federation Manager
+    summary: A tutorial for logging into Federation Manager
+    category: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
+    tags:
+      - tutorial
+    difficulty: 1 # number from 1 to 5
+    duration: 10 # number of minutes
+    status: draft # draft or published
+    published: 2024-02-12
+    author: Your Name <your.name@email.domain>
+
+  openid-connect-integration:
+    output: true
+    permalink: /:collection/:name
+    title: Connecting with OpenID Connect
+    summary: A tutorial for OpenID Connect Integration
+    category: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
+    tags:
+      - tutorial
+    difficulty: 1 # number from 1 to 5
+    duration: 10 # number of minutes
+    status: draft # draft or published
+    published: 2024-02-12
+    author: Your Name <your.name@email.domain>
