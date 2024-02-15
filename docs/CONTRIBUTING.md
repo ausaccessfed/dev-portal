@@ -24,7 +24,6 @@ They may contact you if they need some more clarification.
 
 If you would like to make a minor or substantial contribution, you'll need to ensure you have Git and the git-review (at least v1.27) package installed.
 
-You may want to familiarise yourself with our [Gerrit Quick-start guide](https://wiki.rc.nectar.org.au/wiki/GerritQuickStartGuide) on the Nectar RC Wiki which details the process of getting your account on the review system created and sending reviews.
 
 
 ### Checking out the code
