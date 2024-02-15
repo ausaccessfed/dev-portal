@@ -163,7 +163,7 @@ collections:
     category: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
     tags:
       - tutorial
-    difficulty: 1 # number from 1 to 5
+    difficulty: 3 # number from 1 to 5
     duration: 10 # number of minutes
     status: draft # draft or published
     published: 2024-02-14
