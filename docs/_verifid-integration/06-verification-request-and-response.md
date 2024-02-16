@@ -1,6 +1,6 @@
 ---
 title: Verification request and response
-order: 5
+order: 6
 duration: 1
 ---
 <br>
@@ -17,10 +17,10 @@ https://example.edu/oauth/authorize?response_type=code&client_id=CLIENT_ID&redir
 **Required parameters:**
 
 <table class="table">
-  <thead>
+  <thead class="thead-light">
     <tr>
-      <th scope="col">Parameter</th>
-      <th scope="col">Definition</th>
+      <th style="width:30%">Parameter</th>
+      <th>Definition</th>
     </tr>
   </thead>
   <tbody>
