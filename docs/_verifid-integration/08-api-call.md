@@ -26,9 +26,9 @@ code=AUTHORIZATION_CODE&redirect_uri=REDIRECT_URI
 
 The request fields must be populated as follows:
 
-| grant type | The fixed string “`authorization_code`” (without quotes).|
-| redirect_uri | The exact `redirect_uri` provided for the Verification request. <br><br> We require `redirect_uri` values to be encoded according to [RFC 3986, Section 2.1](https://datatracker.ietf.org/doc/html/rfc3986#section-2.1). This is commonly known as percent or URL encoding. Not using this encoding method may result in HTTP 403, resource forbidden, errors. |
-| code           | The authorization code returned in the Verification response. |
+| **grant type** | The fixed string “`authorization_code`” (without quotes).|
+| **redirect_uri** | The exact `redirect_uri` provided for the Verification request. <br> We require `redirect_uri` values to be encoded according to [RFC 3986, Section 2.1](https://datatracker.ietf.org/doc/html/rfc3986#section-2.1). This is commonly known as percent or URL encoding. Not using this encoding method may result in HTTP 403, resource forbidden, errors. |
+| **code**  | The authorization code returned in the Verification response. |
 
 The response will be in JSON format, for example:
 ```
@@ -41,9 +41,9 @@ The response will be in JSON format, for example:
 
 The response fields shall be populated as follows:
 
-| access_token | The access token which can be used to access the Verification result. This value shall not be longer than 128 characters.  |
-| token_type | The fixed string “bearer”, which describes how the access token can be used.  |
-| expires_in | The number of seconds after which the access token will expire.  |
+| **access_token** | The access token which can be used to access the Verification result. This value shall not be longer than 128 characters.  |
+| **token_type** | The fixed string “bearer”, which describes how the access token can be used.  |
+| **expires_in** | The number of seconds after which the access token will expire.  |
 
 
 #### Retrieving the Verification result

@@ -9,8 +9,8 @@ When a Client registers with VerifID, the Client shall be registered with the fo
 <table class="table">
   <thead>
     <tr>
-      <th scope="col">Parameter</th>
-      <th scope="col">Definition</th>
+      <th style="width:20%">Parameter</th>
+      <th>Definition</th>
     </tr>
   </thead>
   <tbody>
