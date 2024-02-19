@@ -8,12 +8,8 @@ This tutorial shows how to register a new VerifID service.
 
 ### What you'll learn
 
-- 
-- 
-- 
+- How to connect a VerifID service
 
 ### What you'll need
 
-- 
-- 
-- 
+- Completion of the [VerifID Integration Tutorial]()

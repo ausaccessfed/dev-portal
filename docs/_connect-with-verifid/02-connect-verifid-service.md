@@ -4,8 +4,7 @@ order: 2
 duration: 1
 ---
 
-To register as a new client with VerifID Global, please contact [AAF Support](mailto:support@aaf.edu.au) first to
-discuss terms and conditions.
+To register as a new client with VerifID Global, please contact [AAF Support](mailto:support@aaf.edu.au) first to discuss terms and conditions.
 
 For more information, refer to the [VerifID Global website](https://verifid.com.au/#focus).
 
