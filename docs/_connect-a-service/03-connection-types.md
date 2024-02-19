@@ -10,7 +10,7 @@ Choose which protocol your service will use to connect. Each protocol has its ow
   <div class="card-header text-white bg-primary">OpenID Connect</div>
     <div class="card-body">
       <ul class="list-group list-group-flush">
-        <li class="list-group-item"><span class="fa-var-youtube-square" style="color:green"></span> Recommended for most 
+        <li class="list-group-item"><span class="fa-regular fa-circle-check" style="color:green"></span> Recommended for most 
 connections</li>
         <li class="list-group-item"><i class="fa-regular fa-circle-check" style="color:green"></i> Feature-rich</li>
         <li class="list-group-item"><i class="fa-regular fa-circle-check" style="color:green"></i> Many open-source libraries</li>
