@@ -10,12 +10,12 @@ Choose which protocol your service will use to connect. Each protocol has its ow
   <div class="card-header text-white bg-primary">OpenID Connect</div>
     <div class="card-body">
       <ul class="list-group list-group-flush">
-        <li class="list-group-item"><i class="fa-regular fa-circle-check" style="color:green"></i> Recommended for most 
+        <li class="list-group-item"><span class="fa-var-youtube-square" style="color:green"></span> Recommended for most 
 connections</li>
         <li class="list-group-item"><i class="fa-regular fa-circle-check" style="color:green"></i> Feature-rich</li>
         <li class="list-group-item"><i class="fa-regular fa-circle-check" style="color:green"></i> Many open-source libraries</li>
       </ul>
-      <a href="/openid-connect-integration/01-overview" class="btn btn-primary mt-4">Learn more</a>
+      <a href="/openid-connect-integration/01-overview" class="btn btn-primary mt-4">Get Started</a>
     </div>
 </div>
 
@@ -39,7 +39,7 @@ authentication in as few as 20 lines of Ruby. Implementations in other languages
       <li class="list-group-item"><i class="fa-regular fa-circle-xmark" style="color:red"></i> Few open-source libraries
       </li>
     </ul>
-    <a href="#" class="btn btn-outline-primary mt-4">Go somewhere</a>
+    <a href="/rapid-connect-integration/01-overview" class="btn btn-outline-primary mt-4">Get Started</a>
   </div>
 </div>
 
@@ -54,6 +54,6 @@ authentication in as few as 20 lines of Ruby. Implementations in other languages
 protocols which are implemented using <a href="https://www.shibboleth.net/">Shibboleth</a> or <a href="https://simplesamlphp.org/">SimpleSAMLphp</a> as open source options</li>
         <li class="list-group-item"><i class="fa-regular fa-circle-xmark" style="color:red"></i> Complex</li>
       </ul>
-      <a href="#" class="btn btn-outline-primary mt-4">Go somewhere</a>
+      <a href="/saml-integration/01-overview" class="btn btn-outline-primary mt-4">Get Started</a>
     </div>
 </div>
