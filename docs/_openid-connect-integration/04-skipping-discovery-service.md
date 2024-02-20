@@ -6,7 +6,6 @@ duration: 1
 
 AAF's implementation of OpenID Connect allows service administrators to configure their service to skip discovery service and login directly through a specified IdP.
 
-<br>
 ### Getting started
 
 
@@ -33,7 +32,7 @@ Add the new param `entityID=<idp-entityID>` where the entityID has been URL enco
 
 **Example:**
 
-Note: Request paramaters should be URL encoded. Following is demonstration only
+Note: Request paramaters should be URL encoded. The following is for demonstration purposes only.
 {: .callout-info}
 
 ```ruby

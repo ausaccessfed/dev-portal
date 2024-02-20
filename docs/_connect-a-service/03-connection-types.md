@@ -39,7 +39,7 @@ authentication in as few as 20 lines of Ruby. Implementations in other languages
       <li class="list-group-item"><i class="fa-regular fa-circle-xmark" style="color:red"></i> Few open-source libraries
       </li>
     </ul>
-    <a href="/rapid-connect-integration/01-overview" class="btn btn-outline-primary mt-4">Get Started</a>
+    <a href="/rapid-connect-integration/01-overview" class="btn btn-primary mt-4">Get Started</a>
   </div>
 </div>
 
@@ -54,7 +54,7 @@ authentication in as few as 20 lines of Ruby. Implementations in other languages
 protocols which are implemented using <a href="https://www.shibboleth.net/">Shibboleth</a> or <a href="https://simplesamlphp.org/">SimpleSAMLphp</a> as open source options</li>
         <li class="list-group-item"><i class="fa-regular fa-circle-xmark" style="color:red"></i> Complex</li>
       </ul>
-      <a href="/saml-integration/01-overview" class="btn btn-outline-primary mt-4">Get Started</a>
+      <a href="/saml-integration/01-overview" class="btn btn-primary mt-4">Get Started</a>
     </div>
 </div>
 
@@ -65,6 +65,6 @@ protocols which are implemented using <a href="https://www.shibboleth.net/">Shib
         <li class="list-group-item"><i class="fa-regular fa-circle-check" style="color:green"></i> Verifies a user based on their organisational affiliation</li>
         <li class="list-group-item"><i class="fa-regular fa-circle-check" style="color:green"></i> Provides an API for user verification</li>
       </ul>
-      <a href="#" class="btn btn-outline-primary mt-4">Go somewhere</a>
+      <a href="/verifid-integration/01-overview" class="btn btn-primary mt-4">Get Started</a>
     </div>
 </div>

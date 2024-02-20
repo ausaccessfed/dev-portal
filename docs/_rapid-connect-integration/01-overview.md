@@ -11,12 +11,9 @@ applications.
 
 ### What you'll learn
 
-- 
-- 
-- 
+- How Rapid Connect JWT Authentication works
+- How to implement JWT Support
 
 ### What you'll need
 
-- 
-- 
-- 
+- Integration experience
