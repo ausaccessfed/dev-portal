@@ -8,14 +8,16 @@ The **AAF** supports **OpenID Connect (OIDC)** connectivity and operates an **Op
 
 ### What you'll learn
 
-- 
-- 
-- 
+- Attributes and endpoints used for configuration
+- How to configure your service to skip discovery service and login directly through a specified IdP.
 
 ### What you'll need
 
 - Sufficient experience in undertaking OIDC integration work to create your own Relying Party (RP) components with minimal help from the AAF technical team.
 - There are several open-source libraries which implement most of the RP requirements in several languages, [GitHub](https://github.com) is an excellent resource, as is the [OpenID Foundation](https://openid.net/developers/libraries/).
+- Refer to the [OpenID OIDC Overview](https://openid.net/specs/openid-connect-core-1_0.html#Overview) and [OpenID OIDC 
+  Terminology](https://openid.net/specs/openid-connect-core-1_0.html#Terminology) for further information.
+
 
 The AAF *does not* offer support or advice in this area, and the choice depends on the subscriber’s strengths and existing knowledge of OIDC integration.
 {: .callout-info}

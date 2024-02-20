@@ -1,5 +1,5 @@
 ---
-title: Openid Configuration
+title: OpenID Configuration
 order: 2
 duration: 1
 ---

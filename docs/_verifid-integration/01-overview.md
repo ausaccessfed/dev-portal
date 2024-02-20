@@ -14,10 +14,8 @@ The VerifID service will:
 
 ### What you'll learn
 
-- To use an API for user verification
+- How to use an API for user verification
 
 ### What you'll need
 
-- 
-- 
-- 
+- Integration experience

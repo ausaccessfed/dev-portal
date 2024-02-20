@@ -31,5 +31,5 @@ with plaintext <code>http://</code> endpoints explicitly disallowed in all envir
   </tbody>
 </table>
 
-Please contact your VerifID Service Operator for details on how to securely undertake Client registration.
+Please refer to [Connecting with VerifID](/connect-with-verifid/02-connect-verifid-service) for details on how to securely undertake Client registration.
 
