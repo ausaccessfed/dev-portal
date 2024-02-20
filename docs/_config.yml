@@ -184,3 +184,19 @@ collections:
     status: draft # draft or published
     published: 2024-02-14
     author: Your Name <your.name@email.domain>
+
+  connect-with-verifid:
+    output: true
+    permalink: /:collection/:name
+    title: Connect with Verifid
+    summary: A tutorial for Connect with Verifid
+    category: TODO
+    level: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
+    tags:
+      - tutorial
+    difficulty: 1 # number from 1 to 5
+    duration: 10 # number of minutes
+    status: draft # draft or published
+    published: 2024-02-16
+    author: Your Name <your.name@email.domain>
+
