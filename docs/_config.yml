@@ -1,6 +1,6 @@
-title: Nectar Research Cloud tutorials
-email: support@ehelp.edu.au
-description: Nectar Research Cloud tutorials
+title: AAF Dev Portal
+email: support@aaf.edu.au
+description: Documentation for technical connection to the AAF
 baseurl:
 permalink: none
 
@@ -11,7 +11,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
 
-repository: NeCTAR-RC/tutorials
+repository: ausaccessfed/dev-portal
 
 liquid:
   error_mode: strict
@@ -38,7 +38,7 @@ collections:
   connect-with-keycloak:
     output: true
     permalink: /:collection/:name
-    title: Connecting with Keycloak
+    title: Connect with Keycloak
     summary: A tutorial for connecting with Keycloak
     category: TODO
     level: Beginner
@@ -53,8 +53,8 @@ collections:
   connect-a-service:
     output: true
     permalink: /:collection/:name
-    title: Connect a service
-    summary: A tutorial for connecting a service
+    title: Connect a new service
+    summary: A tutorial for connecting a new service
     category: TODO
     level: Beginner
     tags:
@@ -83,7 +83,7 @@ collections:
   openid-connect-integration:
     output: true
     permalink: /:collection/:name
-    title: Connecting with OpenID Connect
+    title: OpenID Connect Integration
     summary: A tutorial for OpenID Connect Integration
     category: TODO
     level: Beginner
@@ -116,10 +116,10 @@ collections:
     title: SAML Integration
     summary: A tutorial for SAML Integration
     category: TODO
-    level: Beginner
+    level: Advanced
     tags:
       - TODO
-    difficulty: 1
+    difficulty: 4
     duration: 10
     status: draft
     published: 2024-02-06
@@ -129,7 +129,7 @@ collections:
     output: true
     permalink: /:collection/:name
     title: Connect an OIDC Service
-    summary: A tutorial for Connect an OIDC Service
+    summary: A tutorial for Connecting an OIDC Service
     category: TODO
     level: Beginner
     tags:
@@ -144,7 +144,7 @@ collections:
     output: true
     permalink: /:collection/:name
     title: Connect a Rapid Connect Service
-    summary: A tutorial for Connect a Rapid Connect Service
+    summary: A tutorial for Connecting a Rapid Connect Service
     category: TODO
     level: Beginner
     tags:
@@ -159,7 +159,7 @@ collections:
     output: true
     permalink: /:collection/:name
     title: Connect a SAML Service
-    summary: A tutorial for Connect a SAML Service
+    summary: A tutorial for Connecting a SAML Service
     category: TODO
     level: Advanced
     tags:

@@ -48,5 +48,5 @@ this guide reflects that approach. Other combinations of platform and web server
 the **SP**, configure the web server and protect content. For these, links in this guide will refer deployers to
 additional **Shibboleth documentation**.
 
-All links in this guide are collated on the Links Page.
+All links in this guide are collated on the [Links Page](/saml-integration/09-links).
 {: .info}
