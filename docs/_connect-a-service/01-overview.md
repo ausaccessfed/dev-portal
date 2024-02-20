@@ -4,7 +4,8 @@ order: 1
 duration: 1
 ---
 
-Welcome to the AAF Connect a New Service Series. In this series, we've put together all the tutorials that you will need to connect a new service (using OpenID Connect, Rapid Connect, SAML or VerifID) to the AAF.
+Welcome to the AAF Connect a New Service Tutorials. We've put together all the tutorials that you will 
+need to connect a new service (using OpenID Connect, Rapid Connect, SAML or VerifID) to the AAF.
 
 ## What you'll learn
 - How to authenticate to Federation Manager (Test)

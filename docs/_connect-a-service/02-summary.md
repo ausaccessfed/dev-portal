@@ -23,3 +23,5 @@ There are several ways to connect to the federation. Below are the current avail
 Connect, SAML, Rapid Connect and VerifID.
 
 ![Connection Methods](/assets/images/connect-a-service/Connection-types.png)
+
+Figure 1. AAF Connection types
