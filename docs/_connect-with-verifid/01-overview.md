@@ -12,4 +12,4 @@ This tutorial shows how to register a new VerifID service.
 
 ### What you'll need
 
-- Completion of the [VerifID Integration Tutorial]()
+- Completion of the [VerifID Integration Tutorial](/verifid-integration/01-overview)
