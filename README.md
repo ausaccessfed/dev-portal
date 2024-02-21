@@ -3,20 +3,21 @@
 
 [Jekyll](https://jekyllrb.com/) is a static site generator built as a Ruby gem. It requires Ruby and a Ruby version manager, such as [rbenv](https://github.com/rbenv/rbenv) or [chruby](https://github.com/postmodern/chruby), for installation. You can refer to the [Jekyll documentation](https://jekyllrb.com/docs/installation/macos/) for detailed installation instructions tailored to your operating system.
 
-## Using Docker
+## Using Docker Compose
 If you prefer a Docker-based setup, follow these steps:
 
-1. **Build the Docker Image**: Run the following command to build a new image of your Jekyll site:
+1. **Build and run Docker Image**: Run the following command to build a new image of your Jekyll site:
     ```bash
-    make build-image
-    ```
-
-2. **Run the Docker Container**: Once the image is built, you can run your site using Docker with the following command:
-    ```bash
-    make run-image
+    make up
     ```
 
 3. **View Your Site**: Open your web browser and navigate to [http://localhost:4000](http://localhost:4000) to view your Jekyll site running locally.
+   
+
+2. **Remove the Docker Image**: Once the image is built, you can run your site using Docker with the following command:
+    ```bash
+    make down
+    ```
 
 By using Docker, you can ensure consistent environments across different platforms and simplify the setup process for your Jekyll site.
 
