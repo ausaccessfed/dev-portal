@@ -1,6 +1,6 @@
 ---
 title: OpenID Configuration
-order: 2
+order: 3
 duration: 1
 ---
 
