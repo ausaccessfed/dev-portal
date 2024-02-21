@@ -66,10 +66,8 @@ protocols which are implemented using <a href="https://www.shibboleth.net/">Shib
   <div class="card-header text-white bg-primary">VerifID</div>
     <div class="card-body">
       <ul class="list-group list-group-flush">
-        <li class="list-group-item"><i class="fa fa-check-circle" style="color:green"></i> Verifies a user based on 
-their organisational affiliation</li>
-        <li class="list-group-item"><i class="fa fa-check-circle" style="color:green"></i> Provides an API for user 
-verification</li>
+        <li class="list-group-item"><i class="fa fa-check-circle" style="color:green"></i> Verifies a user based on their organisational affiliation</li>
+        <li class="list-group-item"><i class="fa fa-check-circle" style="color:green"></i> Provides an API for user verification</li>
       </ul>
       <a href="/verifid-integration/01-overview" class="btn btn-primary mt-4">Get Started</a>
     </div>
