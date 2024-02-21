@@ -11,7 +11,7 @@ If you have not done so already, please [log into Federation Manager](/log-into-
 
 Once you have clicked on 'OpenID Connect' on the ['Connect a New Service'](https://manager.test.aaf.edu.au/connected_services/new) page in Federation Manager, you will then be taken to the **Register a New Service** page:
 
-![Register new service](/assets/images/register-new-oidc-service.png)
+![Register new service](/assets/images/connect-an-oidc-service/register-new-oidc-service.png)
 
 **To complete registration please provide the following information:**
 
