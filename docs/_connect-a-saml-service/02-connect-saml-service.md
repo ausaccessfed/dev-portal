@@ -11,7 +11,7 @@ If you have not done so already, please [log in to Federation Manager](/log-into
 
 Once you have clicked on 'SAML' on the ['Connect a New Service'](https://manager.test.aaf.edu.au/connected_services/new) page, you will then be taken to the **Register a SAML Service Provider** page:
 
-![Register new saml service](/assets/images/register-new-saml-service.png)
+![Register new saml service](/assets/images/connect-a-saml-service/register-new-saml-service.png)
 
 There are two methods for providing the **SAML** details for the new service: automatic or manual.
 
