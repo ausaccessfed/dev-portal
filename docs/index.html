@@ -46,10 +46,10 @@ order: 0
   Any changes you make here should be replicated exactly to the showResults
   function in /assets/javascript/main.js
   {% endcomment %}
-  <div id="tutorial-list" class="card-group flex-direction-row justify-content-center pt-4">
+  <div id="tutorial-list" class="card-group flex-direction-row pt-4">
     {% include tutorials.html %}
     {% for tutorial in all_tutorials %}
-    <div class="card-container" style="width: 18rem;">
+    <div class="card-container mx-auto" style="width: 18rem;">
       <a class="card-tut-link" href="{{ tutorial.label | relative_url }}">
         <div class="card shadow h-100">
           <div class="card-header text-light bg-dark">
