@@ -65,7 +65,7 @@ $(function() {
     if(results.length) {
       var result = '';
       $.each(results, function(i, tutorial) {
-        result += '<div class="card-container" style="width: 18rem;">';
+        result += '<div class="card-container col-md-6 col-lg-4 m-lg-0 py-3">';
         result += '  <a class="card-tut-link" href="' + tutorial.url + '">';
         result += '    <div class="card shadow h-100">';
         result += '      <div class="card-header text-light bg-dark">';
@@ -104,7 +104,7 @@ $(function() {
       var noResults = '<div class="card-container col-sm-12 col-md-8 offset-md-2 mb-5">';
           noResults += '  <div class="card shadow p-5 text-center">';
           noResults += '    <h3>No Matches</h3>';
-          noResults += '    <p>Can\'t find what you\'re looking for? Make a suggestion or ask our support team for help by submitting a <a href="https://aaf.freshdesk.com/support/tickets/new">support ticket</a>.</p>';
+          noResults += '    <p>Can\'t find what you\'re looking for? Make a suggestion or ask our support team for help by submitting a <a href="https://support.ehelp.edu.au/support/tickets/new">support ticket</a>.</p>';
           noResults += '  </div>';
           noResults += '</div>';
       tutorialList.html(noResults);
