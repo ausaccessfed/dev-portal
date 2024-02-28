@@ -6,10 +6,10 @@ duration: 1
 
 {% include tutorials.html -%}
 
-{% assign curriculum = "Cloud Starter" %}
+{% assign curriculum = "OpenID Connect" %}
 
 {% comment %}
-To facilitate proper ordering of tutorials for cloud starter pages, we loop
+To facilitate proper ordering of tutorials for connect a new service pages, we loop
 through our ordered list of categories and build the list of tutorials from
 there
 {% endcomment -%}
@@ -44,7 +44,7 @@ Add any missing categories to the end of the list
 {% comment %}
 Page content starts here
 {% endcomment %}
-The Connect a New Service Series consists of the following tutorials, which you can work through at your own pace.
+The OpenID Connect Series consists of the following tutorials, which you can work through at your own pace.
 
 {% for category in sortcategories %}
 ### {{ category }}

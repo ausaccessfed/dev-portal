@@ -1,5 +1,5 @@
 ---
-title: Welcome
+title: Overview
 order: 1
 duration: 1
 ---
@@ -11,12 +11,12 @@ In this tutorial series we will point you to a number of our tutorials. We recom
 
 ## What you'll learn
 - Integration
-  - How to integrate your application with available protocols (OpenID Connect, Rapid Connect, SAML, VerifID)
+    - How to integrate your application with available protocols (OpenID Connect, Rapid Connect, SAML, VerifID)
 - Federation Manager Authentication
-  - How to authenticate to Federation Manager (Test)
+    - How to authenticate to Federation Manager (Test)
 - Connect a service
-  - How to register a new service with AAF using available protocols (OpenID Connect, Rapid Connect, SAML, VerifID)
-  - How to register a new service using OpenID Connect (OIDC) and Keycloak
+    - How to register a new service with AAF using available protocols (OpenID Connect, Rapid Connect, SAML, VerifID)
+    - How to register a new service using OpenID Connect (OIDC) and Keycloak
 
 ## What you'll need
 - AAF login credentials
