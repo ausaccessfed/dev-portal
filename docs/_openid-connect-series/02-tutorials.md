@@ -9,9 +9,8 @@ duration: 1
 {% assign curriculum = "OpenID Connect" %}
 
 {% comment %}
-To facilitate proper ordering of tutorials for connect a new service pages, we loop
-through our ordered list of categories and build the list of tutorials from
-there
+To facilitate proper ordering of tutorials for openid connect series pages, we loop
+through our ordered list of categories and build the list of tutorials from there
 {% endcomment -%}
 
 {% assign sortcategories = "" | split: "" %}

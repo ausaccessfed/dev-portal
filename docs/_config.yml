@@ -30,8 +30,8 @@ defaults:
 
 # Ordered by how they should appear in the curriculum list
 tutorial_categories:
-  - Integration
   - AAF Connection Types
+  - Integration
   - Federation Manager Authentication
   - Connect a Service
 
@@ -60,7 +60,6 @@ collections:
     title: Connection Types
     summary: An overview of connection types available
     category: AAF Connection Types
-    curriculum: Connect a New Service
     level: Beginner
     tags:
       - TODO
@@ -154,7 +153,6 @@ collections:
     title: Connect a Rapid Connect Service
     summary: A tutorial for Connecting a Rapid Connect Service
     category: Connect a Service
-    curriculum: Connect a New Service
     level: Beginner
     tags:
       - TODO
@@ -170,7 +168,6 @@ collections:
     title: Connect a SAML Service
     summary: A tutorial for Connecting a SAML Service
     category: Connect a Service
-    curriculum: Connect a New Service
     level: Advanced
     tags:
       - TODO
@@ -201,7 +198,6 @@ collections:
     title: Connect with Verifid
     summary: A tutorial for Connect with Verifid
     category: Connect a Service
-    curriculum: Connect a New Service
     level: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
     tags:
       - tutorial
