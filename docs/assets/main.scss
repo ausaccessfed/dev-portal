@@ -173,6 +173,7 @@ code {
 }
 
 .card-container {
+  margin: 1em;
   .card-header,
   .card-body,
   .card-footer {
@@ -196,7 +197,6 @@ code {
  */
 #search-clear {
   display: none;
-  color: $danger;
   border-color: #c6c6c6 !important; // Same as form-control default state
 }
 
