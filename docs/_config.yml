@@ -30,7 +30,10 @@ defaults:
 
 # Ordered by how they should appear in the curriculum list
 tutorial_categories:
-  - Setting up prerequisites
+  - AAF Connection Types
+  - Integration
+  - Federation Manager Authentication
+  - Connect a Service
 
 # New tutorials should be added by running:
 #   $ rake tutorial "My tutorial title"
@@ -40,22 +43,23 @@ collections:
     permalink: /:collection/:name
     title: Connect with Keycloak
     summary: A tutorial for connecting with Keycloak
-    category: TODO
+    category: Connect a Service
+    curriculum: OpenID Connect
     level: Beginner
     tags:
       - TODO
-    difficulty: 1 
-    duration: 10 
-    status: draft 
+    difficulty: 1
+    duration: 10
+    status: draft
     published: 2024-02-06
     author: Your Name <your.name@email.domain>
 
-  connect-a-service:
+  connection-types:
     output: true
     permalink: /:collection/:name
-    title: Connect a new service
-    summary: A tutorial for connecting a new service
-    category: TODO
+    title: Connection Types
+    summary: An overview of connection types available
+    category: AAF Connection Types
     level: Beginner
     tags:
       - TODO
@@ -70,7 +74,8 @@ collections:
     permalink: /:collection/:name
     title: Log into Federation Manager
     summary: A tutorial for logging into Federation Manager
-    category: TODO
+    category: Federation Manager Authentication
+    curriculum: OpenID Connect
     level: Beginner
     tags:
       - TODO
@@ -85,7 +90,8 @@ collections:
     permalink: /:collection/:name
     title: OpenID Connect Integration
     summary: A tutorial for OpenID Connect Integration
-    category: TODO
+    category: Integration
+    curriculum: OpenID Connect
     level: Beginner
     tags:
       - TODO
@@ -100,7 +106,7 @@ collections:
     permalink: /:collection/:name
     title: Rapid Connect Integration
     summary: A tutorial for Rapid Connect Integration
-    category: TODO
+    category: Integration
     level: Beginner
     tags:
       - TODO
@@ -115,7 +121,7 @@ collections:
     permalink: /:collection/:name
     title: SAML Integration
     summary: A tutorial for SAML Integration
-    category: TODO
+    category: Integration
     level: Advanced
     tags:
       - TODO
@@ -130,7 +136,8 @@ collections:
     permalink: /:collection/:name
     title: Connect an OIDC Service
     summary: A tutorial for Connecting an OIDC Service
-    category: TODO
+    category: Connect a Service
+    curriculum: OpenID Connect
     level: Beginner
     tags:
       - TODO
@@ -145,7 +152,7 @@ collections:
     permalink: /:collection/:name
     title: Connect a Rapid Connect Service
     summary: A tutorial for Connecting a Rapid Connect Service
-    category: TODO
+    category: Connect a Service
     level: Beginner
     tags:
       - TODO
@@ -160,11 +167,11 @@ collections:
     permalink: /:collection/:name
     title: Connect a SAML Service
     summary: A tutorial for Connecting a SAML Service
-    category: TODO
+    category: Connect a Service
     level: Advanced
     tags:
       - TODO
-    difficulty: 5
+    difficulty: 4
     duration: 10
     status: draft
     published: 2024-02-06
@@ -175,7 +182,7 @@ collections:
     permalink: /:collection/:name
     title: VerifID Integration
     summary: A tutorial for Verifid Integration
-    category: TODO
+    category: Integration
     level: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
     tags:
       - tutorial
@@ -190,7 +197,7 @@ collections:
     permalink: /:collection/:name
     title: Connect with Verifid
     summary: A tutorial for Connect with Verifid
-    category: TODO
+    category: Connect a Service
     level: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
     tags:
       - tutorial
@@ -198,5 +205,20 @@ collections:
     duration: 10 # number of minutes
     status: draft # draft or published
     published: 2024-02-16
+    author: Your Name <your.name@email.domain>
+
+  openid-connect-series:
+    output: true
+    permalink: /:collection/:name
+    title: OpenID Connect Series
+    summary: Integrate and Connect with OIDC
+    curriculum: OpenID Connect
+    level: Series # Beginner|Intermediate|Advanced|Series|Non-technical
+    tags:
+      - tutorial
+    difficulty: 1 # number from 1 to 5
+    duration: 10 # number of minutes
+    status: draft # draft or published
+    published: 2024-02-28
     author: Your Name <your.name@email.domain>
 
