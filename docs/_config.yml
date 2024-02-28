@@ -20,7 +20,7 @@ liquid:
 exclude:
   - Gemfile
   - Gemfile.lock
-  - vendor
+  - vendor/bundle
 
 defaults:
   - scope:
