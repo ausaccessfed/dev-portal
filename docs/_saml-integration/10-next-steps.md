@@ -9,5 +9,6 @@ To test access to protected content, an active account at an existing subscriber
 script within the protected directory **/secure** with a web browser. The **PHP** script will report values for those
 attributes which the **attribute-map.xml** configuration enables and the **Apache** session environment.
 
-Head over to [Connect a Service](/connect-a-service/01-overview) and follow the steps to authenticate to Federation Manager (Test) after which you can [register your new SAML service](/connect-a-saml-service/01-overview).
+Head over to [Log into Federation Manager](/log-into-federation-manager) and follow the steps to authenticate to 
+Federation Manager (Test) after which you can [register your new SAML service](/connect-a-saml-service/01-overview).
 {: .callout-success}

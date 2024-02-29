@@ -123,6 +123,7 @@ collections:
     title: SAML Integration
     summary: A tutorial for SAML Integration
     category: Integration
+    curriculum: SAML
     level: Advanced
     tags:
       - TODO
@@ -170,6 +171,7 @@ collections:
     title: Connect a SAML Service
     summary: A tutorial for Connecting a SAML Service
     category: Connect a Service
+    curriculum: SAML
     level: Advanced
     tags:
       - TODO
