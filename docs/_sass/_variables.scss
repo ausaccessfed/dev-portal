@@ -1,26 +1,28 @@
 // Bootstrap overrides
 
-$font-family-sans-serif: 'Figtree', sans-serif;
-$font-family-base: 'Figtree', sans-serif;
+$font-family-sans-serif: 'Raleway', sans-serif;
+$font-family-base: 'Lato', sans-serif;
 $font-size-base: 1rem;
 $form-label-font-weight: 600;
 
-// TODO change these to AAF colours
-// https://github.com/ausaccessfed/federationmanager/blob/master/app/frontend/stylesheets/tailwind.config.js
-// ARDC colours
-$ardc-blue:   #00A2C4;
-$ardc-pink:   #E51875;
-$ardc-orange: #faae1d;
-$ardc-purple: #8E489B;
-$ardc-grey:   #969696;
+// AAF colours
+$aaf-blue:   #00A2C4;
+$aaf-pink:   #E51875;
+$aaf-orange: #E89644;
+$aaf-yellow: #f1B94d;
+$aaf-indigo: #5F368A;
+$aaf-purple: #2A004A;
+$aaf-grey:   #969696;
 
 // Override bootstrap colours
 $dark: #000000;
-$blue: $ardc-blue;
-$pink: $ardc-pink;
-$orange: $ardc-orange;
-$purple: $ardc-purple;
-$gray: $ardc-grey;
+$blue: $aaf-blue;
+$pink: $aaf-pink;
+$orange: $aaf-orange;
+$yellow: $aaf-yellow;
+$indigo: $aaf-indigo;
+$purple: $aaf-purple;
+$gray: $aaf-grey;
 
 $gray-100: #fcfcfc;
 $gray-200: #EEEEEE;

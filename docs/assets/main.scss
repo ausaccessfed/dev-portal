@@ -71,12 +71,7 @@ header {
 .banner-hero-card {
   background: #ffffff;
   padding: 40px 60px 40px 40px;
-}
-
-#cloud-learning-img {
-  margin-top: -25px;
-  margin-right: -150px;
-  margin-bottom: -250px;
+  margin-right: 160px;
 }
 
 .footer-callout {
@@ -95,7 +90,7 @@ header {
     a {
       &:hover,
       &:focus {
-        color: $ardc-pink;
+        color: $aaf-pink;
         text-decoration: underline;
       }
     }
