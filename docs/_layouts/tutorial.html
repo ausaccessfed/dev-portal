@@ -44,12 +44,18 @@ layout: default
           {% if collection.curriculum %}
             <div class="p-2">
               <p class="mb-1"><i class="fa fa-info-circle"></i> This tutorial is part of the {{ collection.curriculum }} Series.</p>
-              {% if collection.curriculum == "Cloud Starter" %}
-                <a class="btn btn-link btn-sm p-0" href="{{ '/cloud-starter/02-tutorials' | prepend: site.baseurl }}"><i class="fa fa-arrow-left"></i> Back to Cloud Starter</a>
-              {% elsif collection.curriculum == "Cloud Two" %}
-                <a class="btn btn-link btn-sm p-0" href="{{ '/cloud-two/02-tutorials' | prepend: site.baseurl }}"><i class="fa fa-arrow-left"></i> Back to Cloud Two</a>
-              {% elsif collection.curriculum == "Cloud Expert" %}
-                <a class="btn btn-link btn-sm p-0" href="{{ '/cloud-expert/02-tutorials' | prepend: site.baseurl }}"><i class="fa fa-arrow-left"></i> Back to Cloud Expert</a>
+              {% if collection.curriculum == "OpenID Connect" %}
+              <a class="btn btn-link btn-sm p-0"
+                 href="{{ '/openid-connect-series/02-tutorials' | prepend: site.baseurl }}"><i class="fa fa-arrow-left"></i> Back to OpenID Connect</a>
+              {% elsif collection.curriculum == "Rapid Connect" %}
+              <a class="btn btn-link btn-sm p-0"
+                 href="{{ '/rapid-connect-series/02-tutorials' | prepend: site.baseurl }}"><i class="fa fa-arrow-left"></i> Back to Rapid Connect</a>
+              {% elsif collection.curriculum == "SAML" %}
+              <a class="btn btn-link btn-sm p-0"
+                 href="{{ '/saml-series/02-tutorials' | prepend: site.baseurl }}"><i class="fa fa-arrow-left"></i> Back to SAML</a>
+              {% elsif collection.curriculum == "VerifID" %}
+              <a class="btn btn-link btn-sm p-0"
+                 href="{{ '/verifid-series/02-tutorials' | prepend: site.baseurl }}"><i class="fa fa-arrow-left"></i> Back to VerifID</a>
               {% endif %}
             </div>
           {% endif %}
