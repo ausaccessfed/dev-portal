@@ -241,6 +241,21 @@ collections:
     published: 2024-02-29
     author: Your Name <your.name@email.domain>
 
+  verifid-series:
+    output: true
+    permalink: /:collection/:name
+    title: VerifID Series
+    summary: Integrate and connect with VerifID
+    curriculum: VerifID
+    level: Series # Beginner|Intermediate|Advanced|Series|Non-technical
+    tags:
+      - tutorial
+    difficulty: 1 # number from 1 to 5
+    duration: 10 # number of minutes
+    status: draft # draft or published
+    published: 2024-02-29
+    author: Your Name <your.name@email.domain>
+
   saml-series:
     output: true
     permalink: /:collection/:name
