@@ -11,8 +11,8 @@ Welcome to the VerifID Tutorials. We've put together all the tutorials that you 
     - How to integrate your application with VerifID
 - Federation Manager Authentication
     - How to authenticate to Federation Manager (Test)
-- Connect a service
-    - How to register a new service with AAF using VerifID
+- Connect a client
+    - How to register a new client with AAF using VerifID
 
 ## What you'll need
 - AAF login credentials
