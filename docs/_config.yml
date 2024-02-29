@@ -75,7 +75,7 @@ collections:
     title: Log into Federation Manager
     summary: A tutorial for logging into Federation Manager
     category: Federation Manager Authentication
-    curriculum: OpenID Connect
+    curriculum: OpenID Connect, Rapid Connect
     level: Beginner
     tags:
       - TODO
@@ -107,6 +107,7 @@ collections:
     title: Rapid Connect Integration
     summary: A tutorial for Rapid Connect Integration
     category: Integration
+    curriculum: Rapid Connect
     level: Beginner
     tags:
       - TODO
@@ -153,6 +154,7 @@ collections:
     title: Connect a Rapid Connect Service
     summary: A tutorial for Connecting a Rapid Connect Service
     category: Connect a Service
+    curriculum: Rapid Connect
     level: Beginner
     tags:
       - TODO
@@ -220,5 +222,20 @@ collections:
     duration: 10 # number of minutes
     status: draft # draft or published
     published: 2024-02-28
+    author: Your Name <your.name@email.domain>
+
+  rapid-connect-series:
+    output: true
+    permalink: /:collection/:name
+    title: Rapid Connect Series
+    summary: Integrate and Connect with Rapid Connect
+    curriculum: Rapid Connect
+    level: Series # Beginner|Intermediate|Advanced|Series|Non-technical
+    tags:
+      - tutorial
+    difficulty: 1 # number from 1 to 5
+    duration: 10 # number of minutes
+    status: draft # draft or published
+    published: 2024-02-29
     author: Your Name <your.name@email.domain>
 
