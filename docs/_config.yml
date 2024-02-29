@@ -34,6 +34,7 @@ tutorial_categories:
   - Integration
   - Federation Manager Authentication
   - Connect a Service
+  - Identity Management Solutions
 
 # New tutorials should be added by running:
 #   $ rake tutorial "My tutorial title"
@@ -43,7 +44,7 @@ collections:
     permalink: /:collection/:name
     title: Connect with Keycloak
     summary: A tutorial for connecting with Keycloak
-    category: Connect a Service
+    category: Identity Management Solutions
     curriculum: OpenID Connect
     level: Beginner
     tags:
