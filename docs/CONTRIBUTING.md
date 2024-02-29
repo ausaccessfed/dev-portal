@@ -66,7 +66,7 @@ For Ubuntu, this can be done with:
 # apt install ruby-dev ruby-bundler rake zlib1g-dev make gcc g++
 ```
 
-To install Jekyll and all the required dependencies, run the below command. **But make sure you are in the folder which contains the repository first (ie the `docs` folder)**.
+To install Jekyll and all the required dependencies, run the below command. **But make sure you are in the folder which contains the repository first (ie the `dev-portal/docs` folder)**.
 
 ```sh
 # rake setup
