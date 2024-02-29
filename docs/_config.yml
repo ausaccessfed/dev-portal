@@ -75,7 +75,6 @@ collections:
     title: Log into Federation Manager
     summary: A tutorial for logging into Federation Manager
     category: Federation Manager Authentication
-    curriculum: OpenID Connect, Rapid Connect
     level: Beginner
     tags:
       - TODO
