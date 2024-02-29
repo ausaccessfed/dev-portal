@@ -4,16 +4,16 @@ order: 1
 duration: 1
 ---
 
-This tutorial... (replace this) 
+Welcome to the VerifID Tutorials. We've put together all the tutorials that you will need to connect with VerifID.
 
-### What you'll learn
+## What you'll learn
+- Integration
+    - How to integrate your application with VerifID
+- Federation Manager Authentication
+    - How to authenticate to Federation Manager (Test)
+- Connect a service
+    - How to register a new service with AAF using VerifID
 
-- 
-- 
-- 
-
-### What you'll need
-
-- 
-- 
-- 
+## What you'll need
+- AAF login credentials
+- Experience undertaking integration work

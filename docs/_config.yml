@@ -187,6 +187,7 @@ collections:
     title: VerifID Integration
     summary: A tutorial for Verifid Integration
     category: Integration
+    curriculum: VerifID
     level: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
     tags:
       - tutorial
@@ -199,9 +200,10 @@ collections:
   connect-with-verifid:
     output: true
     permalink: /:collection/:name
-    title: Connect with Verifid
+    title: Connect with VerifID
     summary: A tutorial for Connect with Verifid
     category: Connect a Service
+    curriculum: VerifID
     level: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
     tags:
       - tutorial
