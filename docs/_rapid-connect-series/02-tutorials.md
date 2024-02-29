@@ -6,10 +6,11 @@ duration: 1
 
 {% include tutorials.html -%}
 
-{% assign curriculum = "OpenID Connect" %}
+{% assign curriculum = "Rapid Connect" %}
 
 {% comment %}
-To facilitate proper ordering of tutorials for openid connect series pages, we loop through our ordered list of categories and build the list of tutorials from there
+To facilitate proper ordering of tutorials for rapid connect series pages, we loop
+through our ordered list of categories and build the list of tutorials from there
 {% endcomment -%}
 
 {% assign sortcategories = "" | split: "" %}
@@ -42,7 +43,7 @@ Add any missing categories to the end of the list
 {% comment %}
 Page content starts here
 {% endcomment %}
-The OpenID Connect Series consists of the following tutorials, which you can work through at your own pace.
+The Rapid Connect Series consists of the following tutorials, which you can work through at your own pace.
 
 {% for category in sortcategories %}
 ### {{ category }}
