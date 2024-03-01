@@ -25,9 +25,13 @@ main {
 
 .h1, .h2, .h3, .h4, .h5, .h6, 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Figtree', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 600;
+}
+
+.p {
+  font-family: 'Lato', sans-serif;
 }
 
 .btn {
@@ -69,8 +73,7 @@ header {
 }
 
 .banner-hero-card {
-  background: #ffffff;
-  padding: 40px 60px 40px 40px;
+  color: #EEEEEE;
   margin-right: 160px;
 }
 
