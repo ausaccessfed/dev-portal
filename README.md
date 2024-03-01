@@ -1,3 +1,13 @@
+# AAF Support tutorials
+
+This is the content that hosts the site https://tutorials.aaf.edu.au.
+This site is built with Jekyll and hosted on GitHub Pages.
+
+### Contributing
+
+We welcome contributions to our AAF tutorials. Please read [CONTRIBUTING.md](docs/CONTRIBUTING.md)
+
+
 # Getting Started with Jekyll
 ***
 

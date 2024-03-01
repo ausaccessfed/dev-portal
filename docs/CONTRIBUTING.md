@@ -4,7 +4,7 @@ Thanks for contributing to our `dev-portal tutorials` repository.
 Below are ways you can help make the dev-portal tutorials better.
 
 The easiest way for you to help us is by **raising an issue**, which will require a GitHub account.
-For amendments to the documentation, you will need to be familiar with general Git concepts and send your changes to our Gerrit review server for review.
+For amendments to the documentation, you will need to be familiar with general Git concepts and submit your changes to our Tech Team for review.
 If you'd like to commit substantial changes or even whole **new tutorials**, you will be required to set up the preview environment.
 
 ## Raise an issue
@@ -22,13 +22,13 @@ They may contact you if they need some more clarification.
 
 ## Making changes
 
-If you would like to make a minor or substantial contribution, you'll need to ensure you have Git and the git-review (at least v1.27) package installed.
+If you would like to make a minor or substantial contribution, you'll need to ensure you have Git installed.
 
 
 
 ### Checking out the code
 
-For minor or substantial edits, you will need to clone the repsitory of the documentation source code.
+For minor or substantial edits, you will need to clone the repository of the documentation source code.
 This can be done using the Git command:
 
 ```sh
@@ -50,23 +50,6 @@ You'll need some of your `git` skills with this.
 - Commit your changes to your branch.
 - When you are happy with your edits or additions, commit and send your changes.
 
-To send a review:
-- Using `git commit` add your changes. If you're amending a review, don't forget to add the `--amend` argument.
-- Run the `git review` command to send your changes. The command should return the URL for your review if it was successful.
-
-Our review team will then be alerted.
-Please be prepared to answer questions about your edits and make additional commits.
-
-**Note:**
-Before executing the `git review` command for the first time, you may need to install it first. You can do this using:
-```
-sudo apt-get install git-review
-```
-Then, you need to initiate the setup procedure, using:
-```
-git review -s 
-```
-
 ### Setting up a local development environment
 
 Note for windows users, this process will be much easier if you set up [Windows Subsystem for Linux (WSL)](https://docs.microsoft.com/en-us/windows/wsl/install), then the commands below will work within the WSL environment.
@@ -83,7 +66,7 @@ For Ubuntu, this can be done with:
 # apt install ruby-dev ruby-bundler rake zlib1g-dev make gcc g++
 ```
 
-To install Jekyll and all the required dependencies, run the below command. **But make sure you are in the folder which contains the repository first (ie the `Tutorials` folder)**.
+To install Jekyll and all the required dependencies, run the below command. **But make sure you are in the folder which contains the repository first (ie the `dev-portal/docs` folder)**.
 
 ```sh
 # rake setup
@@ -109,8 +92,7 @@ This command will create you:
 - An images directory specific to your new tutorial.
 - A configuration entry in `_config.yml`.
 
-You will then need to edit the metadata for your new tutorial in `_config.yml`
-under the `collections` section.
+You will then need to edit the metadata for your new tutorial in `_config.yml` under the `collections` section.
 
 You'll need the following YAML config:
 
@@ -143,7 +125,7 @@ duration: <estimated page duration>
 ```
 
 You will need to restart the preview process for Jekyll to render your new
-tutorial, but once it's done, it will be available from the root of the site.
+tutorial, but once it's done, it will be available from the docs folder of the site.
 
 ### Markdown style guide principles
 
@@ -161,7 +143,8 @@ To enter a numbered list for a series of steps, use 1. (number one) for each of 
 
 **Highlighting important information**
 
-There a certain things we need to highlight to users, such as "Warnings" or a "Note" of sorts. This can be done using callouts, which have different types producing slightly different formatting (colours etc) for each, depending on the type of message you want to highlight.
+There a certain things we need to highlight to users, such as "Warnings" or a "Note" of sorts. This can be done using callouts, which have different types producing slightly different formatting (colours, etc.) for each, 
+depending on the type of message you want to highlight.
 
 <code>
 {: .callout-success}
@@ -180,19 +163,12 @@ There a certain things we need to highlight to users, such as "Warnings" or a "N
 
 <br>
 
-**Beware of the hidden spaces**
-
-It's good practice to not leave random extra spaces in the files.
-In gerrit, these will appear as little pink spaces.
-
-<br>
-
 **Preventing broken home page links**
 
-When adding any links for the tutorial site, which contain tutorials.nectar.rc.org.au, use  {{ site.baseurl }} in its place instead.
+When adding any links for the tutorial site, which contain tutorials.aaf.edu.au, use  {{ site.baseurl }} in its place instead.
 
-For example https://tutorials.rc.nectar.org.au/cloud-starter/02-tutorials will be:
+For example https://tutorials.aaf.edu.au/openid-connect-series/02-tutorials will be:
 
-{{ site.baseurl }}/cloud-starter/02-tutorials
+{{ site.baseurl }}/openid-connect-series/02-tutorials
 
 This helps prevent any broken links in the future, if the central URL of the site changes.
