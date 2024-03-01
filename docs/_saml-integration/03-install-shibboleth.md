@@ -24,7 +24,7 @@ Install **Shibboleth**, Apache and the SSL libraries for the architecture of the
 
 `$> yum install httpd.x86_64 mod_ssl.x86_64 shibboleth.x86_64 PHP.x86_64 -y`
 
-An outline for installing the **Shibboleth SP** on other web platforms is available in the [**Shibboleth Wiki.**](https://wiki.shibboleth.net/confluence/display/SP3/GettingStarted https://wiki.shibboleth.net/confluence/display/SP3/WebServers)
+An outline for installing the **Shibboleth SP** on other web platforms is available in the [**Shibboleth Wiki.**](https://shibboleth.atlassian.net/wiki/spaces/SP3/pages/2065335537/Installation)
 
 At this point in the deployment process, determine which federation the application will join: **TEST** or
 **PRODUCTION**. This choice influences which metadata distribution service to connect and which **Federation Manager
