@@ -48,7 +48,9 @@ collections:
     curriculum: OpenID Connect
     level: Beginner
     tags:
-      - TODO
+      - keycloak
+      - openid connect
+      - tutorial
     difficulty: 1
     duration: 10
     status: draft
@@ -63,7 +65,8 @@ collections:
     category: AAF Connection Types
     level: Beginner
     tags:
-      - TODO
+      - connect
+      - overview
     difficulty: 1
     duration: 10
     status: draft
@@ -78,7 +81,9 @@ collections:
     category: Federation Manager Authentication
     level: Beginner
     tags:
-      - TODO
+      - authentication
+      - federation manager
+      - tutorial
     difficulty: 1
     duration: 10
     status: draft
@@ -94,7 +99,8 @@ collections:
     curriculum: OpenID Connect
     level: Beginner
     tags:
-      - TODO
+      - openid connect
+      - tutorial
     difficulty: 1
     duration: 10
     status: draft
@@ -110,7 +116,8 @@ collections:
     curriculum: Rapid Connect
     level: Beginner
     tags:
-      - TODO
+      - rapid connect
+      - tutorial
     difficulty: 1
     duration: 10
     status: draft
@@ -126,7 +133,8 @@ collections:
     curriculum: SAML
     level: Advanced
     tags:
-      - TODO
+      - saml
+      - tutorial
     difficulty: 4
     duration: 10
     status: draft
@@ -142,7 +150,8 @@ collections:
     curriculum: OpenID Connect
     level: Beginner
     tags:
-      - TODO
+      - openid connect
+      - tutorial
     difficulty: 1
     duration: 10
     status: draft
@@ -158,7 +167,8 @@ collections:
     curriculum: Rapid Connect
     level: Beginner
     tags:
-      - TODO
+      - rapid connect
+      - tutorial
     difficulty: 1
     duration: 10
     status: draft
@@ -174,7 +184,8 @@ collections:
     curriculum: SAML
     level: Advanced
     tags:
-      - TODO
+      - saml
+      - tutorial
     difficulty: 4
     duration: 10
     status: draft
@@ -191,6 +202,7 @@ collections:
     level: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
     tags:
       - tutorial
+      - verifid
     difficulty: 1 # number from 1 to 5
     duration: 10 # number of minutes
     status: draft # draft or published
@@ -207,6 +219,7 @@ collections:
     level: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
     tags:
       - tutorial
+      - verifid
     difficulty: 1 # number from 1 to 5
     duration: 10 # number of minutes
     status: draft # draft or published
@@ -221,7 +234,8 @@ collections:
     curriculum: OpenID Connect
     level: Series # Beginner|Intermediate|Advanced|Series|Non-technical
     tags:
-      - tutorial
+      - series
+      - beginner
     difficulty: 1 # number from 1 to 5
     duration: 10 # number of minutes
     status: draft # draft or published
@@ -236,7 +250,8 @@ collections:
     curriculum: Rapid Connect
     level: Series # Beginner|Intermediate|Advanced|Series|Non-technical
     tags:
-      - tutorial
+      - series
+      - beginner
     difficulty: 1 # number from 1 to 5
     duration: 10 # number of minutes
     status: draft # draft or published
@@ -251,7 +266,8 @@ collections:
     curriculum: VerifID
     level: Series # Beginner|Intermediate|Advanced|Series|Non-technical
     tags:
-      - tutorial
+      - series
+      - beginner
     difficulty: 1 # number from 1 to 5
     duration: 10 # number of minutes
     status: draft # draft or published
@@ -266,7 +282,8 @@ collections:
     curriculum: SAML
     level: Series # Beginner|Intermediate|Advanced|Series|Non-technical
     tags:
-      - tutorial
+      - series
+      - advanced
     difficulty: 4 # number from 1 to 5
     duration: 10 # number of minutes
     status: draft # draft or published
