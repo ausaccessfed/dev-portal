@@ -32,14 +32,7 @@ There are two methods for providing the **SAML** details for the new service: au
 3. Entity ID - the service's entity ID
 4. URL - the service's landing page URL
 5. Assertion consumer service URL - the endpoint provided by the SP where SAML responses are posted.
-6. Discovery response URL - 
-
-- For Test:
-`https://ds.test.aaf.edu.au/discovery/aaf`
-
-- For Production:
-`https://ds.aaf.edu.au/discovery/aaf`
-
+6. Discovery response URL - `https://ds.test.aaf.edu.au/discovery/aaf`
 7. Signing certificate - Provide the contents of the public key certificate created by the Shibboleth installation, this is not the web server SSL public certificate.
 
 - Select those attributes that the application requires. The selection of attributes should match those attributes enabled in the **attribute-map.xml** file. If following the instructions for the [Simple PHP Server installed on Linux example](/saml-integration/03-install-shibboleth), the default Shibboleth installation enables the attributes **eppn** and **affiliation**.

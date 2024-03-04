@@ -19,7 +19,7 @@ configurable and can operate in a multi-domain environment. A web server may hav
 
 **Choose wisely!** Once registered and in-use, any change to an **entityID** value disrupts a web service’s
 availability and breaks the targeted/persistent ID generation, so any changes are discouraged.
-{: .info }
+{: .callout-danger}
 
 For Linux, edit the configuration file **/etc/shibboleth/shibboleth2.xml**, and for Windows locate the shibboleth2.xml
 file within the installation directory. Locate the **ApplicationDefaults** element. Update the default value for

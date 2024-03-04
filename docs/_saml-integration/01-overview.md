@@ -29,7 +29,7 @@ This guide is derived from the **Shibboleth Wiki** and assumes knowledge of the 
 architecture:
 
 - working knowledge of the web server platform,
-- standard OS-level knowledge, sufficient for software installation, configuration file editing andstarting/stopping of processes/services,
+- standard OS-level knowledge, sufficient for software installation, configuration file editing and starting/stopping of processes/services,
 - working knowledge of XML,
 - basic knowledge of public key cryptography,
 - basic understanding of web cookies and redirects,

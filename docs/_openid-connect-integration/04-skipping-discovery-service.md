@@ -13,10 +13,6 @@ Find the **entityID** of the IdP that you wish to directly login through. This c
 
 <a href="https://md.test.aaf.edu.au/" class="btn btn-outline-primary mb-3">AAF Test Metadata</a>
 <br>
-<a href="https://md.aaf.edu.au/" class="btn btn-outline-primary">AAF Production Metadata</a>
-
-
-<br>
 For Example, the AAF Virtual Home: `https://vho.aaf.edu.au/idp/shibboleth`
 
 
