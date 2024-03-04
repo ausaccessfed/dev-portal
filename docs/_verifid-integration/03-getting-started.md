@@ -4,8 +4,7 @@ order: 3
 duration: 1
 ---
 
-The interaction used between the Subscriber and VerifID is the Authorization Code Grant(1) as defined by the OAuth 2.
-0 specification (RFC 6749).
+The interaction used between the Subscriber and VerifID is the Authorization Code Grant(1) as defined by the OAuth 2.0 specification (RFC 6749).
 
 Unless explicitly described as optional, **all** parameters are required (i.e. no parameters are optional) in all request and response payloads. This includes parameters which are described by the OAuth 2.0 specification as optional.
 
@@ -24,4 +23,4 @@ For **all** requests to VerifID endpoints a <code>User-Agent</code> header **mus
 <code>User-Agent</code> header may be denied. Developers should note that this is, sadly, often not a header set by HTTP
 client libraries, though all libraries should be easily configurable to add this.
 
-Valid formatting for the <code>User-Agent</code> header is described [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent). To assist in debugging of requests please ensure version information of the VerifID client code you have in production is communicated within the value you provide. 
+Valid formatting for the <code>User-Agent</code> header is described by [mdn web docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent). To assist in debugging of requests please ensure version information of the VerifID client code you have in production is communicated within the value you provide. 
