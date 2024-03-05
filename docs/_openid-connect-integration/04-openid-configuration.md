@@ -4,9 +4,7 @@ order: 4
 duration: 1
 ---
 
-The **AAF OIDC** service supports querying the **OP** Configuration Information endpoint to retrieve the features and
-capabilities of the **OIDC** service. The **AAF OP** provides two endpoints, one for **Production Federation** and one
-for **Test Federation**.
+The **AAF OIDC** service supports querying the **OP** Configuration Information endpoint to retrieve the features and capabilities of the **OIDC** service. The **AAF OP** provides two endpoints, one for **Production Federation** and one for **Test Federation**.
 
 <br>
 Details for the **Test Federation** are here:
