@@ -21,9 +21,7 @@ configurable and can operate in a multi-domain environment. A web server may hav
 availability and breaks the targeted/persistent ID generation, so any changes are discouraged.
 {: .callout-danger}
 
-For Linux, edit the configuration file **/etc/shibboleth/shibboleth2.xml**, and for Windows locate the shibboleth2.xml
-file within the installation directory. Locate the **ApplicationDefaults** element. Update the default value for
-**entityID**, updating the placeholder value **“https://sp.example.org/shibboleth”**.
+For Linux, edit the configuration file **/etc/shibboleth/shibboleth2.xml**, and for Windows locate the shibboleth2.xml file within the installation directory. Locate the **ApplicationDefaults** element. Update the default value for**entityID**, updating the placeholder value **“https://sp.example.org/shibboleth”**.
 
 The **REMOTE_USER** setting is an environment variable which enables Shibboleth to pass the **“authenticated username”** to an application. The default values are sufficient for this demonstration, however deployers should
 only include those attributes which are the primary identifiers in the web application. **Shibboleth** is, to some
