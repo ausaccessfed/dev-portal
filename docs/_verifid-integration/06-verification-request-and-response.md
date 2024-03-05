@@ -72,10 +72,7 @@ Client registration. We require <code>redirect_uri</code> values to be encoded a
   <tbody>
     <tr>
       <td><code>entity_id</code></td>
-      <td>A preselected SAML Identity Provider provided by the Client which will be used to authenticate the User. 
-If this value is provided, it is the responsibility of the Client to ensure the value represents a valid IdP which 
-is known to VerifID. <br><br>The presence of this value will skip the SAML Discovery Service when performing 
-federated authentication. <br><br>We require <code>entity_id</code> values to be encoded according to <a href="https://datatracker.ietf.org/doc/html/rfc3986#section-2.1">RFC 3986,Section 2.1</a>. This is commonly known as percent or URL encoding. Not using this encoding method may result in HTTP 403, resource forbidden, errors.</td>
+      <td>A preselected SAML Identity Provider provided by the Client which will be used to authenticate the User. If this value is provided, it is the responsibility of the Client to ensure the value represents a valid IdP which is known to VerifID.<br><br>The presence of this value will skip the SAML Discovery Service when performing federated authentication. <br><br>We require <code>entity_id</code> values to be encoded according to <a href="https://datatracker.ietf.org/doc/html/rfc3986#section-2.1">RFC 3986, Section 2.1</a>. This is commonly known as percent or URL encoding. Not using this encoding method may result in HTTP 403, resource forbidden, errors.</td>
     </tr>
 </tbody>
 </table>
@@ -84,7 +81,7 @@ federated authentication. <br><br>We require <code>entity_id</code> values to be
 
 ### Verification response
 
-After authenticating to their Organisation via the VerifID Service Operator federation, the result of Verification will be a “protected resource”4 as described in the OAuth 2.0 specification. An authorization response shall be returned by redirecting the User’s browser to the Client’s redirect_uri, with query parameters:
+After authenticating to their Organisation via the VerifID Service Operator federation, the result of Verification will be a “protected resource”(4) as described in the OAuth 2.0 specification. An authorization response shall be returned by redirecting the User’s browser to the Client’s redirect_uri, with query parameters:
 
 ```
 [redirect_uri]?code=AUTHORIZATION_CODE&

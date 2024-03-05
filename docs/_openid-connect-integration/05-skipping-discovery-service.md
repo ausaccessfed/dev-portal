@@ -1,6 +1,6 @@
 ---
 title: Skipping Discovery Service
-order: 4
+order: 5
 duration: 1
 ---
 
@@ -12,10 +12,6 @@ AAF's implementation of OpenID Connect allows service administrators to configur
 Find the **entityID** of the IdP that you wish to directly login through. This can be done by looking through the AAF metadata or your own registrations.
 
 <a href="https://md.test.aaf.edu.au/" class="btn btn-outline-primary mb-3">AAF Test Metadata</a>
-<br>
-<a href="https://md.aaf.edu.au/" class="btn btn-outline-primary">AAF Production Metadata</a>
-
-
 <br>
 For Example, the AAF Virtual Home: `https://vho.aaf.edu.au/idp/shibboleth`
 

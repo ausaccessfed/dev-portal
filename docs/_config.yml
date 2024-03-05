@@ -48,7 +48,9 @@ collections:
     curriculum: OpenID Connect
     level: Beginner
     tags:
-      - TODO
+      - keycloak
+      - openid connect
+      - tutorial
     difficulty: 1
     duration: 10
     status: draft
@@ -63,7 +65,8 @@ collections:
     category: AAF Connection Types
     level: Beginner
     tags:
-      - TODO
+      - connect
+      - overview
     difficulty: 1
     duration: 10
     status: draft
@@ -78,7 +81,9 @@ collections:
     category: Federation Manager Authentication
     level: Beginner
     tags:
-      - TODO
+      - authentication
+      - federation manager
+      - tutorial
     difficulty: 1
     duration: 10
     status: draft
@@ -89,12 +94,13 @@ collections:
     output: true
     permalink: /:collection/:name
     title: OpenID Connect Integration
-    summary: A tutorial for OpenID Connect Integration
+    summary: A tutorial for OpenID Connect integration
     category: Integration
     curriculum: OpenID Connect
     level: Beginner
     tags:
-      - TODO
+      - openid connect
+      - tutorial
     difficulty: 1
     duration: 10
     status: draft
@@ -105,12 +111,13 @@ collections:
     output: true
     permalink: /:collection/:name
     title: Rapid Connect Integration
-    summary: A tutorial for Rapid Connect Integration
+    summary: A tutorial for Rapid Connect integration
     category: Integration
     curriculum: Rapid Connect
     level: Beginner
     tags:
-      - TODO
+      - rapid connect
+      - tutorial
     difficulty: 1
     duration: 10
     status: draft
@@ -121,14 +128,15 @@ collections:
     output: true
     permalink: /:collection/:name
     title: SAML Integration
-    summary: A tutorial for SAML Integration
+    summary: A tutorial for SAML integration
     category: Integration
     curriculum: SAML
     level: Advanced
     tags:
-      - TODO
+      - saml
+      - tutorial
     difficulty: 4
-    duration: 10
+    duration: 60
     status: draft
     published: 2024-02-06
     author: Your Name <your.name@email.domain>
@@ -137,12 +145,13 @@ collections:
     output: true
     permalink: /:collection/:name
     title: Connect an OIDC Service
-    summary: A tutorial for Connecting an OIDC Service
+    summary: A tutorial for connecting an OIDC Service
     category: Connect a Service
     curriculum: OpenID Connect
     level: Beginner
     tags:
-      - TODO
+      - openid connect
+      - tutorial
     difficulty: 1
     duration: 10
     status: draft
@@ -153,12 +162,13 @@ collections:
     output: true
     permalink: /:collection/:name
     title: Connect a Rapid Connect Service
-    summary: A tutorial for Connecting a Rapid Connect Service
+    summary: A tutorial for connecting a Rapid Connect service
     category: Connect a Service
     curriculum: Rapid Connect
     level: Beginner
     tags:
-      - TODO
+      - rapid connect
+      - tutorial
     difficulty: 1
     duration: 10
     status: draft
@@ -169,12 +179,13 @@ collections:
     output: true
     permalink: /:collection/:name
     title: Connect a SAML Service
-    summary: A tutorial for Connecting a SAML Service
+    summary: A tutorial for connecting a SAML service
     category: Connect a Service
     curriculum: SAML
     level: Advanced
     tags:
-      - TODO
+      - saml
+      - tutorial
     difficulty: 4
     duration: 10
     status: draft
@@ -185,12 +196,13 @@ collections:
     output: true
     permalink: /:collection/:name
     title: VerifID Integration
-    summary: A tutorial for Verifid Integration
+    summary: A tutorial for VerifID integration
     category: Integration
     curriculum: VerifID
     level: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
     tags:
       - tutorial
+      - verifid
     difficulty: 1 # number from 1 to 5
     duration: 10 # number of minutes
     status: draft # draft or published
@@ -201,12 +213,13 @@ collections:
     output: true
     permalink: /:collection/:name
     title: Connect with VerifID
-    summary: A tutorial for Connect with Verifid
+    summary: A tutorial for connecting with VerifID
     category: Connect a Service
     curriculum: VerifID
     level: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
     tags:
       - tutorial
+      - verifid
     difficulty: 1 # number from 1 to 5
     duration: 10 # number of minutes
     status: draft # draft or published
@@ -217,11 +230,12 @@ collections:
     output: true
     permalink: /:collection/:name
     title: OpenID Connect Series
-    summary: Integrate and Connect with OIDC
+    summary: Integrate and connect with OIDC
     curriculum: OpenID Connect
     level: Series # Beginner|Intermediate|Advanced|Series|Non-technical
     tags:
-      - tutorial
+      - series
+      - beginner
     difficulty: 1 # number from 1 to 5
     duration: 10 # number of minutes
     status: draft # draft or published
@@ -232,11 +246,12 @@ collections:
     output: true
     permalink: /:collection/:name
     title: Rapid Connect Series
-    summary: Integrate and Connect with Rapid Connect
+    summary: Integrate and connect with Rapid Connect
     curriculum: Rapid Connect
     level: Series # Beginner|Intermediate|Advanced|Series|Non-technical
     tags:
-      - tutorial
+      - series
+      - beginner
     difficulty: 1 # number from 1 to 5
     duration: 10 # number of minutes
     status: draft # draft or published
@@ -251,7 +266,8 @@ collections:
     curriculum: VerifID
     level: Series # Beginner|Intermediate|Advanced|Series|Non-technical
     tags:
-      - tutorial
+      - series
+      - beginner
     difficulty: 1 # number from 1 to 5
     duration: 10 # number of minutes
     status: draft # draft or published
@@ -262,13 +278,14 @@ collections:
     output: true
     permalink: /:collection/:name
     title: SAML Series
-    summary: Integrate and Connect with SAML
+    summary: Integrate and connect with SAML
     curriculum: SAML
     level: Series # Beginner|Intermediate|Advanced|Series|Non-technical
     tags:
-      - tutorial
+      - series
+      - advanced
     difficulty: 4 # number from 1 to 5
-    duration: 10 # number of minutes
+    duration: 70 # number of minutes
     status: draft # draft or published
     published: 2024-02-29
     author: Your Name <your.name@email.domain>

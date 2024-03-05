@@ -3,8 +3,8 @@
 
 $baseurl: "{{ site.baseurl }}";
 
-// Use ARDC Figtree Google Font
-@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+// Use AAF Raleway Google Font
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 @import "variables";
 @import "bootstrap/bootstrap";
@@ -25,9 +25,13 @@ main {
 
 .h1, .h2, .h3, .h4, .h5, .h6, 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Figtree', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 600;
+}
+
+.p {
+  font-family: 'Lato', sans-serif;
 }
 
 .btn {
@@ -69,8 +73,7 @@ header {
 }
 
 .banner-hero-card {
-  background: #ffffff;
-  padding: 40px 60px 40px 40px;
+  color: #EEEEEE;
   margin-right: 160px;
 }
 
