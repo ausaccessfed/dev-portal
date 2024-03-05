@@ -1,6 +1,6 @@
 ---
 title: Skipping Discovery Service
-order: 4
+order: 5
 duration: 1
 ---
 
