@@ -305,3 +305,18 @@ collections:
     published: 2024-03-05
     author: Your Name <your.name@email.domain>
 
+  edugain-integration:
+    output: true
+    permalink: /:collection/:name
+    title: eduGAIN integration
+    summary: A tutorial for eduGAIN integration
+    level: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
+    tags:
+      - tutorial
+      - eduGAIN
+    difficulty: 1 # number from 1 to 5
+    duration: 10 # number of minutes
+    status: draft # draft or published
+    published: 2024-03-06
+    author: Your Name <your.name@email.domain>
+
