@@ -20,7 +20,7 @@ Connecting to eduGAIN is optional, however there are requirements that must be m
   <div class="card-header text-white bg-primary">Technical Connection Requirements</div>
     <div class="card-body">
       <ul class="list-group list-group-flush">
-        <li class="list-group-item"><i class="fa fa-check-circle" style="color:green"></i> Consume Metadata, discovery mechanism and request attributes</li>
+        <li class="list-group-item"><i class="fa fa-check-circle" style="color:green"></i> Consume EduGAIN Metadata, discovery mechanism and request attributes</li>
       </ul>
       <a href="/connect-to-edugain/04-technical-requirements" class="btn btn-primary mt-4">Learn more</a>
     </div>
