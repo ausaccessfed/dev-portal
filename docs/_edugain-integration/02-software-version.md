@@ -7,7 +7,7 @@ duration: 1
 
 ## Latest version of software for eduGAIN services
 
-<h3 class="text-warning">Which software are you running?</h3>
+<h3 class="text-warning">What software are you running?</h3>
 
 There are a number of software implementations of the SAML service provider. Each will have its own website, development activities and update notification processes. You should be following the notifications for the software you are using to implement your SAML service providers to help ensure you are running the latest secure stable version at all times. The following table provides a short list of common software that has been used within the AAF.
 
