@@ -20,6 +20,7 @@ Asserting R&S means:
 <br>
 
 If an SP meets the [R&S Registration Criteria](https://refeds.org/category/research-and-scholarship) then you can expect to receive these attributes from an IdP asserting R&S.
+<br>
 
 ### R&S Attribute Bundle
 
