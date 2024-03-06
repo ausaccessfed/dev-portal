@@ -289,3 +289,19 @@ collections:
     status: draft # draft or published
     published: 2024-02-29
     author: Your Name <your.name@email.domain>
+
+  connect-to-edugain:
+    output: true
+    permalink: /:collection/:name
+    title: Connect to eduGAIN
+    summary: A tutorial for connecting to eduGAIN
+    level: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
+    tags:
+      - tutorial
+      - eduGAIN
+    difficulty: 1 # number from 1 to 5
+    duration: 10 # number of minutes
+    status: draft # draft or published
+    published: 2024-03-05
+    author: Your Name <your.name@email.domain>
+
