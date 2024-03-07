@@ -4,8 +4,9 @@ order: 1
 duration: 1
 ---
 
-The technical configuration of a Shibboleth SP to connect to eduGAIN has been broken down into the following steps:
+This tutorial will guide you through the process for technically configuring a Shibboleth SP to connect to eduGAIN. 
 
+The tutorial has been broken down into the following steps:
 1. Running the latest version of software
 1. Loading the AAF eduGAIN metadata
 1. SP is releasing the required R&S attributes to the federation
@@ -13,8 +14,8 @@ The technical configuration of a Shibboleth SP to connect to eduGAIN has been br
 
 ### What you'll learn
 
-- 
-- 
+- How to check the version of your SAML software
+- How to configure and test a Shibboleth SP
 - 
 
 ### What you'll need

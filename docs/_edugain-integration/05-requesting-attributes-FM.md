@@ -5,7 +5,7 @@ duration: 1
 ---
 <br>
 
-#### Follow the steps below to request attributes:
+#### Follow the steps below to request attributes from Federation Manager:
 
 1. Login to <a href="https://manager.aaf.edu.au/welcome">Federation Manager</a> as the Administrator of the Service (contact <a href="mailto:support@aaf.edu.au">AAF Support</a> if you need to assign an administrator to your service).
 

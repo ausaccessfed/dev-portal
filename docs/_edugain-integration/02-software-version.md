@@ -36,9 +36,10 @@ There are a number of software implementations of the SAML service provider. Eac
 
 <h3 class="text-warning">Which version are you running?</h3>
 
-To determine the software or System Information/version you are currently running, type one of the following commands:
+To determine the software or System Information/version you are currently running, use one of the following commands below.
 
-Note: Depending on your software version, these commands/keys may vary.
+Depending on your software version, these commands/keys may vary.
+{: .callout-info}
 
 
 #### Shibboleth SP
@@ -85,9 +86,10 @@ Output can be something like:
 Consult the software web site for detailed information on upgrading. Upgrading the Shibboleth SP software is generally straight forward as it packaged software on a number of Linux variants.
 
 
-When upgrading please ensure you upgrade your test version in the AAF test federation before moving to your production services. Also consider your organisation change processes when upgrading software.
+When upgrading please ensure you upgrade your test version in the **AAF Test Federation** before moving to your production services. Also consider your organisation change processes when upgrading software.
 {: .callout-info }
 
 <h3 class="text-warning">Keeping your OS and supporting software up to date</h3>
 
 You SAML Service provider software doesn’t run in isolation, there is the Operating System, Web Server, crypto software and many other dependent software components. Each of these is specific to your environments and each will have its own maintenance processes. You need to ensure that these supporting components are regularly patched and upgraded.
+{: .callout-info }

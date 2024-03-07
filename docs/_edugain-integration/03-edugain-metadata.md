@@ -3,13 +3,14 @@ title: EduGAIN Metadata
 order: 3
 duration: 1
 ---
+<br>
 
 <h3 class="text-warning">Consuming eduGAIN metadata for Service Providers</h3>
 
 The AAF is providing a new Metadata feeds for eduGAIN that must be consumed by AAF Services and Identity Providers that wish to join eduGAIN.
 
 
-EduGAIN metadata contains all the authorised entities that can participate with service providers and identity providers within the AAF. This includes;
+EduGAIN metadata contains all the authorised entities that can participate with service providers and identity providers within the AAF. This includes:
 
 - All eduGAIN Identity Providers
 - All eduGAIN service providers that identify as Research and Scholarly
@@ -21,7 +22,7 @@ EduGAIN metadata contains all the authorised entities that can participate with 
 Services in the Production federation will use the <a href="https://md.aaf.edu.au/aaf-edugain-metadata.xml">AAF eduGAIN metadata</a>. This metadata is signed by the AAF using a SHA256 signing key. You MUST use the <a href="https://md.aaf.edu.au/aaf-metadata-certificate.pem">public key</a> to verify metadata documents whenever they are retrieved.
 
 
-To confirm that you have obtained the correct key ensure the file you have downloaded conforms to the following:
+To confirm that you have obtained the correct key, ensure the file you have downloaded conforms to the following:
 
 ```shell
 $> openssl x509 -subject -dates -fingerprint -in aaf-metadata-certificate.pem
