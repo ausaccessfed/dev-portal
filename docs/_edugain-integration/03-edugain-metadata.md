@@ -9,7 +9,7 @@ duration: 1
 The AAF is providing a new Metadata feeds for eduGAIN that must be consumed by AAF Services and Identity Providers that wish to join eduGAIN.
 
 
-EduGAIN metadata contains all of the authorised entities that can participate with service providers and identity providers within the AAF. This includes;
+EduGAIN metadata contains all the authorised entities that can participate with service providers and identity providers within the AAF. This includes;
 
 - All eduGAIN Identity Providers
 - All eduGAIN service providers that identify as Research and Scholarly

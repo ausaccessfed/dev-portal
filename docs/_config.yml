@@ -295,11 +295,11 @@ collections:
     permalink: /:collection/:name
     title: Connect to eduGAIN
     summary: A tutorial for connecting to eduGAIN
-    level: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
+    level: Intermediate # Beginner|Intermediate|Advanced|Series|Non-technical
     tags:
       - tutorial
       - eduGAIN
-    difficulty: 1 # number from 1 to 5
+    difficulty: 3 # number from 1 to 5
     duration: 10 # number of minutes
     status: draft # draft or published
     published: 2024-03-05
@@ -308,13 +308,13 @@ collections:
   edugain-integration:
     output: true
     permalink: /:collection/:name
-    title: eduGAIN integration
+    title: eduGAIN Integration
     summary: A tutorial for eduGAIN integration
-    level: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
+    level: Intermediate # Beginner|Intermediate|Advanced|Series|Non-technical
     tags:
       - tutorial
       - eduGAIN
-    difficulty: 1 # number from 1 to 5
+    difficulty: 3 # number from 1 to 5
     duration: 10 # number of minutes
     status: draft # draft or published
     published: 2024-03-06
