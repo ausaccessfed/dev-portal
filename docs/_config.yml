@@ -295,7 +295,7 @@ collections:
     permalink: /:collection/:name
     title: Connect to eduGAIN
     summary: A tutorial for connecting to eduGAIN
-    level: Intermediate # Beginner|Intermediate|Advanced|Series|Non-technical
+    level: Advanced # Beginner|Intermediate|Advanced|Series|Non-technical
     tags:
       - tutorial
       - eduGAIN
@@ -310,7 +310,7 @@ collections:
     permalink: /:collection/:name
     title: eduGAIN Integration
     summary: A tutorial for eduGAIN integration
-    level: Intermediate # Beginner|Intermediate|Advanced|Series|Non-technical
+    level: Advanced # Beginner|Intermediate|Advanced|Series|Non-technical
     tags:
       - tutorial
       - eduGAIN
