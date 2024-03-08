@@ -8,8 +8,7 @@ This tutorial shows you how to register a new service with eduGAIN through the A
 
 ### What you'll learn
 
-- How to connect your service with EduGAIN
-- Applicability of your service to State and Federal Privacy Principles
+- How to connect your service to EduGAIN
 
 ### What you'll need
 
