@@ -12,7 +12,7 @@ Connecting to eduGAIN is optional, however there are requirements that must be m
       <ul class="list-group list-group-flush">
         <li class="list-group-item"><i class="fa fa-check-circle" style="color:green"></i> Run the latest version of SAML software</li>
       </ul>
-      <a href="/connect-to-edugain/03-software-implementation" class="btn btn-primary mt-4">Learn more</a>
+      <a href="/introduction-to-edugain/03-software-implementation" class="btn btn-primary mt-4">Learn more</a>
     </div>
 </div>
 
@@ -22,7 +22,7 @@ Connecting to eduGAIN is optional, however there are requirements that must be m
       <ul class="list-group list-group-flush">
         <li class="list-group-item"><i class="fa fa-check-circle" style="color:green"></i> Consume EduGAIN Metadata, discovery mechanism and request attributes</li>
       </ul>
-      <a href="/connect-to-edugain/04-technical-requirements" class="btn btn-primary mt-4">Learn more</a>
+      <a href="/introduction-to-edugain/04-technical-requirements" class="btn btn-primary mt-4">Learn more</a>
     </div>
 </div>
 
@@ -32,7 +32,7 @@ Connecting to eduGAIN is optional, however there are requirements that must be m
       <ul class="list-group list-group-flush">
         <li class="list-group-item"><i class="fa fa-check-circle" style="color:green"></i> Recommended for qualifying services</li>
       </ul>
-      <a href="/connect-to-edugain/05-r-s-entity-category" class="btn btn-primary mt-4">Learn more</a>
+      <a href="/introduction-to-edugain/05-r-s-entity-category" class="btn btn-primary mt-4">Learn more</a>
     </div>
 </div>
 
@@ -42,7 +42,7 @@ Connecting to eduGAIN is optional, however there are requirements that must be m
       <ul class="list-group list-group-flush">
         <li class="list-group-item"><i class="fa fa-check-circle" style="color:green"></i> Recommended</li>
       </ul>
-      <a href="/openid-connect-integration/01-overview" class="btn btn-primary mt-4">Learn more</a>
+      <a href="/introduction-to-edugain/06-sirtfi" class="btn btn-primary mt-4">Learn more</a>
     </div>
 </div>
 

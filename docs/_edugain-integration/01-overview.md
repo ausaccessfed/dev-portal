@@ -15,11 +15,10 @@ The tutorial has been broken down into the following steps:
 ### What you'll learn
 
 - How to check the version of your SAML software
-- How to configure and test a Shibboleth SP
-- 
+- How to incorporate AAF metadata into your Shibboleth SP
+- How to add attributes for your service to Federation Manager
+- How to incorporate AAF Discovery Service into your Service
 
 ### What you'll need
 
-- 
-- 
-- 
+- Integration experience

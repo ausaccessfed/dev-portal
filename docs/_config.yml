@@ -31,6 +31,7 @@ defaults:
 # Ordered by how they should appear in the curriculum list
 tutorial_categories:
   - AAF Connection Types
+  - Getting Started
   - Integration
   - Federation Manager Authentication
   - Connect a Service
@@ -295,6 +296,8 @@ collections:
     permalink: /:collection/:name
     title: Connect to eduGAIN
     summary: A tutorial for connecting to eduGAIN
+    category: Connect a Service
+    curriculum: eduGAIN
     level: Advanced # Beginner|Intermediate|Advanced|Series|Non-technical
     tags:
       - tutorial
@@ -310,6 +313,8 @@ collections:
     permalink: /:collection/:name
     title: eduGAIN Integration
     summary: A tutorial for eduGAIN integration
+    category: Integration
+    curriculum: eduGAIN
     level: Advanced # Beginner|Intermediate|Advanced|Series|Non-technical
     tags:
       - tutorial
@@ -330,7 +335,24 @@ collections:
     tags:
       - series
       - advanced
-    difficulty: 1 # number from 1 to 5
+    difficulty: 4 # number from 1 to 5
+    duration: 10 # number of minutes
+    status: draft # draft or published
+    published: 2024-03-08
+    author: Your Name <your.name@email.domain>
+
+  introduction-to-edugain:
+    output: true
+    permalink: /:collection/:name
+    title: Introduction to eduGAIN
+    summary: An overview of eduGAIN
+    category: Getting Started
+    curriculum: eduGAIN
+    level: Advanced # Beginner|Intermediate|Advanced|Series|Non-technical
+    tags:
+      - tutorial
+      - eduGAIN
+    difficulty: 4 # number from 1 to 5
     duration: 10 # number of minutes
     status: draft # draft or published
     published: 2024-03-08
