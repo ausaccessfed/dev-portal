@@ -299,7 +299,7 @@ collections:
     tags:
       - tutorial
       - eduGAIN
-    difficulty: 3 # number from 1 to 5
+    difficulty: 4 # number from 1 to 5
     duration: 10 # number of minutes
     status: draft # draft or published
     published: 2024-03-05
@@ -314,7 +314,7 @@ collections:
     tags:
       - tutorial
       - eduGAIN
-    difficulty: 3 # number from 1 to 5
+    difficulty: 4 # number from 1 to 5
     duration: 10 # number of minutes
     status: draft # draft or published
     published: 2024-03-06
@@ -324,7 +324,7 @@ collections:
     output: true
     permalink: /:collection/:name
     title: eduGAIN Series
-    summary: Integrate and connect with SAML
+    summary: Integrate and connect with eduGAIN
     curriculum: eduGAIN
     level: Series # Beginner|Intermediate|Advanced|Series|Non-technical
     tags:

@@ -4,16 +4,16 @@ order: 1
 duration: 1
 ---
 
-This tutorial... (replace this) 
+Welcome to the eduGAIN Tutorials. We've put together all the tutorials that you will need to connect a new service to eduGAIN via the AAF.
 
-### What you'll learn
+## What you'll learn
+- Configuration
+    - How to configure your service to connect to eduGAIN
+- Federation Manager Authentication
+    - How to authenticate to Federation Manager (Production)
+- Connect a service
+    - How to register a new service with eduGAIN via the AAF
 
-- 
-- 
-- 
-
-### What you'll need
-
-- 
-- 
-- 
+## What you'll need
+- AAF login credentials
+- Experience undertaking integration work
