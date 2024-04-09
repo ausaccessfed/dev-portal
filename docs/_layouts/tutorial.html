@@ -56,6 +56,9 @@ layout: default
               {% elsif collection.curriculum == "VerifID" %}
               <a class="btn btn-link btn-sm p-0"
                  href="{{ '/verifid-series/02-tutorials' | prepend: site.baseurl }}"><i class="fa fa-arrow-left"></i> Back to VerifID</a>
+              {% elsif collection.curriculum == "eduGAIN" %}
+              <a class="btn btn-link btn-sm p-0"
+                 href="{{ '/edugain-series/02-tutorials' | prepend: site.baseurl }}"><i class="fa fa-arrow-left"></i> Back to eduGAIN</a>
               {% endif %}
             </div>
           {% endif %}
@@ -117,8 +120,10 @@ layout: default
                 <a class="btn btn-secondary" href="{{ '/saml-series/02-tutorials' | prepend: site.baseurl }}">Continue Series</a>
               {% elsif collection.curriculum == "VerifID" %}
                 <a class="btn btn-secondary" href="{{ '/verifid-series/02-tutorials' | prepend: site.baseurl }}">Continue Series</a>
+              {% elsif collection.curriculum == "eduGAIN" %}
+                <a class="btn btn-secondary" href="{{ '/edugain-series/02-tutorials' | prepend: site.baseurl }}">Continue Series</a>
               {% endif %}
-            {% endif %}
+              {% endif %}
             <a href="{{ site.baseurl }}/" class="btn btn-outline-secondary" role="button">Return
               Home</a>
           {% endif %}
