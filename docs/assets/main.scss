@@ -136,7 +136,7 @@ header {
   /* For screens smaller than 1400px */
   @media (max-width: 1400px) {
     .logo {
-      width: 180px; /* Smaller size for medium screens */
+      width: 200px; /* Smaller size for medium screens */
     }
   }
 
@@ -154,11 +154,30 @@ header {
     }
   }
 
+  .ncris {
+    width: 200px; /* Default size */
+  }
+
+  /* For screens smaller than 1000px */
+  @media (max-width: 1000px) {
+    .ncris {
+      width: 140px; /* Smaller size for smaller screens */
+    }
+  }
+
+  /* For screens smaller than 800px */
+  @media (max-width: 800px) {
+    .ncris {
+      width: 120px; /* Even smaller size for very small screens */
+    }
+  }
+
   .socials {
     a {
       color: #dfdfdf;
       &:hover {
         color: $aaf-yellow;
+        background-color: #5F368A;
       }
     }
     display: flex;
