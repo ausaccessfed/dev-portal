@@ -14,6 +14,7 @@ $baseurl: "{{ site.baseurl }}";
 @import "typeahead";
 @import "font-awesome/fontawesome";
 @import "font-awesome/solid";
+@import "font-awesome/brands";
 @import "bootstrap-callouts";
 
 html,
@@ -177,14 +178,13 @@ header {
       color: #dfdfdf;
       &:hover {
         color: $aaf-yellow;
-        background-color: #5F368A;
       }
     }
     display: flex;
     justify-content: flex-start;
   }
   .socials i {
-    margin-right: 5px;
+    margin-right: 7px;
     margin-top: 30px;
     margin-bottom: 30px;
     font-size: 30px;
