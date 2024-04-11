@@ -69,7 +69,7 @@ collections:
       - connect
       - overview
     difficulty: 1
-    duration: 10
+    duration: 5
     status: draft
     published: 2024-02-06
     author: Your Name <your.name@email.domain>
@@ -86,7 +86,7 @@ collections:
       - federation manager
       - tutorial
     difficulty: 1
-    duration: 10
+    duration: 4
     status: draft
     published: 2024-02-06
     author: Your Name <your.name@email.domain>

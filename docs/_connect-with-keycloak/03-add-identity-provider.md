@@ -1,7 +1,7 @@
 ---
 title: Add an identity provider
 order: 3
-duration: 3
+duration: 5
 ---
 
 * Once in the selected realm (in this example, it is 'myrealm'), click on 'Identity providers' (at the bottom of the left hand menu bar).
