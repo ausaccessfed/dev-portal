@@ -5,6 +5,7 @@ $baseurl: "{{ site.baseurl }}";
 
 // Use AAF Raleway Google Font
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 @import "variables";
 @import "bootstrap/bootstrap";
@@ -13,6 +14,7 @@ $baseurl: "{{ site.baseurl }}";
 @import "typeahead";
 @import "font-awesome/fontawesome";
 @import "font-awesome/solid";
+@import "font-awesome/brands";
 @import "bootstrap-callouts";
 
 html,
@@ -66,7 +68,7 @@ h1, h2, h3, h4, h5, h6 {
  */
 header {
   background-color: #969696;
-  background-image: url($baseurl + "/assets/images/main-image.jpg");
+  background-image: url($baseurl + "/assets/images/aaf-image.jpg");
   background-size: cover;
   padding-bottom: 200px;
   margin-bottom: -200px;
@@ -87,26 +89,36 @@ header {
 /*
  * Footer
  */
- .footer {
-  padding: 24px 0;
+.footer {
+  padding: 120px 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  color: #dfdfdf;
+  line-height: 1.8em;
   .footer-text {
+    color: #f2f2f2;
     a {
       &:hover,
       &:focus {
-        color: $aaf-pink;
-        text-decoration: underline;
+        color: $aaf-yellow;
+        text-decoration: none;
       }
     }
     ul {
       list-style: none;
     }
   }
-  h4 {
+  h5 {
     text-transform:  uppercase;
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    color: #ffffff;
     &:after {
       content: "";
-      background: #fff;
-      height: 2px;
+      background: #5F368A;
+      height: 3px;
       display: block;
       margin-top: 10px;
       max-width: 50px;
@@ -114,9 +126,68 @@ header {
   }
   .footer-links {
     a {
-      color: #fff;
+      color: $info;
       text-decoration: none;
     }
+  }
+  .logo {
+    width: 300px; /* Default size */
+  }
+
+  /* For screens smaller than 1400px */
+  @media (max-width: 1400px) {
+    .logo {
+      width: 200px; /* Smaller size for medium screens */
+    }
+  }
+
+  /* For screens smaller than 1000px */
+  @media (max-width: 1000px) {
+    .logo {
+      width: 140px; /* Smaller size for smaller screens */
+    }
+  }
+
+  /* For screens smaller than 400px */
+  @media (max-width: 400px) {
+    .logo {
+      width: 120px; /* Even smaller size for very small screens */
+    }
+  }
+
+  .ncris {
+    width: 200px; /* Default size */
+  }
+
+  /* For screens smaller than 1000px */
+  @media (max-width: 1000px) {
+    .ncris {
+      width: 140px; /* Smaller size for smaller screens */
+    }
+  }
+
+  /* For screens smaller than 800px */
+  @media (max-width: 800px) {
+    .ncris {
+      width: 120px; /* Even smaller size for very small screens */
+    }
+  }
+
+  .socials {
+    a {
+      color: #dfdfdf;
+      &:hover {
+        color: $aaf-yellow;
+      }
+    }
+    display: flex;
+    justify-content: flex-start;
+  }
+  .socials i {
+    margin-right: 7px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 30px;
   }
 }
 
