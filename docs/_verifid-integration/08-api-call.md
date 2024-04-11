@@ -10,7 +10,7 @@ Before gaining access to the Verification result, the Client uses the Authorizat
 
 `https://example.edu/oauth/token`
 
-The parameters passed to this endpoint must be passed using a POST request with a application/x-www-form-urlencoded body. This HTTP request is authenticated(6) using HTTP basic authentication in the manner described by the OAuth 2.0 specification, with the client ID as username and client secret as password.
+The parameters passed to this endpoint must be passed using a POST request with an application/x-www-form-urlencoded body. This HTTP request is authenticated(6) using HTTP basic authentication in the manner described by the OAuth 2.0 specification, with the client ID as username and client secret as password.
 
 ```
 POST /oauth/token

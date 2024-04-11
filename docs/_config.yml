@@ -56,7 +56,7 @@ collections:
     duration: 10
     status: draft
     published: 2024-02-06
-    author: Your Name <your.name@email.domain>
+    author: Kelley Foster <kelley.foster@aaf.edu.au>
 
   connection-types:
     output: true
@@ -72,7 +72,7 @@ collections:
     duration: 5
     status: draft
     published: 2024-02-06
-    author: Your Name <your.name@email.domain>
+    author: Kelley Foster <kelley.foster@aaf.edu.au>
 
   log-into-federation-manager:
     output: true
@@ -89,7 +89,7 @@ collections:
     duration: 4
     status: draft
     published: 2024-02-06
-    author: Your Name <your.name@email.domain>
+    author: Kelley Foster <kelley.foster@aaf.edu.au>
 
   openid-connect-integration:
     output: true
@@ -102,11 +102,11 @@ collections:
     tags:
       - openid connect
       - tutorial
-    difficulty: 1
+    difficulty: 2
     duration: 10
     status: draft
     published: 2024-02-06
-    author: Your Name <your.name@email.domain>
+    author: Kelley Foster <kelley.foster@aaf.edu.au>
   
   rapid-connect-integration:
     output: true
@@ -123,7 +123,7 @@ collections:
     duration: 10
     status: draft
     published: 2024-02-06
-    author: Your Name <your.name@email.domain>
+    author: Kelley Foster <kelley.foster@aaf.edu.au>
 
   saml-integration:
     output: true
@@ -140,7 +140,7 @@ collections:
     duration: 60
     status: draft
     published: 2024-02-06
-    author: Your Name <your.name@email.domain>
+    author: Kelley Foster <kelley.foster@aaf.edu.au>
 
   connect-an-oidc-service:
     output: true
@@ -157,7 +157,7 @@ collections:
     duration: 10
     status: draft
     published: 2024-02-06
-    author: Your Name <your.name@email.domain>
+    author: Kelley Foster <kelley.foster@aaf.edu.au>
 
   connect-a-rapid-connect-service:
     output: true
@@ -174,7 +174,7 @@ collections:
     duration: 10
     status: draft
     published: 2024-02-06
-    author: Your Name <your.name@email.domain>
+    author: Kelley Foster <kelley.foster@aaf.edu.au>
 
   connect-a-saml-service:
     output: true
@@ -191,7 +191,7 @@ collections:
     duration: 10
     status: draft
     published: 2024-02-06
-    author: Your Name <your.name@email.domain>
+    author: Kelley Foster <kelley.foster@aaf.edu.au>
 
   verifid-integration:
     output: true
@@ -204,11 +204,11 @@ collections:
     tags:
       - tutorial
       - verifid
-    difficulty: 1 # number from 1 to 5
-    duration: 10 # number of minutes
+    difficulty: 2 # number from 1 to 5
+    duration: 12 # number of minutes
     status: draft # draft or published
     published: 2024-02-14
-    author: Your Name <your.name@email.domain>
+    author: Kelley Foster <kelley.foster@aaf.edu.au>
 
   connect-with-verifid:
     output: true
@@ -225,7 +225,7 @@ collections:
     duration: 10 # number of minutes
     status: draft # draft or published
     published: 2024-02-16
-    author: Your Name <your.name@email.domain>
+    author: Kelley Foster <kelley.foster@aaf.edu.au>
 
   openid-connect-series:
     output: true
@@ -241,7 +241,7 @@ collections:
     duration: 10 # number of minutes
     status: draft # draft or published
     published: 2024-02-28
-    author: Your Name <your.name@email.domain>
+    author: Kelley Foster <kelley.foster@aaf.edu.au>
 
   rapid-connect-series:
     output: true
@@ -257,7 +257,7 @@ collections:
     duration: 10 # number of minutes
     status: draft # draft or published
     published: 2024-02-29
-    author: Your Name <your.name@email.domain>
+    author: Kelley Foster <kelley.foster@aaf.edu.au>
 
   verifid-series:
     output: true
@@ -273,7 +273,7 @@ collections:
     duration: 10 # number of minutes
     status: draft # draft or published
     published: 2024-02-29
-    author: Your Name <your.name@email.domain>
+    author: Kelley Foster <kelley.foster@aaf.edu.au>
 
   saml-series:
     output: true
@@ -289,7 +289,7 @@ collections:
     duration: 70 # number of minutes
     status: draft # draft or published
     published: 2024-02-29
-    author: Your Name <your.name@email.domain>
+    author: Kelley Foster <kelley.foster@aaf.edu.au>
 
   connect-to-edugain:
     output: true
@@ -306,7 +306,7 @@ collections:
     duration: 10 # number of minutes
     status: draft # draft or published
     published: 2024-03-05
-    author: Your Name <your.name@email.domain>
+    author: Kelley Foster <kelley.foster@aaf.edu.au>
 
   edugain-integration:
     output: true
@@ -323,7 +323,7 @@ collections:
     duration: 10 # number of minutes
     status: draft # draft or published
     published: 2024-03-06
-    author: Your Name <your.name@email.domain>
+    author: Kelley Foster <kelley.foster@aaf.edu.au>
 
   edugain-series:
     output: true
@@ -339,7 +339,7 @@ collections:
     duration: 10 # number of minutes
     status: draft # draft or published
     published: 2024-03-08
-    author: Your Name <your.name@email.domain>
+    author: Kelley Foster <kelley.foster@aaf.edu.au>
 
   introduction-to-edugain:
     output: true
@@ -356,5 +356,5 @@ collections:
     duration: 10 # number of minutes
     status: draft # draft or published
     published: 2024-03-08
-    author: Your Name <your.name@email.domain>
+    author: Kelley Foster <kelley.foster@aaf.edu.au>
 

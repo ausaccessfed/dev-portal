@@ -50,13 +50,15 @@ Client registration. We require <code>redirect_uri</code> values to be encoded a
     </tr>
     <tr>
       <td><code>state</code></td>
-      <td>An identifier which the Client provides to uniquely identify the Verification request they have initiated. It is recommended that the Client use this to relate request to response and prevent cross-site request forgery. The value must be unique and securely random, and shall be stored by VerifID for auditing purposes. Non-unique values shall be rejected by VerifID and will result in failed Verification requests. The value must be at least 16 characters, and must not exceed 128 characters in length. It must consist of only letters, numbers, hyphens (-) and underscores (_). 
-        <br><br>A suggested method of generating a suitable <code>state</code> value is:
-        <ol><li>Generate 60 random bytes using a cryptographically secure PRNG;</li> and then <li>Encode those bytes using 
-        the URL-safe Base64 encoding scheme.</li></ol></td>
+      <td>An identifier which the Client provides to uniquely identify the Verification request they have initiated. It is recommended that the Client use this to relate request to response and prevent cross-site request forgery. The value must be unique and securely random, and shall be stored by VerifID for auditing purposes. Non-unique values shall be rejected by VerifID and will result in failed Verification requests. The value must be at least 16 characters, and must not exceed 128 characters in length. It must consist of only letters, numbers, hyphens (-) and underscores (_).</td>
     </tr>
   </tbody>
 </table>
+
+<br>
+
+A suggested method of generating a suitable <code>state</code> value is: Generate 60 random bytes using a cryptographically secure PRNG; and then Encode those bytes using the URL-safe Base64 encoding scheme.
+{: .callout-info}
 
 <br>
 
