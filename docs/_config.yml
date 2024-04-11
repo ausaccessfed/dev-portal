@@ -52,7 +52,7 @@ collections:
       - keycloak
       - openid connect
       - tutorial
-    difficulty: 1
+    difficulty: 2
     duration: 10
     status: draft
     published: 2024-02-06
@@ -119,8 +119,8 @@ collections:
     tags:
       - rapid connect
       - tutorial
-    difficulty: 1
-    duration: 10
+    difficulty: 2
+    duration: 12
     status: draft
     published: 2024-02-06
     author: Kelley Foster <kelley.foster@aaf.edu.au>
@@ -153,8 +153,8 @@ collections:
     tags:
       - openid connect
       - tutorial
-    difficulty: 1
-    duration: 10
+    difficulty: 2
+    duration: 3
     status: draft
     published: 2024-02-06
     author: Kelley Foster <kelley.foster@aaf.edu.au>
@@ -170,7 +170,7 @@ collections:
     tags:
       - rapid connect
       - tutorial
-    difficulty: 1
+    difficulty: 2
     duration: 10
     status: draft
     published: 2024-02-06
@@ -221,7 +221,7 @@ collections:
     tags:
       - tutorial
       - verifid
-    difficulty: 1 # number from 1 to 5
+    difficulty: 2 # number from 1 to 5
     duration: 10 # number of minutes
     status: draft # draft or published
     published: 2024-02-16
@@ -237,8 +237,8 @@ collections:
     tags:
       - series
       - beginner
-    difficulty: 1 # number from 1 to 5
-    duration: 10 # number of minutes
+    difficulty: 2 # number from 1 to 5
+    duration: 25 # number of minutes
     status: draft # draft or published
     published: 2024-02-28
     author: Kelley Foster <kelley.foster@aaf.edu.au>
@@ -253,8 +253,8 @@ collections:
     tags:
       - series
       - beginner
-    difficulty: 1 # number from 1 to 5
-    duration: 10 # number of minutes
+    difficulty: 2 # number from 1 to 5
+    duration: 24 # number of minutes
     status: draft # draft or published
     published: 2024-02-29
     author: Kelley Foster <kelley.foster@aaf.edu.au>
@@ -269,8 +269,8 @@ collections:
     tags:
       - series
       - beginner
-    difficulty: 1 # number from 1 to 5
-    duration: 10 # number of minutes
+    difficulty: 2 # number from 1 to 5
+    duration: 24 # number of minutes
     status: draft # draft or published
     published: 2024-02-29
     author: Kelley Foster <kelley.foster@aaf.edu.au>
@@ -286,7 +286,7 @@ collections:
       - series
       - advanced
     difficulty: 4 # number from 1 to 5
-    duration: 70 # number of minutes
+    duration: 72 # number of minutes
     status: draft # draft or published
     published: 2024-02-29
     author: Kelley Foster <kelley.foster@aaf.edu.au>
@@ -303,7 +303,7 @@ collections:
       - tutorial
       - eduGAIN
     difficulty: 4 # number from 1 to 5
-    duration: 10 # number of minutes
+    duration: 5 # number of minutes
     status: draft # draft or published
     published: 2024-03-05
     author: Kelley Foster <kelley.foster@aaf.edu.au>
@@ -320,7 +320,7 @@ collections:
       - tutorial
       - eduGAIN
     difficulty: 4 # number from 1 to 5
-    duration: 10 # number of minutes
+    duration: 16 # number of minutes
     status: draft # draft or published
     published: 2024-03-06
     author: Kelley Foster <kelley.foster@aaf.edu.au>
@@ -336,7 +336,7 @@ collections:
       - series
       - advanced
     difficulty: 4 # number from 1 to 5
-    duration: 10 # number of minutes
+    duration: 30 # number of minutes
     status: draft # draft or published
     published: 2024-03-08
     author: Kelley Foster <kelley.foster@aaf.edu.au>
@@ -353,7 +353,7 @@ collections:
       - tutorial
       - eduGAIN
     difficulty: 4 # number from 1 to 5
-    duration: 10 # number of minutes
+    duration: 7 # number of minutes
     status: draft # draft or published
     published: 2024-03-08
     author: Kelley Foster <kelley.foster@aaf.edu.au>
