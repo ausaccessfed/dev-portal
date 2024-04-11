@@ -53,7 +53,7 @@ collections:
       - openid connect
       - tutorial
     difficulty: 2
-    duration: 10
+    duration: 15
     status: draft
     published: 2024-02-06
     author: Kelley Foster <kelley.foster@aaf.edu.au>
@@ -238,7 +238,7 @@ collections:
       - series
       - beginner
     difficulty: 2 # number from 1 to 5
-    duration: 25 # number of minutes
+    duration: 30 # number of minutes
     status: draft # draft or published
     published: 2024-02-28
     author: Kelley Foster <kelley.foster@aaf.edu.au>
