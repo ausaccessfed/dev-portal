@@ -10,7 +10,7 @@ duration: 1
 The AAF is providing a new Metadata feeds for eduGAIN that must be consumed by AAF Services and Identity Providers that wish to join eduGAIN.
 
 
-EduGAIN metadata contains all the authorised entities that can participate with service providers and identity providers within the AAF. This includes:
+EduGAIN metadata contains all the authorised entities that can participate with service providers and identity providers within the AAF. These include:
 
 - All eduGAIN Identity Providers
 - All eduGAIN service providers that identify as Research and Scholarly
@@ -59,7 +59,7 @@ Restart your service provider.
 To verify that your SP is consuming the eduGAIN metadata check your SP logs for any errors and check that the metadata file is downloading correctly and appears on your server. Your SP should have created the file `/var/cache/eduGAIN-metadata.aaf.xml`.
 
 
-If your SP does not load the eduGAIN metadata, your log files should provide a good indication as to the fault. You may need to increase the log level to DEBUG which will give you all of the relevant details.
+If your SP does not load the eduGAIN metadata, your log files should provide a good indication as to the fault. You may need to increase the log level to DEBUG which will give you all the relevant details.
 
 
 If your SP does not successfully load the metadata and your logs do not highlight the cause of the failure please contact <a href="mailto:support@aaf.edu.au">AAF Support</a> for assistance.
