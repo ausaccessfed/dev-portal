@@ -10,10 +10,8 @@ duration: 1
 
 Keycloak can also be used to authenticate users with existing OpenID Connect or SAML 2.0 Identity Providers. This can be done by configuring the Identity Provider through the Keycloak admin console.
 
-{: .note}
-The instructions below detail the configuration of AAF as an Identity Provider through Keycloak using the OpenID 
-Connect v1.0 protocol. The process includes the registration of a new service in AAF Federation Manager (Test). 
-Please refer to the documentation for registering a new [OpenID Connect service](/connect-an-oidc-service/01-overview).
+The instructions below detail the configuration of AAF as an Identity Provider through Keycloak using the OpenID Connect protocol. The process includes the registration of a new service in AAF Federation Manager (Test).
+{: .callout-info}
 
 ### What you'll learn
 
