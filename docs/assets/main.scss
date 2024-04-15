@@ -133,43 +133,41 @@ header {
     width: 300px; /* Default size */
   }
 
-  /* For screens smaller than 1400px */
-  @media (max-width: 1400px) {
-    .logo {
-      width: 200px; /* Smaller size for medium screens */
-    }
-  }
-
-  /* For screens smaller than 1000px */
-  @media (max-width: 1000px) {
-    .logo {
-      width: 140px; /* Smaller size for smaller screens */
-    }
-  }
-
-  /* For screens smaller than 400px */
-  @media (max-width: 400px) {
-    .logo {
-      width: 120px; /* Even smaller size for very small screens */
-    }
-  }
-
   .ncris {
     width: 200px; /* Default size */
   }
 
+  /* For screens smaller than 1400px */
+  @media (max-width: 1400px) {
+    .logo {
+      width: 220px;
+    }
+
+    .ncris {
+      width: 190px;
+    }
+  }
+
   /* For screens smaller than 1000px */
   @media (max-width: 1000px) {
+    .logo {
+      width: 170px;
+    }
+
     .ncris {
-      width: 140px; /* Smaller size for smaller screens */
+      width: 120px;
     }
   }
 
   /* For screens smaller than 800px */
   @media (max-width: 800px) {
     .ncris {
-      width: 120px; /* Even smaller size for very small screens */
-      margin-bottom: 10px;
+      width: 100px;
+      margin-bottom: 20px;
+    }
+
+    .logo {
+      width: 130px;
     }
   }
 
