@@ -76,7 +76,6 @@ header {
 
 .banner-hero-card {
   color: #EEEEEE;
-  margin-right: 160px;
 }
 
 .footer-callout {
@@ -92,12 +91,11 @@ header {
 .footer {
   padding: 120px 0;
   font-family: "Lato", sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   font-style: normal;
   color: #dfdfdf;
   line-height: 1.8em;
   .footer-text {
-    color: #f2f2f2;
     a {
       &:hover,
       &:focus {
@@ -112,9 +110,10 @@ header {
   h5 {
     text-transform:  uppercase;
     font-family: "Lato", sans-serif;
-    font-weight: 100;
+    font-weight: 300;
     font-style: normal;
     color: #ffffff;
+    margin-top: 0.8em;
     &:after {
       content: "";
       background: #5F368A;
@@ -134,42 +133,41 @@ header {
     width: 300px; /* Default size */
   }
 
-  /* For screens smaller than 1400px */
-  @media (max-width: 1400px) {
-    .logo {
-      width: 200px; /* Smaller size for medium screens */
-    }
-  }
-
-  /* For screens smaller than 1000px */
-  @media (max-width: 1000px) {
-    .logo {
-      width: 140px; /* Smaller size for smaller screens */
-    }
-  }
-
-  /* For screens smaller than 400px */
-  @media (max-width: 400px) {
-    .logo {
-      width: 120px; /* Even smaller size for very small screens */
-    }
-  }
-
   .ncris {
     width: 200px; /* Default size */
   }
 
+  /* For screens smaller than 1400px */
+  @media (max-width: 1400px) {
+    .logo {
+      width: 220px;
+    }
+
+    .ncris {
+      width: 190px;
+    }
+  }
+
   /* For screens smaller than 1000px */
   @media (max-width: 1000px) {
+    .logo {
+      width: 170px;
+    }
+
     .ncris {
-      width: 140px; /* Smaller size for smaller screens */
+      width: 120px;
     }
   }
 
   /* For screens smaller than 800px */
   @media (max-width: 800px) {
     .ncris {
-      width: 120px; /* Even smaller size for very small screens */
+      width: 100px;
+      margin-bottom: 20px;
+    }
+
+    .logo {
+      width: 130px;
     }
   }
 

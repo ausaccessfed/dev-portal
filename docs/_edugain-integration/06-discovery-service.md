@@ -17,11 +17,11 @@ A local discovery service mechanism is the responsibility of the service provide
 
 ## Use the AAF Discovery Service
 
-The AAF provides a central discovery service that can be utilized by any AAF service provider. It provides a discovery mechanism for both AAF IdPs and **all of eduGAIN** IdPs.
+The AAF provides a central discovery service that can be utilized by any AAF service provider. It provides a discovery mechanism for both AAF IdPs and "all of eduGAIN" IdPs.
 
-The URL for the **all of eduGAIN** IdPs is: `https://ds.aaf.edu.au/discovery/edugain`
+The URL for the "all of eduGAIN" IdPs is: `https://ds.aaf.edu.au/discovery/edugain`
 
-To update your Shibboleth Service Provider to use the **all of eduGAIN** discovery you need to modify the discoveryURL defined in the `/etc/shibboleth/shibboleth2.xml` file.
+To update your Shibboleth Service Provider to use the "all of eduGAIN" discovery you need to modify the discoveryURL defined in the `/etc/shibboleth/shibboleth2.xml` file.
 
 ```shell
 <SSO discoveryProtocol="SAMLDS"
@@ -30,4 +30,4 @@ To update your Shibboleth Service Provider to use the **all of eduGAIN** discove
   </SSO>
 ```
 <br>
-After a *restart* of the Service provider, users will be taken to the **all of eduGAIN** discovery section of the AAF Central Discovery Service.
+After a *restart* of the Service provider, users will be taken to the "all of eduGAIN" discovery section of the AAF Central Discovery Service.
