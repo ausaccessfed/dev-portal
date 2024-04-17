@@ -47,13 +47,13 @@ collections:
     summary: A tutorial for connecting with Keycloak
     category: Identity Management Solutions
     curriculum: OpenID Connect
-    level: Beginner
+    level: Intermediate
     tags:
       - keycloak
       - openid connect
       - tutorial
-    difficulty: 2
-    duration: 15
+    difficulty: 3
+    duration: 20
     status: draft
     published: 2024-02-06
     author: Kelley Foster <kelley.foster@aaf.edu.au>
@@ -98,12 +98,12 @@ collections:
     summary: A tutorial for OpenID Connect integration
     category: Integration
     curriculum: OpenID Connect
-    level: Beginner
+    level: Intermediate
     tags:
       - openid connect
       - tutorial
-    difficulty: 2
-    duration: 10
+    difficulty: 3
+    duration: 15
     status: draft
     published: 2024-02-06
     author: Kelley Foster <kelley.foster@aaf.edu.au>
@@ -115,12 +115,12 @@ collections:
     summary: A tutorial for Rapid Connect integration
     category: Integration
     curriculum: Rapid Connect
-    level: Beginner
+    level: Intermediate
     tags:
       - rapid connect
       - tutorial
-    difficulty: 2
-    duration: 12
+    difficulty: 3
+    duration: 30
     status: draft
     published: 2024-02-06
     author: Kelley Foster <kelley.foster@aaf.edu.au>
@@ -136,7 +136,7 @@ collections:
     tags:
       - saml
       - tutorial
-    difficulty: 4
+    difficulty: 5
     duration: 60
     status: draft
     published: 2024-02-06
@@ -149,12 +149,12 @@ collections:
     summary: A tutorial for connecting an OIDC Service
     category: Connect a Service
     curriculum: OpenID Connect
-    level: Beginner
+    level: Intermediate
     tags:
       - openid connect
       - tutorial
-    difficulty: 2
-    duration: 3
+    difficulty: 3
+    duration: 5
     status: draft
     published: 2024-02-06
     author: Kelley Foster <kelley.foster@aaf.edu.au>
@@ -166,12 +166,12 @@ collections:
     summary: A tutorial for connecting a Rapid Connect service
     category: Connect a Service
     curriculum: Rapid Connect
-    level: Beginner
+    level: Intermediate
     tags:
       - rapid connect
       - tutorial
-    difficulty: 2
-    duration: 10
+    difficulty: 3
+    duration: 15
     status: draft
     published: 2024-02-06
     author: Kelley Foster <kelley.foster@aaf.edu.au>
@@ -183,11 +183,11 @@ collections:
     summary: A tutorial for connecting a SAML service
     category: Connect a Service
     curriculum: SAML
-    level: Advanced
+    level: Intermediate
     tags:
       - saml
       - tutorial
-    difficulty: 4
+    difficulty: 3
     duration: 10
     status: draft
     published: 2024-02-06
@@ -200,12 +200,12 @@ collections:
     summary: A tutorial for VerifID integration
     category: Integration
     curriculum: VerifID
-    level: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
+    level: Intermediate # Beginner|Intermediate|Advanced|Series|Non-technical
     tags:
       - tutorial
       - verifid
-    difficulty: 2 # number from 1 to 5
-    duration: 12 # number of minutes
+    difficulty: 3 # number from 1 to 5
+    duration: 30 # number of minutes
     status: draft # draft or published
     published: 2024-02-14
     author: Kelley Foster <kelley.foster@aaf.edu.au>
@@ -217,12 +217,12 @@ collections:
     summary: A tutorial for connecting with VerifID
     category: Connect a Service
     curriculum: VerifID
-    level: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
+    level: Intermediate # Beginner|Intermediate|Advanced|Series|Non-technical
     tags:
       - tutorial
       - verifid
-    difficulty: 2 # number from 1 to 5
-    duration: 10 # number of minutes
+    difficulty: 3 # number from 1 to 5
+    duration: 15 # number of minutes
     status: draft # draft or published
     published: 2024-02-16
     author: Kelley Foster <kelley.foster@aaf.edu.au>
@@ -236,9 +236,9 @@ collections:
     level: Series # Beginner|Intermediate|Advanced|Series|Non-technical
     tags:
       - series
-      - beginner
-    difficulty: 2 # number from 1 to 5
-    duration: 30 # number of minutes
+      - intermediate
+    difficulty: 3 # number from 1 to 5
+    duration: 50 # number of minutes
     status: draft # draft or published
     published: 2024-02-28
     author: Kelley Foster <kelley.foster@aaf.edu.au>
@@ -252,9 +252,9 @@ collections:
     level: Series # Beginner|Intermediate|Advanced|Series|Non-technical
     tags:
       - series
-      - beginner
-    difficulty: 2 # number from 1 to 5
-    duration: 24 # number of minutes
+      - intermediate
+    difficulty: 3 # number from 1 to 5
+    duration: 55 # number of minutes
     status: draft # draft or published
     published: 2024-02-29
     author: Kelley Foster <kelley.foster@aaf.edu.au>
@@ -268,9 +268,9 @@ collections:
     level: Series # Beginner|Intermediate|Advanced|Series|Non-technical
     tags:
       - series
-      - beginner
-    difficulty: 2 # number from 1 to 5
-    duration: 24 # number of minutes
+      - intermediate
+    difficulty: 3 # number from 1 to 5
+    duration: 55 # number of minutes
     status: draft # draft or published
     published: 2024-02-29
     author: Kelley Foster <kelley.foster@aaf.edu.au>
@@ -286,7 +286,7 @@ collections:
       - series
       - advanced
     difficulty: 4 # number from 1 to 5
-    duration: 72 # number of minutes
+    duration: 80 # number of minutes
     status: draft # draft or published
     published: 2024-02-29
     author: Kelley Foster <kelley.foster@aaf.edu.au>
@@ -298,7 +298,7 @@ collections:
     summary: A tutorial for connecting to eduGAIN
     category: Connect a Service
     curriculum: eduGAIN
-    level: Advanced # Beginner|Intermediate|Advanced|Series|Non-technical
+    level: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
     tags:
       - tutorial
       - eduGAIN
@@ -348,7 +348,7 @@ collections:
     summary: An overview of eduGAIN
     category: Getting Started
     curriculum: eduGAIN
-    level: Advanced # Beginner|Intermediate|Advanced|Series|Non-technical
+    level: Intermediate # Beginner|Intermediate|Advanced|Series|Non-technical
     tags:
       - tutorial
       - eduGAIN
