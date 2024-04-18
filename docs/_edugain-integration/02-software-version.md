@@ -81,15 +81,15 @@ Output can be something like:
 
 <br>
 
-<h3 class="text-warning">Upgrading your software</h3>
+<h3 class="text-warning">Upgrading software</h3>
 
-Consult the software web site for detailed information on upgrading. Upgrading the Shibboleth SP software is generally straight forward as it packaged software on a number of Linux variants.
+Consult the software website for information on its upgrade process. Upgrading the Shibboleth SP software is straightforward as it is pre-packaged for different Linux variants.
 
 
-When upgrading please ensure you upgrade your test version in the **AAF Test Federation** before moving to your production services. Also consider your organisation change processes when upgrading software.
+Upgrade the version in the AAF Test Federation before upgrading the Production version. All upgrades should align with existing organisational change management processes.
 {: .callout-info }
 
-<h3 class="text-warning">Keeping your OS and supporting software up to date</h3>
+<h3 class="text-warning">Keep the OS and supporting software up to date</h3>
 
-You SAML Service provider software doesn’t run in isolation, there is the Operating System, Web Server, crypto software and many other dependent software components. Each of these is specific to your environments and each will have its own maintenance processes. You need to ensure that these supporting components are regularly patched and upgraded.
+The SAML Service does not run in isolation and depends on the Operating System, the Web Server, the cryptography software and several other software components. Each of these is specific to an environment and each component will have a maintenance process. Ensure that these supporting components are regularly patched and upgraded.
 {: .callout-info }
