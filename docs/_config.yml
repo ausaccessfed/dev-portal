@@ -358,3 +358,17 @@ collections:
     published: 2024-03-08
     author: Kelley Foster <kelley.foster@aaf.edu.au>
 
+  dockerize-shib-sp:
+    output: true
+    permalink: /:collection/:name
+    title: Dockerize shib-sp
+    summary: A tutorial for Dockerize shib-sp
+    category: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
+    tags:
+      - tutorial
+    difficulty: 1 # number from 1 to 5
+    duration: 10 # number of minutes
+    status: draft # draft or published
+    published: 2024-04-18
+    author: Your Name <your.name@email.domain>
+
