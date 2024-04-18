@@ -361,12 +361,16 @@ collections:
   dockerize-shib-sp:
     output: true
     permalink: /:collection/:name
-    title: Dockerize shib-sp
-    summary: A tutorial for Dockerize shib-sp
-    category: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
+    title: Dockerize Shibboleth-sp
+    summary: A tutorial for Dockerizing shib-sp
+    category: Integration
+    curriculum: SAML
+    level: Intermediate
     tags:
+      - docker
+      - saml
       - tutorial
-    difficulty: 1 # number from 1 to 5
+    difficulty: 3 # number from 1 to 5
     duration: 10 # number of minutes
     status: draft # draft or published
     published: 2024-04-18
