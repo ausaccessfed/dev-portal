@@ -5,24 +5,24 @@ duration: 1
 ---
 <br>
 
-<h3 class="text-warning">Consuming eduGAIN metadata for Service Providers</h3>
+<h3 class="text-warning">Consuming eduGAIN Metadata</h3>
 
-The AAF is providing a new Metadata feeds for eduGAIN that must be consumed by AAF Services and Identity Providers that wish to join eduGAIN.
-
-
-EduGAIN metadata contains all the authorised entities that can participate with service providers and identity providers within the AAF. These include:
+EduGAIN metadata contains all the authorised entities with which AAF service providers and identity providers can interact. The AAF provides a Metadata distribution service for eduGAIN. These include:
 
 - All eduGAIN Identity Providers
-- All eduGAIN service providers that identify as Research and Scholarly
-- All other eduGAIN service providers that have been requested by an AAF organisation and approved by the AAF
+- All eduGAIN Service Providers that identify as Research and Scholarly entity categories
+- Other eduGAIN Service Providers requested by AAF subscriber organisations and approved by the AAF.
 
+To participate in eduGAIN, AAF Service Providers and Identity Providers must:
+
+- consume the eduGAIN metadata
+- agree to and abide by the AAF eduGAIN Participant Rules
+
+<br>
 
 <h3 class="text-warning">Production Federation</h3>
 
-Services in the Production federation will use the <a href="https://md.aaf.edu.au/aaf-edugain-metadata.xml">AAF eduGAIN metadata</a>. This metadata is signed by the AAF using a SHA256 signing key. You MUST use the <a href="https://md.aaf.edu.au/aaf-metadata-certificate.pem">public key</a> to verify metadata documents whenever they are retrieved.
-
-
-To confirm that you have obtained the correct key, ensure the file you have downloaded conforms to the following:
+Service Providers in the Production federation will use the <a href="https://md.aaf.edu.au/aaf-edugain-metadata.xml">AAF eduGAIN metadata</a>. The AAF digitally signs the eduGAIN metadata. A service MUST use the <a href="https://md.aaf.edu.au/aaf-metadata-certificate.pem">public key</a> to verify metadata documents whenever they are retrieved. To confirm that you have obtained the correct key, ensure the PEM file you have downloaded conforms to the following:
 
 ```shell
 $> openssl x509 -subject -dates -fingerprint -in aaf-metadata-certificate.pem
@@ -31,16 +31,14 @@ $> openssl x509 -subject -dates -fingerprint -in aaf-metadata-certificate.pem
          notAfter=Dec  9 04:27:20 2035 GMT
          SHA1 Fingerprint=E2:FC:CC:CB:0E:0F:3B:32:FA:55:87:29:08:DE:E0:34:DA:A2:15:5A
 ```
+
 <br>
 
-<h3 class="text-warning">Configuring a Shibboleth SP</h3>
+<h3 class="text-warning">Configuring a Shibboleth Service Provider (SP)</h3>
 
-If your service provider is using the Shibboleth SP software you will need to make the following changes to the shibboleth2.xml file generally found in the /etc/shibboleth.
+For a service provider using the Shibboleth SP software, the following changes to the `/etc/shibboleth/shibboleth2.xml` file are necessary.
 
-Check which version of the AAF metadata you are currently using. If you obtain metadata from <a href="https://ds.aaf.edu.au">https://ds.aaf.edu.au</a> you must first update your SP to use the new AAF federation metadata source available from <a href="https://md.aaf.edu.au">https://md.aaf.edu.au</a> before continuing.
-
-
-Add the following configuration beneath the AAF federation metadata configuration:
+Add the following configuration element as a child element of the element:
 
 ```shell
 <MetadataProvider type="XML" uri="https://md.aaf.edu.au/aaf-edugain-metadata.xml"
@@ -50,25 +48,24 @@ Add the following configuration beneath the AAF federation metadata configuratio
         </MetadataProvider>
 ```
 
-Verify that the certificate used for your AAF metadata feed is the same as for the eduGAIN metadata feed. The `certificate=”aaf-metadata-cert.pem"` config should be the same for both.
+The AAF digitally signs the eduGAIN metadata with the same certificate as the AAF metadata. Restart the Shibboleth service provider to load the change.
 
-Restart your service provider.
+<br>
 
 <h3 class="text-warning">Testing</h3>
 
-To verify that your SP is consuming the eduGAIN metadata check your SP logs for any errors and check that the metadata file is downloading correctly and appears on your server. Your SP should have created the file `/var/cache/eduGAIN-metadata.aaf.xml`.
+To verify that the SP is consuming the eduGAIN metadata, check the Shibboleth logs for any errors and that the metadata file is downloading correctly to the "backingFilePath" `/var/cache/eduGAIN-metadata.aaf.xml`.
 
+The Shibboleth log files should indicate any issues if the software does not load the eduGAIN metadata. It may be necessary to increase the log-level to DEBUG to log all relevant details.
 
-If your SP does not load the eduGAIN metadata, your log files should provide a good indication as to the fault. You may need to increase the log level to DEBUG which will give you all the relevant details.
-
-
-If your SP does not successfully load the metadata and your logs do not highlight the cause of the failure please contact <a href="mailto:support@aaf.edu.au">AAF Support</a> for assistance.
-
+If the SP does not successfully load the metadata and the logs fail to highlight the cause of the failure, contact <a href="mailto:support@aaf.edu.au">AAF Support</a> for assistance.
 
 #### Non-Shibboleth Service Providers
 
-For non-shibboleth service providers please consult the documentation provided by your software on how to consume federation metadata.  AAF Support can provide limited support for non-shibboleth software at this time.
+For non-shibboleth SAML service providers, consult the relevant documentation for the software on how to consume federation metadata. AAF Support can provide some support for non-shibboleth software at this time.
+
+<br>
 
 <h3 class="text-warning">Test Federation</h3>
 
-eduGAIN does not provide a test federation, however the AAF does provide an <a href="https://md.test.aaf.edu.au">eduGAIN feed</a> for the test federation. This metadata can be used on your test SP to verify your configuration changes before applying them to your production service.
+Though eduGAIN does not provide a test federation, the AAF does provide a test <a href="https://md.test.aaf.edu.au">eduGAIN</a> metadata feed for services in the AAF Test Federation. This feed enables testing of an SP to verify configuration changes before applying them to a production service.
