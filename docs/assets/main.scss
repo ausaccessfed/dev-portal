@@ -137,6 +137,13 @@ header {
     width: 200px; /* Default size */
   }
 
+  @media (min-width: 990px) {
+    .card-container {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
   /* For screens smaller than 1400px */
   @media (max-width: 1400px) {
     .logo {
