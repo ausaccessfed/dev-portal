@@ -65,10 +65,10 @@ $(function() {
     if(results.length) {
       var result = '';
       $.each(results, function(i, tutorial) {
-        result += '<div class="card-container" style="width: 18rem;">';
+        result += '<div class="card-container mx-auto" style="width: 18rem;">';
         result += '  <a class="card-tut-link" href="' + tutorial.url + '">';
         result += '    <div class="card shadow h-100">';
-        result += '      <div class="card-header text-light bg-dark">';
+        result += '      <div class="card-header text-light" style="background-color: #2A004A">';
         result += '        <div class="card-category">';
         result += '          <small class="title text-uppercase">' + tutorial.level + '</small>';
         if (tutorial.level == 'Series') {
