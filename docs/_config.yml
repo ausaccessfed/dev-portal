@@ -361,8 +361,8 @@ collections:
   dockerize-shib-sp:
     output: true
     permalink: /:collection/:name
-    title: Dockerize Shibboleth-sp
-    summary: A tutorial for Dockerizing shib-sp
+    title: Dockerize Shibboleth-SP
+    summary: A tutorial for Dockerizing Shibboleth-SP
     category: Integration
     curriculum: SAML
     level: Intermediate
