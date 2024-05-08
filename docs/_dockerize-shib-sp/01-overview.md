@@ -8,7 +8,7 @@ This tutorial will guide you through how to create a simple application protecte
 
 ### What you'll learn
 
-- Create a Docker file for building a Docker image
+- Create a Dockerfile for building a Docker image
 - Use a base image for your Dockerfile
 - Install and configure Shibboleth
 - Install and configure Apache

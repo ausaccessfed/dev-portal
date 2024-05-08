@@ -4,7 +4,8 @@ order: 2
 duration: 1
 ---
 
-The key to deploying federated services is understanding **Shibboleth** and **SAML**, how the required components interact, and details on session cookies and the terminology in use. 
+The key to deploying federated services is understanding **Shibboleth** and **SAML**, how the required components
+interact, and details on session cookies and the terminology in use. 
 
 <strong>The following articles serve as an introduction to these topics:</strong>
 
