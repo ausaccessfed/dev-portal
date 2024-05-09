@@ -4,11 +4,21 @@ order: 2
 duration: 1
 ---
 
-To register as a new client with VerifID Global, please contact [AAF Support](mailto:support@aaf.edu.au) first to discuss terms and conditions.
+To register as a new client with VerifID Global:
 
-For more information, refer to the [VerifID Global website](https://verifid.com.au/#focus).
+1. Contact [AAF Support](mailto:support@aaf.edu.au) first to discuss terms and conditions.
 
-When prompted by the AAF to complete registration, please provide the following information:
+2. When prompted by the AAF to complete registration, refer to this [registration link](https://manager.aaf.edu.au/verifid/register).
+
+Note: You will need an AAF account (e.g. VHO account) to access the above registration link. Contact [AAF Support](mailto:support@aaf.edu.au) to request an account or alternatively, send your registration details (i.e. Display Name and Redirect URI, as shown on the form below) to [AAF Support](mailto:support@aaf.edu.au).
+{: .callout-info}
+
+If you have an AAF account and have clicked on the [registration link](https://manager.aaf.edu.au/verifid/register), you will be taken to the VerifID Client Registration page:
+
+![Verifid Client Registration](/assets/images/connect-with-verifid/verifid-client-registration.png)
+
+
+Please provide the following information:
 
 <ul class="list-group">
   <li class="list-group-item"><strong>Display Name</strong> - The human-readable name of your client. This will be shown to 
@@ -19,6 +29,6 @@ whitespace characters.</li>
 
 <br>
 
-Click **Register Now**.
+- Click **Register Now** to complete your registration.
 
-![Verifid Client Registration](/assets/images/connect-with-verifid/verifid-client-registration.png)
+For more information about VerifID and how it works, refer to the [VerifID Global website](https://verifid.com.au/#focus).
