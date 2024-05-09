@@ -35,6 +35,6 @@ There are two methods for providing the **SAML** details for the new service: au
 6. Discovery response URL - `https://ds.test.aaf.edu.au/discovery/aaf`
 7. Signing certificate - Provide the contents of the public key certificate created by the Shibboleth installation, this is not the web server SSL public certificate.
 
-- Select those attributes that the application requires. The selection of attributes should match those attributes enabled in the **attribute-map.xml** file. If following the instructions for the [Simple PHP Server installed on Linux example](/saml-integration/03-install-shibboleth), the default Shibboleth installation enables the attributes **eppn** and **affiliation**.
+- Select those attributes that the application requires. The selection of attributes should match those attributes enabled in the **attribute-map.xml** file. If following the instructions for the [Simple PHP Server installed on Linux example](/saml-integration/03-install-shibboleth-example-a) or the [Dockerizing Shib-SP example](/saml-integration/03-install-shibboleth-example-b), the default Shibboleth installation enables the attributes **eppn** and **affiliation**.
 
 - Click **Register** to complete the registration step.

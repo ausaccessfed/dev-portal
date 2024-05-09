@@ -4,7 +4,6 @@ order: 1
 duration: 1
 ---
 
-This tutorial will guide you through how to create a simple application protected by Shibboleth. In contrast to the [previous SAML integration tutorial](http://127.0.0.1:4000/saml-integration/01-overview), you will be creating a Docker image for a Shibboleth Service Provider (SP) application and configuring it to run in a container. This may be useful if you are using a MacOS as opposed to a Windows or Linux machine.
 
 ### What you'll learn
 
