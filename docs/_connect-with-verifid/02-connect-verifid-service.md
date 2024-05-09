@@ -8,7 +8,7 @@ To register as a new client with VerifID Global:
 
 1. Contact [AAF Support](mailto:support@aaf.edu.au) first to discuss terms and conditions.
 
-2. When prompted by the AAF to complete registration, refer to this [registration link](https://manager.aaf.edu.au/verifid/register).
+2. [Register](https://manager.aaf.edu.au/verifid/register).
 
 Note: You will need an AAF account (e.g. VHO account) to access the above registration link. Contact [AAF Support](mailto:support@aaf.edu.au) to request an account or alternatively, send your registration details (i.e. Display Name and Redirect URI, as shown on the form below) to [AAF Support](mailto:support@aaf.edu.au).
 {: .callout-info}
