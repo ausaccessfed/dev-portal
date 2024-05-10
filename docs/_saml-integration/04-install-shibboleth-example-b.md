@@ -8,11 +8,9 @@ duration: 1
 
 ### Dockerizing Shib-SP
 
-This tutorial will guide you through how to create a simple application protected by Shibboleth. In contrast to the [previous example](http://127.0.0.1:4000/03-install-shibboleth-example-a), you will be creating a Docker image for a Shibboleth Service Provider (SP) application and configuring it to run in a container.
+This tutorial will guide you through how to create a Docker image for a Shibboleth Service Provider (SP) application and configure it to run in a container.
 
-
-Please note, this is a proof of concept and only configures Shibboleth SP. Apache will need to be installed and 
-configured to get the app to respond to actual web requests. See the [shibboleth documentation](https://shibboleth.atlassian.net/wiki/spaces/SP3/pages/2065335062/Apache) for more information.
+Please note, this is a proof of concept and only configures Shibboleth SP. Apache will need to be installed and configured to get the app to respond to web requests. See the [shibboleth documentation](https://shibboleth.atlassian.net/wiki/spaces/SP3/pages/2065335062/Apache) for more information.
 {: .callout-info}
 
 <br>
@@ -34,17 +32,17 @@ gpgkey=https://shibboleth.net/downloads/service-provider/RPMS/repomd.xml.key\n\
         https://shibboleth.net/downloads/service-provider/RPMS/cantor.repomd.xml.key\n\
 enabled=1" > /etc/yum.repos.d/shibboleth.repo
 
-# Update packages and install Shibboleth using the `yum` package manager. The `yum clean all` command is used to clean up the package cache after the installation thereby reducing the size of the resulting Docker image.
+# Update packages and install Shibboleth using the `yum` package manager. `yum clean all` cleans up the package cache after the installation reducing the size of the resulting Docker image.
 RUN yum install -y shibboleth && yum clean all
 
-# Change logging configuration of Shibboleth to output to console
+# Change logging configuration of Shibboleth to output to console instead of a file. This is useful for viewing Shibboleth errors when running the container.
 RUN sed -i 's|var/log/shibboleth.*|/proc/self/fd/1|' /etc/shibboleth/shibd.logger
 
 # Copy Shibboleth configuration files into the container. The `shibboleth2.xml` file contains the Shibboleth configuration settings, while the `attribute-map.xml` file contains the attribute mapping rules.
 COPY shibboleth2.xml /etc/shibboleth/shibboleth2.xml
 COPY attribute-map.xml /etc/shibboleth/attribute-map.xml
 
-# Copy the secrets folder that contains the SSL certificate and key files required for Shibboleth to communicate securely with the Identity Provider.
+# Copy the secrets folder containing the SSL certificate and key files required for Shibboleth to communicate securely with the Identity Provider.
 COPY secrets /etc/shibboleth/secrets
 
 # Set read permissions for the secrets folder. This is necessary to allow Shibboleth to read the SSL certificate and key files.

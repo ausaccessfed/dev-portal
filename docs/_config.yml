@@ -358,21 +358,3 @@ collections:
     published: 2024-03-08
     author: Kelley Foster <kelley.foster@aaf.edu.au>
 
-  dockerize-shib-sp:
-    output: true
-    permalink: /:collection/:name
-    title: Dockerize Shibboleth-SP
-    summary: A tutorial for Dockerizing Shibboleth-SP
-    category: Integration
-    curriculum: SAML
-    level: Intermediate
-    tags:
-      - docker
-      - saml
-      - tutorial
-    difficulty: 3 # number from 1 to 5
-    duration: 10 # number of minutes
-    status: draft # draft or published
-    published: 2024-04-18
-    author: Your Name <your.name@email.domain>
-
