@@ -6,22 +6,26 @@ duration: 1
 
 The primary interaction of this service requires a User who is accessing a web-based service via a standard web browser.
 
-1. A Client identifies a need to verify the User’s Affiliation values
+A Client identifies a need to verify the User’s Affiliation values
 
-1. The Client issues a Verification request as specified in [Section 6](/verifid-integration/06-verification-request-and-response) of this tutorial
+1. The Client issues a Verification Request as specified in [Section 6](/verifid-integration/06-verification-request-and-response) of this tutorial
 
-1. Via VerifID, the User is directed to perform an interactive authentication via the VerifID operator’s SAML federation
+1. The Verification Request is redirected (via the User's browser) to the VerifID Service
 
-1. Upon successful authentication, the User returns to VerifID, which issues a Verification response as specified in 
-   the [Section 6](/verifid-integration/06-verification-request-and-response) of this tutorial
+1. At VerifID, the User is directed to perform an interactive authentication via the VerifID operator’s SAML federation
 
-1. The Client makes an authenticated request to retrieve an access token which can be used to retrieve the Verification result
+1. On successful authenication at the User's home institution within the SAML Federation, the User is redirected back to VerifID
+
+1. VerifID issues a Verification response and a redirect back to the User's browser as specified in the [Section 6](/verifid-integration/06-verification-request-and-response) of this tutorial
+
+1. The Verification response is redirected through by User's browser to the Client. 
+
+1. On receiving the Verfication Response, the Client makes an authenticated request to retrieve an access token which is used to retrieve the Verification result
 
 1. The Client makes an API call to VerifID to retrieve the Verification result
 
-1. The Verification result is parsed and the Client can use the data within to determine the User’s Affiliation values.
+At the Client, the Verification result is parsed and the Client determines the User’s Affiliation values.
 
-
-![Perform verification](/assets/images/verifid-integration/Perform-verification.png)
+![image](https://github.com/ausaccessfed/dev-portal/assets/10768324/71a6de01-fa36-4340-8108-c1285eac30f6)
 
 **Figure 1.** Performing a Verification
