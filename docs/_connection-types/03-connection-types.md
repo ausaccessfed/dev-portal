@@ -10,13 +10,11 @@ Choose which protocol your service will use to connect. Each protocol has its ow
   <div class="card-header text-white bg-primary">OpenID Connect</div>
     <div class="card-body">
       <ul class="list-group list-group-flush">
-        <li class="list-group-item"><i class="fa fa-check-circle" style="color:green"></i> Recommended for most 
-connections</li>
+        <li class="list-group-item"><i class="fa fa-check-circle" style="color:green"></i> Recommended for most connections</li>
         <li class="list-group-item"><i class="fa fa-check-circle" style="color:green"></i> Feature-rich</li>
-        <li class="list-group-item"><i class="fa fa-check-circle" style="color:green"></i> Many open-source 
-libraries</li>
+        <li class="list-group-item"><i class="fa fa-check-circle" style="color:green"></i> Many open-source libraries</li>
       </ul>
-      <a href="/openid-connect-integration/01-overview" class="btn btn-primary mt-4">Get Started</a>
+      <a href="/openid-connect-series/01-overview" class="btn btn-primary mt-4">Get Started</a>
     </div>
 </div>
 
@@ -24,8 +22,7 @@ libraries</li>
   <div class="card-header text-white bg-primary">Rapid Connect</div>
   <div class="card-body">
     <ul class="list-group list-group-flush">
-      <li class="list-group-item"><i class="fa fa-check-circle" style="color:green"></i> Simple: Easy to test 
-and deploy</li>
+      <li class="list-group-item"><i class="fa fa-check-circle" style="color:green"></i> Simple: Easy to test and deploy</li>
       <li class="list-group-item"><i class="fa fa-check-circle" style="color:green"></i> Connect your service to our test 
           environment, straight away, for free. There's no need to wait for an approval process.</li>
       <li class="list-group-item"><i class="fa fa-check-circle" style="color:green"></i> Deploy your 
@@ -41,7 +38,7 @@ authentication in as few as 20 lines of Ruby. Implementations in other languages
       <li class="list-group-item"><i class="fa fa-ban" style="color:red"></i> Few open-source libraries
       </li>
     </ul>
-    <a href="/rapid-connect-integration/01-overview" class="btn btn-primary mt-4">Get Started</a>
+    <a href="/rapid-connect-series/01-overview" class="btn btn-primary mt-4">Get Started</a>
   </div>
 </div>
 
@@ -58,7 +55,7 @@ eduGAIN</li>
 protocols which are implemented using <a href="https://www.shibboleth.net/">Shibboleth</a> or <a href="https://simplesamlphp.org/">SimpleSAMLphp</a> as open source options</li>
         <li class="list-group-item"><i class="fa fa-ban" style="color:red"></i> Complex</li>
       </ul>
-      <a href="/saml-integration/01-overview" class="btn btn-primary mt-4">Get Started</a>
+      <a href="/saml-series/01-overview" class="btn btn-primary mt-4">Get Started</a>
     </div>
 </div>
 
@@ -69,6 +66,17 @@ protocols which are implemented using <a href="https://www.shibboleth.net/">Shib
         <li class="list-group-item"><i class="fa fa-check-circle" style="color:green"></i> Verifies a user based on their organisational affiliation</li>
         <li class="list-group-item"><i class="fa fa-check-circle" style="color:green"></i> Provides an API for user verification</li>
       </ul>
-      <a href="/verifid-integration/01-overview" class="btn btn-primary mt-4">Get Started</a>
+      <a href="/verifid-series/01-overview" class="btn btn-primary mt-4">Get Started</a>
+    </div>
+</div>
+
+<div class="card border-dark mt-4 mb-3">
+  <div class="card-header text-white bg-primary">eduGAIN</div>
+    <div class="card-body">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"><i class="fa fa-check-circle" style="color:green"></i> Allows researchers to access services enabling international research collaboration</li>
+        <li class="list-group-item"><i class="fa fa-ban" style="color:red"></i> Requires the use of complex SAML protocols</li>
+      </ul>
+      <a href="/edugain-series/01-overview" class="btn btn-primary mt-4">Get Started</a>
     </div>
 </div>
