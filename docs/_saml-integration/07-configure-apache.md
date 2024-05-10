@@ -1,6 +1,6 @@
 ---
 title: Configure Apache
-order: 6
+order: 7
 duration: 1
 ---
 

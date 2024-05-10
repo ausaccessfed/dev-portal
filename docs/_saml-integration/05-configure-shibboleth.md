@@ -1,6 +1,6 @@
 ---
 title: Configure Shibboleth
-order: 4
+order: 5
 duration: 1
 ---
 
