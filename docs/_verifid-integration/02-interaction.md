@@ -26,6 +26,6 @@ A Client identifies a need to verify the User’s Affiliation values
 
 At the Client, the Verification result is parsed and the Client determines the User’s Affiliation values.
 
-![image](https://github.com/ausaccessfed/dev-portal/assets/10768324/71a6de01-fa36-4340-8108-c1285eac30f6)
+![Verification Flow](/assets/images/verifid-integration/VerifID-verification.png)
 
 **Figure 1.** Performing a Verification
