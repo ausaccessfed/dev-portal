@@ -8,7 +8,8 @@ This tutorial will assist with standing up a simple application protected by **S
 to the **AAF’s TEST Federation** to evaluate basic functionality.
 
 ### What you'll learn
-- How to install and configure Shibboleth
+- How to install Shibboleth (on desktop or using Dockerfile)
+- How to configure Shibboleth
 - How to configure Apache
 - How to integrate Shibboleth SP with an application
 
@@ -24,6 +25,10 @@ and/or configuration of the following components:
 - allocation of a DNS name for the service,
 - where available, SELinux is disabled, as it may interfere with communication between the Apache web server and 
 the Shibboleth process.
+
+Optional requirements include:
+- Docker container platform
+- Knowledge running a container platform in a local development environment
 
 This guide is derived from the **Shibboleth Wiki** and assumes knowledge of the following aspects of the target OS and
 architecture:

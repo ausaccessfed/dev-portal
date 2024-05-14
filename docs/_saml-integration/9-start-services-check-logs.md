@@ -1,6 +1,6 @@
 ---
 title: Start services and check logs
-order: 8
+order: 9
 duration: 1
 ---
 

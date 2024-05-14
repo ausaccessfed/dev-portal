@@ -1,6 +1,6 @@
 ---
 title: Configure the application
-order: 7
+order: 8
 duration: 1
 ---
 

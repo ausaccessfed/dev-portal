@@ -1,6 +1,6 @@
 ---
 title: Review SP attribute-filter.xml file
-order: 5
+order: 6
 duration: 1
 ---
 
