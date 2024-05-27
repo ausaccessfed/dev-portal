@@ -1,12 +1,12 @@
 ---
-title: Add a new tutorial
+title: Add tutorial content
 order: 3
 duration: 1
 ---
 
 A rake task will set up a skeleton tutorial for you, by typing:
 
-```sh
+```shell
 rake tutorial "Title of my new tutorial"
 ```
 
