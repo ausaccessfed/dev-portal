@@ -1,14 +1,14 @@
 ---
 title: Set up development environment
-order: 2
+order: 3
 duration: 1
 ---
 
-The AAF Support Tutorials site is built with [Jekyll](https://jekyllrb.com/) and hosted on [GitHub Pages](https://pages.github.com/). To contribute to the content or create a new tutorial, we recommend that you set up a local development environment, so you can visualise and fine tune your work before you submit it for review.
+To contribute to the content or create a new tutorial, we recommend that you set up a local development environment, so you can visualise and fine tune your work before you submit it for review.
 <br>
 
 ### Checking out the code
-
+The AAF Support Tutorials site is built with [Jekyll](https://jekyllrb.com/) and hosted on [GitHub Pages](https://pages.github.com/). The source code for the site is hosted in the [AAF dev portal repository](https://github.com/ausaccessfed/dev-portal).
 Clone the repository of the documentation source code. This can be done using the Git command:
 
 ```shell
@@ -17,16 +17,16 @@ git clone git@github.com:ausaccessfed/dev-portal.git
 
 <br>
 
-### Setup for Windows users
+### Setup for Windows and Linux users
 
-1. First set up [Windows Subsystem for Linux (WSL)](https://docs.microsoft.com/en-us/windows/wsl/install). This will make the process much easier and allow you to use the commands below within the WSL environment.
+1. For Windows users, first set up the [Windows Subsystem for Linux (WSL)](https://docs.microsoft.com/en-us/windows/wsl/install). This will make the process much easier and allow you to use the commands below within the WSL environment.
 
 2. **Install the Ruby packages** including Bundler, rake and the Ruby development package for building native extensions. For Ubuntu, this can be done with:
 ```shell
 apt install ruby-dev ruby-bundler rake zlib1g-dev make gcc g++
 ```
 
-3. **Navigate to the publishing source**: Change your working directory to the root of your Jekyll site (typically named `docs`):
+3. **Navigate to the publishing source**: Change your working directory to the root of your Jekyll site (named `docs`):
 ```shell
   cd path/to/your/docs
 ```
@@ -57,7 +57,7 @@ rake serve
     gem install bundler
     ```
 
-3. **Navigate to the publishing source**: Change your working directory to the root of your Jekyll site (typically named `docs`):
+3. **Navigate to the publishing source**: Change your working directory to the root of your Jekyll site (named `docs`):
     ```shell
     cd path/to/your/docs
     ```

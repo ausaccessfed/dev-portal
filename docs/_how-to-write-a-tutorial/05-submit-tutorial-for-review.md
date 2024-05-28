@@ -1,6 +1,6 @@
 ---
 title: Submit tutorial for review
-order: 4
+order: 5
 duration: 1
 ---
 

@@ -1,25 +1,25 @@
 ---
 title: Add tutorial content
-order: 3
+order: 4
 duration: 1
 ---
 
-A rake task will set up a skeleton tutorial for you, by typing:
+On the command line, a rake task will set up the initial tutorial structure for you:
 
 ```shell
-rake tutorial "Title of my new tutorial"
+rake tutorial "Title of your tutorial"
 ```
 
-This command will create you:
+This command will create:
 
 - A new directory for hosting the markdown content.
-- An initial overview page for this new tutorial.
-- An images directory specific to your new tutorial.
+- An initial overview page for your new tutorial.
+- An images directory specific to your new tutorial (located in `assets/images/<title of your tutorial>`).
 - A configuration entry in `_config.yml`.
 
 You will then need to edit the metadata for your new tutorial in `_config.yml` under the `collections` section.
 
-You'll need the following YAML config:
+Add the following details to the YAML config:
 
 ```yaml
   your-tutorial-id:
@@ -38,8 +38,7 @@ You'll need the following YAML config:
     author: <Your Name>
 ```
 
-Then for the content of your tutorial, each page within your tutorial should
-have the following front matter:
+Then you will need to add the following front matter to the top of each page of your tutorial:
 
 ```yaml
 ---
@@ -49,8 +48,7 @@ duration: <estimated page duration>
 ---
 ```
 
-You will need to restart the preview process for Jekyll to render your new
-tutorial, but once it's done, it will be available from the docs folder of the site.
+You will need to restart the preview process for Jekyll to render your new tutorial, but once it's done, it will be available from the docs folder of the site.
 
 ### Markdown style guide principles
 
