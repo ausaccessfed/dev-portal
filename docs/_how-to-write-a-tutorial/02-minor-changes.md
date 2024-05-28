@@ -13,4 +13,4 @@ You can raise an issue by clicking on the ["Issues"](https://github.com/ausacces
 
 Provide a title and a clear description of your suggestion. Make sure to include the tutorial name and page to which your suggestion applies. When you are finished, click on "Submit new issue". Our technical team will review your issue and resolve it if they can. They may contact you if they need more clarification.
 
-![Raise an Issue](/assets/images/how-to-write-a-tutorial/raise_an_issue.png)
+![Raise an Issue](/assets/images/how-to-write-a-tutorial/raise-an-issue.png)

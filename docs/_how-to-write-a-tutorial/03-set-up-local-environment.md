@@ -74,3 +74,22 @@ rake serve
 
 6. **Preview Your Site**: Once the build process completes, open your web browser and navigate to [http://localhost:4000](http://localhost:4000) to preview your Jekyll site.
 
+<br>
+
+### Using Docker Compose
+If you prefer a Docker-based setup, follow these steps (ensure you are in the root of your Jekyll site):
+
+1. **Build and run Docker Image**: Run the following command to build a new image of your Jekyll site:
+    ```bash
+    make up
+    ```
+
+3. **View Your Site**: Open your web browser and navigate to [http://localhost:4000](http://localhost:4000) to view your Jekyll site running locally.
+
+
+2. **Remove the Docker Image**: Once the image is built, you can stop and remove the image with the following command:
+    ```bash
+    make down
+    ```
+
+By using Docker, you can ensure consistent environments across different platforms and simplify the setup process for your Jekyll site.

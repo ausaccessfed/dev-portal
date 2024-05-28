@@ -4,7 +4,7 @@ order: 4
 duration: 1
 ---
 
-On the command line, a rake task will set up the initial tutorial structure for you:
+On the command line, the following rake task will set up the initial tutorial structure for you:
 
 ```shell
 rake tutorial "Title of your tutorial"
@@ -32,13 +32,14 @@ Add the following details to the YAML config:
       - <tag 1>
       - <tag n>
     difficulty: <number 1-5>
-    duration: <number of minutes tutorial might take>
+    duration: <number of minutes your tutorial might take>
     status: <draft or published>
-    published: <YYYY-MM-DD>
+    published: YYYY-MM-DD
     author: <Your Name>
 ```
 
-Then you will need to add the following front matter to the top of each page of your tutorial:
+
+Each page (i.e. file) of the tutorial needs to be in Markdown format (`<name-of-page>`.md) and have the following front matter:
 
 ```yaml
 ---
@@ -48,50 +49,67 @@ duration: <estimated page duration>
 ---
 ```
 
-You will need to restart the preview process for Jekyll to render your new tutorial, but once it's done, it will be available from the docs folder of the site.
-
-### Markdown style guide principles
-
-*On the tutorial site, there are a few styling basics to be aware of in Markdown/Liquid.*
-
-**Numbering lists**
-
-To enter a numbered list for a series of steps, use 1. (number one) for each of your numbered steps, and markdown will convert these into the number order:
-
-1.
-1.
-1.
-1.
-
-
-**Highlighting important information**
-
-There a certain things we need to highlight to users, such as "Warnings" or a "Note" of sorts. This can be done using callouts, which have different types producing slightly different formatting (colours, etc.) for each,
-depending on the type of message you want to highlight.
-
-<code>
-{: .callout-success}
-
-{: .callout-danger}
-
-{: .callout-default}
-
-{: .callout-warning }
-
-{: .callout-info}
-
-{: .callout-primary}
-
-</code>
+You will need to restart the preview process for Jekyll to render your new tutorial, but once it's done, it will be available from the `docs` folder of the site.
 
 <br>
 
-**Preventing broken home page links**
+## Markdown style guide principles
 
-When adding any links for the tutorial site, which contain tutorials.aaf.edu.au, use  {{ site.baseurl }} in its place instead.
+On the tutorial site, there are a few styling basics to be aware of in Markdown/Liquid as shown below. For all other formatting and style guide principles, refer to the [Markdown style guide](https://guides.github.com/features/mastering-markdown/) or any other online markdown resources.
 
-For example https://tutorials.aaf.edu.au/openid-connect-series/02-tutorials will be:
+#### Numbering lists
 
-{{ site.baseurl }}/openid-connect-series/02-tutorials
+To create a numbered list for a series of steps, use 1. (number one) followed by a space for each of your numbered steps, and markdown will automatically convert these into a list as shown below:
+
+1. 
+1. 
+1. 
+1. 
+
+<br>
+
+#### Highlighting important information
+
+There are certain things we need to highlight to users, such as "Warnings" or "Notes". This can be done using callouts, which have different types producing slightly different formatting (colours, etc.) for each, depending on the type of message you want to highlight. Just place your text directly above the callout type.
+
+```shell
+{: .callout}
+```
+Note
+{: .callout}
+
+```shell
+{: .callout-success}
+```
+Success
+{: .callout-success}
+
+```shell
+{: .callout-danger}
+```
+Danger
+{: .callout-danger}
+
+```shell
+{: .callout-warning }
+```
+Warning
+{: .callout-warning }
+
+```shell
+{: .callout-info}
+```
+Info
+{: .callout-info}
+
+<br>
+
+#### Preventing broken home page links
+
+When adding any links for the tutorial site, which contain `tutorials.aaf.edu.au`, use **\{\{ site.baseurl \}\}** in its place instead.
+
+For example `https://tutorials.aaf.edu.au/openid-connect-series/02-tutorials` will be:
+
+>**\{\{ site.baseurl \}\}/openid-connect-series/02-tutorials**
 
 This helps prevent any broken links in the future, if the central URL of the site changes.
