@@ -17,3 +17,4 @@ duration: 1
 ![Ready for review](/assets/images/how-to-write-a-tutorial/ready-for-review.png)
 
 - Our technical team will review your PR and may contact you if they need more clarification.
+- Approved changes and new tutorials will be merged into the main branch and published to the AAF Support Tutorials site.
