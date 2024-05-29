@@ -1,6 +1,6 @@
 ---
 title: Integration Examples
-order: 5
+order: 6
 duration: 1
 ---
 <br>

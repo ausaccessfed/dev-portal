@@ -11,6 +11,7 @@ applications.
 
 ### What you'll learn
 
+- How Rapid Connect manages the Shibboleth SP component on behalf of the application
 - How Rapid Connect JWT Authentication works
 - How to implement JWT Support
 

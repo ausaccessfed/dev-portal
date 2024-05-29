@@ -1,6 +1,6 @@
 ---
 title: JSON Web Token and SAML
-order: 2
+order: 3
 duration: 1
 ---
 <br>
