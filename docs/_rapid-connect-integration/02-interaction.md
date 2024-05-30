@@ -4,8 +4,11 @@ order: 2
 duration: 1
 ---
 
-The Rapid Connect service manages the Shibboleth Service Provider (SP) component on behalf of the application, 
-simplifying the integration process for developers. For information regarding the deployment and operation of Shibboleth refer to the [Shibboleth documentation](https://shibboleth.atlassian.net/wiki/spaces). The Rapid Connect service provides a SAML end-point, translation between SAML and JSON Web Token (JWT), redirection of requests and validation of the JWT. This simplifies the integration work necessary to connect an application and removes the need to test and deploy an SP component. All other logic remains in the application, enabling the use of cloud services which do not support the addition of Shibboleth directly, such as Heroku and Google App Engine. 
+The Rapid Connect service manages the Shibboleth Service Provider (SP) component on behalf of the application, simplifying the integration process for developers. 
+For information regarding the deployment and operation of Shibboleth, refer to the [Shibboleth documentation](https://shibboleth.atlassian.net/wiki/spaces). 
+The Rapid Connect service provides a SAML end-point, translation between SAML and JSON Web Token (JWT), redirection of requests and validation of the JWT. 
+This simplifies the integration work necessary to connect an application and removes the need to test and deploy an SP component. 
+All other logic remains in the application, enabling the use of cloud services which do not support the addition of Shibboleth directly, such as Heroku and Google App Engine. 
 
 The design goal for Rapid Connect was to ensure as few dependencies as possible to simplify deployment. This requires that user access decisions and interactions all occur within the application.
 
