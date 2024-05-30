@@ -7,7 +7,7 @@ duration: 1
 On the command line, the following rake task will set up the initial tutorial structure for you:
 
 ```shell
-rake tutorial "Title of your tutorial"
+bundle exec rake tutorial "Title of your tutorial"
 ```
 
 This command will create:

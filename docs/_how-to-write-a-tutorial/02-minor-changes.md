@@ -1,5 +1,5 @@
 ---
-title: Minor amendments
+title: Minor changes
 order: 2
 duration: 1
 ---

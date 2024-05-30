@@ -4,9 +4,9 @@ order: 1
 duration: 1
 ---
 
-We welcome contributions to our AAF tutorials. The easiest way for you to help us is by **raising an issue**, which will require a [GitHub account](https://github.com).
-For amendments to the documentation, you will need to be familiar with general Git concepts and submit your changes to our Tech Team for review.
-If you'd like to commit substantial changes or even whole **new tutorials**, you will need to set up the preview environment.
+We welcome contributions to our AAF tutorials. If you'd like to help us, a great way to start is by **raising an issue** on GitHub, which will require a [GitHub account](https://github.com). This will allow our team to track and prioritise your suggestion.
+To suggest updates to the documentation, you should have a general grasp of how GitHub works, including creating branches, making commits, and pushing changes. Additionally, you'll need to collaborate with our Tech Team to ensure your suggestions are reviewed and incorporated into the tutorial content.
+To contribute major changes or an entire **new tutorial**, you will need to set up a local dev environment.
 
 ### What you'll learn
 

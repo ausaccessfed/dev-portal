@@ -41,7 +41,7 @@ You're now ready to make changes.
 ### Substantial edits and new tutorials
 
 To contribute substantial edits or new tutorials, we recommend that you [set up a local development environment](#setting-up-a-local-development-environment), so you can visualise and fine tune your work before you submit it for review.
-You'll need some of your `git` skills to do this.
+You'll need a basic understanding of `git` to do this.
 
 - Clone your fork to your local computer using `git clone`.
 - Step through the setup routine ([below](#setting-up-a-local-development-environment)) to set up your computer for local previews of your edits.

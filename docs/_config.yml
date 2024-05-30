@@ -361,7 +361,7 @@ collections:
   how-to-write-a-tutorial:
     output: true
     permalink: /:collection/:name
-    title: Contribute tutorial content
+    title: Adding & Editing Tutorials - A Guide for Contributors
     summary: How to request changes to content or write your own tutorial
     category: Getting Started
     level: Beginner
