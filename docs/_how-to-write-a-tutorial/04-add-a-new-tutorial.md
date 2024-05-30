@@ -66,11 +66,10 @@ To create a numbered list for a series of steps, use 1. (number one) followed by
 1. 
 1. 
 
-<br>
 
 #### Highlighting important information
 
-There are certain things we need to highlight to users, such as "Warnings" or "Notes". This can be done using callouts, which have different types producing slightly different formatting (colours, etc.) for each, depending on the type of message you want to highlight. Just place your text directly above the callout type.
+There are certain things we need to highlight to users, such as "Warnings" or "Notes". This can be done using callouts, of which there are different types producing slightly different formatting (colours, etc.) for each, depending on the type of message you want to highlight. Just place your text directly above the callout type.
 
 ```shell
 {: .callout}

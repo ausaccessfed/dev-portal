@@ -20,8 +20,8 @@ To contribute major changes or an entire **new tutorial**, you will need to set 
 
 - Knowledge of Git concepts
 - A GitHub account
-- Ruby packages:
+- Docker Desktop
+- Ruby packages (optional):
   - Bundler
   - rake
   - Ruby development package for building native extensions
-- Docker Desktop (optional)
