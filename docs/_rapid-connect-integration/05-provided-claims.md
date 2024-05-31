@@ -1,6 +1,6 @@
 ---
 title: Provided Claims
-order: 4
+order: 5
 duration: 1
 ---
 
