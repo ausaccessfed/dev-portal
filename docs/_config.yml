@@ -358,3 +358,18 @@ collections:
     published: 2024-03-08
     author: Kelley Foster <kelley.foster@aaf.edu.au>
 
+  how-to-write-a-tutorial:
+    output: true
+    permalink: /:collection/:name
+    title: Adding & Editing Tutorials - A Guide for Contributors
+    summary: How to request changes to content or write your own tutorial
+    category: Getting Started
+    level: Beginner
+    tags:
+      - tutorial
+    difficulty: 1 # number from 1 to 5
+    duration: 10 # number of minutes
+    status: draft # draft or published
+    published: 2024-05-23
+    author: Kelley Foster <kelley.foster@aaf.edu.au>
+
