@@ -13,10 +13,11 @@ Please mark options that are relevant.
 
 ## How Has This Been Tested?
 
-Please describe the tests that you ran to verify your changes. This could involve visual checks, link checks, or using tools to validate HTML/CSS/JavaScript.
+Please describe the tests that you ran to verify your changes.
 
-- [ ] Test A
-- [ ] Test B
+- [ ] Visual checks
+- [ ] Link checks
+- [ ] HTML/CSS/JavaScript validation tools
 
 ## Checklist:
 
