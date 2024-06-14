@@ -373,3 +373,18 @@ collections:
     published: 2024-05-23
     author: Kelley Foster <kelley.foster@aaf.edu.au>
 
+  set-up-sp-in-multiple-federations:
+    output: true
+    permalink: /:collection/:name
+    title: Set up Service Provider in Multiple Federations
+    summary: A tutorial for setting up a Service Provider in multiple federations
+    category: Integration
+    level: Advanced
+    tags:
+      - tutorial
+    difficulty: 5
+    duration: 10 # number of minutes
+    status: draft # draft or published
+    published: 2024-06-14
+    author: Kelley Foster <kelley.foster@aaf.edu.au>
+
