@@ -1,6 +1,6 @@
 ## Description
 
-Provide a clear description of your pull request. Make sure to include the tutorial name and a reason for your suggested changes/additions. If it is related to an issue, please reference the issue number, like `#1234`.
+Provide a clear description of your pull request. Make sure to include the tutorial title and a reason for your suggested changes/additions. If it is related to an issue, please reference the issue number, like `#1234`.
 
 ## Type of change
 
