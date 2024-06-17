@@ -15,7 +15,7 @@ If you find an issue that needs to be resolved, please have a look through the [
 If it has, or a closely related issue exists, please add your comments to the existing issue.
 
 If your issue isn't already listed, then create a New Issue.
-Provide details of your suggestion and include the tutorial name and page to which your suggestion applies.
+Provide details of your suggestion and include the tutorial name and page to which your suggestion applies, as well as your email address.
 One of our technical team will review your suggestion and resolve it if they can.
 They may contact you if they need some more clarification.
 
@@ -30,6 +30,8 @@ You'll need a basic understanding of `git` to do this. Please refer to the `READ
 - If you intend to add a whole new tutorial, use the instructions for [adding tutorials below](#adding-a-new-tutorial).
 - Commit your changes to your branch.
 - When you are happy with your edits or additions, commit and send your changes.
+- Push your commits to your remote branch `git push -u origin <your-branch-name>`.
+- Navigate to the [Dev Portal GitHub repository](https://github.com/ausaccessfed/dev-portal) where you will be prompted to create a pull request (PR).
 
 ### Adding a new tutorial
 
@@ -64,7 +66,7 @@ You'll need the following YAML config:
     duration: <number of minutes tutorial might take>
     status: <draft or published>
     published: <YYYY-MM-DD>
-    author: <Your Name>
+    author: <Your Name> <your email address>
 ```
 
 Then for the content of your tutorial, each page within your tutorial should have the following front matter:

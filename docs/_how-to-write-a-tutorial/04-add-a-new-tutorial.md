@@ -35,7 +35,7 @@ Add the following details to the YAML config:
     duration: <number of minutes your tutorial might take>
     status: <draft or published>
     published: YYYY-MM-DD
-    author: <Your Name>
+    author: <Your Name> <your email address>
 ```
 
 
