@@ -331,13 +331,13 @@ collections:
     title: eduGAIN Series
     summary: Integrate and connect with eduGAIN
     curriculum: eduGAIN
-    level: Series # Beginner|Intermediate|Advanced|Series|Non-technical
+    level: Series
     tags:
       - series
       - advanced
-    difficulty: 4 # number from 1 to 5
-    duration: 47 # number of minutes
-    status: published # draft or published
+    difficulty: 4
+    duration: 47
+    status: published
     published: 2024-03-08
     author: Kelley Foster <kelley.foster@aaf.edu.au>
 
@@ -383,8 +383,8 @@ collections:
     tags:
       - tutorial
     difficulty: 5
-    duration: 10 # number of minutes
-    status: draft # draft or published
+    duration: 10
+    status: published
     published: 2024-06-14
     author: Kelley Foster <kelley.foster@aaf.edu.au>
 
