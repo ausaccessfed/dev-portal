@@ -54,7 +54,7 @@ collections:
       - tutorial
     difficulty: 3
     duration: 20
-    status: draft
+    status: published
     published: 2024-02-06
     author: Kelley Foster <kelley.foster@aaf.edu.au>
 
@@ -70,7 +70,7 @@ collections:
       - overview
     difficulty: 1
     duration: 5
-    status: draft
+    status: published
     published: 2024-02-06
     author: Kelley Foster <kelley.foster@aaf.edu.au>
 
@@ -87,7 +87,7 @@ collections:
       - tutorial
     difficulty: 1
     duration: 4
-    status: draft
+    status: published
     published: 2024-02-06
     author: Kelley Foster <kelley.foster@aaf.edu.au>
 
@@ -104,7 +104,7 @@ collections:
       - tutorial
     difficulty: 3
     duration: 15
-    status: draft
+    status: published
     published: 2024-02-06
     author: Kelley Foster <kelley.foster@aaf.edu.au>
   
@@ -121,7 +121,7 @@ collections:
       - tutorial
     difficulty: 3
     duration: 30
-    status: draft
+    status: published
     published: 2024-02-06
     author: Kelley Foster <kelley.foster@aaf.edu.au>
 
@@ -138,7 +138,7 @@ collections:
       - tutorial
     difficulty: 5
     duration: 60
-    status: draft
+    status: published
     published: 2024-02-06
     author: Kelley Foster <kelley.foster@aaf.edu.au>
 
@@ -155,7 +155,7 @@ collections:
       - tutorial
     difficulty: 3
     duration: 5
-    status: draft
+    status: published
     published: 2024-02-06
     author: Kelley Foster <kelley.foster@aaf.edu.au>
 
@@ -172,7 +172,7 @@ collections:
       - tutorial
     difficulty: 3
     duration: 15
-    status: draft
+    status: published
     published: 2024-02-06
     author: Kelley Foster <kelley.foster@aaf.edu.au>
 
@@ -189,7 +189,7 @@ collections:
       - tutorial
     difficulty: 3
     duration: 10
-    status: draft
+    status: published
     published: 2024-02-06
     author: Kelley Foster <kelley.foster@aaf.edu.au>
 
@@ -200,13 +200,13 @@ collections:
     summary: A tutorial for VerifID integration
     category: Integration
     curriculum: VerifID
-    level: Intermediate # Beginner|Intermediate|Advanced|Series|Non-technical
+    level: Intermediate
     tags:
       - tutorial
       - verifid
-    difficulty: 3 # number from 1 to 5
-    duration: 30 # number of minutes
-    status: draft # draft or published
+    difficulty: 3
+    duration: 30
+    status: published
     published: 2024-02-14
     author: Kelley Foster <kelley.foster@aaf.edu.au>
 
@@ -217,13 +217,13 @@ collections:
     summary: A tutorial for connecting with VerifID
     category: Connect a Service
     curriculum: VerifID
-    level: Intermediate # Beginner|Intermediate|Advanced|Series|Non-technical
+    level: Intermediate
     tags:
       - tutorial
       - verifid
-    difficulty: 3 # number from 1 to 5
-    duration: 15 # number of minutes
-    status: draft # draft or published
+    difficulty: 3
+    duration: 15
+    status: published
     published: 2024-02-16
     author: Kelley Foster <kelley.foster@aaf.edu.au>
 
@@ -233,13 +233,13 @@ collections:
     title: OpenID Connect Series
     summary: Integrate and connect with OIDC
     curriculum: OpenID Connect
-    level: Series # Beginner|Intermediate|Advanced|Series|Non-technical
+    level: Series
     tags:
       - series
       - intermediate
-    difficulty: 3 # number from 1 to 5
-    duration: 50 # number of minutes
-    status: draft # draft or published
+    difficulty: 3
+    duration: 50
+    status: published
     published: 2024-02-28
     author: Kelley Foster <kelley.foster@aaf.edu.au>
 
@@ -249,13 +249,13 @@ collections:
     title: Rapid Connect Series
     summary: Integrate and connect with Rapid Connect
     curriculum: Rapid Connect
-    level: Series # Beginner|Intermediate|Advanced|Series|Non-technical
+    level: Series
     tags:
       - series
       - intermediate
-    difficulty: 3 # number from 1 to 5
-    duration: 55 # number of minutes
-    status: draft # draft or published
+    difficulty: 3
+    duration: 55
+    status: published
     published: 2024-02-29
     author: Kelley Foster <kelley.foster@aaf.edu.au>
 
@@ -265,13 +265,13 @@ collections:
     title: VerifID Series
     summary: Integrate and connect with VerifID
     curriculum: VerifID
-    level: Series # Beginner|Intermediate|Advanced|Series|Non-technical
+    level: Series
     tags:
       - series
       - intermediate
-    difficulty: 3 # number from 1 to 5
-    duration: 55 # number of minutes
-    status: draft # draft or published
+    difficulty: 3
+    duration: 55
+    status: published
     published: 2024-02-29
     author: Kelley Foster <kelley.foster@aaf.edu.au>
 
@@ -281,13 +281,13 @@ collections:
     title: SAML Series
     summary: Integrate and connect with SAML
     curriculum: SAML
-    level: Series # Beginner|Intermediate|Advanced|Series|Non-technical
+    level: Series
     tags:
       - series
       - advanced
-    difficulty: 4 # number from 1 to 5
-    duration: 80 # number of minutes
-    status: draft # draft or published
+    difficulty: 4
+    duration: 80
+    status: published
     published: 2024-02-29
     author: Kelley Foster <kelley.foster@aaf.edu.au>
 
@@ -298,13 +298,13 @@ collections:
     summary: A tutorial for connecting to eduGAIN
     category: Connect a Service
     curriculum: eduGAIN
-    level: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
+    level: Beginner
     tags:
       - tutorial
       - eduGAIN
-    difficulty: 1 # number from 1 to 5
-    duration: 5 # number of minutes
-    status: draft # draft or published
+    difficulty: 1
+    duration: 5
+    status: published
     published: 2024-03-05
     author: Kelley Foster <kelley.foster@aaf.edu.au>
 
@@ -315,13 +315,13 @@ collections:
     summary: A tutorial for eduGAIN integration
     category: Integration
     curriculum: eduGAIN
-    level: Advanced # Beginner|Intermediate|Advanced|Series|Non-technical
+    level: Advanced
     tags:
       - tutorial
       - eduGAIN
-    difficulty: 4 # number from 1 to 5
-    duration: 30 # number of minutes
-    status: draft # draft or published
+    difficulty: 4
+    duration: 30
+    status: published
     published: 2024-03-06
     author: Kelley Foster <kelley.foster@aaf.edu.au>
 
@@ -331,13 +331,13 @@ collections:
     title: eduGAIN Series
     summary: Integrate and connect with eduGAIN
     curriculum: eduGAIN
-    level: Series # Beginner|Intermediate|Advanced|Series|Non-technical
+    level: Series
     tags:
       - series
       - advanced
-    difficulty: 4 # number from 1 to 5
-    duration: 47 # number of minutes
-    status: draft # draft or published
+    difficulty: 4
+    duration: 47
+    status: published
     published: 2024-03-08
     author: Kelley Foster <kelley.foster@aaf.edu.au>
 
@@ -348,13 +348,13 @@ collections:
     summary: An overview of eduGAIN
     category: Getting Started
     curriculum: eduGAIN
-    level: Intermediate # Beginner|Intermediate|Advanced|Series|Non-technical
+    level: Intermediate
     tags:
       - tutorial
       - eduGAIN
-    difficulty: 3 # number from 1 to 5
-    duration: 10 # number of minutes
-    status: draft # draft or published
+    difficulty: 3
+    duration: 10
+    status: published
     published: 2024-03-08
     author: Kelley Foster <kelley.foster@aaf.edu.au>
 
@@ -367,9 +367,9 @@ collections:
     level: Beginner
     tags:
       - tutorial
-    difficulty: 1 # number from 1 to 5
-    duration: 10 # number of minutes
-    status: draft # draft or published
+    difficulty: 1
+    duration: 10
+    status: published
     published: 2024-05-23
     author: Kelley Foster <kelley.foster@aaf.edu.au>
 
@@ -383,8 +383,8 @@ collections:
     tags:
       - tutorial
     difficulty: 5
-    duration: 10 # number of minutes
-    status: draft # draft or published
+    duration: 10
+    status: published
     published: 2024-06-14
     author: Kelley Foster <kelley.foster@aaf.edu.au>
 

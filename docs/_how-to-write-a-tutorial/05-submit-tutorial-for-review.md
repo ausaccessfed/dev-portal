@@ -11,10 +11,15 @@ duration: 1
 
 ![Create a PR](/assets/images/how-to-write-a-tutorial/create-a-pr.png)
 
-- Provide a clear description of your pull request. Make sure to include the tutorial name and a reason for your suggested changes/additions.
+- Provide a clear description of your pull request. Make sure to:
+  - include the title of the tutorial and a reason for your suggested changes/additions. 
+  - reference the issue number if your pull request is related to an existing issue.
+  - test your tutorial content (including any links/images) to ensure it is accurate and easy to follow.
+  - provide your email address so we can contact you if we need more information.
+- Click "Create pull request".
+
+![Open a PR](/assets/images/how-to-write-a-tutorial/open-pr.png)
+
 - When you are ready, click on "Ready for review".
 
 ![Ready for review](/assets/images/how-to-write-a-tutorial/ready-for-review.png)
-
-- Our technical team will review your PR and may contact you if they need more clarification.
-- Approved changes and new tutorials will be merged into the main branch and published to the AAF Support Tutorials site.
