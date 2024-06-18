@@ -1,5 +1,5 @@
 ---
-title: Minor changes
+title: Request minor changes
 order: 2
 duration: 1
 ---
