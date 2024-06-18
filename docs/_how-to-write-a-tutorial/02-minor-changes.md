@@ -1,5 +1,5 @@
 ---
-title: Minor changes
+title: Request minor changes
 order: 2
 duration: 1
 ---
@@ -20,7 +20,7 @@ Then click on the "Get started" button.
 
 ![Get Started Button](/assets/images/how-to-write-a-tutorial/get-started-button.png)
 
-- Provide a title and a clear description of your suggestion. Make sure to include the tutorial name and page to which your suggestion applies, as well as your email address.
+- Provide a clear description of your suggestion. Make sure to include the tutorial name and page/s to which your suggestion applies, as well as your email address.
 
 - When you are finished, click on "Submit new issue". Our technical team will review your issue and resolve it if they can. They may contact you if they need more clarification.
 

@@ -15,7 +15,7 @@ This command will create:
 - A new directory for hosting the markdown content.
 - An initial overview page for your new tutorial.
 - An images directory specific to your new tutorial (located in `assets/images/<title of your tutorial>`).
-- A configuration entry in `_config.yml`.
+- A configuration entry at the bottom of the `_config.yml` file.
 
 You will then need to edit the metadata for your new tutorial in `_config.yml` under the `collections` section.
 
@@ -49,7 +49,7 @@ duration: <estimated page duration>
 ---
 ```
 
-You will need to restart the preview process for Jekyll to render your new tutorial, but once it's done, it will be available from the `docs` folder of the site.
+You will need to restart the preview process for Jekyll to render your new tutorial (using the command `bundle exec jekyll serve`), but once it's done, it will be available from the `docs` folder of the site.
 
 <br>
 
