@@ -17,17 +17,26 @@ This command will create:
 - An images directory specific to your new tutorial (located in `assets/images/<title of your tutorial>`).
 - A configuration entry in `_config.yml`.
 
-You will then need to edit the metadata for your new tutorial in `_config.yml` under the `collections` section.
+You will need to edit the metadata for your new tutorial in the `_config.yml` file within the `collections` section.
 
-Add the following details to the YAML config:
+Add the following details to the YAML config below:
+
+Use these definitions for tutorial difficulty:
+1. Beginner (basic knowledge)
+2. Beginner (limited experience)
+3. Intermediate (practical application)
+4. Advanced (applied theory)
+5. Advanced (recognized authority)
+
+<br>
 
 ```yaml
   your-tutorial-id:
     output: true
     permalink: /:collection/:name
-    title: <tutorial title>
-    summary: <tutorial summary>
-    category: <one of Beginner, Intermediate, Advanced, Non-Technical or Curriculum>
+    title: <your tutorial title>
+    summary: <tutorial description>
+    category: <choose one of Beginner, Intermediate, Advanced, Non-Technical or Curriculum>
     tags:
       - <tag 1>
       - <tag n>
@@ -38,6 +47,7 @@ Add the following details to the YAML config:
     author: <Your Name> <your email address>
 ```
 
+<br>
 
 Each page (i.e. file) of the tutorial needs to be in Markdown format (`<name-of-page>`.md) and have the following front matter:
 

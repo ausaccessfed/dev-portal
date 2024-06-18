@@ -4,7 +4,7 @@ order: 2
 duration: 1
 ---
 
-This section which will show you how to request changes to the tutorial documentation.
+This section which will show you how to request minor changes to the tutorial documentation.
 
 ## Raising an issue
 The easiest way to request a change is to raise an issue. To do this, you will require a [GitHub](https://github.com) account.
@@ -12,7 +12,7 @@ The easiest way to request a change is to raise an issue. To do this, you will r
 If there is an issue that needs to be resolved, please have a look through the [list of existing issues](https://github.com/ausaccessfed/dev-portal/issues) to see whether your issue hasn't already been reported.
 If it has, or a closely related issue exists, please add your comments to the existing issue.
 
-You can raise an issue by clicking on the ["Issues"](https://github.com/ausaccessfed/dev-portal/issues) tab in the AAF dev-portal repository and then clicking on the "New Issue" button.
+You can raise a new issue by clicking on the ["Issues"](https://github.com/ausaccessfed/dev-portal/issues) tab in the AAF dev-portal repository and then clicking on the "New Issue" button.
 
 ![New Issue Button](/assets/images/how-to-write-a-tutorial/new-issue-button.png)
 
