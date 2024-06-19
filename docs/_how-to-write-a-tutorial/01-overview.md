@@ -25,3 +25,4 @@ To contribute major changes or an entire **new tutorial**, you will need to set 
   - Bundler
   - rake
   - Ruby development package for building native extensions
+  - nothing
