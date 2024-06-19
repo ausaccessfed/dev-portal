@@ -15,7 +15,7 @@ bundle exec rake tutorial "Title of your tutorial"
 **This command will create:**
 
 ##### 1. A new directory for hosting the markdown content.
-  - The directory will be named according to the title of your tutorial.
+  - The directory will be named after the title of your tutorial.
 
 ##### 2. An initial overview page for your new tutorial.
   - The overview page will be named `01-overview.md`. Please include a summary of the tutorial content in this file as well as the following headings: "What you'll learn" (what the user will learn from your tutorial) and "What you'll need" (what prerequisites a user will require before starting your tutorial).
@@ -33,14 +33,14 @@ duration: <estimated page duration>
 
 ##### 3. An images directory specific to your new tutorial
   - located in `assets/images/<title of your tutorial>`.
-  - This directory will store any images you wish to include in your tutorial.
+  - This directory will store any images and diagrams you wish to include in your tutorial.
 
 ##### 4. An index file
 - This file will redirect to the first page of your tutorial. Please do not change this file.
 
 ##### 5. A new entry at the bottom of the `_config.yml` file. 
   - You will need to edit the metadata for your new tutorial in this file. 
-  - Add the following details to the YAML config as shown below:
+  - Add the following details to the new entry as shown below:
 
 ```yaml
   your-tutorial-id:
@@ -88,6 +88,7 @@ To create a numbered list for a series of steps, use 1. (number one) followed by
 1. 
 1. 
 
+<br>
 
 #### Highlighting important information
 
@@ -122,6 +123,28 @@ Warning
 ```
 Info
 {: .callout-info}
+
+<br>
+
+#### Adding links and images
+
+To add an internal link to a page, use the following syntax:
+
+```shell
+[Link text](/path-to-page)
+```
+
+For an external link, use the following syntax:
+
+```shell
+[Link text](https://www.example.com)
+```
+
+To add an image, use the following syntax:
+
+```shell
+![Alt text](/path-to-image)
+```
 
 <br>
 

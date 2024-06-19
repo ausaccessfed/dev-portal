@@ -24,7 +24,7 @@ Click on the "Get started" button for "Request Minor Changes".
 
 - When you are finished, click on "Submit new issue". Our technical team will review your issue and resolve it if they can. They may contact you if they need more clarification.
 
-![Raise an Issue](/assets/images/how-to-write-a-tutorial/minor-changes-issue.png)
+![Raise an Issue](/assets/images/how-to-write-a-tutorial/raise-an-issue.png)
 
 ## Opening a Pull Request (PR)
 
