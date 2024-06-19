@@ -1,10 +1,13 @@
 ---
-title: Submit tutorial for review
+title: Submit changes for review
 order: 5
 duration: 1
 ---
 
-- When you are happy with your edits or additions, commit your changes to your branch.
+<br>
+
+### Opening a Pull Request (PR)
+- When you are happy with your tutorial content, commit your changes to your branch.
 - Push your commits to your remote branch `git push -u origin <your-branch-name>`.
 - Navigate to the [Dev Portal GitHub repository](https://github.com/ausaccessfed/dev-portal) where you will be prompted to create a pull request (PR).
 - Click on "Compare & pull request".
