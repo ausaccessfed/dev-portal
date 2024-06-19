@@ -11,9 +11,9 @@ body:
       value: "Note: Please search to see if an issue already exists for your suggested improvement."
 
   - type: input
-    id: tutorial-summary
+    id: changes-summary
     attributes:
-      label: Tutorial Summary
+      label: Changes Summary
       description: "Enter a brief summary of your suggested changes. Make sure to include the tutorial name and page/s to which your changes apply."
     validations:
       required: true
