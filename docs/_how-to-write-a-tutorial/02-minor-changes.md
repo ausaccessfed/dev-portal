@@ -16,12 +16,12 @@ You can raise a new issue by clicking on the ["Issues"](https://github.com/ausac
 
 ![New Issue Button](/assets/images/how-to-write-a-tutorial/new-issue-button.png)
 
-Then click on the "Get started" button.
+Then click on the "Get started" button for requesting minor changes.
 
-![Get Started Button](/assets/images/how-to-write-a-tutorial/get-started-button.png)
+![Get Started Button](/assets/images/how-to-write-a-tutorial/get-started-button-2.png)
 
 - Provide a title and a clear description of your suggestion. Make sure to include the tutorial name and page to which your suggestion applies, as well as your email address.
 
-- When you are finished, click on "Submit new issue". Our technical team will review your issue and resolve it if they can. They may contact you if they need more clarification.
+![Raise an Issue](/assets/images/how-to-write-a-tutorial/raise-an-issue-2.png)
 
-![Raise an Issue](/assets/images/how-to-write-a-tutorial/raise-an-issue.png)
+- When you are finished, click on "Submit new issue". Our technical team will review your issue and resolve it if they can. They may contact you if they need more clarification.
