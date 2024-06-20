@@ -30,6 +30,7 @@ order: <number 1 to n for each page>
 duration: <estimated page duration>
 ---
 ```
+<br>
 
 ##### 3. An images directory specific to your new tutorial
   - located in `assets/images/<title of your tutorial>`.
