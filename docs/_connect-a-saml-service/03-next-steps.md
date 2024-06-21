@@ -10,5 +10,5 @@ Await review by the **AAF Support team**, who will be in touch with the deployer
 On approval, the service is registered in the **Federation** and metadata generated for inclusion in the **AAF Metadata** file, which is refreshed every few hours.
 <br>
 <br>
-Head over to the [Find your service](http://127.0.0.1:4000/find-your-registered-services/01-overview) tutorial to learn how to confirm that your service has been registered in Federation Manager.
+Head over to the [Find your service](/find-your-registered-services/01-overview) tutorial to learn how to confirm that your service has been registered in Federation Manager.
 {: .callout-info }
