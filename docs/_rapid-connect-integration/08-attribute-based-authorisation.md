@@ -51,8 +51,9 @@ Attributes that can be utilised for authorisation are contained within the claim
   </thead>
   <tbody>
     <tr>
-      <th scope="row"><a href="https://validator.aaf.edu.au/documentation/attributes/oid:1.3.6.1.4.1.5923.1.1.1.9">eduperson_scoped_affiliation</a></th>
-      <td><ul><li>Used to authorise users based on their affiliation/s in their home organisation.</li><li>Should be used when the service provider <strong>does not</strong> need confirmation of the security domain of the user.</li></ul></td>
+      <th scope="row"><a href="https://validator.aaf.edu.au/documentation/attributes/oid:1.3.6.1.4.1.5923.1.1.1.9">eduPersonScopedAffiliation</a></th>
+      <td><ul><li>Used to authorise users based on their affiliation/s in their home organisation.</li><li>Should be used when the Service Provider <strong>does not</strong> need confirmation of the security domain of the user.
+</li></ul></td>
     </tr>
     <tr>
       <th scope="row"><a href="https://validator.aaf.edu.au/documentation/attributes/oid:0.9.2342.19200300.100.1.3">mail</a></th>
