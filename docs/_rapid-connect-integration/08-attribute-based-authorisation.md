@@ -6,7 +6,7 @@ duration: 1
 
 Specific claims within the ID token can be utilised to make authorisation decisions within an application.
 
-Below is an example of a decoded JWS for the user "John Doe" sent by Rapid Connect:
+Below is an example of a decoded JWS for the user "John Doe" sent by Rapid Connect.
 
 ```json
 {
@@ -35,9 +35,40 @@ Below is an example of a decoded JWS for the user "John Doe" sent by Rapid Conne
 
 <br>
 
-Attributes that can be utilised for authorisation are contained within the claim object `https://aaf.edu.au/attributes` and include:
+For a live example of attribute release for your institution, sign in to the [AAF Rapid Connector App](https://rapid-connector.dev.aaf.edu.au/).
+{: .callout-info}
 
-- [`edupersonscopedaffiliation`](https://validator.aaf.edu.au/documentation/attributes/oid:1.3.6.1.4.1.5923.1.1.1.9) - Indicates the user's position within the organisation, e.g. student, staff, faculty, alumn, library-walk-in. This should be used when the service provider requires confirmation of the user's security domain.
+<br>
+
+Attributes that can be utilised for authorisation are contained within the claim object `https://aaf.edu.au/attributes` of the JWS and include:
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Attribute Name</th>
+      <th scope="col">Notes on Usage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"><a href="https://validator.aaf.edu.au/documentation/attributes/oid:1.3.6.1.4.1.5923.1.1.1.9">eduperson_scoped_affiliation</a></th>
+      <td><ul><li>Used to authorise users based on their affiliation/s in their home organisation.</li><li>Should be used when the service provider <strong>does not</strong> need confirmation of the security domain of the user.</li></ul></td>
+    </tr>
+    <tr>
+      <th scope="row"><a href="https://validator.aaf.edu.au/documentation/attributes/oid:0.9.2342.19200300.100.1.3">mail</a></th>
+      <td><ul><li>Should only be used when a Service Provider needs to communicate with the end user.</li>
+<li>This may apply when an applicant needs to be informed whether their access to a research database has been granted or denied.</li></ul></td>
+    </tr>
+    <tr>
+      <th scope="row"><a href="https://validator.aaf.edu.au/documentation/attributes/oid:2.5.4.3">commonName</a></th>
+      <td>Should only be used if a user's common name is necessary for a wiki or other collaboration platform.</td>
+    </tr>
+    <tr>
+      <th scope="row"><a href="https://validator.aaf.edu.au/documentation/attributes/oid:2.16.840.1.113730.3.1.241">displayName</a></th>
+      <td>Should only be used if a user's preferred name is necessary for a wiki or other collaboration platform.</td>
+    </tr>
+  </tbody>
+</table>
 
 The claim `organizationname` should not be used for authorisation decisions.
 {: .callout-info}

@@ -6,9 +6,7 @@ duration: 1
 
 Specific attributes can be utilised to make authorisation decisions within an application.
 
-Below is an example of the ID Token attributes that are provided by the AAF OpenID Provider and translated to OpenID Connect. 
-
-For a live example, sign in to the [AAF OpenID Connect Demo App](https://oidc-demo.aaf.edu.au/).
+Below is an example of the ID Token attributes that are provided by the AAF OpenID Provider and translated to OpenID Connect:
   
 ```json
   {
@@ -48,6 +46,11 @@ For a live example, sign in to the [AAF OpenID Connect Demo App](https://oidc-de
 
 <br>
 
+For a live example of attribute release for your institution, sign in to the [AAF OpenID Connect Demo App](https://oidc-demo.aaf.edu.au/).
+{: .callout-info}
+
+<br>
+
 The relevant attributes that can be utilised for authorisation by a Service Provider include:
 
 <table class="table table-striped">
@@ -60,28 +63,29 @@ The relevant attributes that can be utilised for authorisation by a Service Prov
   <tbody>
     <tr>
       <th scope="row"><a href="https://validator.aaf.edu.au/documentation/attributes/oid:1.3.6.1.4.1.5923.1.1.1.7">eduperson_entitlement</a></th>
-      <td><ul><li>Indicates a user's set of rights to specific resources.</li><li>Service provider 
-invites 
-some or all identity providers to express that value for those users who satisfy the 
-definition.</li><li>Responsibility for authorisation of access to a particular resource can be delegated by the Service Provider to the Identity Provider.</li></ul></td>
+      <td><ul><li>Indicates a user's set of rights to specific resources.</li><li>The Service Provider can invite 
+some or all Identity Providers to express that value for those users who satisfy the definition.
+</li><li>The Service Provider can delegate responsibility for authorisation of access to a particular resource to the Identity Provider.</li></ul></td>
     </tr>
     <tr>
       <th scope="row"><a href="https://validator.aaf.edu.au/documentation/attributes/oid:1.3.6.1.4.1.5923.1.1.1.1">eduperson_affiliation</a></th>
-      <td><ul><li>Enables an organisation to assert its relationship with the user.</li><li>Provides a user (member of an organisation, or a specific school or faculty within it) access to a resource on a site licence basis.</li></ul></td>
+      <td><ul><li>Enables an organisation to assert its relationship with the user.</li><li>Provides a user (member 
+of an organisation, or a specific school or faculty within it) access to a resource on a site licence basis.
+</li><li>Should be used when the Service Provider <strong>does not</strong> need confirmation of the security domain of the user.</li></ul></td>
     </tr>
     <tr>
       <th scope="row"><a href="https://validator.aaf.edu.au/documentation/attributes/oid:1.3.6.1.4.1.5923.1.1.1.9">eduperson_scoped_affiliation</a></th>
-      <td>A multivalued attribute used to reflect multiple relationships that a user has with an organisation and that Service Providers use to authorise access.</td>
+      <td><ul><li>A multivalued attribute used to reflect multiple relationships that a user has with an organisation.</li>
+<li>Should be used when the service provider <strong>does need</strong> confirmation of the security domain of the user.</li></ul></td>
     </tr>
     <tr>
       <th scope="row"><a href="https://validator.aaf.edu.au/documentation/attributes/oid:1.3.6.1.4.1.25178.1.2.9">schac_home_organization</a></th>
-      <td>A person's home organization using the domain name of the organization</td>
+      <td><ul><li>Can be used when the Service Provider needs to identify the Home Institution of a user.</li></ul></td>
     </tr>
     <tr>
-    <th scope="row"><a href="https://validator.aaf.edu.au/documentation/attributes/oid:0.9.2342.19200300.100.1.3">email</a></th>
-      <td><ul><li>Should only be used when the service provider needs to communicate with the end user.</li>
-<li>This may apply when an applicant is informed if their access to a research database is denied or 
-granted</li></ul></td>
+    <th scope="row"><a href="https://validator.aaf.edu.au/documentation/attributes/oid:0.9.2342.19200300.100.1.3">mail</a></th>
+      <td><ul><li>Should only be used when the Service Provider needs to communicate with the end user.</li>
+<li>This may apply when an applicant needs to be informed whether their access to a research database has been granted or denied.</li></ul></td>
     </tr>
   </tbody>
 </table>
