@@ -12,7 +12,7 @@ Below are the core attributes that can be released by the AAF Identity Provider 
 
 <br>
 
-For a live example of attribute release for your institution, sign in to [AAF Validator](https://validator.test.aaf.edu.au/).
+For a live example of attribute release for your institution, sign in to [AAF Validator](https://validator.aaf.edu.au/).
 {: .callout-info}
 
 <br>
