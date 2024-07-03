@@ -54,7 +54,6 @@ collections:
       - tutorial
     difficulty: 3
     duration: 20
-    status: published
     published: 2024-02-06
     author: Kelley Foster <kelley.foster@aaf.edu.au>
 
@@ -70,7 +69,6 @@ collections:
       - overview
     difficulty: 1
     duration: 5
-    status: published
     published: 2024-02-06
     author: Kelley Foster <kelley.foster@aaf.edu.au>
 
@@ -87,7 +85,6 @@ collections:
       - tutorial
     difficulty: 1
     duration: 4
-    status: published
     published: 2024-02-06
     author: Kelley Foster <kelley.foster@aaf.edu.au>
 
@@ -104,7 +101,6 @@ collections:
       - tutorial
     difficulty: 3
     duration: 15
-    status: published
     published: 2024-02-06
     author: Kelley Foster <kelley.foster@aaf.edu.au>
   
@@ -121,7 +117,6 @@ collections:
       - tutorial
     difficulty: 3
     duration: 30
-    status: published
     published: 2024-02-06
     author: Kelley Foster <kelley.foster@aaf.edu.au>
 
@@ -138,7 +133,6 @@ collections:
       - tutorial
     difficulty: 5
     duration: 60
-    status: published
     published: 2024-02-06
     author: Kelley Foster <kelley.foster@aaf.edu.au>
 
@@ -155,7 +149,6 @@ collections:
       - tutorial
     difficulty: 3
     duration: 5
-    status: published
     published: 2024-02-06
     author: Kelley Foster <kelley.foster@aaf.edu.au>
 
@@ -172,7 +165,6 @@ collections:
       - tutorial
     difficulty: 3
     duration: 15
-    status: published
     published: 2024-02-06
     author: Kelley Foster <kelley.foster@aaf.edu.au>
 
@@ -189,7 +181,6 @@ collections:
       - tutorial
     difficulty: 3
     duration: 10
-    status: published
     published: 2024-02-06
     author: Kelley Foster <kelley.foster@aaf.edu.au>
 
@@ -206,7 +197,6 @@ collections:
       - verifid
     difficulty: 3
     duration: 30
-    status: published
     published: 2024-02-14
     author: Kelley Foster <kelley.foster@aaf.edu.au>
 
@@ -223,7 +213,6 @@ collections:
       - verifid
     difficulty: 3
     duration: 15
-    status: published
     published: 2024-02-16
     author: Kelley Foster <kelley.foster@aaf.edu.au>
 
@@ -239,7 +228,6 @@ collections:
       - intermediate
     difficulty: 3
     duration: 50
-    status: published
     published: 2024-02-28
     author: Kelley Foster <kelley.foster@aaf.edu.au>
 
@@ -255,7 +243,6 @@ collections:
       - intermediate
     difficulty: 3
     duration: 55
-    status: published
     published: 2024-02-29
     author: Kelley Foster <kelley.foster@aaf.edu.au>
 
@@ -271,7 +258,6 @@ collections:
       - intermediate
     difficulty: 3
     duration: 55
-    status: published
     published: 2024-02-29
     author: Kelley Foster <kelley.foster@aaf.edu.au>
 
@@ -287,7 +273,6 @@ collections:
       - advanced
     difficulty: 4
     duration: 80
-    status: published
     published: 2024-02-29
     author: Kelley Foster <kelley.foster@aaf.edu.au>
 
@@ -304,7 +289,6 @@ collections:
       - eduGAIN
     difficulty: 1
     duration: 5
-    status: published
     published: 2024-03-05
     author: Kelley Foster <kelley.foster@aaf.edu.au>
 
@@ -321,7 +305,6 @@ collections:
       - eduGAIN
     difficulty: 4
     duration: 30
-    status: published
     published: 2024-03-06
     author: Kelley Foster <kelley.foster@aaf.edu.au>
 
@@ -337,7 +320,6 @@ collections:
       - advanced
     difficulty: 4
     duration: 47
-    status: published
     published: 2024-03-08
     author: Kelley Foster <kelley.foster@aaf.edu.au>
 
@@ -354,7 +336,6 @@ collections:
       - eduGAIN
     difficulty: 3
     duration: 10
-    status: published
     published: 2024-03-08
     author: Kelley Foster <kelley.foster@aaf.edu.au>
 
@@ -369,7 +350,6 @@ collections:
       - tutorial
     difficulty: 1
     duration: 10
-    status: published
     published: 2024-05-23
     author: Kelley Foster <kelley.foster@aaf.edu.au>
 
@@ -384,7 +364,6 @@ collections:
       - tutorial
     difficulty: 5
     duration: 10
-    status: published
     published: 2024-06-14
     author: Kelley Foster <kelley.foster@aaf.edu.au>
 
@@ -399,7 +378,6 @@ collections:
       - tutorial
     difficulty: 1
     duration: 5
-    status: draft
     published: 2024-06-21
     author: Kelley Foster <kelley.foster@aaf.edu.au>
 
