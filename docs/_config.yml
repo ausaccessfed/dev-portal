@@ -36,6 +36,7 @@ tutorial_categories:
   - Federation Manager Authentication
   - Connect a Service
   - Identity Management Solutions
+  - Authorization
 
 # New tutorials should be added by running:
 #   $ rake tutorial "My tutorial title"
@@ -379,5 +380,19 @@ collections:
     difficulty: 1
     duration: 5
     published: 2024-06-21
+    author: Kelley Foster <kelley.foster@aaf.edu.au>
+
+  define-group-based-edupersonaffiliation:
+    output: true
+    permalink: /:collection/:name
+    title: Define eduPersonAffiliation based on Groups
+    summary: A tutorial for Defining eduPersonAffiliation based on Groups
+    category: Authorization
+    level: Advanced
+    tags:
+      - tutorial
+    difficulty: 4
+    duration: 10
+    published: 2024-07-04
     author: Kelley Foster <kelley.foster@aaf.edu.au>
 
