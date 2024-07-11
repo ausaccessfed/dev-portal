@@ -1,6 +1,6 @@
 ---
 title: AAF OIDC Demo App - Synthetic SP
-order: 4
+order: 5
 duration: 1
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: AAF OIDC Demo App - Synthetic SP + eduGAIN
-order: 5
+order: 6
 duration: 1
 ---
 
