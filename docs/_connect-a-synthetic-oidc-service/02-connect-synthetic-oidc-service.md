@@ -32,8 +32,8 @@ Once you have clicked on 'OpenID Connect' on the ['Connect a New Service'](https
 registration via the client details page.
 <br><br>In contrast to a standard service, a synthetic service requires the following redirect URLs:
 <br><br><ul>
-        <li>Synthetic service: <br><br>https://application.com/oidc_synthetic/callback</li><br><br>
-        <li>Synthetic service + eduGAIN: <br><br>https://application.com/oidc_synthetic_edugain/callback</li>
+        <li>Synthetic service: <br><br><strong>https://application.com/oidc_synthetic/callback</strong></li><br><br>
+        <li>Synthetic service + eduGAIN: <br><br><strong>https://application.com/oidc_synthetic_edugain/callback</strong></li>
       </ul>
         </td>
     </tr>    
