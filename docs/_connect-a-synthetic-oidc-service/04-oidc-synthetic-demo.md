@@ -1,12 +1,14 @@
 ---
 title: AAF OIDC Demo App - Synthetic SP
-order: 5
+order: 4
 duration: 1
 ---
 
-The [AAF OIDC Demo App](https://oidc-demo.test.aaf.edu.au/) is a simple web application that demonstrates the OpenID Connect Authorization Code flow.
+To see a demonstration using a synthetic service provider, head over to the [AAF OIDC Demo App](https://oidc-demo.test.aaf.edu.au/). 
 
-To see a demonstration using a synthetic service provider, click "Sign in via AAF (Synthetic SP)" to begin the authentication process.
+This is a simple web application that demonstrates the OpenID Connect Authorization Code flow.
+
+Click "Sign in via AAF (Synthetic SP)" to begin the authentication process.
 
 ![OIDC Demo App](/assets/images/connect-a-synthetic-oidc-service/oidc-demo-app-synthetic.png)
 
