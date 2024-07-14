@@ -7,7 +7,7 @@ duration: 1
 This tutorial shows how to register a new **synthetic** OpenID Connect service with the AAF Test Federation. 
 
 The benefits of connecting a **synthetic service** over a **standard service** include:
-- The ability to have fine-grained control over the scopes and claims that are returned in the ID Token.
+- The ability to have fine-grained control over the scopes and claims that are returned in the ID Token and Userinfo.
 - Access to eduGAIN
 
 ### What you'll learn

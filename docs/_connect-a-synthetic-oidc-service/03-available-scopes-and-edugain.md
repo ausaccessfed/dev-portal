@@ -8,7 +8,7 @@ duration: 1
 
 ## Scopes
 
-Once your service has been [registered in Federation Manager](http://127.0.0.1:4000/find-your-registered-services/01-overview) and the AAF has provided you with access to the synthetic feature, click on your new active synthetic service:
+Once the AAF has provided you with access to the synthetic feature and you have registered your service in [Federation Manager](http://127.0.0.1:4000/find-your-registered-services/01-overview), click on your new active synthetic service:
 
 ![Services Page](/assets/images/connect-a-synthetic-oidc-service/synthetic-oidc-service.png)
 
@@ -16,12 +16,12 @@ On the service page, click on the "Scopes" tab to configure the scopes that your
 
 ![Scopes button](/assets/images/connect-a-synthetic-oidc-service/scopes-button.png)
 
-The following scopes are available for use with synthetic services:
+Choose the scopes that you wish to use with your synthetic service. Please note that by default, *all* scopes will be used unless specified otherwise.
 
 ![Available Scopes](/assets/images/connect-a-synthetic-oidc-service/available-scopes.png)
 
 
-When you have selected the scopes required for your service, head back to the "Overview" tab and click the "Update Service" button to save your changes.
+When you have selected the scopes for your service, head back to the "Overview" tab and click the "Update Service" button to save your changes.
 
 ![Update Service](/assets/images/connect-a-synthetic-oidc-service/update-service-button.png)
 
