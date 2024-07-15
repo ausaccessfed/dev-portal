@@ -20,11 +20,6 @@ Choose the scopes that you wish to use with your synthetic service. Please note 
 
 ![Available Scopes](/assets/images/connect-a-synthetic-oidc-service/available-scopes.png)
 
-
-When you have selected the scopes for your service, head back to the "Overview" tab and click the "Update Service" button to save your changes.
-
-![Update Service](/assets/images/connect-a-synthetic-oidc-service/update-service-button.png)
-
 <br>
 
 ## Access to eduGAIN
