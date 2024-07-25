@@ -380,20 +380,3 @@ collections:
     duration: 5
     published: 2024-06-21
     author: Kelley Foster <kelley.foster@aaf.edu.au>
-
-  connect-a-synthetic-oidc-service:
-    output: true
-    permalink: /:collection/:name
-    title: Connect a Synthetic OIDC Service
-    summary: A tutorial for Connecting a Synthetic OIDC Service
-    category: Connect a Service
-    curriculum: OpenID Connect
-    level: Intermediate
-    tags:
-      - tutorial
-      - openid connect
-    difficulty: 3
-    duration: 10
-    published: 2024-07-10
-    author: Kelley Foster <kelley.foster@aaf.edu.au>
-
