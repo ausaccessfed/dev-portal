@@ -30,5 +30,12 @@ registration process.
 You only have one opportunity to copy the Secret, it cannot be recovered later. You can however generate a new secret later.
 {: .callout-warning }
 
-Your service is now available to use immediately in the Test Federation!
-{: .callout-success }
+Your service will be automatically registered in the Test Federation. However, there will be a delay before you can use the service. 
+{: .callout-info }
+
+This delay includes:
+- metadata generation/publishing
+- cron jobs on Federation Manager's side to ensure shib-sp knows how to respond to the new synthetic service.
+
+You will see an error message if you attempt to log into the service while it is being processed.
+{: .callout-warning }
