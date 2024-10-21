@@ -24,8 +24,7 @@ Once you have clicked on 'OpenID Connect' on the ['Connect a New Service'](https
 
 - Click **Register Service** to complete the registration step.
 
-You will be provided with the Identifier and Secret used by your **RP** service that is generated during the 
-registration process.
+You will be provided with the Identifier and Secret used by your **RP** service that is generated during the registration process.
 
 You only have one opportunity to copy the Secret, it cannot be recovered later. You can however generate a new secret later.
 {: .callout-warning }
@@ -34,8 +33,8 @@ Your service will be automatically registered in the Test Federation. However, t
 {: .callout-info }
 
 This delay includes:
-- metadata generation/publishing
-- cron jobs on Federation Manager's side to ensure shib-sp knows how to respond to the new synthetic service.
+- Generating and publishing new SAML metadata for your service
+- Background jobs setting up the required configuration changes for your new service
 
 You will see an error message if you attempt to log into the service while it is being processed.
 {: .callout-warning }
