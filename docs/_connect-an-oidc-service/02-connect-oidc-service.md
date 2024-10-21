@@ -24,11 +24,17 @@ Once you have clicked on 'OpenID Connect' on the ['Connect a New Service'](https
 
 - Click **Register Service** to complete the registration step.
 
-You will be provided with the Identifier and Secret used by your **RP** service that is generated during the 
-registration process.
+You will be provided with the Identifier and Secret used by your **RP** service that is generated during the registration process.
 
 You only have one opportunity to copy the Secret, it cannot be recovered later. You can however generate a new secret later.
 {: .callout-warning }
 
-Your service is now available to use immediately in the Test Federation!
-{: .callout-success }
+Your service will be automatically registered in the Test Federation. However, there will be a delay before you can use the service. 
+{: .callout-info }
+
+This delay includes:
+- Generating and publishing new SAML metadata for your service
+- Background jobs setting up the required configuration changes for your new service
+
+You will see an error message if you attempt to log into the service while it is being processed.
+{: .callout-warning }
