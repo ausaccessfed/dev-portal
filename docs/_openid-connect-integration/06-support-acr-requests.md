@@ -4,7 +4,7 @@ order: 7
 duration: 1
 ---
 
-Currently, the only supported ACR value is the [`https://refeds.org/profile/mfa`](https://refeds.org/profile/mfa) value. This value is used to request the REFEDS MFA profile for the user. If the users' IdP supports the REFEDS MFA profile, the AAF OpenID Provider will return the REFEDS MFA profile attributes in the ID Token. If the users' IdP does not support the REFEDS MFA profile, the AAF OpenID Provider will return an error to the service.
+Currently, the only supported ACR value is the [`https://refeds.org/profile/mfa`](https://refeds.org/profile/mfa) value. This value is used to request the REFEDS MFA profile for the user. If the user's IdP supports the REFEDS MFA profile, the AAF OpenID Provider will return the REFEDS MFA profile attributes in the ID Token. If the user's IdP does not support the REFEDS MFA profile, the AAF OpenID Provider will return an error to your service.
 
 ## Example OIDC Request
 
