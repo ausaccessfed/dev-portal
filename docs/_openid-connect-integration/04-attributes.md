@@ -63,6 +63,10 @@ claims will also be present.</td>
       <th scope="row">schac_home_organization</th>
       <td>Returns the users <a href="https://validator.aaf.edu.au/documentation/attributes/oid:1.3.6.1.4.1.25178.1.2.9">schac_home_organization</a> value</td>
     </tr>
+    <tr>
+      <th scope="row">home_organization</th>
+      <td>Returns the users <a href="https://validator.aaf.edu.au/documentation/attributes/oid:2.5.4.10">o</a> value</td>
+    </tr>
   </tbody>
 </table>
 <br>
