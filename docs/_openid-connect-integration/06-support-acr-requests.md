@@ -7,10 +7,7 @@ duration: 1
 
 The Authentication Context Class Reference (ACR) is a string that specifies the authentication context used during the authentication process. For more information, refer to the [OpenID Connect Core 1.0 specification](https://openid.net/specs/openid-connect-core-1_0.html#acrSemantics).
 
-Using ACR provides several benefits for developers and organizations:
-- **Enhanced Security**: By specifying the required authentication context, organizations can ensure that users are authenticated using stronger methods, such as multi-factor authentication (MFA).
-- **Compliance**: ACR helps organizations meet regulatory and compliance requirements by enforcing specific authentication contexts.
-- **User Experience**: Developers can tailor the authentication process to different user needs, providing a more seamless and secure experience.
+By specifying the required authentication context, you can ensure that users are authenticated using stronger methods, such as multi-factor authentication (MFA).
 
 Currently, the only supported ACR value is the [`https://refeds.org/profile/mfa`](https://refeds.org/profile/mfa) value. This value is used to request the REFEDS MFA profile for the user. If the user's IdP supports the REFEDS MFA profile, the AAF OpenID Provider will return the REFEDS MFA profile attributes in the ID Token. If the user's IdP does not support the REFEDS MFA profile, the AAF OpenID Provider will return an error to your service.
 
