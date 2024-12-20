@@ -37,6 +37,7 @@ tutorial_categories:
   - Connect a Service
   - Identity Management Solutions
   - Learning Platforms
+  - Multi-factor Authentication
 
 # New tutorials should be added by running:
 #   $ rake tutorial "My tutorial title"
@@ -446,3 +447,17 @@ collections:
     difficulty: 6
     duration: 20
     published: 2026-04-17
+
+  configure-refeds-mfa-on-shibboleth-sp:
+    output: true
+    permalink: /:collection/:name
+    title: Configure REFEDS MFA on Shibboleth SP
+    summary: A tutorial for Configuring REFEDS MFA on Shibboleth SP
+    category: Multi-factor Authentication
+    level: Intermediate
+    tags:
+      - tutorial
+    difficulty: 3
+    duration: 10
+    published: 2024-12-18
+
