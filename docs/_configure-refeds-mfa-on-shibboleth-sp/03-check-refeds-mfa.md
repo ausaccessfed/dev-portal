@@ -4,16 +4,23 @@ order: 3
 duration: 1
 ---
 
-The Identity Provider (IdP) must then check the AuthnContextClassRef element in the AuthnRequest message. If the URI
-of the REFEDS MFA Profile is present, the IdP must ensure that the user is authenticated using MFA. 
+After the SP sends the MFA requirement to the IdP, the IdP must then check the `<AuthnContextClassRef>` element in the AuthnRequest message.
 
-The identity provider must then include the AuthnContextClassRef element in the Response message. This is most 
-easily done by replacing the `require shibboleth` stub with `require authnContextClassRef https://refeds.org/profile/mfa` in the Apache configuration 
-file as shown below.
+If the URI of the REFEDS MFA Profile is present, the IdP must include the REFEDS MFA in its response to ensure that the user is authenticated using MFA. 
 
-An HTTP 401 Authorization Required error page is also included in the configuration file to block further access 
-and inform the user that MFA is required to access the resource. The user is also provided with a link to 
-reauthenticate with MFA.
+This is accomplished by including the `<AuthnContextClassRef>` element in the IdP's Response message and is most easily done by replacing the `require shibboleth` stub on the third line of the Apache configuration file as shown 
+below:
+
+```apache
+<Location /auth/login>
+    AuthType shibboleth 
+    require shibboleth
+    ShibRequestSetting requireSession true
+    ShibRequestSetting authnContextClassRef https://refeds.org/profile/mfa
+</Location>
+```
+
+with the following: `require authnContextClassRef https://refeds.org/profile/mfa`
 
 ```apache
 <Location /auth/login>
@@ -21,8 +28,8 @@ reauthenticate with MFA.
     require authnContextClassRef https://refeds.org/profile/mfa
     ShibRequestSetting requireSession true
     ShibRequestSetting authnContextClassRef https://refeds.org/profile/mfa
-    ErrorDocument 401 "<h1>Access denied: MFA required</h1>Multi-Factor Authentication is required to access this resource, but you have logged in without MFA confirmed.<p>You can try <a href=\"/Shibboleth.sso/Login?target=/auth/login&authnContextClassRef=https://refeds.org/profile/mfa\">logging in again with MFA</a>."
 </Location>
 ```
 
-The SP must check the AuthnContextClassRef element in the Response message.
+If there are other `require` rules in the Apache configuration file, the `require authnContextClassRef https://refeds.org/profile/mfa` rule should be added to the list of rules which should then all be wrapped 
+in a `<RequireAll>` block and joined with a logical <strong>AND</strong>. If this is not done, Apache will apply default <strong>OR</strong> logic.

@@ -4,22 +4,25 @@ order: 2
 duration: 1
 ---
 
-To signal multi-factor authentication (MFA), REFEDS has defined a profile that Service Providers (SPs) can use. This profile is called the [REFEDS MFA Profile](https://refeds.org/profile/mfa).
+To signal the MFA requirement, the SP must include an `<AuthnContextClassRef>` element in the AuthnRequest message. This element must contain the URI of the REFEDS MFA Profile:
 
-To signal the MFA requirement, the SP must include an AuthnContextClassRef element in the AuthnRequest message. This element must contain the URI of the REFEDS MFA Profile.
+```
+https://refeds.org/profile/mfa
+```
 
 Requesting REFEDS MFA can be done in explicitly or implicitly initiated sessions.
 
 ## Explicitly initiated sessions
 
-If redirecting to the SessionInitiator, the SP must include the AuthnContextClassRef element in the AuthnRequest message. This element must contain the URI of the REFEDS MFA Profile.
+If redirecting to the SessionInitiator, the SP must include the `<AuthnContextClassRef>` element in the AuthnRequest message. This element must contain the URI of the REFEDS MFA Profile.
 
 For example, include the query string parameter `authnContextClassRef` in the URL of the Session Initiator (e.g. `/Shibboleth/Login`):
 
 ```
-authnContextClassRef=https://refeds.org/profile/mfa
+https://validator.aaf.edu.au/Shibboleth.sso/Login?target=/auth/login&authnContextClassRef=https://refeds.org/profile/mfa
 ```
 <br>
+
 
 ## Implicitly initiated sessions
 
