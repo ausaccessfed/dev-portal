@@ -22,7 +22,9 @@ To participate in eduGAIN, AAF Service Providers and Identity Providers must:
 
 <h3 class="text-warning">Production Federation</h3>
 
-Service Providers in the Production federation will use the <a href="https://md.aaf.edu.au/aaf-edugain-metadata.xml">AAF eduGAIN metadata</a>. The AAF digitally signs the eduGAIN metadata. A service MUST use the <a href="https://md.aaf.edu.au/aaf-metadata-certificate.pem">public key</a> to verify metadata documents whenever they are retrieved. To confirm that you have obtained the correct key, ensure the PEM file you have downloaded conforms to the following:
+Service Providers in the Production federation will use the <a href="https://md.aaf.edu.au/mdq/aaf_and_edugain/">AAF eduGAIN MDQ endpoints</a>. 
+
+The AAF digitally signs the eduGAIN metadata. A service MUST use the <a href="https://md.aaf.edu.au/aaf-metadata-certificate.pem">public key</a> to verify metadata documents whenever they are retrieved. To confirm that you have obtained the correct key, ensure the PEM file you have downloaded conforms to the following:
 
 ```shell
 $> openssl x509 -subject -dates -fingerprint -in aaf-metadata-certificate.pem
@@ -41,11 +43,13 @@ For a service provider using the Shibboleth SP software, the following changes t
 Add the following configuration element as a child element of the element:
 
 ```shell
-<MetadataProvider type="XML" uri="https://md.aaf.edu.au/aaf-edugain-metadata.xml"
-    backingFilePath="eduGAIN-metadata.aaf.xml" reloadInterval="7200">
-           <MetadataFilter type="RequireValidUntil" maxValidityInterval="2419200"/>
-           <MetadataFilter type="Signature" certificate="aaf-metadata-cert.pem"/>
-        </MetadataProvider>
+<MetadataProvider
+type="MDQ" id="mdq" ignoreTransport="true" cacheDirectory="/var/cache/shibboleth/mdq-metadata.xml" baseUrl="https://md.test.aaf.edu.au/mdq/aaf_and_edugain/"
+reloadInterval="1800">
+<MetadataFilter type="RequireValidUntil" maxValidityInterval="2419200" />
+<MetadataFilter type="Signature" certificate="/metadata_cert_pem" />
+<DiscoveryFilter type="Exclude" matcher="EntityAttributes" trimTags="true" attributeName="http://macedir.org/entity-category" attributeNameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" attributeValue="http://refeds.org/category/hide-from-discovery" />
+</MetadataProvider>
 ```
 
 The AAF digitally signs the eduGAIN metadata with the same certificate as the AAF metadata. Restart the Shibboleth service provider to load the change.
@@ -54,7 +58,7 @@ The AAF digitally signs the eduGAIN metadata with the same certificate as the AA
 
 <h3 class="text-warning">Testing</h3>
 
-To verify that the SP is consuming the eduGAIN metadata, check the Shibboleth logs for any errors and that the metadata file is downloading correctly to the "backingFilePath" `/var/cache/eduGAIN-metadata.aaf.xml`.
+To verify that the SP is consuming the eduGAIN metadata, check the Shibboleth logs for any errors and that the metadata file is downloading correctly to the "backingFilePath" `/var/cache/shibboleth/mdq-metadata.xml`.
 
 The Shibboleth log files should indicate any issues if the software does not load the eduGAIN metadata. It may be necessary to increase the log-level to DEBUG to log all relevant details.
 

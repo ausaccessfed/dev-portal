@@ -103,17 +103,18 @@ having an **IdP’s** metadata will provide access to users of the **IdP** as lo
 **SP's** metadata, even if the **IdP** is not listed by the discovery service. The reverse is not possible.
 
 Locate the **`<MetadataProvider>`** elements and identify, via the comments and type of equal to **“XML”**, the
-element which controls the “remote supply of **"signed metadata"** which also caches a copy locally. To enable this
+element which controls the remote supply of **"signed metadata"** which also caches a copy locally. To enable this
 element, remove the enclosing comment delimiters `<!--` and `-->`.
 
-Since this demonstration service will be available to the **TEST Federation**, replace the URL value with the **TEST
-Federation** metadata source URL:
+The AAF is now providing an MDQ (Metadata Query) metadata provider to obtain and manage metadata. Replace the type="XML" attribute value with the value "MDQ".
 
-[https://md.test.aaf.edu.au/aaf-test-metadata.xml](https://md.test.aaf.edu.au/aaf-test-metadata.xml).
+Since this demonstration service will be available to the **TEST Federation**, replace the URL value with the **TEST Federation** MDQ endpoint:
 
-If a service is production-ready, use the **PRODUCTION Federation** metadata source URL:
+[https://md.test.aaf.edu.au/mdq/aaf/](https://md.test.aaf.edu.au/mdq/aaf/).
 
-[https://md.aaf.edu.au/aaf-test-metadata.xml](https://md.aaf.edu.au/aaf-test-metadata.xml).
+If a service is production-ready, use the **PRODUCTION Federation** MDQ endpoint:
+
+[https://md.aaf.edu.au/mdq/aaf/](https://md.aaf.edu.au/mdq/aaf/).
 
 Replace the certificate setting value with the following string aaf-metadata-certificate.pem, and download the AAF signing certificate with the following command:
 
@@ -121,18 +122,14 @@ Replace the certificate setting value with the following string aaf-metadata-cer
 
 **PRODUCTION** and **TEST** Metadata are signed by the same certificate.
 
-The **`<MetadataProvider>`** element should now have the same content as the following fragment:
+The **`<MetadataProvider>`** element (to be used in the test Federation) should now have the same content as the following fragment:
 
 ```xml
-<MetadataProvider type="XML" validate="true" 
-  url="https://md.test.aaf.edu.au/aaf-test-metadata.xml"
-  backingFilePath="federation-metadata.xml" maxRefreshDelay="7200">
-    <MetadataFilter type="RequireValidUntil" maxValidityInterval="2419200"/>
-    <MetadataFilter type="Signature" certificate="aaf-metadata-certificate.pem" verifyBackup="false"/>
-    <DiscoveryFilter type="Blacklist" matcher="EntityAttributes" trimTags="true"
-  attributeName="http://macedir.org/entity-category"
-  attributeNameFormat="urn:oasis:names:tc:SAML:3.0:attrname-format:uri"
-  attributeValue="http://refeds.org/category/hide-from-discovery" />
+<MetadataProvider
+        type="MDQ" id="mdq" ignoreTransport="true" cacheDirectory="/var/cache/shibboleth/mdq-metadata.xml" baseUrl="https://md.test.aaf.edu.au/mdq/aaf/"
+        reloadInterval="1800">
+    <MetadataFilter type="RequireValidUntil" maxValidityInterval="8640000" />
+    <MetadataFilter type="Signature" certificate="/metadata_cert_pem" />
 </MetadataProvider>
 ```
 
@@ -152,6 +149,6 @@ Keep the private keys secure!
 
 Details on the **`<MetadataProvider>`** elements configurable options are available here:
 
-- [MetadataProvider](https://wiki.shibboleth.net/confluence/display/SP3/MetadataProvider)
+- [MetadataProvider](https://shibboleth.atlassian.net/wiki/spaces/SP3/pages/2060616124/MetadataProvider)
 
-- [XMLMetadataProvider](https://wiki.shibboleth.net/confluence/display/SP3/XMLMetadataProvider)
+- [MDQMetadataProvider](https://shibboleth.atlassian.net/wiki/spaces/SP3/pages/2060616133/MDQMetadataProvider)
