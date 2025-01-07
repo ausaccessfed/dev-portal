@@ -102,9 +102,7 @@ The aggregated metadata differs to the information available from the **discover
 having an **IdP’s** metadata will provide access to users of the **IdP** as long as the **IdP** has a copy of the
 **SP's** metadata, even if the **IdP** is not listed by the discovery service. The reverse is not possible.
 
-Locate the **`<MetadataProvider>`** elements and identify, via the comments and type of equal to **“XML”**, the
-element which controls the remote supply of **"signed metadata"** which also caches a copy locally. To enable this
-element, remove the enclosing comment delimiters `<!--` and `-->`.
+Locate the **`<MetadataProvider>`** elements and identify, via the comments and type of equal to **“XML”**, the element which controls the remote supply of **"signed metadata"** which also caches a copy locally. To enable this element, remove the enclosing comment delimiters `<!--` and `-->`.
 
 The AAF is now providing an MDQ (Metadata Query) metadata provider to obtain and manage metadata. Replace the type="XML" attribute value with the value "MDQ".
 
@@ -133,8 +131,7 @@ The **`<MetadataProvider>`** element (to be used in the test Federation) should 
 </MetadataProvider>
 ```
 
-Though a standard Shibboleth **SP** install creates two certificate pairs, one for signing and one for encryption,
-the **AAF Service Provider Registration Form** only requests one public key certificate.
+Though a standard Shibboleth **SP** install creates two certificate pairs, one for signing and one for encryption, the **AAF Service Provider Registration Form** only requests one public key certificate.
 
 For a deployer, the choices available are to:
 
