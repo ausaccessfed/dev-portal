@@ -38,3 +38,6 @@ For example, add the following:
     ShibRequestSetting authnContextClassRef https://refeds.org/profile/mfa
 </Location>
 ```
+
+If there are other `require` rules in the Apache configuration file, the `require authnContextClassRef https://refeds.org/profile/mfa` rule should be added to the list of rules which should then all be wrapped
+in a `<RequireAll>` block and joined with a logical <strong>AND</strong>. If this is not done, Apache will apply default <strong>OR</strong> logic.
