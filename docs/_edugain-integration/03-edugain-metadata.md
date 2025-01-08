@@ -44,7 +44,7 @@ Add the following configuration element as a child element of the element:
 
 ```shell
 <MetadataProvider
-type="MDQ" id="mdq" ignoreTransport="true" cacheDirectory="/var/cache/shibboleth/mdq-metadata.xml" baseUrl="https://md.test.aaf.edu.au/mdq/aaf_and_edugain/"
+type="MDQ" id="mdq" ignoreTransport="true" cacheDirectory="/var/cache/shibboleth/mdq-metadata" baseUrl="https://md.test.aaf.edu.au/mdq/aaf_and_edugain/"
 reloadInterval="1800">
 <MetadataFilter type="RequireValidUntil" maxValidityInterval="2419200" />
 <MetadataFilter type="Signature" certificate="aaf-metadata-certificate.pem" />
