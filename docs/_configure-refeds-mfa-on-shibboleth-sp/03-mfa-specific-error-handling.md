@@ -1,20 +1,14 @@
 ---
 title: MFA-specific error handling
-order: 4
+order: 3
 duration: 1
 ---
 
-The next step in the configuration process is error handling. If a different `authnContextClassRef` value is used 
-other than what is requested by the SP, the IdP must return an error to the SP. There are a number of reasons why 
-this may occur and can include misconfiguration of the IdP or the SP. In this case, Apache blocks further access to the 
-user's session with a standard 401 error page. It is the responsibility of the SP to handle this error and inform the 
-user that MFA is required to access the resource.
+The next step in the configuration process is error handling. If the IdP does not support the requested `authnContextClassRef` it will respond with a redirect to an error page (at the url configured within shibboleth2.xml), with status code: `opensaml::FatalProfileException`.
 
-Customised 401 error pages are encouraged and can be created to suit the needs of the SP. Additional instructions 
-can include:
+Customised 401 error pages are encouraged and can be created to suit the needs of the SP. Additional instructions can include:
 
-- Informing the user that MFA is required to access the resource (this is usually due to MFA being requested by the 
-  SP but not being supported by the IdP)
+- Informing the user that MFA is required to access the resource (this is usually due to MFA being requested by the SP but not being supported by the IdP)
 - Providing a link to log in again with MFA
 - Redirecting the user to a different page
 - Providing a contact email address for the IdP's service desk

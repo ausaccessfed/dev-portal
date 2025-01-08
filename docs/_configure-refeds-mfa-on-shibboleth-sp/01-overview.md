@@ -4,7 +4,7 @@ order: 1
 duration: 1
 ---
 
-Service Providers (SPs) can use a signal defined within a profile called the [REFEDS MFA Profile](https://refeds.org/profile/mfa) to request multi-factor authentication (MFA) from an Identity Provider (IdP).
+Service Providers (SPs) can use a signal defined within the [REFEDS MFA Profile](https://refeds.org/profile/mfa) to request multi-factor authentication (MFA) from an Identity Provider (IdP).
 
 The IdP responds to the SP's request by ensuring that the user is authenticated using MFA. If the user is not authenticated using MFA, the IdP will return an error message to the SP.
 
@@ -13,7 +13,6 @@ This tutorial will guide you through the process of configuring a Shibboleth Ser
 ### What you'll learn
 
 - How to request REFEDS MFA
-- How to check REFEDS MFA
 - Error handling
 
 ### What you'll need
