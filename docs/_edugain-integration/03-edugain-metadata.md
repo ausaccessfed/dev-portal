@@ -47,7 +47,7 @@ Add the following configuration element as a child element of the element:
 type="MDQ" id="mdq" ignoreTransport="true" cacheDirectory="/var/cache/shibboleth/mdq-metadata.xml" baseUrl="https://md.test.aaf.edu.au/mdq/aaf_and_edugain/"
 reloadInterval="1800">
 <MetadataFilter type="RequireValidUntil" maxValidityInterval="2419200" />
-<MetadataFilter type="Signature" certificate="/metadata_cert_pem" />
+<MetadataFilter type="Signature" certificate="aaf-metadata-certificate.pem" />
 <DiscoveryFilter type="Exclude" matcher="EntityAttributes" trimTags="true" attributeName="http://macedir.org/entity-category" attributeNameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" attributeValue="http://refeds.org/category/hide-from-discovery" />
 </MetadataProvider>
 ```
@@ -58,7 +58,7 @@ The AAF digitally signs the eduGAIN metadata with the same certificate as the AA
 
 <h3 class="text-warning">Testing</h3>
 
-To verify that the SP is consuming the eduGAIN metadata, check the Shibboleth logs for any errors and that the metadata file is downloading correctly to the "backingFilePath" `/var/cache/shibboleth/mdq-metadata.xml`.
+To verify that the SP is consuming the eduGAIN metadata, check the Shibboleth logs for any errors and that the metadata is downloading correctly to the "cacheDirectory" `/var/cache/shibboleth/mdq-metadata`.
 
 The Shibboleth log files should indicate any issues if the software does not load the eduGAIN metadata. It may be necessary to increase the log-level to DEBUG to log all relevant details.
 
