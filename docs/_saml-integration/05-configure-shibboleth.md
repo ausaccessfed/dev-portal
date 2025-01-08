@@ -98,21 +98,19 @@ The **AAF** collects the subscriber **IdP** and **SP** metadata and publishes ag
 periodically refreshed with a validity window. Without the aggregated metadata, each **SP** would need to independently obtain **IdP** metadata from each organisation with an IdP service to enable that organisation’s users
 access to the web application protected by the **SP**.
 
-The aggregated metadata differs to the information available from the **discovery service URL**. For an **SP**,
-having an **IdP’s** metadata will provide access to users of the **IdP** as long as the **IdP** has a copy of the
-**SP's** metadata, even if the **IdP** is not listed by the discovery service. The reverse is not possible.
+The aggregated metadata differs to the information available from the **discovery service URL**. For an **SP**, having an **IdP’s** metadata will provide access to users of the **IdP** as long as the **IdP** has a copy of the **SP's** metadata, even if the **IdP** is not listed by the discovery service. The reverse is not possible.
 
-Locate the **`<MetadataProvider>`** elements and identify, via the comments and type of equal to **“XML”**, the element which controls the remote supply of **"signed metadata"** which also caches a copy locally. To enable this element, remove the enclosing comment delimiters `<!--` and `-->`.
+Locate the **`<MetadataProvider>`** elements and identify, via the comments and type of equal to **“XML”**, the element which controls the remote supply of **"signed metadata"**. To enable this element, remove the enclosing comment delimiters `<!--` and `-->`.
 
-The AAF is now providing an MDQ (Metadata Query) metadata provider to obtain and manage metadata. Replace the type="XML" attribute value with the value "MDQ".
+The AAF provides an MDQ (Metadata Query) metadata provider to obtain metadata. Replace the type="XML" attribute value with the value "MDQ".
 
 Since this demonstration service will be available to the **TEST Federation**, replace the URL value with the **TEST Federation** MDQ endpoint:
 
-[https://md.test.aaf.edu.au/mdq/aaf/](https://md.test.aaf.edu.au/mdq/aaf/).
+`https://md.test.aaf.edu.au/mdq/aaf/`
 
 If a service is production-ready, use the **PRODUCTION Federation** MDQ endpoint:
 
-[https://md.aaf.edu.au/mdq/aaf/](https://md.aaf.edu.au/mdq/aaf/).
+`https://md.aaf.edu.au/mdq/aaf/`
 
 Replace the certificate setting value with the following string aaf-metadata-certificate.pem, and download the AAF signing certificate with the following command:
 
@@ -124,7 +122,7 @@ The **`<MetadataProvider>`** element (to be used in the test Federation) should 
 
 ```xml
 <MetadataProvider
-        type="MDQ" id="mdq" ignoreTransport="true" cacheDirectory="/var/cache/shibboleth/mdq-metadata" baseUrl="https://md.test.aaf.edu.au/mdq/aaf/"
+        type="MDQ" id="mdq" ignoreTransport="true" cacheDirectory="metadata" baseUrl="https://md.test.aaf.edu.au/mdq/aaf/"
         reloadInterval="1800">
     <MetadataFilter type="RequireValidUntil" maxValidityInterval="8640000" />
     <MetadataFilter type="Signature" certificate="aaf-metadata-certificate.pem" />
