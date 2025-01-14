@@ -51,9 +51,29 @@ If you click on the 'Identity providers' option (in the left-hand menu bar), you
 ### Logging in with the new identity provider
 
 * First ensure that the users you wish to authenticate with this identity provider have been added to the selected 
-  realm (in this case, it is 'myrealm').
-* After creating the new identity provider, click on 'Users' in the left-hand menu bar.
-* When next signing in, you will see the option to sign in with 'oidc' (or whatever `alias` you chose to identify your identity provider).
+  realm. 
+  * After creating the new identity provider, click on 'Users' in the left-hand menu bar.
+
+![Users Link](/assets/images/connect-with-keycloak/navigate-to-users.png)
+
+* Click on the user you wish to authenticate with the new identity provider.
+
+![Add Selected User](/assets/images/connect-with-keycloak/add-selected-user.png)
+
+* In the User Profile, click on identity provider links.
+
+![Link User to IdP](/assets/images/connect-with-keycloak/idp-link.png)
+
+* Click 'Link account' next to the new identity provider (in this case, 'oidc').
+
+![Link Account](/assets/images/connect-with-keycloak/link-user-account.png)
+
+* You will see that the user account and the identity provider have been linked.
+
+![Linked Account](/assets/images/connect-with-keycloak/linked-user-account.png)
+
+* When next signing in as a user, you will see the option to sign in with 'oidc' (or whatever `alias` you chose to 
+  identify your identity provider).
 * Click on 'oidc'.
 
 ![Sign in with oidc](/assets/images/connect-with-keycloak/sign-in-with-oidc.png)

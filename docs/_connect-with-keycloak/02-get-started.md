@@ -33,3 +33,16 @@ duration: 3
 * Within your new realm, click on 'Users' in the left hand menu bar.
 
 ![Users Link](/assets/images/connect-with-keycloak/navigate-to-users.png)
+
+* Click on 'Create new user'.
+
+![Add User Link](/assets/images/connect-with-keycloak/create-new-user.png)
+
+* Fill in the required fields for the new user and click 'Create'.
+
+![Add User Form](/assets/images/connect-with-keycloak/add-user-form.png)
+
+* To add further details to the user such as credentials, roles, groups, etc., click on the tabs at the top of the 
+  user details. For further information regarding the configuration of users refer to the [Keycloak documentation](https://www.keycloak.org/documentation).
+
+![User Tab](/assets/images/connect-with-keycloak/user-tab.png)
