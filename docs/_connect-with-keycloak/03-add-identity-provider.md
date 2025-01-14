@@ -47,6 +47,12 @@ If you click on the 'Identity providers' option (in the left-hand menu bar), you
 
 ![OpenID connect provider](/assets/images/connect-with-keycloak/keycloak-new-identity-provider.png)
 
+
+### Logging in with the new identity provider
+
+* First ensure that the users you wish to authenticate with this identity provider have been added to the selected 
+  realm (in this case, it is 'myrealm').
+* After creating the new identity provider, click on 'Users' in the left-hand menu bar.
 * When next signing in, you will see the option to sign in with 'oidc' (or whatever `alias` you chose to identify your identity provider).
 * Click on 'oidc'.
 
@@ -66,3 +72,42 @@ This will take you to the AAF Discovery Service (known as AAF Central).
 * If authentication is successful, you will be taken back to your Keycloak account console.
 
 ![New user account](/assets/images/connect-with-keycloak/new-user-account.png)
+
+
+### Skipping Discovery Service
+
+
+AAF's implementation of OpenID Connect allows service administrators to configure their service [to skip the discovery service](/openid-connect-integration/05-skipping-discovery-service) and login directly through a specified IdP. This can also be done through Keycloak.
+
+### Getting started
+
+
+Find the **entityID** of the IdP that you wish to directly login through. This can be done by looking through the AAF metadata or your own registrations.
+
+<a href="https://md.test.aaf.edu.au/" class="btn btn-outline-primary mb-3">AAF Test Metadata</a>
+<br>
+For Example, the AAF Virtual Home: `https://vho.aaf.edu.au/idp/shibboleth`
+
+
+### Sending the request
+
+To skip the discovery service, you'll need to add `extra authorization params` to the initial request to the authorisation endpoint.
+
+In Keycloak, first turn off the 'Use discovery endpoint' toggle in the 'OpenID Connect settings' section.
+
+A number of extra fields will appear including `Authorization URL`, `Token URL`, `Logout URL`, `Userinfo URL`, and 
+`Issuer`, `Validate Signatures` and `Use PKCE`.
+
+![Skip discovery](/assets/images/connect-with-keycloak/skip-discovery.png)
+
+Add the new param `entityID=<idp-entity>` where the entityID has been URL encoded.
+
+**Example:**
+
+```GET /oidc/authorize?
+client_id=123456789&
+redirect_uri=https://example.com/aaf/callback&
+nonce=123456&
+state=6789&
+entityID=https://vho.aaf.edu.au/idp/shibboleth
+```

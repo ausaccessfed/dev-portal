@@ -11,13 +11,25 @@ duration: 3
 
 * Once signed in, click on 'master' (at the top of the left hand menu bar).
 
-![Keycloak Master Page](/assets/images/connect-with-keycloak/keycloak-highlight-master.png)
+![Keycloak Master Page](/assets/images/connect-with-keycloak/keycloak-master-realm-page.png)
+
+### Create a new realm
 
 * Create a new realm where you would like to add AAF as an identity provider and in which you will manage your users, applications, roles and groups. To do this, click 'Create Realm'.
 
-![Master Realm Page](/assets/images/connect-with-keycloak/keycloak-master-realm-page.png)
+![Master Realm Page](/assets/images/connect-with-keycloak/keycloak-create-realm.png)
 
 * Select an appropriate `Realm name`. In this example, the new realm is called 'myrealm'.
 * Click 'Create'.
 
-![Create Realm Page](/assets/images/connect-with-keycloak/keycloak-create-realm.png)
+![Create Realm Page](/assets/images/connect-with-keycloak/keycloak-create-realm-2.png)
+
+* You will now see the new realm 'myrealm' in the left hand menu bar.
+
+![New Realm Page](/assets/images/connect-with-keycloak/created-realm.png)
+
+### Create a new user
+
+* Within your new realm, click on 'Users' in the left hand menu bar.
+
+![Users Link](/assets/images/connect-with-keycloak/navigate-to-users.png)
