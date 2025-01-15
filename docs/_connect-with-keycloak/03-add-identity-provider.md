@@ -25,7 +25,8 @@ Keep the Keycloak admin console page open as you will need to enter the `Client 
 
 ![Register new service](/assets/images/connect-with-keycloak/register-oidc-service-redirect-url.png)
 
-* Once you click 'Register Service' you will receive an 'Identifier' and a 'Secret' from Federation Manager (Test).
+* Once you click 'Register Service' you will receive an 'Identifier' (redacted below) and a 'Secret' from Federation 
+  Manager (Test). You will be able to regenerate the secret later if required.
 
 ![Keycloak service](/assets/images/connect-with-keycloak/keycloak-service.png)
 
@@ -109,17 +110,14 @@ Find the **entityID** of the IdP that you wish to directly login through. This c
 
 <a href="https://md.test.aaf.edu.au/" class="btn btn-outline-primary mb-3">AAF Test Metadata</a>
 <br>
-For Example, the AAF Virtual Home: `https://vho.aaf.edu.au/idp/shibboleth`
+For Example, the AAF Virtual Home is: `https://vho.aaf.edu.au/idp/shibboleth`
 
 
 ### Sending the request
 
 To skip the discovery service, you'll need to add `extra authorization params` to the initial request to the authorisation endpoint.
 
-In Keycloak, first turn off the 'Use discovery endpoint' toggle in the 'OpenID Connect settings' section.
-
-A number of extra fields will appear including `Authorization URL`, `Token URL`, `Logout URL`, `Userinfo URL`, and 
-`Issuer`, `Validate Signatures` and `Use PKCE`.
+In Keycloak, first turn off the 'Use discovery endpoint' toggle in the 'OpenID Connect settings' section. Metadata fields will appear underneath and include `Authorization URL`, `Token URL`, `Logout URL`, `Userinfo URL`, and `Issuer`, `Validate Signatures` and `Use PKCE`.
 
 ![Skip discovery](/assets/images/connect-with-keycloak/skip-discovery.png)
 
@@ -127,10 +125,27 @@ Add the new param `entityID=<idp-entity>` where the entityID has been URL encode
 
 **Example:**
 
-```GET /oidc/authorize?
+```shell
+GET /oidc/authorize?
 client_id=123456789&
 redirect_uri=https://example.com/aaf/callback&
 nonce=123456&
 state=6789&
 entityID=https://vho.aaf.edu.au/idp/shibboleth
 ```
+
+* Enter the Authorization URL and the Token URL for the IdP you wish to directly login through.
+* Click 'Add'.
+
+* On your newly created identity provider details page, scroll down to the 'OpenID Connect settings' section and click on the 'Advanced' toggle.
+
+![Advanced Toggle](/assets/images/connect-with-keycloak/advanced-toggle.png)
+
+Several new fields will appear:
+
+![Advanced Settings](/assets/images/connect-with-keycloak/advanced-settings.png)
+
+* Scroll down to the 'Forwarded query parameters' field and add the `entityID` parameter. Multiple parameters can be entered, each separated by a comma (,).
+* Click 'Save'.
+
+You will now be able to login directly through the specified IdP.
