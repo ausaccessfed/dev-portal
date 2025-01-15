@@ -50,9 +50,8 @@ If you click on the 'Identity providers' option (in the left-hand menu bar), you
 
 ### Logging in with the new identity provider
 
-* First ensure that the users you wish to authenticate with this identity provider have been added to the selected 
-  realm. 
-  * After creating the new identity provider, click on 'Users' in the left-hand menu bar.
+* First ensure that the users you wish to authenticate with this identity provider have been added to the selected realm. 
+* To do this, click on 'Users' in the left-hand menu bar.
 
 ![Users Link](/assets/images/connect-with-keycloak/navigate-to-users.png)
 
@@ -68,17 +67,21 @@ If you click on the 'Identity providers' option (in the left-hand menu bar), you
 
 ![Link Account](/assets/images/connect-with-keycloak/link-user-account.png)
 
-* You will see that the user account and the identity provider have been linked.
+* Enter the user ID (from the User Details page) and username for the user account you wish to link.
+* Click 'Link'.
+
+![Enter User ID](/assets/images/connect-with-keycloak/enter-user-id.png)
+
+* You will see that the user account and the identity provider have now been linked.
 
 ![Linked Account](/assets/images/connect-with-keycloak/linked-user-account.png)
 
-* When next signing in as a user, you will see the option to sign in with 'oidc' (or whatever `alias` you chose to 
-  identify your identity provider).
+* When next signing in as a user (in this case, http://localhost:8080/realms/myrealm/account), you will see the option to sign in with 'oidc' (or whatever `alias` you chose to identify your identity provider).
 * Click on 'oidc'.
 
 ![Sign in with oidc](/assets/images/connect-with-keycloak/sign-in-with-oidc.png)
 
-This will take you to the AAF Discovery Service (known as AAF Central).
+This will take you to the AAF Discovery Service (note that the name and description you provided when registering your service will appear here). 
 
 * Select your organisation from the list provided and click 'Continue to your organisation'.
 

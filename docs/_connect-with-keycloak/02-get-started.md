@@ -42,7 +42,8 @@ duration: 3
 
 ![Add User Form](/assets/images/connect-with-keycloak/add-user-form.png)
 
-* To add further details to the user such as credentials, roles, groups, etc., click on the tabs at the top of the 
-  user details. For further information regarding the configuration of users refer to the [Keycloak documentation](https://www.keycloak.org/documentation).
+* Once the user has been created, further details can be added such as credentials, roles, groups, etc. Click on the tabs at the top of the 
+  user details page. 
+* For further information regarding the configuration of users refer to the [Keycloak documentation](https://www.keycloak.org/documentation).
 
 ![User Tab](/assets/images/connect-with-keycloak/user-tab.png)
