@@ -25,11 +25,14 @@ Keep the Keycloak admin console page open as you will need to enter the `Client 
 
 ![Register new service](/assets/images/connect-with-keycloak/keycloak-register-oidc-service-redirect-url.png)
 
-* Once you click 'Register Service' you will receive an 'Identifier' (redacted below) and a 'Secret' from Federation Manager (Test). You will be able to regenerate the secret later if required.
+* Once you click 'Register Service' you will receive an 'Identifier' (redacted below) and a 'Secret' from Federation Manager (Test).
+
+You will be able to regenerate the secret later if required.
+{: .callout-info}
 
 ![Keycloak service](/assets/images/connect-with-keycloak/keycloak-service.png)
 
-* Copy these items to your clipboard and head back over to Keycloak.
+* Copy the 'Identifier' and 'Secret' to your clipboard and head back over to Keycloak.
 * Paste these items into the `Client ID` and `Client Secret` fields, respectively, within the 'OpenID Connect settings' section of the Keycloak console.
 
 ![Oidc provider secret](/assets/images/connect-with-keycloak/keycloak-add-oidc-provider-secret.png)
