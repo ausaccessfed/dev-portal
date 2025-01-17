@@ -1,6 +1,6 @@
 ---
 title: Next Steps
-order: 4
+order: 6
 duration: 1
 ---
 
