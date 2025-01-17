@@ -1,5 +1,5 @@
 ---
-title: Create a new identity provider
+title: Add an identity provider
 order: 5
 duration: 5
 ---
