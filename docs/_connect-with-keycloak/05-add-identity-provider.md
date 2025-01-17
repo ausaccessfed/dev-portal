@@ -1,6 +1,6 @@
 ---
 title: Add an identity provider
-order: 3
+order: 5
 duration: 5
 ---
 
