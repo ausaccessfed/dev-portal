@@ -37,35 +37,39 @@ claims will also be present.</td>
     </tr>
     <tr>
       <th scope="row">aueduperson</th>
-      <td>Returns the users <a href="https://validator.aaf.edu.au/documentation/attributes/oid:1.3.6.1.4.1.27856.1.2.5">au_edu_person_shared_token</a> value</td>
+      <td>Returns the user's <a href="https://validator.aaf.edu.au/documentation/attributes/oid:1.3.6.1.4.1.27856.1.2.5">au_edu_person_shared_token</a> value</td>
     </tr>
     <tr>
       <th scope="row">eduperson_affiliation</th>
-      <td>Returns the users <a href="https://validator.aaf.edu.au/documentation/attributes/oid:1.3.6.1.4.1.5923.1.1.1.1">eduperson_affiliation</a> value</td>
+      <td>Returns the user's <a href="https://validator.aaf.edu.au/documentation/attributes/oid:1.3.6.1.4.1.5923.1.1.1.1">eduperson_affiliation</a> value</td>
     </tr>
     <tr>
       <th scope="row">eduperson_assurance</th>
-      <td>Returns the users <a href="https://validator.aaf.edu.au/documentation/attributes/oid:1.3.6.1.4.1.5923.1.1.1.11">eduperson_assurance</a> value</td>
+      <td>Returns the user's <a href="https://validator.aaf.edu.au/documentation/attributes/oid:1.3.6.1.4.1.5923.1.1.1.11">eduperson_assurance</a> value</td>
     </tr>
     <tr>
       <th scope="row">eduperson_orcid</th>
-      <td>Returns the users <a href="https://validator.aaf.edu.au/documentation/attributes/oid:1.3.6.1.4.1.5923.1.1.1.16">eduperson_orcid</a> value</td>
+      <td>Returns the user's <a href="https://validator.aaf.edu.au/documentation/attributes/oid:1.3.6.1.4.1.5923.1.1.1.16">eduperson_orcid</a> value</td>
     </tr>
     <tr>
       <th scope="row">eduperson_principal_name</th>
-      <td>Returns the users <a href="https://validator.aaf.edu.au/documentation/attributes/oid:1.3.6.1.4.1.5923.1.1.1.6">eduperson_principal_name</a> value</td>
+      <td>Returns the user's <a href="https://validator.aaf.edu.au/documentation/attributes/oid:1.3.6.1.4.1.5923.1.1.1.6">eduperson_principal_name</a> value</td>
     </tr>
     <tr>
       <th scope="row">eduperson_scoped_affiliation</th>
-      <td>Returns the users <a href="https://validator.aaf.edu.au/documentation/attributes/oid:1.3.6.1.4.1.5923.1.1.1.9">eduperson_scoped_affiliation</a> value</td>
+      <td>Returns the user's <a href="https://validator.aaf.edu.au/documentation/attributes/oid:1.3.6.1.4.1.5923.1.1.1.9">eduperson_scoped_affiliation</a> value</td>
     </tr>
     <tr>
       <th scope="row">schac_home_organization</th>
-      <td>Returns the users <a href="https://validator.aaf.edu.au/documentation/attributes/oid:1.3.6.1.4.1.25178.1.2.9">schac_home_organization</a> value</td>
+      <td>Returns the user's <a href="https://validator.aaf.edu.au/documentation/attributes/oid:1.3.6.1.4.1.25178.1.2.9">schac_home_organization</a> value</td>
+    </tr>
+    <tr>
+      <th scope="row">schac_home_organization_type</th>
+      <td>Returns the user's <a href="https://validator.aaf.edu.au/documentation/attributes/oid:1.3.6.1.4.1.25178.1.2.10">schac_home_organization_type</a> value</td>
     </tr>
     <tr>
       <th scope="row">home_organization</th>
-      <td>Returns the users <a href="https://validator.aaf.edu.au/documentation/attributes/oid:2.5.4.10">o</a> value</td>
+      <td>Returns the user's <a href="https://validator.aaf.edu.au/documentation/attributes/oid:2.5.4.10">o</a> value</td>
     </tr>
   </tbody>
 </table>
