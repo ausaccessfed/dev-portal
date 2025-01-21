@@ -61,7 +61,7 @@ If you click on the 'Identity providers' option (in the left-hand menu bar), you
 
 ![Add Selected User](/assets/images/connect-with-keycloak/keycloak-add-selected-user.png)
 
-* In the User Profile, click on identity provider links.
+* In the User Profile, click on 'identity provider links'.
 
 ![Link User to IdP](/assets/images/connect-with-keycloak/keycloak-idp-link.png)
 
