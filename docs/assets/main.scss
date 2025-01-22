@@ -94,6 +94,7 @@ header {
   font-weight: 300;
   font-style: normal;
   color: #dfdfdf;
+  background-color: #2a2a2a;
   line-height: 1.8em;
 
   .footer-text {
@@ -150,25 +151,37 @@ header {
     display: flex;
     flex-wrap: wrap;
     margin: 0.5rem;
-    align-items: stretch;
   }
 
   .acknowledge {
-    margin-right: 60px;
+    margin-right: 40px;
   }
 
-  @media (min-width: 990px) {
-    .card-container {
-      margin-left: 0;
-      margin-right: 0;
+  /* Extra large devices (large desktops, 1200px and up) */
+    @media (min-width: 1200px) {
+        .logo {
+        width: 200px;
+        }
+
+        .ncris {
+        width: 100px;
+        }
+
+        .acknowledge {
+        margin-right: 50px;
+        }
+
+        .card-container {
+        margin-left: 0;
+        margin-right: 0;
+        }
     }
-  }
 
-  /* For screens smaller than 1400px */
-  @media (max-width: 1400px) {
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) and (max-width: 1199px) {
     .custom-flex {
       flex-direction: row;
-      justify-content: center;
+      justify-content: space-between;
     }
 
     .logo {
@@ -180,23 +193,19 @@ header {
     }
 
     .acknowledge {
-      margin-right: 40px;
+      margin-right: 20px;
+    }
+
+    .card-container {
+      margin-left: 0;
+      margin-right: 0;
     }
   }
 
-  /* For screens smaller than 1000px */
-  @media (max-width: 1000px) {
-    .custom-flex {
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
-
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) and (max-width: 991.98px) {
     .custom-flex > .col {
       flex: 1 1 50%; /* Two columns per row */
-    }
-
-    .footer-text {
-      white-space: normal;
     }
 
     .logo {
@@ -208,8 +217,8 @@ header {
     }
   }
 
-  /* For screens smaller than 800px */
-  @media (max-width: 800px) {
+  /* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) and (max-width: 767.98px) {
     .custom-flex {
       flex-direction: column;
     }
@@ -221,6 +230,26 @@ header {
 
     .logo {
       width: 130px;
+    }
+  }
+
+  /* Extra small devices (portrait phones, less than 576px) */
+  @media (max-width: 575.98px) {
+    .custom-flex {
+      flex-direction: column;
+    }
+
+    .ncris {
+      width: 60px;
+      margin-bottom: 20px;
+    }
+
+    .logo {
+      width: 100px;
+    }
+
+    .footer-text {
+      text-align: start;
     }
   }
 
@@ -328,7 +357,7 @@ code {
 }
 
 /*
- * Diffculty indicator
+ * Difficulty indicator
  */
 .difficulty-indicator {
   background-image: url($baseurl + "/assets/images/level-of-difficulty.svg");
