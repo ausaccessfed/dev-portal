@@ -90,6 +90,7 @@ header {
  */
 .footer {
   padding-top: 40px;
+  padding-bottom: 20px;
   font-family: "Lato", sans-serif;
   font-weight: 300;
   font-style: normal;
@@ -215,6 +216,11 @@ header {
     .ncris {
       width: 80px;
     }
+
+    .set-width {
+      max-width: 40%;
+      margin-right: 40px;
+    }
   }
 
   /* Small devices (landscape phones, 576px and up) */
@@ -230,6 +236,10 @@ header {
 
     .logo {
       width: 130px;
+    }
+
+    .set-width {
+      max-width: 50%;
     }
   }
 
@@ -250,6 +260,10 @@ header {
 
     .footer-text {
       text-align: start;
+    }
+
+    .set-width {
+      max-width: 50%;
     }
   }
 
