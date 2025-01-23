@@ -13,9 +13,13 @@ Find the **entityID** of the IdP that you wish to directly login through. This c
 
 <a href="https://md.test.aaf.edu.au/" class="btn btn-outline-primary mb-3">AAF Test Metadata</a>
 <br>
-For Example, the AAF Virtual Home: `https://vho.aaf.edu.au/idp/shibboleth`
+For Example, the entityID for AAF Virtual Home is: `https://vho.aaf.edu.au/idp/shibboleth`
 
 
 ### Sending the request
 
-The unique URL for directing a user’s browser to Rapid Connect can be appended with a specific identity provider’s EntityID.
+The unique URL for directing a user’s browser to Rapid Connect can be appended with a specific identity provider’s EntityID (if known).
+
+For example:
+
+`https://application.com.au/jwt/authnrequest?entityID=https://vho.aaf.edu.au/idp/shibboleth`
