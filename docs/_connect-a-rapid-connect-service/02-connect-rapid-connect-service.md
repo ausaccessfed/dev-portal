@@ -17,8 +17,8 @@ png)
 
 1. Name - A descriptive name for your service.
 2. URL - The primary URL of your application which users would enter into the browser to visit your application. This value is provided to your application as the **aud** claim.
-3. Callback URL - The secure URL within your application that AAF Rapid Connect should POST completed responses to. We described this endpoint as part of the [Integration Steps](/rapid-connect-integration/06-integration).
-4. Secret - Must be random and securely stored by the service. This value should never be publicly disclosed and is used by the service to verify signed tokens from AAF Rapid Connect. We generated this as part of the [Integration Steps](/rapid-connect-integration/06-integration).
+3. Callback URL - The secure URL within your application that AAF Rapid Connect should POST completed responses to. We described this endpoint as part of the [Integration Steps](/rapid-connect-integration/07-integration).
+4. Secret - Must be random and securely stored by the service. This value should never be publicly disclosed and is used by the service to verify signed tokens from AAF Rapid Connect. We generated this as part of the [Integration Steps](/rapid-connect-integration/07-integration).
 5. Organisation - The AAF subscribed organisation which is sponsoring this service.
 
 - Click **Register Service** to complete the registration step.
