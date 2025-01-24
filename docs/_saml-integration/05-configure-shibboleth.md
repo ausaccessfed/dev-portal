@@ -147,3 +147,59 @@ Details on the **`<MetadataProvider>`** elements configurable options are availa
 - [MetadataProvider](https://shibboleth.atlassian.net/wiki/spaces/SP3/pages/2060616124/MetadataProvider)
 
 - [MDQMetadataProvider](https://shibboleth.atlassian.net/wiki/spaces/SP3/pages/2060616133/MDQMetadataProvider)
+
+<br>
+
+#### 6 `<Errors>` Element
+
+The **`<Errors>`** element controls the error handling of the **SP** in response to problems occurring during authentication and authorization processes. If an SP encounters an error during the SAML exchange, the **`<Errors>`** element will determine the response to the user. There are two types of 
+error handling available in Shibboleth:
+
+- Template-based error handling
+- Redirection-based error handling
+
+##### Template-based error handling
+
+Template-based error handling is the default error handling method in Shibboleth. In this case, an error page is 
+returned to the browser with a message that the SP has encountered an error. The error page is created using an HTML 
+template that is populated dynamically with specific error information.
+
+Templates can make use of tags such as `requestURL`, `errorType`, `errorText`, and `entityID`. For further tags refer 
+to the [Shibboleth documentation](https://shibboleth.atlassian.net/wiki/spaces/SP3/pages/2065334361/Errors).
+
+Customised error pages improve the user's experience and can be created to suit the needs of the SP. Additional instructions on the error page can include:
+
+- Providing a link to log in again
+- Redirecting the user to a different page
+- Providing a contact email address for the IdP's service desk
+- Providing a link to the SP's support page
+
+An example of a customised error page is shown below:
+
+![Shibboleth Error Page](/assets/images/saml-integration/custom-error-page.png)
+
+##### Redirection-based error handling
+
+Redirection-based error handling is an alternative error handling method in Shibboleth. In this case, the browser is 
+redirected to a designated location when an error occurs. The redirection URL contains a query string with 
+information about the error. The query string can include the parameters referenced in the [Shibboleth documentation](https://shibboleth.atlassian.net/wiki/spaces/SP3/pages/2065334361/Errors).
+
+For example, if the SP encounters an error, the browser is redirected to the URL specified in the `redirectErrors` of the `<Errors>` element:
+
+```xml
+<Errors supportContact="support@example.org"
+        redirectErrors="http://example.org/shibboleth/error" />
+```
+
+The example URL below contains query parameters with information about the error:
+
+```shell
+https://example.org/shibboleth/error?now=Mon+Jul+8+03%3A32%3A20+2024
+  &requestURL=https://example.org/Shibboleth.sso/SAML2/POST
+  &errorType=opensaml::FatalProfileException
+  &errorText=SAML response contained an error.
+```
+
+
+
+
