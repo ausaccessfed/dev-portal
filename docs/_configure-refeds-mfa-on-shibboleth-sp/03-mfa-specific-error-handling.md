@@ -4,7 +4,9 @@ order: 3
 duration: 1
 ---
 
-The next step in the configuration process is error handling. If the IdP does not support the requested `authnContextClassRef` it will respond with a redirect to an error page (at the url configured within shibboleth2.xml), with status code: `opensaml::FatalProfileException`.
+The next step in the configuration process is error handling (refer to the [SAML Integration Tutorial for Shibboleth error handling](/saml-integration/05-configure-shibboleth/#6-errors-element)).
+
+If the IdP does not support the requested `authnContextClassRef` it will respond with a redirect to an error page (at the url configured within shibboleth2.xml), with status code: `opensaml::FatalProfileException`.
 
 The following query paramaters are sent to the configured errorURL when an MFA related error occurs:
 
