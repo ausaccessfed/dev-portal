@@ -14,6 +14,7 @@ applications.
 - How Rapid Connect manages the Shibboleth SP component on behalf of the application
 - How Rapid Connect JWT Authentication works
 - How to implement JWT Support
+- How to configure your service to skip discovery service and login directly through a specified IdP.
 
 ### What you'll need
 

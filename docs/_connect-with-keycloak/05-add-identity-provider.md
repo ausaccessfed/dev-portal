@@ -1,10 +1,10 @@
 ---
 title: Add an identity provider
-order: 3
+order: 5
 duration: 5
 ---
 
-* Once in the selected realm (in this example, it is 'myrealm'), click on 'Identity providers' (at the bottom of the left hand menu bar).
+* Once in the selected realm (in this example, it is called 'myrealm'), click on 'Identity providers' (at the bottom of the left hand menu bar).
 
 ![Identity provider Link](/assets/images/connect-with-keycloak/keycloak-navigate-to-idp.png)
 
@@ -23,13 +23,16 @@ Keep the Keycloak admin console page open as you will need to enter the `Client 
 
 * On the 'Register a New Service' page (for OpenID Connect) in Federation Manager, paste the `Redirect URI` value obtained from Keycloak into the `Redirect URL` field.
 
-![Register new service](/assets/images/connect-with-keycloak/register-oidc-service-redirect-url.png)
+![Register new service](/assets/images/connect-with-keycloak/keycloak-register-oidc-service-redirect-url.png)
 
-* Once you click 'Register Service' you will receive an 'Identifier' and a 'Secret' from Federation Manager (Test).
+* Once you click 'Register Service' you will receive an 'Identifier' (redacted below) and a 'Secret' from Federation Manager (Test).
+
+You will be able to regenerate the secret later if required.
+{: .callout-info}
 
 ![Keycloak service](/assets/images/connect-with-keycloak/keycloak-service.png)
 
-* Copy these items to your clipboard and head back over to Keycloak.
+* Copy the 'Identifier' and 'Secret' to your clipboard and head back over to Keycloak.
 * Paste these items into the `Client ID` and `Client Secret` fields, respectively, within the 'OpenID Connect settings' section of the Keycloak console.
 
 ![Oidc provider secret](/assets/images/connect-with-keycloak/keycloak-add-oidc-provider-secret.png)
@@ -47,22 +50,50 @@ If you click on the 'Identity providers' option (in the left-hand menu bar), you
 
 ![OpenID connect provider](/assets/images/connect-with-keycloak/keycloak-new-identity-provider.png)
 
-* When next signing in, you will see the option to sign in with 'oidc' (or whatever `alias` you chose to identify your identity provider).
+### Logging in with the new identity provider
+
+* First ensure that the users you wish to authenticate with this identity provider have been added to the selected realm.
+* To do this, click on 'Users' in the left-hand menu bar.
+
+![Users Link](/assets/images/connect-with-keycloak/keycloak-navigate-to-users.png)
+
+* Click on the user you wish to authenticate with the new identity provider.
+
+![Add Selected User](/assets/images/connect-with-keycloak/keycloak-add-selected-user.png)
+
+* In the User Profile, click on 'identity provider links'.
+
+![Link User to IdP](/assets/images/connect-with-keycloak/keycloak-idp-link.png)
+
+* Click 'Link account' next to the new identity provider (in this case, 'oidc').
+
+![Link Account](/assets/images/connect-with-keycloak/keycloak-link-user-account.png)
+
+* Enter the user ID (from the User Details page) and username for the user account you wish to link.
+* Click 'Link'.
+
+![Enter User ID](/assets/images/connect-with-keycloak/keycloak-enter-user-id.png)
+
+* You will see that the user account and the identity provider have now been linked.
+
+![Linked Account](/assets/images/connect-with-keycloak/keycloak-linked-user-account.png)
+
+* When next signing in as a user (in this case, http://localhost:8080/realms/myrealm/account), you will see the option to sign in with 'oidc' (or whatever `alias` you chose to identify your identity provider).
 * Click on 'oidc'.
 
-![Sign in with oidc](/assets/images/connect-with-keycloak/sign-in-with-oidc.png)
+![Sign in with oidc](/assets/images/connect-with-keycloak/keycloak-sign-in-with-oidc.png)
 
-This will take you to the AAF Discovery Service (known as AAF Central).
+This will take you to the AAF Discovery Service (note that the name and description you provided when registering your service will appear here).
 
 * Select your organisation from the list provided and click 'Continue to your organisation'.
 
-![Log into Central](/assets/images/connect-with-keycloak/log-in-to-central.png)
+![Log into Central](/assets/images/connect-with-keycloak/keycloak-log-in-to-central.png)
 
 * You will be prompted to enter your username and password.
 * Click 'Sign in'.
 
-![Log in to organisation](/assets/images/connect-with-keycloak/login-to-organisation.png)
+![Log in to organisation](/assets/images/connect-with-keycloak/keycloak-login-to-organisation.png)
 
 * If authentication is successful, you will be taken back to your Keycloak account console.
 
-![New user account](/assets/images/connect-with-keycloak/new-user-account.png)
+![New user account](/assets/images/connect-with-keycloak/keycloak-new-user-account.png)
