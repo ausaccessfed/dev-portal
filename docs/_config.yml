@@ -36,6 +36,7 @@ tutorial_categories:
   - Federation Manager Authentication
   - Connect a Service
   - Identity Management Solutions
+  - Multi-factor Authentication
 
 # New tutorials should be added by running:
 #   $ rake tutorial "My tutorial title"
@@ -380,3 +381,18 @@ collections:
     duration: 5
     published: 2024-06-21
     author: Kelley Foster <kelley.foster@aaf.edu.au>
+
+  configure-refeds-mfa-on-shibboleth-sp:
+    output: true
+    permalink: /:collection/:name
+    title: Configure REFEDS MFA on Shibboleth SP
+    summary: A tutorial for Configuring REFEDS MFA on Shibboleth SP
+    category: Multi-factor Authentication
+    level: Intermediate
+    tags:
+      - tutorial
+    difficulty: 3
+    duration: 10
+    published: 2024-12-18
+    author: Kelley Foster <kelley.foster@aaf.edu.au>
+
