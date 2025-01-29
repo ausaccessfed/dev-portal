@@ -27,4 +27,4 @@ You will be prompted to select your Organisation as shown below.
 
 If authentication is successful, you will be taken to the **Federation Manager Dashboard** page.
 
-![FM Dashboard](/assets/images/log-into-federation-manager/FM-dashboard.png)
+![FM Dashboard](/assets/images/log-into-federation-manager/FM-dashboard-gen.png)
