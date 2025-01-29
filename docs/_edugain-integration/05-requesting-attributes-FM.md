@@ -13,24 +13,24 @@ duration: 1
 
 3. Once you have been successfully authenticated, click on “My services” on the Federation Manager dashboard.
 
-    ![My services](/assets/images/edugain-integration/my_services.png)
+    ![My services](/assets/images/edugain-integration/FM-dashboard-services.png)
 
 4. Select "SAML" as the protocol from the dropdown list on the right-hand side of the dashboard. Then select your 
 service from the “Services” list.
 
-    ![SAML Protocol](/assets/images/edugain-integration/saml_protocol.png)
+    ![SAML Protocol](/assets/images/edugain-integration/saml-protocol.png)
 
 5. Select the SAML tab.
 
-    ![SAML Tab](/assets/images/edugain-integration/saml_tab.png)
+    ![SAML Tab](/assets/images/edugain-integration/saml-tab.png)
 
 6. Then click on the "Requested Attributes" tab.
 
-    ![Requested attributes](/assets/images/edugain-integration/requested_attributes.png)
+    ![Requested attributes](/assets/images/edugain-integration/requested-attributes.png)
 
 You are now on the Service Provider’s Attributes page, which includes required, optional and other attributes. From here you can add, modify and remove attributes that your service requires.
 
-![Select attributes](/assets/images/edugain-integration/select_attributes.png)
+![Select attributes](/assets/images/edugain-integration/select-attributes.png)
 
 Please note that adding a new attribute will require approval at both the organisation and federation level. Please ensure that a reason is clearly provided which defines a purpose with respect to your service.
 <br><br>
