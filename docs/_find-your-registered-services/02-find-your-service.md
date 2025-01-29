@@ -4,13 +4,13 @@ order: 2
 duration: 1
 ---
 
-- Navigate to [Federation Manager](https://manager.test.aaf.edu.au/welcome).
+- Navigate to [Federation Manager (Test)](https://manager.test.aaf.edu.au/welcome).
 
 - [Login](http://127.0.0.1:4000/log-into-federation-manager/02-authentication) via your home organisation’s Identity Provider or AAF Virtual home.
 
 - Once logged in, click on "View organisations".
 
-![FM Dashboard](/assets/images/find-your-registered-services/FM-dashboard.png)
+![FM Dashboard](/assets/images/find-your-registered-services/FM-dashboard-org.png)
 
 - Select the Organisation that you have administrative privileges for.
 

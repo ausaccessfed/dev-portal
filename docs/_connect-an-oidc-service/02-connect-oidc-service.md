@@ -29,6 +29,8 @@ You will be provided with the Identifier and Secret used by your **RP** service 
 You only have one opportunity to copy the Secret, it cannot be recovered later. You can however generate a new secret later.
 {: .callout-warning }
 
+![Service details](/assets/images/connect-an-oidc-service/service-details.png)
+
 Your service will be automatically registered in the Test Federation. However, there will be a delay before you can use the service. 
 {: .callout-info }
 
