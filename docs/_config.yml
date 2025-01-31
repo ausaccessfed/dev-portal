@@ -380,3 +380,18 @@ collections:
     duration: 5
     published: 2024-06-21
     author: Kelley Foster <kelley.foster@aaf.edu.au>
+
+  set-up-oidc-via-kubelogin-for-k8s-cluster-authentication:
+    output: true
+    permalink: /:collection/:name
+    title: Set up OIDC via Kubelogin for K8s Cluster Authentication
+    summary: A tutorial for setting up OIDC via Kubelogin for K8s cluster authentication
+    category: Integration
+    level: Advanced
+    tags:
+      - tutorial
+    difficulty: 4
+    duration: 10
+    published: 2025-01-24
+    author: Kelley Foster <kelley.foster@aaf.edu.au>
+
