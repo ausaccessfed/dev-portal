@@ -31,12 +31,14 @@ You only have one opportunity to copy the Secret, it cannot be recovered later. 
 
 ![Service details](/assets/images/connect-an-oidc-service/service-details.png)
 
-Your service will be automatically registered in the Test Federation. However, there will be a delay before you can use the service. 
+Your service will be automatically registered in the Test Federation and you will receive an email confirming this. However, there will be a two-hour delay before you can use the service. 
 {: .callout-info }
 
 This delay includes:
 - Generating and publishing new SAML metadata for your service
 - Background jobs setting up the required configuration changes for your new service
+
+![OIDC service registration email](/assets/images/connect-an-oidc-service/oidc-service-email.png)
 
 You will see an error message if you attempt to log into the service while it is being processed.
 {: .callout-warning }
