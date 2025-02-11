@@ -8,11 +8,12 @@ $form-label-font-weight: 600;
 // AAF colours
 $aaf-blue:   #00A2C4;
 $aaf-pink:   #E51875;
-$aaf-orange: #E37743;
-$aaf-yellow: #E89644;
+$aaf-orange: #F08528;
+$aaf-yellow: #F39D44;
 $aaf-indigo: #5F368A;
 $aaf-purple: #2A004A;
 $aaf-grey:   #969696;
+$aaf-dark-grey: #2d2d2d;
 
 // Override bootstrap colours
 $dark: #000000;
@@ -24,13 +25,13 @@ $indigo: $aaf-indigo;
 $purple: $aaf-purple;
 $gray: $aaf-grey;
 
-$gray-100: #fcfcfc;
-$gray-200: #EEEEEE;
-$gray-300: #dddddd;
+$gray-100: #f3f3f3;
+$gray-200: #efefef;
+$gray-300: #e7e7e7;
 $gray-400: #c6c6c6;
 $gray-500: #999999;
-$gray-600: #666666;
-$gray-700: #333333;
+$gray-600: #707070;
+$gray-700: #2d2d2d;
 $gray-800: #222222;
 $gray-900: #111111;
 

@@ -59,6 +59,10 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.navbar {
+  background-color: $aaf-dark-grey;
+}
+
 .nav-link {
   text-transform: uppercase;
 }
@@ -68,7 +72,7 @@ h1, h2, h3, h4, h5, h6 {
  */
 header {
   background-color: #969696;
-  background-image: url($baseurl + "/assets/images/aaf-image-min.jpg");
+  background: linear-gradient(to top right, $aaf-orange, $aaf-indigo);
   background-size: cover;
   padding-bottom: 200px;
   margin-bottom: -200px;
@@ -95,7 +99,7 @@ header {
   font-weight: 300;
   font-style: normal;
   color: #dfdfdf;
-  background-color: #2a2a2a;
+  background-color: #2d2d2d;
   line-height: 1.8em;
 
   .footer-text {
