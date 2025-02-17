@@ -12,9 +12,6 @@ $baseurl: "{{ site.baseurl }}";
 @import "syntax-highlighting";
 @import "bootstrap_customization";
 @import "typeahead";
-@import "font-awesome/fontawesome";
-@import "font-awesome/solid";
-@import "font-awesome/brands";
 @import "bootstrap-callouts";
 
 html,
