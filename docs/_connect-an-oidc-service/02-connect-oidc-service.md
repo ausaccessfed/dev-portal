@@ -21,6 +21,8 @@ Once you have clicked on 'OpenID Connect' on the ['Connect a New Service'](https
 4. Redirect URL - The endpoint which will receive the OIDC responses from AAF. Additional redirect URIs can be added after registration via the client details page.
 5. Organisation - Responsible for the operation of the service, must be an **AAF** subscriber.
 
+Note: In the development environment, make sure to use `http` for both the URL and Redirect URL.
+{: .callout-info }
 
 - Click **Register Service** to complete the registration step.
 

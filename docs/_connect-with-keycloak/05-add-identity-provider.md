@@ -23,6 +23,9 @@ Keep the Keycloak admin console page open as you will need to enter the `Client 
 
 * On the 'Register a New Service' page (for OpenID Connect) in Federation Manager, paste the `Redirect URI` value obtained from Keycloak into the `Redirect URL` field.
 
+Note: In the development environment, make sure to use `http` for both the URL and Redirect URL.
+{: .callout-info }
+
 ![Register new service](/assets/images/connect-with-keycloak/keycloak-register-oidc-service-redirect-url.png)
 
 * Once you click 'Register Service' you will receive an 'Identifier' (redacted below) and a 'Secret' from Federation Manager (Test).
@@ -38,9 +41,29 @@ You will be able to regenerate the secret later if required.
 ![Oidc provider secret](/assets/images/connect-with-keycloak/keycloak-add-oidc-provider-secret.png)
 
 The other mandatory fields in this section are the `Discovery Endpoint` and `Client Assertion Signature Algorithm`.
-* The `Discovery Endpoint` will be: `https://central.test.aaf.edu.au/.well-known/openid-configuration`
-* The `Client Assertion Signature Algorithm` will be 'RS256' as it is the currently available algorithm when signing JWTs. If no algorithm is specified, Keycloak will default to RS256 in the case of a JWT signed with a private key.
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Field</th>
+      <th scope="col">Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Discovery Endpoint</th>
+      <td><ul><li>will be: <code>https://central.test.aaf.edu.au/.well-known/openid-configuration</code></li></ul></td>
+    </tr>
+    <tr>
+      <th scope="row">Client Assertion Signature Algorithm</th>
+      <td><ul><li>will be <code>RS256</code> as it is the currently available algorithm when signing JWTs. If no algorithm is specified, Keycloak will default to RS256 in the case of a JWT signed with a private key.</li></ul></td>
+    </tr>
+  </tbody>
+</table>
+
 * Click 'Add'.
+
+<br>
 
 You will see the new identity provider settings (as shown below).
 
@@ -78,7 +101,7 @@ If you click on the 'Identity providers' option (in the left-hand menu bar), you
 
 ![Linked Account](/assets/images/connect-with-keycloak/keycloak-linked-user-account.png)
 
-* When next signing in as a user (in this case, http://localhost:8080/realms/myrealm/account), you will see the option to sign in with 'oidc' (or whatever `alias` you chose to identify your identity provider).
+* When next signing in as a user (in this case, `http://localhost:8080/realms/myrealm/account`), you will see the option to sign in with 'oidc' (or whatever `alias` you chose to identify your identity provider).
 * Click on 'oidc'.
 
 ![Sign in with oidc](/assets/images/connect-with-keycloak/keycloak-sign-in-with-oidc.png)
@@ -93,6 +116,12 @@ This will take you to the AAF Discovery Service (note that the name and descript
 * Click 'Sign in'.
 
 ![Log in to organisation](/assets/images/connect-with-keycloak/keycloak-login-to-organisation.png)
+
+Your attributes will be displayed, and you will be asked to confirm that you wish to share these with the service you are logging into. 
+
+* Click one of the options and then click 'Approve'.
+
+![Share attributes](/assets/images/connect-with-keycloak/keycloak-share-attributes.png){:style="display:block; margin-left:auto; margin-right:auto"}
 
 * If authentication is successful, you will be taken back to your Keycloak account console.
 
