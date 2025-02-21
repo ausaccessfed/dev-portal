@@ -15,5 +15,4 @@ This tutorial will guide you through setting up Moodle to authenticate users via
 ### What you'll need
 
 - To have set up [Moodle](https://moodledev.io/general/development/gettingstarted#a-quick-start-to-moodle-development) on your local machine.
-- 
-- 
+- Docker Desktop installed on your local machine (optional).
