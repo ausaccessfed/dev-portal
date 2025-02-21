@@ -380,3 +380,18 @@ collections:
     duration: 5
     published: 2024-06-21
     author: Kelley Foster <kelley.foster@aaf.edu.au>
+
+  set-up-moodle-via-aaf-authentication:
+    output: true
+    permalink: /:collection/:name
+    title: Connect with Moodle via AAF Authentication
+    summary: A tutorial for Setting up Moodle via AAF Authentication
+    category: Identity Management Solutions
+    level: Beginner
+    tags:
+      - tutorial
+    difficulty: 1
+    duration: 10
+    published: 2025-02-21
+    author: Kelley Foster <kelley.foster@aaf.edu.au>
+
