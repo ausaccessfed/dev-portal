@@ -18,3 +18,7 @@ duration: 1
 * On the 'Server' page, click on 'OAuth 2 services'.
 
 ![Server Page](/assets/images/set-up-moodle-via-aaf-authn/server-page.png)
+
+* On the 'OAuth 2 services' page, click on 'Custom'.
+
+![OAuth 2 Services Page](/assets/images/set-up-moodle-via-aaf-authn/oauth2-services-page.png)
