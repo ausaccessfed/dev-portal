@@ -1,10 +1,10 @@
 ---
 title: Enable a new service
-order: 4
+order: 6
 duration: 1
 ---
 
-To enable the new service, go to 'Site Administration' and select 'Plugins'.
+To enable the new service, click on 'Site Administration' and select 'Plugins'.
 
 ![Select Plugins](/assets/images/set-up-moodle-via-aaf-authn/select-plugins.png)
 
@@ -16,6 +16,7 @@ On the 'Manage authentication' page, scroll down to 'OAuth 2' and click on the e
 
 ![Enable OAuth 2](/assets/images/set-up-moodle-via-aaf-authn/enable-oauth2.png)
 
+Like so:
 
 ![OAuth 2 Enabled](/assets/images/set-up-moodle-via-aaf-authn/enabled-oauth2.png)
 
