@@ -28,7 +28,7 @@ You will be redirected to the AAF Discovery page. Note that the name and descrip
 
 ![AAF Discovery](/assets/images/set-up-moodle-via-aaf-authn/discovery-page.png)
 
-If authentication is successful, you will be redirected to the user's Moodle page.
+If authentication is successful, you will be redirected to your Moodle home page.
 
 ![Service Homepage](/assets/images/set-up-moodle-via-aaf-authn/redirect-to-user-page.png)
 
