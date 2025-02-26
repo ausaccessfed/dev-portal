@@ -1,6 +1,6 @@
 ---
 title: Enable a new service
-order: 6
+order: 5
 duration: 1
 ---
 

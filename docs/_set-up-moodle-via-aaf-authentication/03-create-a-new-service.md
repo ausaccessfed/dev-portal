@@ -1,6 +1,6 @@
 ---
 title: Create a new service
-order: 4
+order: 3
 duration: 1
 ---
 
@@ -30,7 +30,7 @@ Keep the Moodle admin console page open as you will need to enter the `Client ID
 You will be able to regenerate the secret later if required.
 {: .callout-info}
 
-![Client ID and Secret](/assets/images/set-up-moodle-via-aaf-authn/register-moodle-service.png)
+![Client ID and Secret](/assets/images/set-up-moodle-via-aaf-authn/register-moodle-service.png){:style="display:block; margin-left:auto; margin-right:auto"}
 
 * Copy the `Identifier` and `Secret` to your clipboard and head back over to the Moodle admin console.
 * Paste these items into the `Client ID` and `Client Secret` fields, respectively, within the 'OpenID Connect settings' section of the Moodle console.

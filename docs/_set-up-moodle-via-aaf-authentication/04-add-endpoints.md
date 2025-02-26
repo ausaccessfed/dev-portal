@@ -1,10 +1,10 @@
 ---
 title: Add service endpoints
-order: 5
+order: 4
 duration: 1
 ---
 
-To configure the service endpoints, click on the 'dot points' icon in the 'Edit' column of the 'OAuth 2 Service' row.
+To configure the endpoints for your new service, click on the 'dot points' icon in the 'Edit' column of the 'OAuth 2 Service' row.
 
 ![Configure Endpoints](/assets/images/set-up-moodle-via-aaf-authn/configure-endpoints.png)
 
