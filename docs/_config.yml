@@ -36,6 +36,7 @@ tutorial_categories:
   - Federation Manager Authentication
   - Connect a Service
   - Identity Management Solutions
+  - Learning Platforms
 
 # New tutorials should be added by running:
 #   $ rake tutorial "My tutorial title"
@@ -386,12 +387,12 @@ collections:
     permalink: /:collection/:name
     title: Connect with Moodle via AAF Authentication
     summary: A tutorial for Setting up Moodle via AAF Authentication
-    category: Identity Management Solutions
-    level: Beginner
+    category: Learning Platforms
+    level: Intermediate
     tags:
       - tutorial
-    difficulty: 1
-    duration: 10
+    difficulty: 3
+    duration: 40
     published: 2025-02-21
     author: Kelley Foster <kelley.foster@aaf.edu.au>
 

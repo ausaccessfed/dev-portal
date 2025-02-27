@@ -1,6 +1,6 @@
 ---
 title: Test new service
-order: 6
+order: 5
 duration: 1
 ---
 
@@ -12,17 +12,11 @@ Once the service has been enabled, it can be tested.
 
 Your new service should now be listed in the 'Plugins' section. 
 
-* Click 'Continue' to proceed.
+* Click the new service button to proceed.
 
 ![Test Service](/assets/images/set-up-moodle-via-aaf-authn/test-service.png)
 
-The login page for the new service will appear. 
-
-* Click the new service button to test the service.
-
-![New Login](/assets/images/set-up-moodle-via-aaf-authn/new-login.png)
-
-You will be redirected to the AAF Discovery page. Note that the name and description of the service will be displayed on the page.
+You will be redirected to the AAF Discovery page. Note that the name and description of the new service will be displayed on the page.
 
 * Click on your organisation and then click 'Continue to your organisation' to proceed.
 
@@ -31,5 +25,9 @@ You will be redirected to the AAF Discovery page. Note that the name and descrip
 If authentication is successful, you will be redirected to your Moodle home page.
 
 ![Service Homepage](/assets/images/set-up-moodle-via-aaf-authn/redirect-to-user-page.png)
+
+When you next log on to Moodle, your new service will be available for use:
+
+![New Login](/assets/images/set-up-moodle-via-aaf-authn/new-login.png)
 
 
