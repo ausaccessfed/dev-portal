@@ -8,7 +8,7 @@ This tutorial shows you how to register a new single page OpenID Connect service
 
 ### What you'll learn
 
-- How to connect a single page OpenID Connect service in the AAF test Federation
+- How to connect a single page OpenID Connect service in Federation Manager (Test)
 
 ### What you'll need
 
