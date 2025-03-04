@@ -400,6 +400,7 @@ collections:
     output: true
     permalink: /:collection/:name
     title: Connect a single page OIDC service
+    summary: A tutorial for connecting a single page OIDC service
     category: Connect a Service
     curriculum: OpenID Connect
     level: Intermediate
