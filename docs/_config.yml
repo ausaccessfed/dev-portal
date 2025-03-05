@@ -396,3 +396,19 @@ collections:
     published: 2025-02-27
     author: Kelley Foster <kelley.foster@aaf.edu.au>
 
+  connect-a-single-page-oidc-service:
+    output: true
+    permalink: /:collection/:name
+    title: Connect a single page OIDC service
+    summary: A tutorial for connecting a single page OIDC service
+    category: Connect a Service
+    curriculum: OpenID Connect
+    level: Intermediate
+    tags:
+      - openid connect
+      - tutorial
+    difficulty: 3
+    duration: 10
+    published: 2025-02-28
+    author: Kelley Foster <kelley.foster@aaf.edu.au>
+
