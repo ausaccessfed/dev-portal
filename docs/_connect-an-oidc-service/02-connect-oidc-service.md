@@ -21,7 +21,6 @@ Once you have clicked on 'OpenID Connect' on the ['Connect a New Service'](https
 4. Redirect URL - The endpoint which will receive the OIDC responses from AAF. Additional redirect URIs can be added after registration via the client details page.
 5. Authentication Methods - Select the authentication method that your service will support:
  - Secret: Recommended for server-side applications that can securely store client secrets.
- - Proof Key for Code Exchange (PKCE): Recommended for mobile/desktop/single page applications that cannot securely store secrets.
  - Secret and PKCE: Recommended for applications that can securely store secrets and require extra security.
 6. Organisation - Responsible for the operation of the service, must be an **AAF** subscriber.
 
