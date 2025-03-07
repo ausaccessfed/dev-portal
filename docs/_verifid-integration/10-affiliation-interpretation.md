@@ -2,7 +2,7 @@
 title: How to interpret the Affiliation
 order: 10
 duration: 1
-last_updated: 2025-03-07 12:26:16 +1000
+last_updated: March 07, 2025
 ---
 
 [The eduPerson schema(10)](https://wiki.refeds.org/display/STAN/eduPerson+2020-01#eduPerson202001-eduPersonAffiliation) defines the attribute “`eduPersonAffiliation`” as follows:

@@ -2,7 +2,7 @@
 title: Metadata certificates and permissions
 order: 4
 duration: 1
-last_updated: 2025-03-07 12:26:16 +1000
+last_updated: March 07, 2025
 ---
 
 Make sure that you download each federation's metadata certificate to your service provider and set the appropriate permissions so your service provider can read it.

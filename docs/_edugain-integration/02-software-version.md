@@ -2,7 +2,7 @@
 title: Software Version
 order: 2
 duration: 1
-last_updated: 2025-03-07 12:26:16 +1000
+last_updated: March 07, 2025
 ---
 <br>
 

@@ -2,7 +2,7 @@
 title: Overview
 order: 1
 duration: 1
-last_updated: 2025-03-07 12:26:16 +1000
+last_updated: March 07, 2025
 ---
 
 Welcome to the AAF Support Tutorials. We've put together all the tutorials that you will need to connect a new service (using OpenID Connect, Rapid Connect, SAML or VerifID) to the AAF.

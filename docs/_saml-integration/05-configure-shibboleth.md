@@ -2,7 +2,7 @@
 title: Configure Shibboleth
 order: 5
 duration: 1
-last_updated: 2025-03-07 12:26:16 +1000
+last_updated: March 07, 2025
 ---
 
 For this demonstration, minor updates to the default installation are sufficient to demonstrate functionality.

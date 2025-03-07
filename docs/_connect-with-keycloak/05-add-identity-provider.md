@@ -2,7 +2,7 @@
 title: Add an identity provider
 order: 5
 duration: 5
-last_updated: 2025-03-07 12:26:16 +1000
+last_updated: March 07, 2025
 ---
 
 * Once in the selected realm (in this example, it is called 'myrealm'), click on 'Identity providers' (at the bottom of the left hand menu bar).
