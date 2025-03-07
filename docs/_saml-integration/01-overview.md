@@ -2,7 +2,7 @@
 title: Overview
 order: 1
 duration: 1
-last_updated:
+last_updated: 2025-03-07 12:26:16 +1000
 ---
 
 This tutorial will assist with standing up a simple application protected by **Shibboleth** and add the application

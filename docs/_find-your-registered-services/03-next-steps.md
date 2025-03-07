@@ -2,7 +2,7 @@
 title: Next steps
 order: 3
 duration: 1
-last_updated:
+last_updated: 2025-03-07 12:26:16 +1000
 ---
 
 You have successfully confirmed that your service has been registered in FM.

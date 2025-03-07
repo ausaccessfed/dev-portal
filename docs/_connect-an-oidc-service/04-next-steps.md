@@ -2,7 +2,7 @@
 title: Next steps
 order: 4
 duration: 1
-last_updated:
+last_updated: 2025-03-07 12:26:16 +1000
 ---
 
 Congratulations! You have successfully registered an OpenID Connect service.

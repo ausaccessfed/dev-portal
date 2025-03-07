@@ -2,7 +2,7 @@
 title: Register with EduGAIN
 order: 2
 duration: 1
-last_updated:
+last_updated: 2025-03-07 12:26:16 +1000
 ---
 
 Now that you have completed the configuration requirements, and your SP is ready to be connected to eduGAIN, email <a href="mailto:support@aaf.edu.au">AAF Support</a> using the following template.

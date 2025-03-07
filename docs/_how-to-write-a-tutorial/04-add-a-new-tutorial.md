@@ -2,7 +2,7 @@
 title: Add tutorial content
 order: 4
 duration: 1
-last_updated:
+last_updated: 2025-03-07 12:26:16 +1000
 ---
 
 On the command line, the following rake task will set up the initial tutorial structure for you:

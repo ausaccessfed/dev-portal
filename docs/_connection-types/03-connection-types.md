@@ -2,7 +2,7 @@
 title: Connection Types
 order: 3
 duration: 2
-last_updated:
+last_updated: 2025-03-07 12:26:16 +1000
 ---
 
 Choose which protocol your service will use to connect. Each protocol has its own benefits and drawbacks and the choice will depend on your organisation's requirements and preferences.
