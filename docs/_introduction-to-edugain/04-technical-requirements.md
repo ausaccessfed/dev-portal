@@ -2,6 +2,7 @@
 title: Technical Connection Requirements
 order: 4
 duration: 1
+last_updated:
 ---
 <br>
 

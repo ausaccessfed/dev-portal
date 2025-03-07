@@ -2,6 +2,7 @@
 title: Provided Claims
 order: 5
 duration: 1
+last_updated:
 ---
 
 The following claims are provided by AAF Rapid Connect:

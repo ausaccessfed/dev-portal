@@ -2,6 +2,7 @@
 title: Overview
 order: 1
 duration: 1
+last_updated:
 ---
 
 This tutorial shows how to set up your service provider in multiple federations. For illustrative purposes this tutorial will explain how to set up a service provider in two federations, the `AAF` and the `Tuakiri Federation` but the same configuration applies to joining other federations.

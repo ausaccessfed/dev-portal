@@ -2,6 +2,7 @@
 title: Overview
 order: 1
 duration: 1
+last_updated:
 ---
 
 ### Register an OIDC service with Keycloak

@@ -2,6 +2,7 @@
 title: Attribute Based Authorisation
 order: 9
 duration: 1
+last_updated:
 ---
 
 Specific claims within the ID token can be utilised to make authorisation decisions within an application.

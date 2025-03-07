@@ -2,6 +2,7 @@
 title: Glossary
 order: 11
 duration: 1
+last_updated:
 ---
 
 <ul class="list-group">

@@ -2,6 +2,7 @@
 title: Next Steps
 order: 3
 duration: 1
+last_updated:
 ---
 
 Await review by the **AAF Support team**. After approval, test your service and go-live.

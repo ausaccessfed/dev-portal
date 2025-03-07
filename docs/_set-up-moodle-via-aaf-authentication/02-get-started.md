@@ -2,6 +2,7 @@
 title: Get started
 order: 2
 duration: 1
+last_updated:
 ---
 
 * If you are using Moodle for the first time, [please refer to their documentation](https://moodledev.io/general/development/gettingstarted#a-quick-start-to-moodle-development) to get started.

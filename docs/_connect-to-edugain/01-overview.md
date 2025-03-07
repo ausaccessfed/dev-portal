@@ -2,6 +2,7 @@
 title: Overview
 order: 1
 duration: 1
+last_updated:
 ---
 
 This tutorial shows you how to register a new service with eduGAIN through the AAF.

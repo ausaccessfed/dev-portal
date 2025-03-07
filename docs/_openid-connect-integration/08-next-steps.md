@@ -2,6 +2,7 @@
 title: Next Steps
 order: 8
 duration: 1
+last_updated:
 ---
 
 Once you have completed the OpenID configuration, you are ready to connect your service!

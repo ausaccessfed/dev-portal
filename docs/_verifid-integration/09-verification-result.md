@@ -2,6 +2,7 @@
 title: Verification result
 order: 9
 duration: 1
+last_updated:
 ---
 
 This payload describes the result of Verification, and takes the following format:

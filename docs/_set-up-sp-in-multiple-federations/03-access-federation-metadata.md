@@ -2,6 +2,7 @@
 title: Access federation metadata
 order: 3
 duration: 1
+last_updated:
 ---
 
 Ensure your service provider has access to the metadata from each federation by editing the shibboleth.xml file. 

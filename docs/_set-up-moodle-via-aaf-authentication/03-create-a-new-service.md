@@ -2,6 +2,7 @@
 title: Create a new service
 order: 3
 duration: 1
+last_updated:
 ---
 
 * On the 'Site administration' page, navigate to 'Server' &rarr; 'OAuth 2 services' &rarr; 'Custom'.

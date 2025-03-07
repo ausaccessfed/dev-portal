@@ -2,6 +2,7 @@
 title: Test authentication
 order: 3
 duration: 1
+last_updated:
 ---
 
 Since you have registered your service in the Test Federation, your application will be automatically approved!

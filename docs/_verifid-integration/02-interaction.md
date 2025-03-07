@@ -2,6 +2,7 @@
 title: Interaction
 order: 2
 duration: 1
+last_updated:
 ---
 
 The primary interaction of this service requires a User who is accessing a web-based service via a standard web browser.

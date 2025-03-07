@@ -2,6 +2,7 @@
 title: Install Shibboleth - Example A
 order: 3
 duration: 1
+last_updated:
 ---
 
 <br>

@@ -2,6 +2,7 @@
 title: Overview
 order: 1
 duration: 1
+last_updated:
 ---
 
 This tutorial will guide you through the process for technically configuring a Shibboleth SP to connect to eduGAIN. 

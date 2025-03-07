@@ -2,6 +2,7 @@
 title: Next Steps
 order: 12
 duration: 1
+last_updated:
 ---
 
 Once you have completed the VerifID configuration, you are ready to connect your client!

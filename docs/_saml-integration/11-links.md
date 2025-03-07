@@ -2,6 +2,7 @@
 title: Links
 order: 11
 duration: 1
+last_updated:
 ---
 
 <br>

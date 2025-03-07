@@ -2,6 +2,7 @@
 title: Privacy Requirements
 order: 7
 duration: 1
+last_updated:
 ---
 
 The AAF recommends reviewing relevant legislation before connecting to eduGAIN.

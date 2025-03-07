@@ -2,6 +2,7 @@
 title: Error response
 order: 7
 duration: 1
+last_updated:
 ---
 
 If an error occurs when validating and processing the authorization request, or when generating the authorization response, an error response will be returned to the callback URL. The error response is an authorization “Error Response” as described in the OAuth 2.0 specification(5), and is returned by redirecting the User’s browser to the Client’s <code>redirect_uri</code>, with query parameters:

@@ -65,7 +65,7 @@ order: 0
                 <h5 class="card-title mb-0">{{ tutorial.title }}</h5>
               </div>
               <div class="card-body">
-                <small class="text-muted">{{ tutorial.published | date: "%-d %B %Y" }}</small>
+                <small class="text-muted">Date published: {{ tutorial.published | date: "%-d %B %Y" }}</small>
                 <p class="card-text py-2">{{ tutorial.summary }}</p>
               </div>
               <div class="card-footer">

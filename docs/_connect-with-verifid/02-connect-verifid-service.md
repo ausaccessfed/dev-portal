@@ -2,6 +2,7 @@
 title: Register with VerifID Global
 order: 2
 duration: 1
+last_updated:
 ---
 
 To register as a new client with VerifID Global:

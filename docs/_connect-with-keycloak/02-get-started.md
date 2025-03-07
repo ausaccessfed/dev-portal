@@ -2,6 +2,7 @@
 title: Get started
 order: 2
 duration: 3
+last_updated:
 ---
 
 * If you are using Keycloak for the first time, [please refer to their documentation](https://www.keycloak.org/documentation) to get started.

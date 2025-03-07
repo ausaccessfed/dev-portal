@@ -2,6 +2,7 @@
 title: Review SP attribute-filter.xml file
 order: 6
 duration: 1
+last_updated:
 ---
 
 For this demonstration, the uncommented default attributes are sufficient. A deployer selects those attributes a web

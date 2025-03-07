@@ -2,6 +2,7 @@
 title: Authentication
 order: 2
 duration: 1
+last_updated:
 ---
 
 This section will show you how to authenticate to the AAF Test Federation Manager Dashboard to register a new service.

@@ -2,6 +2,7 @@
 title: Summary
 order: 2
 duration: 1
+last_updated:
 ---
 
 The AAF provides two Federations, a Test Federation and a Production Federation.

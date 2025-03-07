@@ -2,6 +2,7 @@
 title: Client registration
 order: 4
 duration: 1
+last_updated:
 ---
 
 When a Client registers with VerifID, the Client shall be registered with the following details:

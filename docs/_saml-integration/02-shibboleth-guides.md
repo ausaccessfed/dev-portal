@@ -2,6 +2,7 @@
 title: Shibboleth Guides
 order: 2
 duration: 1
+last_updated:
 ---
 
 The key to deploying federated services is understanding **Shibboleth** and **SAML**, how the required components

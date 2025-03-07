@@ -2,6 +2,7 @@
 title: Overview
 order: 1
 duration: 1
+last_updated:
 ---
 
 This tutorial will guide you through setting up Moodle to authenticate users via the Australian Access Federation (AAF).

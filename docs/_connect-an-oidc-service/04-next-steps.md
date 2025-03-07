@@ -2,6 +2,7 @@
 title: Next steps
 order: 4
 duration: 1
+last_updated:
 ---
 
 Congratulations! You have successfully registered an OpenID Connect service.

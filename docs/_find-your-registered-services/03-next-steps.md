@@ -2,6 +2,7 @@
 title: Next steps
 order: 3
 duration: 1
+last_updated:
 ---
 
 You have successfully confirmed that your service has been registered in FM.

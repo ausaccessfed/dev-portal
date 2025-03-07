@@ -2,6 +2,7 @@
 title: Test new service
 order: 5
 duration: 1
+last_updated:
 ---
 
 Once the service has been enabled, it can be tested. 

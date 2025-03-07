@@ -2,6 +2,7 @@
 title: API Call
 order: 8
 duration: 1
+last_updated:
 ---
 
 #### Retrieving the access token

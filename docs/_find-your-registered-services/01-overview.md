@@ -2,6 +2,7 @@
 title: Overview
 order: 1
 duration: 1
+last_updated:
 ---
 
 Once you have connected your service, log in to Federation Manager (FM) to confirm that your service has been registered.

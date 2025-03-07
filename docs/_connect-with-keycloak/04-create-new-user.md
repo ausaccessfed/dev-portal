@@ -2,6 +2,7 @@
 title: Create a new user
 order: 4
 duration: 5
+last_updated:
 ---
 
 * Within your new realm, click on 'Users' in the left hand menu bar.

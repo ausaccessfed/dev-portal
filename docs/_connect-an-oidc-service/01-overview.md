@@ -2,6 +2,7 @@
 title: Overview
 order: 1
 duration: 1
+last_updated:
 ---
 
 This tutorial shows how to register a new OpenID Connect service with the AAF Test Federation

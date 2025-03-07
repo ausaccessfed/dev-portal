@@ -2,6 +2,7 @@
 title: Overview
 order: 1
 duration: 1
+last_updated:
 ---
 
 This tutorial will assist with standing up a simple application protected by **Shibboleth** and add the application

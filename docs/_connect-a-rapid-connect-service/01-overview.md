@@ -2,7 +2,7 @@
 title: Overview
 order: 1
 duration: 1
-last_updated: 2024-02-15 11:22:08 +1000
+last_updated:
 ---
 
 This tutorial shows how to register a new Rapid Connect service with the AAF Test Federation.

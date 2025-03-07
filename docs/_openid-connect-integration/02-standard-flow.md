@@ -2,6 +2,7 @@
 title: Standard Flow
 order: 2
 duration: 1
+last_updated:
 ---
 
 The OpenID Connect protocol, in abstract, follows the following steps.

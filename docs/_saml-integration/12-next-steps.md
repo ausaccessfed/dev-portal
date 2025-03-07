@@ -2,6 +2,7 @@
 title: Next Steps
 order: 12
 duration: 1
+last_updated:
 ---
 
 To test access to protected content, an active account at an existing subscriber with an **IdP** is necessary. The

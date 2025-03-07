@@ -2,6 +2,7 @@
 title: Connect a new service
 order: 3
 duration: 1
+last_updated:
 ---
 
 - Once you have logged into the Federation Manager Dashboard (Test), click on 'Connect a service'.

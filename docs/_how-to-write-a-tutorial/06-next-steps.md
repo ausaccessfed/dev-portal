@@ -2,6 +2,7 @@
 title: Next Steps
 order: 6
 duration: 1
+last_updated:
 ---
 
 <strong>Thank you for your suggestions!</strong>

@@ -2,6 +2,7 @@
 title: Register service
 order: 2
 duration: 1
+last_updated:
 ---
 
 A deployed Shibboleth Service Provider (SP) only becomes useful after registering the **SP** in a Federation. The following steps show how to register an **SP**.
