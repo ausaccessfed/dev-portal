@@ -87,7 +87,7 @@ task :tutorial do
     f.puts 'title: Overview'
     f.puts 'order: 1'
     f.puts 'duration: 1'
-    f.puts "last_updated: #{Time.now.strftime('%Y-%m-%d')}"
+    f.puts "last_updated: #{Time.now.strftime('%d-%m-%Y')}"
     f.puts '---'
     f.puts ''
     f.puts 'This tutorial... (replace this) '
@@ -149,3 +149,9 @@ end
 
 #Load custom rake scripts
 Dir['_rake/*.rake'].each { |r| load r }
+
+desc "Update last modified date"
+task :update_last_modified do
+  sh "chmod +x update_last_modified.sh"
+  sh "sh update_last_modified.sh"
+end
