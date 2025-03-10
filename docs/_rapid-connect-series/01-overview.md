@@ -2,6 +2,7 @@
 title: Overview
 order: 1
 duration: 1
+last_updated: March 01, 2024
 ---
 
 Welcome to the Rapid Connect Tutorials. We've put together all the tutorials that you will need to connect a new 
