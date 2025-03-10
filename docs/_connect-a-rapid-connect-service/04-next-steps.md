@@ -2,7 +2,7 @@
 title: Next steps
 order: 3
 duration: 1
-last_updated: March 07, 2025
+last_updated: 07 March, 2025
 ---
 
 Congratulations! You have successfully registered a rapid connect service and have tested authentication.

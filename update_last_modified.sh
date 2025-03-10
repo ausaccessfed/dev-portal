@@ -2,7 +2,7 @@
 
 for file in docs/**/*.md; do
   echo "Processing file: $file"
-  last_modified=$(git log -1 --format="%ad" --date=format:"%B %d, %Y" "$file")
+  last_modified=$(git log -1 --format="%ad" --date=format:"%d %B, %Y" "$file")
   echo "Last modified date: $last_modified"
   if [ -n "$last_modified" ]; then
     if grep -q "^last_updated:" "$file"; then

@@ -2,7 +2,7 @@
 title: Request minor changes
 order: 2
 duration: 1
-last_updated: March 07, 2025
+last_updated: 07 March, 2025
 ---
 
 This section which will show you how to request minor changes to the tutorial documentation.

@@ -2,7 +2,7 @@
 title: Get started
 order: 2
 duration: 1
-last_updated: March 07, 2025
+last_updated: 07 March, 2025
 ---
 
 * If you are using Moodle for the first time, [please refer to their documentation](https://moodledev.io/general/development/gettingstarted#a-quick-start-to-moodle-development) to get started.

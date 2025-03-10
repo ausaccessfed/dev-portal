@@ -2,7 +2,7 @@
 title: Connection Requirements
 order: 2
 duration: 1
-last_updated: March 07, 2025
+last_updated: 07 March, 2025
 ---
 
 Connecting to eduGAIN is optional, however there are requirements that must be met by Service Providers before connecting.

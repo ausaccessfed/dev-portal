@@ -2,7 +2,7 @@
 title: Next Steps
 order: 7
 duration: 1
-last_updated: March 07, 2025
+last_updated: 07 March, 2025
 ---
 
 Once you have completed the eduGAIN configuration, you are ready to connect your service!

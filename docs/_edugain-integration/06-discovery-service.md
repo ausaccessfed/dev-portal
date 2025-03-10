@@ -2,7 +2,7 @@
 title: Discovery Service Mechanism for SPs
 order: 6
 duration: 1
-last_updated: March 07, 2025
+last_updated: 07 March, 2025
 ---
 
 When a service can be accessed by users from multiple organisations from multiple federations, it must ensure that the user can find and select their organisation so that they can authenticate during the login process. This process is called **Identity Provider Discovery**. There are multiple open-source implementations (Shibboleth Discovery Service) that allow a Service Provider to operate their own Discovery Service. Alternatively, the AAF provides a central discovery service.

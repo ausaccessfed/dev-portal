@@ -2,7 +2,7 @@
 title: Request a new tutorial
 order: 3
 duration: 1
-last_updated: March 07, 2025
+last_updated: 07 March, 2025
 ---
 
 To request a new tutorial, you can raise an issue on GitHub. Click on the ["Issues"](https://github.com/ausaccessfed/dev-portal/issues) tab in the AAF dev-portal repository and then click on the "New Issue" button.

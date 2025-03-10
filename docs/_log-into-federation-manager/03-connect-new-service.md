@@ -2,7 +2,7 @@
 title: Connect a new service
 order: 3
 duration: 1
-last_updated: March 07, 2025
+last_updated: 07 March, 2025
 ---
 
 - Once you have logged into the Federation Manager Dashboard (Test), click on 'Connect a service'.

@@ -2,7 +2,7 @@
 title: Attribute Based Authorisation
 order: 7
 duration: 1
-last_updated: March 07, 2025
+last_updated: 07 March, 2025
 ---
 
 Released attributes can be utilised to make authorisation decisions within an application. 

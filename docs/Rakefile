@@ -87,6 +87,7 @@ task :tutorial do
     f.puts 'title: Overview'
     f.puts 'order: 1'
     f.puts 'duration: 1'
+    f.puts "last_updated: #{Time.now.strftime('%Y-%m-%d')}"
     f.puts '---'
     f.puts ''
     f.puts 'This tutorial... (replace this) '
