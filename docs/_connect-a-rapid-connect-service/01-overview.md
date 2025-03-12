@@ -7,7 +7,7 @@ last_updated: 07 March, 2025
 
 This tutorial shows how to register a new Rapid Connect service with the AAF Test Federation.
 
-### What you'll learn
+### What you'll learn today
 
 - How to connect a Rapid Connect service
 
