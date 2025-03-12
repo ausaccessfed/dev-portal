@@ -2,7 +2,7 @@
 title: Attributes
 order: 4
 duration: 1
-last_updated: 07 March, 2025
+last_updated: 10 March, 2025
 ---
 
 These are the attributes/claims our OpenID Provider (OP) can provide to a Relying Party (RP) currently:

@@ -2,7 +2,7 @@
 title: Test authentication
 order: 3
 duration: 1
-last_updated: 07 March, 2025
+last_updated: 10 March, 2025
 ---
 
 Since you have registered your service in the Test Federation, your application will be automatically approved!

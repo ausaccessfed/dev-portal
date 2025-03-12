@@ -2,7 +2,7 @@
 title: Overview
 order: 1
 duration: 1
-last_updated: 07 March, 2025
+last_updated: 10 March, 2025
 ---
 
 This tutorial will guide you through setting up Moodle to authenticate users via the Australian Access Federation (AAF).

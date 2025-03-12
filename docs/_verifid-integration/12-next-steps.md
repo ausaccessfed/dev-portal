@@ -2,7 +2,7 @@
 title: Next Steps
 order: 12
 duration: 1
-last_updated: 07 March, 2025
+last_updated: 10 March, 2025
 ---
 
 Once you have completed the VerifID configuration, you are ready to connect your client!

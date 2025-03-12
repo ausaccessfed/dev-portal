@@ -2,7 +2,7 @@
 title: Integration
 order: 7
 duration: 1
-last_updated: 07 March, 2025
+last_updated: 10 March, 2025
 ---
 
 Before you get started with AAF Rapid Connect, you MUST meet all the following high level requirements:
