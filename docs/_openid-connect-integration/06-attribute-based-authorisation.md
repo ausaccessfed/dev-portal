@@ -2,6 +2,7 @@
 title: Attribute Based Authorisation
 order: 6
 duration: 1
+last_updated: 10 March, 2025
 ---
 
 Specific attributes can be utilised to make authorisation decisions within an application.

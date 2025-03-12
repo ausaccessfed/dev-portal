@@ -2,6 +2,7 @@
 title: Register service
 order: 2
 duration: 1
+last_updated: 10 March, 2025
 ---
 
 The **AAF OpenID Provider (OP)** satisfies the **OIDC** conformance testing framework and passes the Authorization Code flow. The **AAF** monitors the **OP** during business hours and responds to service interruption issues promptly.

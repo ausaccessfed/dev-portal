@@ -2,6 +2,7 @@
 title: Skipping Discovery Service
 order: 8
 duration: 1
+last_updated: 10 March, 2025
 ---
 
 AAF's implementation of Rapid Connect allows service administrators to configure their service to skip discovery service and login directly through a specified IdP.

@@ -2,6 +2,7 @@
 title: Glossary
 order: 11
 duration: 1
+last_updated: 10 March, 2025
 ---
 
 <ul class="list-group">

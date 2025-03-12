@@ -2,6 +2,7 @@
 title: Getting started
 order: 3
 duration: 1
+last_updated: 10 March, 2025
 ---
 
 The interaction used between the Subscriber and VerifID is the Authorization Code Grant(1) as defined by the OAuth 2.

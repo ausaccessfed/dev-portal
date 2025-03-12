@@ -2,6 +2,7 @@
 title: JSON Web Token and SAML
 order: 3
 duration: 1
+last_updated: 10 March, 2025
 ---
 <br>
 

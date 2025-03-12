@@ -2,6 +2,7 @@
 title: Verification result
 order: 9
 duration: 1
+last_updated: 10 March, 2025
 ---
 
 This payload describes the result of Verification, and takes the following format:

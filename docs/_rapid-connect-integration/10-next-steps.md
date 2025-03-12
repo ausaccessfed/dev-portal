@@ -2,6 +2,7 @@
 title: Next Steps
 order: 10
 duration: 1
+last_updated: 10 March, 2025
 ---
 
 Once you have completed the Rapid Connect configuration, you are ready to connect your service!

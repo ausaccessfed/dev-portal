@@ -2,6 +2,7 @@
 title: Authentication Interaction
 order: 2
 duration: 1
+last_updated: 10 March, 2025
 ---
 
 The Rapid Connect service manages the Shibboleth Service Provider (SP) component on behalf of the application, simplifying the integration process for developers. 

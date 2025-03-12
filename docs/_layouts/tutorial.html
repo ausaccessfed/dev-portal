@@ -91,6 +91,9 @@ layout: default
       </div>
 
       <div class="md-content col-md-9 ml-sm-auto py-3 px-4">
+        <small style="font-size: small; color: darkgrey;">Last updated: {{ page.last_updated | date: "%-d %B %Y" }}</small>
+        <br>
+        <br>
         <h1>{{ page.title }}</h1>
         {{ content }}
       </div>

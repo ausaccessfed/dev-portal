@@ -76,6 +76,7 @@ Then for the content of your tutorial, each page within your tutorial should hav
 title: <page title>
 order: <number 1 to n for each page>
 duration: <estimated page duration>
+last_updated: <do not change this value, it will be automatically generated>
 ---
 ```
 

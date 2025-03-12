@@ -2,6 +2,7 @@
 title: Configure the application
 order: 10
 duration: 1
+last_updated: 10 March, 2025
 ---
 
 The Shibboleth installation will create the **secure** directory in Apache’s **DocumentRoot** directory and protect
