@@ -152,6 +152,6 @@ Dir['_rake/*.rake'].each { |r| load r }
 
 desc "Update last modified date"
 task :update_last_modified do
-  sh "chmod +x update_last_modified.sh"
-  sh "sh update_last_modified.sh"
+  sh "chmod +x bin/update_last_modified.sh"
+  sh "sh bin/update_last_modified.sh"
 end
