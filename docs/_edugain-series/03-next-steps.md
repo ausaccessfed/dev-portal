@@ -2,7 +2,7 @@
 title: Next Steps
 order: 3
 duration: 1
-last_updated: 10 March, 2025
+last_updated: 11 March, 2024
 ---
 
 Congratulations! You've successfully configured your service to connect with eduGAIN via the AAF.

@@ -2,7 +2,7 @@
 title: Provided Claims
 order: 5
 duration: 1
-last_updated: 10 March, 2025
+last_updated: 31 May, 2024
 ---
 
 The following claims are provided by AAF Rapid Connect:

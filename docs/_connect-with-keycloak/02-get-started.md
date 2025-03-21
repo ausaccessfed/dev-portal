@@ -2,7 +2,7 @@
 title: Get started
 order: 2
 duration: 3
-last_updated: 10 March, 2025
+last_updated: 17 January, 2025
 ---
 
 * If you are using Keycloak for the first time, [please refer to their documentation](https://www.keycloak.org/documentation) to get started.

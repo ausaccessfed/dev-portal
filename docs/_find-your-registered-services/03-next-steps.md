@@ -2,7 +2,7 @@
 title: Next steps
 order: 3
 duration: 1
-last_updated: 10 March, 2025
+last_updated: 21 June, 2024
 ---
 
 You have successfully confirmed that your service has been registered in FM.

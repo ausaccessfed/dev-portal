@@ -2,7 +2,7 @@
 title: Test new service
 order: 5
 duration: 1
-last_updated: 10 March, 2025
+last_updated: 28 February, 2025
 ---
 
 Once the service has been enabled, it can be tested. 
