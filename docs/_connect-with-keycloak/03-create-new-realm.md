@@ -2,7 +2,7 @@
 title: Create a new realm
 order: 3
 duration: 5
-last_updated: 10 March, 2025
+last_updated: 17 January, 2025
 ---
 
 * Create your new realm where you would like to add AAF as an identity provider and in which you will manage your users, applications, roles and groups. To do this, click 'Create Realm'.

@@ -2,7 +2,7 @@
 title: Enable a new service
 order: 4
 duration: 1
-last_updated: 10 March, 2025
+last_updated: 28 February, 2025
 ---
 
 To enable the new service, click on the 'Site Administration' page, and navigate to 'Plugins' &rarr; 'Authentication' &rarr; 'Manage authentication'.

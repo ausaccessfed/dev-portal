@@ -2,7 +2,7 @@
 title: Overview
 order: 1
 duration: 1
-last_updated: 10 March, 2025
+last_updated: 11 March, 2024
 ---
 
 This tutorial will guide you through the process for technically configuring a Shibboleth SP to connect to eduGAIN. 

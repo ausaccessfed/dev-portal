@@ -2,7 +2,7 @@
 title: Next steps
 order: 5
 duration: 1
-last_updated: 10 March, 2025
+last_updated: 17 June, 2024
 ---
 
 Restart the Shibboleth service and wait for your service provider and the discovery services and IdPs from each federation to download the updated metadata.

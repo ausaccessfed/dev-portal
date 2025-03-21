@@ -2,7 +2,7 @@
 title: Overview
 order: 1
 duration: 1
-last_updated: 10 March, 2025
+last_updated: 28 February, 2024
 ---
 
 Welcome to the OpenID Connect Tutorials. We've put together all the tutorials that you will need to connect a new service to the AAF using OpenID Connect.

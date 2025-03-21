@@ -2,7 +2,7 @@
 title: Overview
 order: 1
 duration: 1
-last_updated: 10 March, 2025
+last_updated: 20 February, 2024
 ---
 
 This tutorial shows how to register a new VerifID service.

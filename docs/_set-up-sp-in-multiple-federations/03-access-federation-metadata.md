@@ -2,7 +2,7 @@
 title: Access federation metadata
 order: 3
 duration: 1
-last_updated: 10 March, 2025
+last_updated: 17 June, 2024
 ---
 
 Ensure your service provider has access to the metadata from each federation by editing the shibboleth.xml file. 

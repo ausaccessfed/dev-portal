@@ -2,7 +2,7 @@
 title: Overview
 order: 1
 duration: 1
-last_updated: 10 March, 2025
+last_updated: 20 June, 2024
 ---
 
 We welcome contributions to our AAF tutorials. If you'd like to help us, a great way to start is by **raising an issue** on GitHub, which will require a [GitHub account](https://github.com). This will allow our team to track and prioritise your suggestion.

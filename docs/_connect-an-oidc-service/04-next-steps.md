@@ -2,7 +2,7 @@
 title: Next steps
 order: 4
 duration: 1
-last_updated: 10 March, 2025
+last_updated: 25 July, 2024
 ---
 
 Congratulations! You have successfully registered an OpenID Connect service.

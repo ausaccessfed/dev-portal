@@ -2,7 +2,7 @@
 title: API Call
 order: 8
 duration: 1
-last_updated: 10 March, 2025
+last_updated: 12 April, 2024
 ---
 
 #### Retrieving the access token

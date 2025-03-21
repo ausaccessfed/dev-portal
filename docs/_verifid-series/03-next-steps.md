@@ -1,7 +1,7 @@
 ---
 title: Next Steps
 order: 3
-last_updated: 10 March, 2025
+last_updated: 01 March, 2024
 ---
 
 Congratulations! You've successfully integrated your application with VerifID and have connected your client to the AAF.

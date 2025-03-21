@@ -2,7 +2,7 @@
 title: Create a new user
 order: 4
 duration: 5
-last_updated: 10 March, 2025
+last_updated: 17 January, 2025
 ---
 
 * Within your new realm, click on 'Users' in the left hand menu bar.
