@@ -412,3 +412,17 @@ collections:
     published: 2025-02-28
     author: Kelley Foster <kelley.foster@aaf.edu.au>
 
+  register-an-xnat-oidc-service:
+    output: true
+    permalink: /:collection/:name
+    title: Register an XNAT OIDC Service
+    summary: A tutorial for registering an XNAT OIDC Service
+    category: Learning Platforms
+    level: Intermediate
+    tags:
+      - tutorial
+    difficulty: 3
+    duration: 10
+    published: 2025-04-08
+    author: Kelley Foster <kelley.foster@aaf.edu.au>
+
