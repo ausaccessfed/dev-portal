@@ -1,0 +1,25 @@
+---
+title: Enable AAF as Authentication Provider
+order: 4
+duration: 1
+last_updated: 08-04-2025
+---
+
+* Once you are signed in as the admin user in XNAT, click on the **Administer** tab in the top menu bar followed by 
+  **Site Administration** -> **Security** (located in **Site Settings**).
+
+![Administer Tab](/assets/images/register-an-xnat-oidc-service/administer-tab.png)
+
+Once on the **Security** page, scroll down to the **User Authentication Settings** section and add `aaf` to the 
+**Enabled Authentication Providers** list. This will enable the AAF authentication provider.
+
+Note that the authentication providers need to be comma separated if there is more than one.
+{: .callout-info}
+
+![Enable Authentication Provider](/assets/images/register-an-xnat-oidc-service/enable-authentication-provider.png)
+
+* Click on the **Save** button to save the changes.
+
+* Log out of the XNAT instance. You will now see the **Sign in with AAF** button on the login page.
+
+![Sign in with AAF](/assets/images/register-an-xnat-oidc-service/sign-in-with-aaf.png)
