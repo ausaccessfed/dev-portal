@@ -1,5 +1,5 @@
 ---
-title: Define AAF Configuration File
+title: Define OpenID Connect Configuration File
 order: 2
 duration: 1
 last_updated: 11 April, 2025
