@@ -1,6 +1,6 @@
 ---
 title: Enable AAF as Authentication Provider
-order: 4
+order: 3
 duration: 1
 last_updated: 08-04-2025
 ---

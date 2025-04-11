@@ -1,6 +1,6 @@
 ---
 title: Define AAF Configuration File
-order: 3
+order: 2
 duration: 1
 last_updated: 08-04-2025
 ---
@@ -55,4 +55,4 @@ openid.aaf.familyNameProperty=deliberately_unknown_property
 
 * Head over to [Federation Manager (Test)](https://manager.test.aaf.edu.au/oidc/clients/new) to register a new OIDC service for your XNAT application.
 * Ensure that the **Redirect URL** for your OIDC service is set to `/openid-login`.
-* Use the **Identifier** and **Secret** values from your registered service to populate the `openid.aaf.clientId` and `openid.aaf.clientSecret` fields in the above configuration file.
+* Use the **Identifier** and **Secret** values from your registered service in Federation Manager to populate the `openid.aaf.clientId` and `openid.aaf.clientSecret` fields in the above configuration file.
