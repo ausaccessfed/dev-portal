@@ -15,4 +15,3 @@ This tutorial will guide you through setting up XNAT to authenticate users via t
 
 - To have completed the [Connect an OIDC Service](/connect-an-oidc-service/01-overview) tutorial
 - To have set up XNAT on your [local machine](https://www.xnat.org/download/) or use docker to deploy an [XNAT instance](https://github.com/NrgXnat/xnat-docker-compose). If you are using XNAT for the first time, [please refer to their documentation](https://wiki.xnat.org/documentation/xnat-administration/getting-started-with-xnat) to get started.
-- AAF login credentials
