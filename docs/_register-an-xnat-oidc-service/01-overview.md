@@ -2,7 +2,7 @@
 title: Overview
 order: 1
 duration: 1
-last_updated: 08-04-2025
+last_updated: 11 April, 2025
 ---
 
 This tutorial will guide you through setting up XNAT to authenticate users via the Australian Access Federation (AAF).

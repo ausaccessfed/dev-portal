@@ -2,7 +2,7 @@
 title: Define AAF Configuration File
 order: 2
 duration: 1
-last_updated: 08-04-2025
+last_updated: 11 April, 2025
 ---
 
 * Follow the instructions in the [XNAT documentation](https://wiki.xnat.org/documentation/configuring-authentication-providers) to configure an authentication provider.

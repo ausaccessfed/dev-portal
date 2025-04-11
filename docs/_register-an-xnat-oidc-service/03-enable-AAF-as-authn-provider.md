@@ -2,7 +2,7 @@
 title: Enable AAF as Authentication Provider
 order: 3
 duration: 1
-last_updated: 08-04-2025
+last_updated: 11 April, 2025
 ---
 
 * Once you are signed in as the admin user in your XNAT application, click on the **Administer** tab in the top menu bar followed by **Site Administration** -> **Security** (located in **Site Settings**).
