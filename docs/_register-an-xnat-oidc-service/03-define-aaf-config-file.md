@@ -6,7 +6,7 @@ last_updated: 08-04-2025
 ---
 
 * Follow the instructions in the [XNAT documentation](https://wiki.xnat.org/documentation/configuring-authentication-providers) to configure an authentication provider.
-* Once you have created a file named `openid-provider.properties` in the `/data/xnat/home/config/auth` directory, copy the contents of the following code block into it.
+* Once you have created a file named `openid-provider.properties` in the `/data/xnat/home/config/auth` directory of your XNAT installation, copy the contents of the following code block into it.
 
 ```shell
 #
@@ -53,5 +53,6 @@ openid.aaf.familyNameProperty=deliberately_unknown_property
 
 <br>
 
-* The `openid.aaf.clientId` and `openid.aaf.clientSecret` values are obtained from the AAF when you register your OIDC service in [Federation Manager (Test)](https://manager.test.aaf.edu.au/oidc/clients/new).
-* Ensure that the **Redirect URL** is set to `/openid-login`.
+* Head over to [Federation Manager (Test)](https://manager.test.aaf.edu.au/oidc/clients/new) to register a new OIDC service for your XNAT application.
+* Ensure that the **Redirect URL** for your OIDC service is set to `/openid-login`.
+* Use the **Identifier** and **Secret** values from your registered service to populate the `openid.aaf.clientId` and `openid.aaf.clientSecret` fields in the above configuration file.
