@@ -12,7 +12,7 @@ This process consists of two steps as follows:
 ### 1) Install and configure the OpenID authentication provider plugin
 * To enable OpenID authentication, you will need to install and configure the [OpenID authentication provider plugin](https://bitbucket.org/xnatx/openid-auth-plugin/src/develop/).
 
-### 2) Install the OpenID authentication provider configuration for AAF
+### 2) Configure the OpenID authentication provider with your AAF credentials
 * Once you have created a file named `openid-provider.properties` in the `/data/xnat/home/config/auth` directory of your XNAT installation, copy the contents of the following code block into it.
 
 ```shell
