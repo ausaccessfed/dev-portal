@@ -124,7 +124,7 @@ The **`<MetadataProvider>`** element (to be used in the test Federation) should 
 ```xml
 <MetadataProvider
         type="MDQ" id="mdq" ignoreTransport="true" cacheDirectory="metadata" baseUrl="https://md.test.aaf.edu.au/mdq/aaf/"
-        reloadInterval="1800">
+        cleanupInterval="1800">
     <MetadataFilter type="RequireValidUntil" maxValidityInterval="8640000" />
     <MetadataFilter type="Signature" certificate="aaf-metadata-certificate.pem" />
 </MetadataProvider>
