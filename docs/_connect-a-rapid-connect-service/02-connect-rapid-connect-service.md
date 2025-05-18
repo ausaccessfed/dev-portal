@@ -8,7 +8,7 @@ last_updated: 29 January, 2025
 If you have not done so already, please [log in to Federation Manager](/log-into-federation-manager/01-overview) to get started.
 {: .callout-info }
 
-Once you have logged into Federation Manager and are on the ['Connect a New Service'](https://manager.test.aaf.edu.au/connected_services/new) page, click on 'Rapid Connect'. You will then be taken to the **Register a New Service** 
+Once you have logged into Federation Manager and are on the ['Connect a New Service'](https://manager.test.aaf.edu.au/services/new) page, click on 'Rapid Connect'. You will then be taken to the **Register a New Service** 
 page:
 
 ![Register new rapid connect service](/assets/images/connect-a-rapid-connect-service/register-new-rapid-connect-service.

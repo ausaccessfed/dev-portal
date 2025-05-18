@@ -10,7 +10,7 @@ The **AAF OpenID Provider (OP)** satisfies the **OIDC** conformance testing fram
 ---
 If you have not done so already, please [log into Federation Manager](/log-into-federation-manager/01-overview) to get started.
 
-Once you have clicked on 'OpenID Connect' on the ['Connect a New Service'](https://manager.test.aaf.edu.au/connected_services/new) page in Federation Manager, you will then be taken to the **Register a New Service** page:
+Once you have clicked on 'OpenID Connect' on the ['Connect a New Service'](https://manager.test.aaf.edu.au/services/new) page in Federation Manager, you will then be taken to the **Register a New Service** page:
 
 ![Register new service](/assets/images/connect-an-oidc-service/register-oidc-service.png)
 
