@@ -10,7 +10,7 @@ A deployed Shibboleth Service Provider (SP) only becomes useful after registerin
 ---
 If you have not done so already, please [log in to Federation Manager](/log-into-federation-manager/01-overview) to get started.
 
-Once you have clicked on 'SAML' on the ['Connect a New Service'](https://manager.test.aaf.edu.au/connected_services/new) page, you will then be taken to the **Register a SAML Service Provider** page:
+Once you have clicked on 'SAML' on the ['Connect a New Service'](https://manager.test.aaf.edu.au/services/new) page, you will then be taken to the **Register a SAML Service Provider** page:
 
 ![Register new saml service](/assets/images/connect-a-saml-service/register-new-saml-service.png)
 
