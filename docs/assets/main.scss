@@ -4,8 +4,7 @@
 $baseurl: "{{ site.baseurl }}";
 
 // Use AAF Raleway Google Font
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 @import "variables";
 @import "bootstrap/bootstrap";
@@ -24,13 +23,13 @@ main {
 
 .h1, .h2, .h3, .h4, .h5, .h6, 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
 }
 
 .p {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 .btn {
@@ -90,14 +89,13 @@ header {
  * Footer
  */
 .footer {
-  padding-top: 40px;
-  padding-bottom: 20px;
+  padding: 80px 0;
   font-family: "Lato", sans-serif;
   font-weight: 300;
   font-style: normal;
-  color: #dfdfdf;
+  color: #bdbdbd;
   background-color: #2d2d2d;
-  line-height: 1.8em;
+  line-height: 1.9em;
 
   .footer-text {
     font-size: 0.8em;
@@ -116,9 +114,9 @@ header {
     }
   }
 
-  h5 {
+  h6 {
     text-transform: uppercase;
-    font-family: "Lato", sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: 300;
     font-style: normal;
     color: #ffffff;
@@ -130,6 +128,7 @@ header {
       height: 3px;
       display: block;
       margin-top: 10px;
+      margin-bottom: 25px;
       max-width: 50px;
     }
   }
@@ -138,15 +137,19 @@ header {
     a {
       color: $info;
       text-decoration: none;
+      &:hover {
+        color: $aaf-orange;
+      }
     }
   }
 
   .logo {
-    width: 200px; /* Default size */
+    width: 250px; /* Default size */
+    margin-bottom: 25px;
   }
 
   .ncris {
-    width: 100px; /* Default size */
+    width: 161px; /* Default size */
   }
 
   .custom-flex {
@@ -162,11 +165,11 @@ header {
   /* Extra large devices (large desktops, 1200px and up) */
     @media (min-width: 1200px) {
         .logo {
-        width: 200px;
+        width: 250px;
         }
 
         .ncris {
-        width: 100px;
+        width: 161px;
         }
 
         .acknowledge {
@@ -191,7 +194,7 @@ header {
     }
 
     .ncris {
-      width: 90px;
+      width: 120px;
     }
 
     .acknowledge {
@@ -269,19 +272,34 @@ header {
   }
 
   .socials {
-    a {
-      color: #dfdfdf;
-      &:hover {
-        color: $aaf-yellow;
-      }
-    }
     display: flex;
-    justify-content: flex-start;
+    flex-direction: row;
+    gap: 20px;
   }
-  .socials i {
-    margin-right: 7px;
-    margin-bottom: 30px;
-    font-size: 20px;
+
+  .socials a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #393939;
+    border-radius: 3px;
+    transition: background 0.2s;
+    width: 2em;
+    height: 2em;
+  }
+
+  .socials a i {
+    color: #fff;
+    font-size: 0.9em;
+    transition: color 0.2s;
+  }
+
+  .socials a:hover {
+    background: $aaf-purple;
+  }
+
+  .socials a:hover i {
+    color: $aaf-orange;
   }
 }
 
