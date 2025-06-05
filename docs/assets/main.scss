@@ -94,7 +94,7 @@ header {
   font-weight: 300;
   font-style: normal;
   color: #bdbdbd;
-  background-color: #2d2d2d;
+  background-color: #2a2a2a;
   line-height: 1.9em;
 
   .container {
@@ -168,6 +168,11 @@ header {
 
   .acknowledge {
     margin-right: 40px;
+  }
+
+  .credit {
+    margin-top: 40px;
+    margin-bottom: 20px;
   }
 
   /* Extra large devices (large desktops, 1200px and up) */
