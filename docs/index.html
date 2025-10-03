@@ -19,12 +19,12 @@ order: 0
       </div>
     </div>
   </header>
-  <div class="container py-4 mt-4">
+  <div class="container pt-4 mt-4">
     <div class="row">
       <div class="col-md-6 offset-md-3">
       <div class="input-group shadow">
         <div class="input-group-prepend">
-          <button id="search-filter-button" class="btn btn-warning dropdown-toggle py-1" type="button"
+          <button id="search-filter-button" class="btn dropdown-toggle py-1" type="button"
                   data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Categories</button>
           <div class="dropdown-menu search-filter-menu">
             <a class="dropdown-item" href="#">All Categories</a>
@@ -44,7 +44,7 @@ order: 0
       Any changes you make here should be replicated exactly to the showResults
       function in /assets/javascript/main.js
     {% endcomment %}
-    <div id="tutorial-list" class="card-group flex-direction-row pt-4">
+    <div id="tutorial-list" class="card-group flex-direction-row mt-3 py-4">
       {% include tutorials.html %}
       {% for tutorial in all_tutorials %}
         <div class="card-container mx-auto" style="width: 18rem;">
@@ -92,7 +92,7 @@ order: 0
             <div class="card-body px-lg-5">
               <h2 class="my-3">Need more help?</h2>
               <h4 class="mb-4">Reach out to our friendly support team!</h4>
-              <a class="btn btn-outline-primary btn-lg mb-3" href="https://aaf.freshdesk.com/support/home/">Learn More</a>
+              <a class="btn btn-warning btn-lg mb-3" href="https://aaf.freshdesk.com/support/home/">Learn More</a>
             </div>
           </div>
         </div>

@@ -80,9 +80,6 @@ header {
 
 .footer-callout {
   background-color: #f2f2f2;
-  .container {
-    margin-top: -100px;
-  }
 }
 
 /*
@@ -362,6 +359,14 @@ code {
 /*
  * Search
  */
+#search-filter-button {
+  background-color: #522f74 !important;
+  color: #EEEEEE !important;
+  border: 1px solid #522f74 !important;
+  box-shadow: none !important;
+  border-radius: 0.25rem 0 0 0.25rem !important;
+}
+
 #search-input.form-control {
   &:focus {
     outline: 0 !important;
