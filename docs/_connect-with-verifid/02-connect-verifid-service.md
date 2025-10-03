@@ -11,8 +11,9 @@ To register as a new client with VerifID Global:
 
 2. Log into [Federation Manager](/log-into-federation-manager/01-overview) to get started.
 
-3. Once you have clicked on 'VerifID' on the ['Connect a New Service'](https://manager.test.aaf.edu.au/services/new) 
-   page in Federation Manager, you will be taken to the VerifID Client Registration page.
+3. Once you have clicked on 'VerifID' on the 'Connect a New Service' page in:
+   4. [Federation Manager (Test)](https://manager.test.aaf.edu.au/services/new), or
+   5. [Federation Manager (Production)](https://manager.aaf.edu.au/services/new), you will be taken to the VerifID Client Registration page.
 
 4. Please provide the following information:
 
