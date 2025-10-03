@@ -13,10 +13,6 @@ The VerifID service will:
 - Provide no data about a User other than their Affiliation to the Institution. The status will be provided by the User’s Organisation at the point of verification and the accuracy of this information is outside VerifID Service Operators' responsibilities.
 - Retain sufficient log information regarding each verification request.
 
-{: .callout-info}
-For more information about VerifID and how it works, refer to the [VerifID Global website](https://verifid.com.au/#focus).
-<br>
-
 ### What you'll learn
 
 - How to use an API for user verification
