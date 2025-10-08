@@ -76,10 +76,29 @@ header {
 
 .banner-hero-card {
   color: #EEEEEE;
+  a {
+    color: #EEEEEE;
+    text-decoration: none;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #EEEEEE;
+    &:hover {
+      color: #EEEEEE;
+      border-bottom: 2px solid;
+      border-bottom-color: #5F368A;
+    }
+  }
 }
 
 .footer-callout {
   background-color: #f2f2f2;
+}
+
+.learn-more-button {
+  background-color: #5F368A;
+  color: #FFFFFF;
+  &:hover {
+    background-color: $aaf-orange;
+  }
 }
 
 /*
@@ -102,31 +121,14 @@ header {
       flex-wrap: wrap;
   }
 
-  .footer-text {
-    font-size: 0.8em;
-    text-align: justify;
-
-    a {
-      &:hover,
-      &:focus {
-        color: $aaf-yellow;
-        text-decoration: none;
-      }
-    }
-
-    ul {
-      list-style: none;
-    }
-  }
-
   ul.list-unstyled li {
     margin-bottom: 0.5em;
   }
 
-  h6 {
+  h4 {
     text-transform: uppercase;
     font-family: "Inter", sans-serif;
-    font-weight: 300;
+    font-weight: 200;
     font-style: normal;
     color: #ffffff;
     margin-top: 0.8em;
@@ -142,13 +144,16 @@ header {
     }
   }
 
-  .footer-content {
+  .footer-link {
     a {
       color: $info;
       text-decoration: none;
-      &:hover {
-        color: $aaf-orange;
-      }
+      padding-bottom: 2px;
+      border-bottom: 1px solid $info;
+        &:hover {
+          color: $info;
+          border-bottom-color: $aaf-orange;
+        }
     }
   }
 
@@ -269,6 +274,7 @@ header {
     transition: background 0.2s;
     width: 2em;
     height: 2em;
+    text-decoration: none;
   }
 
   .socials a i {

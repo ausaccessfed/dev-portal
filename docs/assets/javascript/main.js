@@ -102,10 +102,12 @@ $(function() {
     }
     else {
       var noResults = '<div class="card-container col-sm-12 col-lg-10 offset-lg-1 mx-auto">';
-          noResults += '  <div class="card shadow p-2 text-center">';
-          noResults += '    <h3>No Matches</h3>';
-          noResults += '    <p>Can\'t find what you\'re looking for? Make a suggestion or ask our support team for' +
-              ' help by submitting a <a href="https://aaf.freshdesk.com/support/tickets/new">support ticket</a>.</p>';
+          noResults += '  <div class="card shadow p-lg-5 text-center">';
+          noResults += '    <h2 class="my-3">No Matches</h2>';
+          noResults += '    <h3 class="mb-4"><small>Can\'t find what you\'re looking for?</small></h3>';
+          noResults += '    <p>Make a suggestion or ask our support team for help by submitting a ' +
+              ' <a style="padding-bottom: 1px; border-bottom: 1px solid #17a2b8; text-decoration:' +
+              ' none;" href="https://aaf.freshdesk.com/support/tickets/new">support ticket</a>.</p>';
           noResults += '  </div>';
           noResults += '</div>';
       tutorialList.html(noResults);
