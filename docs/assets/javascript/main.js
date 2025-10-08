@@ -72,7 +72,7 @@ $(function() {
         result += '        <div class="card-category">';
         result += '          <small class="title text-uppercase">' + tutorial.level + '</small>';
         if (tutorial.level == 'Series') {
-          result += '            <img src="' + baseurl + '/assets/images/aaflogo.png" class="series' + ' float-right"' + ' alt="AAF Series">';
+          result += '            <img src="' + baseurl + '/assets/images/aaflogo.png" class="series float-right"' + ' alt="AAF Series">';
         }
         result += '        </div>';
         result += '        <h5 class="card-title mb-0">' + tutorial.title + '</h5>';
