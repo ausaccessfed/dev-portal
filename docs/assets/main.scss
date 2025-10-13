@@ -32,6 +32,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Inter', sans-serif;
 }
 
+a {
+  text-underline-offset: 6px;
+}
+
 .btn {
   text-transform: uppercase;
   font-weight: 600;
