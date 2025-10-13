@@ -85,9 +85,7 @@ layout: default
             {% endfor -%}
           </div>
           <div class="p-2">
-            <p>Find a mistake? Let us know <a href="https://github.com/ausaccessfed/dev-portal/issues/new"
-                                              style="text-decoration: none; padding-bottom: 2px; border-bottom: 1px
-                                              solid;" class="text-dark">the issue here</a>.</p>
+            <p>Find a mistake? Let us know <a href="https://github.com/ausaccessfed/dev-portal/issues/new" class="text-dark">the issue here</a>.</p>
           </div>
         </div>
       </div>
@@ -107,8 +105,7 @@ layout: default
       <div class="col-sm-12 col-md-8 offset-md-2">
         {% if next %}
           <h3>Up Next:</h3>
-          <p class="lead"><a href="{{ next.url | prepend: site.baseurl }}" class="text-dark" style="text-decoration: none; padding-bottom: 2px; border-bottom: 1px
-                                              solid">{{ next.order }}. {{
+          <p class="lead"><a href="{{ next.url | prepend: site.baseurl }}" class="text-dark">{{ next.order }}. {{
             next.title }} <i class="fa fa-arrow-right"></i></a></p>
         {% else %}
           {% if collection.level == 'Series' %}
