@@ -46,11 +46,11 @@ Page content starts here
 The OpenID Connect Series consists of the following tutorials, which you can work through at your own pace.
 
 {% for category in sortcategories %}
-## {{ category }}
+### {{ category }}
 {% for tutorial in tutorials reversed %}
 {% if tutorial.curriculum == curriculum and tutorial.category == category %}
 <div id="{{ tutorial.label }}" class="series-tutorial" markdown="1">
-### [{{ tutorial.title }}]({{ tutorial.label | relative_url }})
+#### [{{ tutorial.title }}]({{ tutorial.label | relative_url }})
 {{ tutorial.summary }}  
 <small>Duration: {{ tutorial.duration }} minutes</small>
 </div>
