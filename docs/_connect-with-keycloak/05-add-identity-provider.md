@@ -74,7 +74,7 @@ If you click on the 'Identity providers' option (in the left-hand menu bar), you
 
 ![OpenID connect provider](/assets/images/connect-with-keycloak/keycloak-new-identity-provider.png)
 
-### Logging in with the new identity provider
+## Logging in with the new identity provider
 
 * First ensure that the users you wish to authenticate with this identity provider have been added to the selected realm.
 * To do this, click on 'Users' in the left-hand menu bar.
