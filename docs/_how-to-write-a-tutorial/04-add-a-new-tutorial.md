@@ -24,7 +24,7 @@ bundle exec rake tutorial "Title of your tutorial"
   - You may want to include a "Next Steps" page at the end of your tutorial, which will be named `06-next-steps.md`. This page will guide the user on what to do next after completing your tutorial.
   - Each page needs to have the following front matter:
 
-    ```yaml
+    ```
     ---
     title: <page title>
     order: <number 1 to n for each page>
@@ -43,7 +43,7 @@ bundle exec rake tutorial "Title of your tutorial"
   - You will need to edit the metadata for your new tutorial in this file. 
   - Add the following details to the new entry as shown below:
 
-    ```yaml
+    ```
       your-tutorial-id:
         output: true # do not change
         permalink: /:collection/:name # do not change
@@ -97,31 +97,31 @@ To create a numbered list for a series of steps, use 1. (number one) followed by
 
 There are certain things we need to highlight to users, such as "Warnings" or "Notes". This can be done using callouts, of which there are different types producing slightly different formatting (colours, etc.) for each, depending on the type of message you want to highlight. Just place your text directly above the callout type.
 
-```shell
+```
 {: .callout}
 ```
 Note
 {: .callout}
 
-```shell
+```
 {: .callout-success}
 ```
 Success
 {: .callout-success}
 
-```shell
+```
 {: .callout-danger}
 ```
 Danger
 {: .callout-danger}
 
-```shell
+```
 {: .callout-warning }
 ```
 Warning
 {: .callout-warning }
 
-```shell
+```
 {: .callout-info}
 ```
 Info
@@ -133,19 +133,19 @@ Info
 
 To add an internal link to a page, use the following syntax:
 
-```shell
+```
 [Link text](/path-to-page)
 ```
 
 For an external link, use the following syntax:
 
-```shell
+```
 [Link text](https://www.example.com)
 ```
 
 To add an image, use the following syntax:
 
-```shell
+```
 ![Alt text](/path-to-image)
 ```
 
