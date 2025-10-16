@@ -6,7 +6,7 @@ last_updated: 31 May, 2024
 ---
 <br>
 
-### JSON Web Token (JWT)
+## JSON Web Token (JWT)
 
 The following is sourced from the [JWT specification](https://self-issued.info/docs/draft-ietf-oauth-json-web-token.html).
 
@@ -14,7 +14,7 @@ JSON Web Token (JWT) is a compact URL-safe means of representing claims to be tr
 
 The suggested pronunciation of JWT is the same as the English word "jot".
 
-### Relationship of JWTs to SAML Assertions
+## Relationship of JWTs to SAML Assertions
 
 SAML 2.0 provides a standard for creating security tokens with greater expressiveness and more security options than supported by JWTs. However, the cost of this flexibility and expressiveness is both size and complexity. SAML's use of XML and XML DSIG contributes to the size of SAML assertions; its use of XML and especially XML Canonicalization contributes to their complexity.
 

@@ -16,7 +16,7 @@ Example URLs are based off the <code>https://example.edu</code> hostname. Your V
 The information under “Endpoint discovery” must be considered authoritative when determining which URL will be used for each request.
 
 
-### User Agent
+## User Agent
 
 The <code>User-Agent</code> request header is a characteristic string that lets servers and network peers identify the application, operating system, vendor, and/or version of the requesting user agent.
 

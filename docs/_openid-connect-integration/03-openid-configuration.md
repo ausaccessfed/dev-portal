@@ -10,9 +10,9 @@ The **AAF OIDC** service supports querying the **OP** Configuration Information 
 <br>
 Details for the **Test Federation** are here:
 
-<a href="https://central.test.aaf.edu.au/.well-known/openid-configuration" class="btn btn-outline-primary mb-3">Test Federation</a>
+<a href="https://central.test.aaf.edu.au/.well-known/openid-configuration" class="btn btn-primary mb-3">Test Federation</a>
 
-```shell
+```
 curl https://central.test.aaf.edu.au/.well-known/openid-configuration | jq
 
 {

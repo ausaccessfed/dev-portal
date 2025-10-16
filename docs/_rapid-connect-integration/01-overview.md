@@ -10,13 +10,13 @@ The AAF Rapid Connect service allows the AAF to translate SAML assertions which 
 This tutorial describes JWT for developers and the integration code required to use AAF Rapid Connect with your 
 applications.
 
-### What you'll learn
+## What you'll learn
 
 - How Rapid Connect manages the Shibboleth SP component on behalf of the application
 - How Rapid Connect JWT Authentication works
 - How to implement JWT Support
 - How to configure your service to skip discovery service and login directly through a specified IdP.
 
-### What you'll need
+## What you'll need
 
 - Integration experience

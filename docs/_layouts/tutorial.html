@@ -25,14 +25,14 @@ layout: default
       <div class="btn-toolbar mb-2 mb-md-0">
         <div class="btn-group mr-2">
           {% if prev -%}
-            <a href="{{ prev.url | prepend: site.baseurl }}" class="btn btn-sm btn-outline-primary" role="button">Previous</a>
+            <a href="{{ prev.url | prepend: site.baseurl }}" class="btn btn-sm btn-primary" role="button">Previous</a>
           {% else -%}
-                  <a href="#" class="btn btn-sm btn-outline-primary disabled" role="button">Previous</a>
+                  <a href="#" class="btn btn-sm btn-primary disabled" role="button" aria-disabled="true">Previous</a>
           {% endif -%}
           {% if next -%}
-                  <a href="{{ next.url | prepend: site.baseurl }}" class="btn btn-sm btn-outline-primary" role="button">Next</a>
+                  <a href="{{ next.url | prepend: site.baseurl }}" class="btn btn-sm btn-primary" role="button">Next</a>
           {% else -%}
-                  <a href="#" class="btn btn-sm btn-outline-primary disabled" role="button">Next</a>
+                  <a href="#" class="btn btn-sm btn-primary disabled" role="button" aria-disabled="true">Next</a>
           {% endif -%}
         </div>
       </div>
@@ -42,22 +42,22 @@ layout: default
       <div class="col-md-3 d-none d-md-block">
         <div class="sidebar py-3 sticky-top">
           {% if collection.curriculum %}
-            <div class="p-2">
+            <div class="sidebar-btn-link p-2">
               <p class="mb-1"><i class="fa fa-info-circle"></i> This tutorial is part of the {{ collection.curriculum }} Series.</p>
               {% if collection.curriculum == "OpenID Connect" %}
-              <a class="btn btn-link btn-sm p-0"
+              <a class="btn btn-link btn-md p-0"
                  href="{{ '/openid-connect-series/02-tutorials' | prepend: site.baseurl }}"><i class="fa fa-arrow-left"></i> Back to OpenID Connect</a>
               {% elsif collection.curriculum == "Rapid Connect" %}
-              <a class="btn btn-link btn-sm p-0"
+              <a class="btn btn-link btn-md p-0"
                  href="{{ '/rapid-connect-series/02-tutorials' | prepend: site.baseurl }}"><i class="fa fa-arrow-left"></i> Back to Rapid Connect</a>
               {% elsif collection.curriculum == "SAML" %}
-              <a class="btn btn-link btn-sm p-0"
+              <a class="btn btn-link btn-md p-0"
                  href="{{ '/saml-series/02-tutorials' | prepend: site.baseurl }}"><i class="fa fa-arrow-left"></i> Back to SAML</a>
               {% elsif collection.curriculum == "VerifID" %}
-              <a class="btn btn-link btn-sm p-0"
+              <a class="btn btn-link btn-md p-0"
                  href="{{ '/verifid-series/02-tutorials' | prepend: site.baseurl }}"><i class="fa fa-arrow-left"></i> Back to VerifID</a>
               {% elsif collection.curriculum == "eduGAIN" %}
-              <a class="btn btn-link btn-sm p-0"
+              <a class="btn btn-link btn-md p-0"
                  href="{{ '/edugain-series/02-tutorials' | prepend: site.baseurl }}"><i class="fa fa-arrow-left"></i> Back to eduGAIN</a>
               {% endif %}
             </div>
@@ -85,13 +85,13 @@ layout: default
             {% endfor -%}
           </div>
           <div class="p-2">
-            <p>Find a mistake? Let us know <a href="https://github.com/ausaccessfed/dev-portal/issues/new">the issue here</a>.</p>
+            <p>Find a mistake? Let us know <a href="https://github.com/ausaccessfed/dev-portal/issues/new" class="text-dark">the issue here</a>.</p>
           </div>
         </div>
       </div>
 
       <div class="md-content col-md-9 ml-sm-auto py-3 px-4">
-        <small style="font-size: small; color: darkgrey;">Last updated: {{ page.last_updated | date: "%-d %B %Y" }}</small>
+        <small style="font-size: small;">Last updated: {{ page.last_updated | date: "%-d %B %Y" }}</small>
         <br>
         <br>
         <h1>{{ page.title }}</h1>
@@ -99,20 +99,21 @@ layout: default
       </div>
     </div> <!-- row -->
 </div>
-<section id="up-next" class="p-5 bg-primary text-white text-center">
+<section id="up-next" class="p-5 bg-primary text-center">
   <div class="container pb-5">
     <div class="row">
       <div class="col-sm-12 col-md-8 offset-md-2">
         {% if next %}
-          <h3>Up Next:</h3>
-          <p class="lead"><a href="{{ next.url | prepend: site.baseurl }}" class="text-white">{{ next.order }}. {{ next.title }} <i class="fa fa-arrow-right"></i></a></p>
+          <h2>Up Next:</h2>
+          <p class="lead"><a href="{{ next.url | prepend: site.baseurl }}" class="text-dark">{{ next.order }}. {{
+            next.title }} <i class="fa fa-arrow-right"></i></a></p>
         {% else %}
           {% if collection.level == 'Series' %}
-            <h3>Series Complete!</h3>
+            <h2>Series Complete!</h2>
             <p>You have completed this Series of Tutorials. Return to the tutorials home page to explore other tutorials.</p>
             <a href="{{ site.baseurl }}/" class="btn bg-secondary text-white" role="button">Return Home</a>
           {% else %}
-            <h3>Tutorial Complete!</h3>
+            <h2>Tutorial Complete!</h2>
             <p>You have completed this tutorial. Continue with the other tutorials in the {{ page.category }} Series or return to the tutorials home page.</p>
             {% if collection.curriculum %}
               {% if collection.curriculum == "OpenID Connect" %}
@@ -127,8 +128,7 @@ layout: default
                 <a class="btn btn-secondary" href="{{ '/edugain-series/02-tutorials' | prepend: site.baseurl }}">Continue Series</a>
               {% endif %}
               {% endif %}
-            <a href="{{ site.baseurl }}/" class="btn btn-outline-secondary" role="button">Return
-              Home</a>
+            <a href="{{ site.baseurl }}/" class="btn btn-secondary" role="button">Return Home</a>
           {% endif %}
         {% endif %}
       </div>

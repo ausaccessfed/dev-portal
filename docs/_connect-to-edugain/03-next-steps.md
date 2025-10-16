@@ -5,7 +5,7 @@ duration: 1
 last_updated: 11 March, 2024
 ---
 
-Await review by the **AAF Support team**. After approval, test your service and go-live.
+Await review by the AAF Support team. After approval, test your service and go-live.
 {: .callout-success }
 
 <br>

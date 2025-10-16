@@ -166,3 +166,7 @@ function showCompletedStatus() {
     }
   });
 }
+
+$(function() {
+  $('pre.highlight').attr('tabindex', '0');
+});
