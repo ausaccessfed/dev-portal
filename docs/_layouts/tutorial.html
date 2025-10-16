@@ -25,14 +25,14 @@ layout: default
       <div class="btn-toolbar mb-2 mb-md-0">
         <div class="btn-group mr-2">
           {% if prev -%}
-            <a href="{{ prev.url | prepend: site.baseurl }}" class="btn btn-sm btn-outline-primary" role="button">Previous</a>
+            <a href="{{ prev.url | prepend: site.baseurl }}" class="btn btn-sm btn-primary" role="button">Previous</a>
           {% else -%}
-                  <a href="#" class="btn btn-sm btn-outline-primary disabled" role="button">Previous</a>
+                  <a href="#" class="btn btn-sm btn-primary disabled" role="button" aria-disabled="true">Previous</a>
           {% endif -%}
           {% if next -%}
-                  <a href="{{ next.url | prepend: site.baseurl }}" class="btn btn-sm btn-outline-primary" role="button">Next</a>
+                  <a href="{{ next.url | prepend: site.baseurl }}" class="btn btn-sm btn-primary" role="button">Next</a>
           {% else -%}
-                  <a href="#" class="btn btn-sm btn-outline-primary disabled" role="button">Next</a>
+                  <a href="#" class="btn btn-sm btn-primary disabled" role="button" aria-disabled="true">Next</a>
           {% endif -%}
         </div>
       </div>
@@ -85,13 +85,13 @@ layout: default
             {% endfor -%}
           </div>
           <div class="p-2">
-            <p>Find a mistake? Let us know <a href="https://github.com/ausaccessfed/dev-portal/issues/new">the issue here</a>.</p>
+            <p>Find a mistake? Let us know <a href="https://github.com/ausaccessfed/dev-portal/issues/new" class="text-dark">the issue here</a>.</p>
           </div>
         </div>
       </div>
 
       <div class="md-content col-md-9 ml-sm-auto py-3 px-4">
-        <small style="font-size: small; color: darkgrey;">Last updated: {{ page.last_updated | date: "%-d %B %Y" }}</small>
+        <small style="font-size: small;">Last updated: {{ page.last_updated | date: "%-d %B %Y" }}</small>
         <br>
         <br>
         <h1>{{ page.title }}</h1>
@@ -99,13 +99,14 @@ layout: default
       </div>
     </div> <!-- row -->
 </div>
-<section id="up-next" class="p-5 bg-primary text-white text-center">
+<section id="up-next" class="p-5 bg-primary text-center">
   <div class="container pb-5">
     <div class="row">
       <div class="col-sm-12 col-md-8 offset-md-2">
         {% if next %}
           <h3>Up Next:</h3>
-          <p class="lead"><a href="{{ next.url | prepend: site.baseurl }}" class="text-white">{{ next.order }}. {{ next.title }} <i class="fa fa-arrow-right"></i></a></p>
+          <p class="lead"><a href="{{ next.url | prepend: site.baseurl }}" class="text-dark">{{ next.order }}. {{
+            next.title }} <i class="fa fa-arrow-right"></i></a></p>
         {% else %}
           {% if collection.level == 'Series' %}
             <h3>Series Complete!</h3>
