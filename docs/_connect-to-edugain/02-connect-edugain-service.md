@@ -9,7 +9,7 @@ Now that you have completed the configuration requirements, and your SP is ready
 
 <br>
 
-```shell
+```
 Dear AAF Support,
 
 We request that the service "____SERVICE NAME____" operated by "____ORGANISATION NAME____" be added to eduGAIN.
