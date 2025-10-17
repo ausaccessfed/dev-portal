@@ -13,10 +13,10 @@ The VerifID service will:
 - Provide no data about a User other than their Affiliation to the Institution. The status will be provided by the User’s Organisation at the point of verification and the accuracy of this information is outside VerifID Service Operators' responsibilities.
 - Retain sufficient log information regarding each verification request.
 
-### What you'll learn
+## What you'll learn
 
 - How to use an API for user verification
 
-### What you'll need
+## What you'll need
 
 - Integration experience

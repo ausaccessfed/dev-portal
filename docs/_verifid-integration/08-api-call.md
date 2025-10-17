@@ -5,7 +5,7 @@ duration: 1
 last_updated: 12 April, 2024
 ---
 
-#### Retrieving the access token
+## Retrieving the access token
 
 Before gaining access to the Verification result, the Client uses the Authorization Code returned in the Verification response, and makes an authenticated request to the “token_endpoint”, for example:
 
@@ -47,7 +47,7 @@ The response fields shall be populated as follows:
 | **expires_in** | The number of seconds after which the access token will expire.  |
 
 
-#### Retrieving the Verification result
+## Retrieving the Verification result
 
 As indicated by the token_type value, the access token retrieved above is used as a “bearer” token(7) as described by the OAuth 2.0 specification. To access the Verification result, the Client makes a request to the protected resource endpoint:
 

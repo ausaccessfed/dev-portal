@@ -38,7 +38,7 @@ authenticated. Details on the configurable options within the **`<ApplicationDef
 The **`<Sessions>`** and its child **`<Handler>`** elements control SSO and provide core SAML functionality. Update the
 **`<Sessions>`** element settings with the following values.
 
-```xml
+```
 <Sessions lifetime="28800" timeout="3600" relayState="cookie" 
      checkAddress="true" handlerSSL="true" cookieProps="https" 
      redirectLimit="none">
@@ -55,7 +55,7 @@ The `<StorageService>` element configures the component used for persistent stor
 daemon across requests, and in some cases, restart of the software. Update the `<StorageService>` with the following
 values.
 
-```xml
+```
     <StorageService type="Memory" id="memory" />
     <ReplayCache StorageService="memory" />
     <ArtifactMap StorageService="memory" />
@@ -75,7 +75,7 @@ To configure the service to use the Federation, remove the entityID setting and 
 
 Update the **discoveryURL** configuration value so the **`<SSO>`** element has the following contents:
 
-```xml
+```
 <SSO
   discoveryProtocol="SAMLDS"
   discoveryURL="https://ds.test.aaf.edu.au/discovery/DS">
@@ -121,7 +121,7 @@ Replace the certificate setting value with the following string aaf-metadata-cer
 
 The **`<MetadataProvider>`** element (to be used in the test Federation) should now have the same content as the following fragment:
 
-```xml
+```
 <MetadataProvider
         type="MDQ" id="mdq" ignoreTransport="true" cacheDirectory="metadata" baseUrl="https://md.test.aaf.edu.au/mdq/aaf/"
         cleanupInterval="1800">
@@ -181,14 +181,14 @@ Redirection-based error handling is an alternative error handling method in Shib
 
 For example, if an **SP** encounters an error, the browser is redirected to the URL specified in the `redirectErrors` of the `<Errors>` element:
 
-```xml
+```
 <Errors supportContact="support@example.org"
         redirectErrors="http://example.org/shibboleth/error" />
 ```
 
 The example URL below contains query parameters with information about the error:
 
-```shell
+```
 https://example.org/shibboleth/error?now=Mon+Jul+8+03%3A32%3A20+2024
   &requestURL=https://example.org/Shibboleth.sso/SAML2/POST
   &errorType=opensaml::FatalProfileException
