@@ -59,6 +59,18 @@ a {
   }
 }
 
+/* Inline code on white background */
+code {
+  color: #cc0066 !important;
+  background: #f5f5f5 !important;
+}
+
+/* Code blocks on dark background */
+pre, pre code {
+  background: #222 !important;
+  color: #ffe082 !important;
+}
+
 .navbar {
   background-color: $aaf-dark-grey;
 }
@@ -128,7 +140,7 @@ header {
     margin-bottom: 0.5em;
   }
 
-  h4 {
+  h3 {
     text-transform: uppercase;
     font-family: "Inter", sans-serif;
     font-weight: 200;
@@ -304,6 +316,10 @@ header {
   .list-group-item.active {
     color: #000000;
   }
+}
+
+.sidebar-btn-link a {
+  color: $link-color !important;
 }
 
 

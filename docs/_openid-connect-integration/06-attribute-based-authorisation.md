@@ -9,7 +9,7 @@ Specific attributes can be utilised to make authorisation decisions within an ap
 
 Below is an example of the ID Token attributes that are provided by the AAF OpenID Provider and translated to OpenID Connect:
   
-```json
+```
   {
     "sub": "YAdr3eQkhvnHrtOcdnOl4cFRdYnOmKoP4523eh45y89",
     "name": "John Doe",
