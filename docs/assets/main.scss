@@ -83,23 +83,22 @@ pre, pre code {
  * Header
  */
 header {
-  background-color: #969696;
-  background: linear-gradient(to top right, $aaf-orange, $aaf-indigo);
+  background-color: $aaf-purple;
   background-size: cover;
   padding-bottom: 200px;
   margin-bottom: -200px;
 }
 
 .banner-hero-card {
-  color: #EEEEEE;
+  color: #FFFFFF;
   a {
-    color: #EEEEEE;
+    color: #FFFFFF;
     text-decoration: none;
     padding-bottom: 2px;
-    border-bottom: 1px solid #EEEEEE;
+    border-bottom: 1px solid #FFFFFF;
     &:hover {
       border-bottom: 2px solid;
-      border-bottom-color: #5F368A;
+      border-bottom-color: $aaf-orange;
     }
   }
 }
