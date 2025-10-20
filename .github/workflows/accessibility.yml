@@ -1,6 +1,6 @@
 name: pa11y tests
 
-on: [pull_request]
+on: [push]
 
 jobs:
   build:
@@ -9,12 +9,12 @@ jobs:
 
     steps:
       - name: Checkout source.
-        uses: actions/checkout@v5
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8
 
       - name: Install jekyll site dependencies.
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.1.4
+          ruby-version: .ruby-version
           bundler-cache: true
           working-directory: docs
 
@@ -43,7 +43,7 @@ jobs:
           ENABLE_PR: 'true'
           PR_NUMBER: ${{ github.event.pull_request.number }}
           TITLE: 'Accessibility Report'
-          SUCCESS: 'true'
+          SUCCESS: ${{ !contains(steps.pa11y_output.outputs.content, 'errno 2') }}
 
       - name: Check for pa11y failures.
         if: contains(steps.pa11y_output.outputs.content, 'errno 2')
