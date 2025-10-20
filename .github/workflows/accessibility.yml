@@ -9,7 +9,7 @@ jobs:
 
     steps:
       - name: Checkout source.
-        uses: actions/checkout@v2
+        uses: actions/checkout@v5
 
       - name: Install jekyll site dependencies.
         uses: ruby/setup-ruby@v1
@@ -35,6 +35,15 @@ jobs:
         uses: juliangruber/read-file-action@v1
         with:
           path: ./pa11y_output.txt
+
+      - name: Summarise and post PR comment
+        uses: ausaccessfed/workflows/.github/actions/summarise@main
+        with:
+          OUTPUT_FILES: pa11y_output.txt
+          ENABLE_PR: 'true'
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          TITLE: 'Accessibility Report'
+          SUCCESS: 'true'
 
       - name: Check for pa11y failures.
         if: contains(steps.pa11y_output.outputs.content, 'errno 2')
