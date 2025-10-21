@@ -1,10 +1,9 @@
 {
   "defaults": {
-    "concurrency": 4,
-    "standard": "WCAG2AA",
-    "runners": ["axe"]
-  },
-  "chromeLaunchConfig": {
-      "args": ["--no-sandbox"]
+    "chromeLaunchConfig": {
+      "args": [
+        "--no-sandbox"
+      ]
     }
+  }
 }
