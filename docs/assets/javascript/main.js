@@ -156,7 +156,7 @@ function storeCompleted(completedTutorial) {
 
 function showCompletedStatus() {
   $(".series-tutorial").each(function() {
-    var tutorialLabel = $(this).attr('id');
+    var tutorialLabel = $(this).attr('data-label');
     
     var completedTutorialsArr = JSON.parse(localStorage.getItem("completedTutorials"));
     if($.inArray(tutorialLabel, completedTutorialsArr) != -1) {
