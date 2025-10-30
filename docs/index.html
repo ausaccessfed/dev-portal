@@ -8,23 +8,23 @@ order: 0
       <div class="row">
         <div class="col-sm-12 col-md-12 col-lg-8 offset-lg-1 col-xl-5 offset-xl-1">
           <div class="banner-hero-card">
-            <h1 class="mb-4 display-4">AAF Support Tutorials</h1>
+            <h1 class="mb-4 display-3">AAF Support Tutorials</h1>
             <p class="mb-3">There are a number of ways to connect your service to the federation technically. This site provides documentation and tutorials on how to connect your service to the AAF.</p>
             <p>Whether you are getting started, or increasing your efficiency, our technical tutorials are for beginner, intermediate and advanced users.</p>
             <hr>
-            <p><strong>Don't know where to start?</strong> Begin with the <a href="/connection-types/01-overview" style="color:#EEEEEE;">Connection Types</a> tutorial.</p>
-            <p><strong>Want to contribute to this site?</strong> Learn how to <a href="/how-to-write-a-tutorial/01-overview" style="color:#EEEEEE;">request changes or publish your own tutorial.</a></p>
+            <p><strong>Don't know where to start?</strong> Begin with the <a href="/connection-types/01-overview">Connection Types</a> tutorial.</p>
+            <p><strong>Want to contribute to this site?</strong> Learn how to <a href="/how-to-write-a-tutorial/01-overview">request changes or publish your own tutorial.</a></p>
           </div>
         </div>
       </div>
     </div>
   </header>
-  <div class="container py-4 mt-4">
+  <div class="container pt-4 mt-4">
     <div class="row">
       <div class="col-md-6 offset-md-3">
       <div class="input-group shadow">
         <div class="input-group-prepend">
-          <button id="search-filter-button" class="btn btn-warning dropdown-toggle py-1" type="button"
+          <button id="search-filter-button" class="btn dropdown-toggle py-1" type="button"
                   data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Categories</button>
           <div class="dropdown-menu search-filter-menu">
             <a class="dropdown-item" href="#">All Categories</a>
@@ -36,11 +36,6 @@ order: 0
           </div>
         </div>
         <input id="search-input" type="search" class="form-control py-1 border-right-0" placeholder="Search tutorials..." aria-label="Search tutorials">
-        <div class="input-group-append">
-          <button id="search-clear" class="btn bg-white border border-left-rounded">
-            <i class="fa fa-times"></i>
-          </button>
-        </div>
       </div>
     </div>
 
@@ -49,7 +44,7 @@ order: 0
       Any changes you make here should be replicated exactly to the showResults
       function in /assets/javascript/main.js
     {% endcomment %}
-    <div id="tutorial-list" class="card-group flex-direction-row pt-4">
+    <div id="tutorial-list" class="card-group flex-direction-row mt-3 py-4">
       {% include tutorials.html %}
       {% for tutorial in all_tutorials %}
         <div class="card-container mx-auto" style="width: 18rem;">
@@ -62,7 +57,7 @@ order: 0
                     <img src="{{ '/assets/images/aaflogo.png' | relative_url }}" class="series float-end" alt="AAF Series">
                   {% endif -%}
                 </div>
-                <h5 class="card-title mb-0">{{ tutorial.title }}</h5>
+                <p class="lead card-title mb-0"><strong>{{ tutorial.title }}</strong></p>
               </div>
               <div class="card-body">
                 <small class="text-muted">Date published: {{ tutorial.published | date: "%-d %B %Y" }}</small>
@@ -96,8 +91,8 @@ order: 0
           <div class="card text-center shadow">
             <div class="card-body px-lg-5">
               <h2 class="my-3">Need more help?</h2>
-              <h4 class="mb-4">Reach out to our friendly support team!</h4>
-              <a class="btn btn-outline-primary btn-lg mb-3" href="https://aaf.freshdesk.com/support/home/">Learn More</a>
+              <h3 class="mb-4">Reach out to our friendly support team!</h3>
+              <a class="learn-more-button btn btn-lg mb-3" href="https://aaf.freshdesk.com/support/home/">Learn More</a>
             </div>
           </div>
         </div>

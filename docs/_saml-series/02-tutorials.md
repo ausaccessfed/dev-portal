@@ -49,7 +49,7 @@ The SAML Series consists of the following tutorials, which you can work through 
 ### {{ category }}
 {% for tutorial in tutorials reversed %}
 {% if tutorial.curriculum == curriculum and tutorial.category == category %}
-<div id="{{ tutorial.label }}" class="series-tutorial" markdown="1">
+<div data-label="{{ tutorial.label }}" class="series-tutorial" markdown="1">
 ##### [{{ tutorial.title }}]({{ tutorial.label | relative_url }})
 {{ tutorial.summary }}  
 <small>Duration: {{ tutorial.duration }} minutes</small>
