@@ -426,3 +426,17 @@ collections:
     published: 2025-04-08
     author: Kelley Foster <kelley.foster@aaf.edu.au>
 
+  include-service-in-service-catalogue:
+    output: true
+    permalink: /:collection/:name
+    title: Add a Service to the Service Catalogue
+    summary: A tutorial for adding your service to the service catalogue
+    category: Connect a Service
+    level: Beginner
+    tags:
+      - tutorial
+    difficulty: 1
+    duration: 1
+    published: 2025-06-17
+    author: Kelley Foster <kelley.foster@aaf.edu.au>
+
