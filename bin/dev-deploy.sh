@@ -1,33 +1,25 @@
 #!/bin/sh
-# =========================================
-#  Safe deploy helper script
-#  - Ensures a clean working tree
-#  - Temporarily removes docs/CNAME, commits, pushes, then restores
-# =========================================
 
-set -e  # Exit immediately on error
+set -e
 
 REMOTE="development"
 REMOTE_MAIN_BRANCH="master"
 CNAME_PATH="docs/CNAME"
 DRY_RUN=${1:-false}
 
-# --- Check for uncommitted changes ---
 if [ -n "$(git status --porcelain)" ]; then
   echo "Uncommitted changes detected. Please commit or stash before running this script."
   exit 1
 else
-  echo "✅ Working tree is clean."
+  echo "Working tree is clean."
 fi
 
-# --- Check that remote exists ---
 if ! git remote get-url "$REMOTE" >/dev/null 2>&1; then
   echo "Remote '$REMOTE' not found. Please add it with:"
   echo "   git remote add $REMOTE <url>"
   exit 1
 fi
 
-# --- Handle CNAME removal ---
 if [ -f "$CNAME_PATH" ]; then
   echo "Removing $CNAME_PATH..."
   rm "$CNAME_PATH"
