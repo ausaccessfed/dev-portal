@@ -2,7 +2,7 @@
 title: Steps to add your service
 order: 2
 duration: 1
-last_updated: 17-06-2025
+last_updated: 04 November, 2025
 ---
 
 Once you have confirmed that your service is registered in [Federation Manager (Production)](https://manager.aaf.edu.au/welcome), you can add it to the 

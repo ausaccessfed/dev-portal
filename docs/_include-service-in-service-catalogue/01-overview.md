@@ -2,7 +2,7 @@
 title: Overview
 order: 1
 duration: 1
-last_updated: 17-06-2025
+last_updated: 04 November, 2025
 ---
 
 Include your service in Federation Manager's (FM) Service Catalogue to ensure maximum visibility and accessibility for 
