@@ -95,3 +95,14 @@ rake serve
 #### Running the Site Locally
 
 2. **Preview Your Site**: Once the build process completes, open your web browser and navigate to [http://localhost:4000](http://localhost:4000) to preview your Jekyll site.
+
+
+#### Deploying the Site to Development
+
+A single Github repo can only contain one Github Pages site. Therefore, to deploy changes to the development environment, 
+we use a separate git repo with branch protections disabled.
+
+To deploy your changes to the development environment, follow these steps:
+1. **Commit Your Changes**: Ensure all your changes are committed to your local Git repository.
+2. run `make deploy` to deploy the changes to the development environment.
+3. Navigate to "REPLACE ME" repo to verify your changes have been deployed successfully.
