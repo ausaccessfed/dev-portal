@@ -5,7 +5,8 @@ duration: 1
 last_updated: 17-06-2025
 ---
 
-Once you have confirmed that your service is registered in Federation Manager (Production), you can add it to the Service Catalogue. This will make your service discoverable and accessible to users.
+Once you have confirmed that your service is registered in [Federation Manager (Production)](https://manager.aaf.edu.au/welcome), you can add it to the 
+Service Catalogue. This will make your service discoverable and accessible to users.
 
 - Navigate to the Services List page (https://manager.aaf.edu.au/services) and click on your active service.
 
