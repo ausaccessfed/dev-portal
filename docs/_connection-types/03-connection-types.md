@@ -12,7 +12,7 @@ Choose which protocol your service will use to connect. Each protocol has its ow
     <div class="card-body">
       <ul class="list-group list-group-flush">
         <li class="list-group-item fw-bold"><i class="fa fa-check-circle" style="color:green"></i> Preferred option and recommended for most connections</li>
-        <li class="list-group-item"><i class="fa fa-check-circle" style="color:green"></i> Modern protocol suitable for web, mobile and API integrations</li>
+        <li class="list-group-item"><i class="fa fa-check-circle" style="color:green"></i> Modern protocol suitable for web and mobile integrations</li>
         <li class="list-group-item"><i class="fa fa-check-circle" style="color:green"></i> Feature-rich</li>
         <li class="list-group-item"><i class="fa fa-check-circle" style="color:green"></i> Many open-source libraries and active development</li>
         <li class="list-group-item"><i class="fa fa-check-circle" style="color:green"></i> Easy to integrate and maintain, with extensive documentation and tooling.</li>
