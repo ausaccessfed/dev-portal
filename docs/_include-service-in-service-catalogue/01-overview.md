@@ -9,13 +9,12 @@ Include your service in Federation Manager's (FM) Service Catalogue to ensure ma
 your users.
 <br>
 <br>
-By listing your service, you make it easy for organizations and individuals to discover, evaluate, and connect with 
+By listing your service, you make it easy for organisations and individuals to discover, evaluate, and connect with 
 what you offer. The catalogue streamlines the process of finding trusted solutions, helping your service to stand out and drive 
 greater engagement from the community.
 <br>
 <br>
-
-Take advantage of this opportunity to showcase your service’s unique value and reach a wider audience.
+*Take advantage of this opportunity to showcase your service’s unique value and reach a wider audience.*
 {: .callout-info }
 
 ### What you'll learn
