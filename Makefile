@@ -4,3 +4,8 @@ up:
 
 down:
 	docker-compose down
+
+
+deploy:
+	./deploy.sh REMOTE_MAIN_BRANCH=main
+	@echo "Site deploying to GitHub Pages. Check the repository for updates."
