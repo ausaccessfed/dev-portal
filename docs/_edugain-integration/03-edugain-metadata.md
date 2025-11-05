@@ -2,7 +2,7 @@
 title: EduGAIN Metadata
 order: 3
 duration: 1
-last_updated: 09 January, 2025
+last_updated: 22 October, 2025
 ---
 <br>
 

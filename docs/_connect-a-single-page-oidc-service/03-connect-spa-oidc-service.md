@@ -2,7 +2,7 @@
 title: Register service
 order: 3
 duration: 1
-last_updated: 20 March, 2025
+last_updated: 21 March, 2025
 ---
 
 * Follow the steps for [registering a new OIDC service](/connect-an-oidc-service/02-connect-oidc-service) in Federation Manager (Test).

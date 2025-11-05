@@ -2,7 +2,7 @@
 title: Tutorials
 order: 2
 duration: 1
-last_updated: 01 March, 2024
+last_updated: 24 October, 2025
 ---
 
 {% include tutorials.html -%}

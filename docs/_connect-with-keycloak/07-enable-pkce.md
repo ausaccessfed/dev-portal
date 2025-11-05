@@ -2,7 +2,7 @@
 title: Enable PKCE
 order: 7
 duration: 1
-last_updated: 05 February, 2025
+last_updated: 20 October, 2025
 ---
 
 ## What is PKCE?

@@ -2,7 +2,7 @@
 title: Background
 order: 2
 duration: 1
-last_updated: 20 March, 2025
+last_updated: 21 March, 2025
 ---
 
 Unlike regular web applications (with a backend), native and single page applications (SPAs), *cannot* securely store client secrets.

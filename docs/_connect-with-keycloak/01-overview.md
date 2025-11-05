@@ -2,7 +2,7 @@
 title: Overview
 order: 1
 duration: 1
-last_updated: 12 April, 2024
+last_updated: 20 October, 2025
 ---
 
 ## Register an OIDC service with Keycloak

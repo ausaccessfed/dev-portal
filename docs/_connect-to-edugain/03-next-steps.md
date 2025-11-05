@@ -2,7 +2,7 @@
 title: Next Steps
 order: 3
 duration: 1
-last_updated: 11 March, 2024
+last_updated: 22 October, 2025
 ---
 
 Await review by the AAF Support team. After approval, test your service and go-live.

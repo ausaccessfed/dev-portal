@@ -2,7 +2,7 @@
 title: Overview
 order: 1
 duration: 1
-last_updated: 21 June, 2024
+last_updated: 21 March, 2025
 ---
 
 Once you have connected your service, log in to Federation Manager (FM) to confirm that your service has been registered.

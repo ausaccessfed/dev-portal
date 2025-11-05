@@ -2,7 +2,7 @@
 title: Overview
 order: 1
 duration: 1
-last_updated: 20 March, 2025
+last_updated: 21 March, 2025
 ---
 
 This tutorial shows you how to register a new single page OpenID Connect service with the AAF Test Federation

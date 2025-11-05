@@ -2,7 +2,7 @@
 title: Requesting Attributes - eduGAIN IdPs
 order: 4
 duration: 1
-last_updated: 08 March, 2024
+last_updated: 21 March, 2025
 ---
 
 The Australian Access Federation simplifies access to user attributes from AAF Identity providers. The AAF has defined Core attributes that a service provider can reliably expect to receive from the IdP when requested.

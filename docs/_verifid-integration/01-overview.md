@@ -2,7 +2,7 @@
 title: Overview
 order: 1
 duration: 1
-last_updated: 12 April, 2024
+last_updated: 20 October, 2025
 ---
 
 VerifID is a service that allows staff and students from qualifying institutions to receive discounts at various retailers. VerifID works by verifying that a User belonging to an Organisation has a certain desired Affiliation with the institution.
