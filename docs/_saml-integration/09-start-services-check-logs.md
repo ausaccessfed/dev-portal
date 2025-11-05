@@ -2,7 +2,7 @@
 title: Start services and check logs
 order: 9
 duration: 1
-last_updated: 02 July, 2024
+last_updated: 21 March, 2025
 ---
 
 Using the system tools, start or restart the Apache and Shibboleth services. For Linux these are: httpd and shibd.

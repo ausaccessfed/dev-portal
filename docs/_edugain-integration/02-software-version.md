@@ -2,7 +2,7 @@
 title: Software Version
 order: 2
 duration: 1
-last_updated: 18 April, 2024
+last_updated: 22 October, 2025
 ---
 <br>
 

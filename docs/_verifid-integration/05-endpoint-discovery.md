@@ -2,7 +2,7 @@
 title: Endpoint discovery
 order: 5
 duration: 1
-last_updated: 16 February, 2024
+last_updated: 21 March, 2025
 ---
 
 VerifID is an OAuth 2.0 authorization server, and provides authorization server metadata per the draft standard(2) at the following URL:

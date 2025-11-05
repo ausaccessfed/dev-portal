@@ -2,7 +2,7 @@
 title: Privacy Requirements
 order: 7
 duration: 1
-last_updated: 09 April, 2024
+last_updated: 21 March, 2025
 ---
 
 The AAF recommends reviewing relevant legislation before connecting to eduGAIN.
