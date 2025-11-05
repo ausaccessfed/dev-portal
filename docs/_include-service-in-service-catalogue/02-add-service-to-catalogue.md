@@ -41,3 +41,7 @@ prefer to use the default description.
 - After updating your service, navigate to the [Service Catalogue](https://manager.aaf.edu.au/service_catalogue) page in FM (Production). You will see your service listed with the tags you selected.
 
 ![service-catalogue-page](/assets/images/include-service-in-service-catalogue/service-catalogue-page.png)
+
+- Click on the card for your service to view its rich description.
+
+![service-rich-description](/assets/images/include-service-in-service-catalogue/service-rich-description.png)
