@@ -2,27 +2,28 @@
 title: Connection Types
 order: 3
 duration: 2
-last_updated: 12 April, 2024
+last_updated: 05 November, 2025
 ---
 
 Choose which protocol your service will use to connect. Each protocol has its own benefits and drawbacks and the choice will depend on your organisation's requirements and preferences.
 
 <div class="card border-dark mt-4 mb-3">
-  <div class="card-header text-white bg-primary">OpenID Connect</div>
+  <div class="card-header text-black bg-primary">OpenID Connect</div>
     <div class="card-body">
       <ul class="list-group list-group-flush">
-        <li class="list-group-item"><i class="fa fa-check-circle" style="color:green"></i> Recommended for most 
-connections</li>
+        <li class="list-group-item fw-bold"><i class="fa fa-check-circle" style="color:green"></i> Preferred option and recommended for most connections</li>
+        <li class="list-group-item"><i class="fa fa-check-circle" style="color:green"></i> Modern protocol suitable for web and mobile integrations</li>
         <li class="list-group-item"><i class="fa fa-check-circle" style="color:green"></i> Feature-rich</li>
-        <li class="list-group-item"><i class="fa fa-check-circle" style="color:green"></i> Many open-source 
-libraries</li>
+        <li class="list-group-item"><i class="fa fa-check-circle" style="color:green"></i> Many open-source libraries and active development</li>
+        <li class="list-group-item"><i class="fa fa-check-circle" style="color:green"></i> Easy to integrate and maintain, with extensive documentation and tooling.</li>
+        <li class="list-group-item"><i class="fa fa-check-circle" style="color:green"></i> Allows participation in eduGAIN</li>
       </ul>
       <a href="/openid-connect-integration/01-overview" class="btn btn-primary mt-4">Get Started</a>
     </div>
 </div>
 
 <div class="card border-dark mb-3">
-  <div class="card-header text-white bg-primary">Rapid Connect</div>
+  <div class="card-header text-black bg-primary">Rapid Connect</div>
   <div class="card-body">
     <ul class="list-group list-group-flush">
       <li class="list-group-item"><i class="fa fa-check-circle" style="color:green"></i> Simple: Easy to test 
@@ -47,7 +48,7 @@ authentication in as few as 20 lines of Ruby. Implementations in other languages
 </div>
 
 <div class="card border-dark mt-4 mb-3">
-  <div class="card-header text-white bg-primary">SAML</div>
+  <div class="card-header text-black bg-primary">SAML</div>
     <div class="card-body">
       <ul class="list-group list-group-flush">
         <li class="list-group-item"><i class="fa fa-check-circle" style="color:green"></i> Feature rich</li>
@@ -64,7 +65,7 @@ protocols which are implemented using <a href="https://www.shibboleth.net/">Shib
 </div>
 
 <div class="card border-dark mt-4 mb-3">
-  <div class="card-header text-white bg-primary">VerifID</div>
+  <div class="card-header text-black bg-primary">VerifID</div>
     <div class="card-body">
       <ul class="list-group list-group-flush">
         <li class="list-group-item"><i class="fa fa-check-circle" style="color:green"></i> Verifies a user based on their organisational affiliation</li>

@@ -2,7 +2,7 @@
 title: Getting started
 order: 3
 duration: 1
-last_updated: 12 April, 2024
+last_updated: 20 October, 2025
 ---
 
 The interaction used between the Subscriber and VerifID is the Authorization Code Grant(1) as defined by the OAuth 2.
@@ -16,7 +16,7 @@ Example URLs are based off the <code>https://example.edu</code> hostname. Your V
 The information under “Endpoint discovery” must be considered authoritative when determining which URL will be used for each request.
 
 
-### User Agent
+## User Agent
 
 The <code>User-Agent</code> request header is a characteristic string that lets servers and network peers identify the application, operating system, vendor, and/or version of the requesting user agent.
 

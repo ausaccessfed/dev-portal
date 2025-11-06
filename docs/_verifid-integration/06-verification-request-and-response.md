@@ -2,11 +2,11 @@
 title: Verification request and response
 order: 6
 duration: 1
-last_updated: 12 April, 2024
+last_updated: 20 October, 2025
 ---
 <br>
 
-### Verification request
+## Verification request
 
 To initiate Verification, the Client shall issue a request which is an Authorization Request(3) per the OAuth 2.0 specification. This request takes the form of redirecting the User’s browser to VerifID’s “authorization_endpoint” with a query string of the following format:
 
@@ -82,7 +82,7 @@ A suggested method of generating a suitable <code>state</code> value is: Generat
 
 <br>
 
-### Verification response
+## Verification response
 
 After authenticating to their Organisation via the VerifID Service Operator federation, the result of Verification will be a “protected resource”(4) as described in the OAuth 2.0 specification. An authorization response shall be returned by redirecting the User’s browser to the Client’s redirect_uri, with query parameters:
 

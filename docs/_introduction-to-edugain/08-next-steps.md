@@ -2,7 +2,7 @@
 title: Next Steps
 order: 8
 duration: 1
-last_updated: 09 April, 2024
+last_updated: 21 March, 2025
 ---
 
 Once you have completed the background reading on the requirements to connect to EduGAIN, you are ready to configure your service!

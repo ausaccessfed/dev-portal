@@ -2,7 +2,7 @@
 title: Research and Scholarship Entity Category
 order: 5
 duration: 1
-last_updated: 11 March, 2024
+last_updated: 22 October, 2025
 ---
 <br>
 
@@ -64,7 +64,7 @@ The R&S attribute bundle consists of the following data elements. "Affiliation" 
       <th scope="row">4</th>
       <td>affiliation</td>
       <td>Affiliation is defined as the eduPersonScopedAffiliation attribute.</td>
-      <td style="color: red">NO</td>
+      <td style="color: #e10000">NO</td>
     </tr>
   </tbody>
 </table>

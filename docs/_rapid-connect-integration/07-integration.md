@@ -2,7 +2,7 @@
 title: Integration
 order: 7
 duration: 1
-last_updated: 31 May, 2024
+last_updated: 20 October, 2025
 ---
 
 Before you get started with AAF Rapid Connect, you MUST meet all the following high level requirements:
@@ -14,7 +14,7 @@ Before you get started with AAF Rapid Connect, you MUST meet all the following h
 
 <br>
 
-### 1. Select a JWT library
+## 1. Select a JWT library
 
 To get started with AAF Rapid Connect integration, select a suitable JWT library from the following table for your
 application. These libraries will assist developers in quickly implementing JWT support. Libraries are not listed in
@@ -129,7 +129,7 @@ your needs. Found a useful JWT library not listed here? [Please let us know abou
 
 <br>
 
-### 2. Create a secret
+## 2. Create a secret
 
 The first step in integrating your code is to compute a secret that will be shared between your application and AAF Rapid Connect for signing and verifying JWT.
 
@@ -139,11 +139,11 @@ Recommended secret generation method on *nix hosts, 32 characters long:
 
 This value should never be publicly disclosed. Once created be sure to store it securely. This value will be required during service registration.
 
-### 3. Provide a web accessible endpoint
+## 3. Provide a web accessible endpoint
 
 Your application MUST define a https endpoint which accepts a HTTP POST request. The endpoint must acquire the data provided in the parameter **assertion** for further processing.
 
-### 4. Validate the signed JWT (JWS) your application has received
+## 4. Validate the signed JWT (JWS) your application has received
 
 Should any stage of the below validation fail your application MUST discard the token and present the user with a suitable error message.
 
@@ -160,7 +160,7 @@ Should any stage of the below validation fail your application MUST discard the 
 
 All applications connecting to the AAF must adhere to all relevant [AAF rules and policies](https://aaf.edu.au/support/resources/). Prior to approving the connection of your service to the federation, the AAF may request to review your JWT related code and test your running endpoint to verify that an application's JWT handling conforms to the above requirements.
 
-### 5. Make use of the user's personal information
+## 5. Make use of the user's personal information
 
 Your application now has a fully verified JWT provided by AAF Rapid Connect.
 

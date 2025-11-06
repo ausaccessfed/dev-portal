@@ -2,14 +2,14 @@
 title: Attribute Based Authorisation
 order: 6
 duration: 1
-last_updated: 25 July, 2024
+last_updated: 17 October, 2025
 ---
 
 Specific attributes can be utilised to make authorisation decisions within an application.
 
 Below is an example of the ID Token attributes that are provided by the AAF OpenID Provider and translated to OpenID Connect:
   
-```json
+```
   {
     "sub": "YAdr3eQkhvnHrtOcdnOl4cFRdYnOmKoP4523eh45y89",
     "name": "John Doe",

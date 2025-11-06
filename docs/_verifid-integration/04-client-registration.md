@@ -2,7 +2,7 @@
 title: Client registration
 order: 4
 duration: 1
-last_updated: 20 February, 2024
+last_updated: 21 March, 2025
 ---
 
 When a Client registers with VerifID, the Client shall be registered with the following details:

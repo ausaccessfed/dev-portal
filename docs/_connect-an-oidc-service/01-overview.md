@@ -2,7 +2,7 @@
 title: Overview
 order: 1
 duration: 1
-last_updated: 20 February, 2024
+last_updated: 21 March, 2025
 ---
 
 This tutorial shows how to register a new OpenID Connect service with the AAF Test Federation

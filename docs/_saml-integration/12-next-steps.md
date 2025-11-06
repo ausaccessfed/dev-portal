@@ -2,7 +2,7 @@
 title: Next Steps
 order: 12
 duration: 1
-last_updated: 02 July, 2024
+last_updated: 21 March, 2025
 ---
 
 To test access to protected content, an active account at an existing subscriber with an **IdP** is necessary. The

@@ -2,7 +2,7 @@
 title: Tutorials
 order: 2
 duration: 1
-last_updated: 01 March, 2024
+last_updated: 24 October, 2025
 ---
 
 {% include tutorials.html -%}
@@ -50,7 +50,7 @@ The Rapid Connect Series consists of the following tutorials, which you can work
 ### {{ category }}
 {% for tutorial in tutorials reversed %}
 {% if tutorial.curriculum == curriculum and tutorial.category == category %}
-<div id="{{ tutorial.label }}" class="series-tutorial" markdown="1">
+<div data-label="{{ tutorial.label }}" class="series-tutorial" markdown="1">
 ##### [{{ tutorial.title }}]({{ tutorial.label | relative_url }})
 {{ tutorial.summary }}  
 <small>Duration: {{ tutorial.duration }} minutes</small>

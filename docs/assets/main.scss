@@ -25,11 +25,14 @@ main {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Inter', sans-serif;
   font-style: normal;
-  font-weight: 600;
 }
 
 .p {
   font-family: 'Inter', sans-serif;
+}
+
+a {
+  text-underline-offset: 6px;
 }
 
 .btn {
@@ -55,6 +58,18 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+/* Inline code on white background */
+code {
+  color: #cc0066 !important;
+  background: #f5f5f5 !important;
+}
+
+/* Code blocks on dark background */
+pre, pre code {
+  background: #222 !important;
+  color: #ffe082 !important;
+}
+
 .navbar {
   background-color: $aaf-dark-grey;
 }
@@ -67,21 +82,35 @@ h1, h2, h3, h4, h5, h6 {
  * Header
  */
 header {
-  background-color: #969696;
-  background: linear-gradient(to top right, $aaf-orange, $aaf-indigo);
+  background-color: $aaf-purple;
   background-size: cover;
   padding-bottom: 200px;
   margin-bottom: -200px;
 }
 
 .banner-hero-card {
-  color: #EEEEEE;
+  color: #FFFFFF;
+  a {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #FFFFFF;
+    &:hover {
+      border-bottom: 2px solid;
+      border-bottom-color: $aaf-orange;
+    }
+  }
 }
 
 .footer-callout {
   background-color: #f2f2f2;
-  .container {
-    margin-top: -100px;
+}
+
+.learn-more-button {
+  background-color: #5F368A;
+  color: #FFFFFF;
+  &:hover {
+    background-color: $aaf-orange;
   }
 }
 
@@ -105,31 +134,14 @@ header {
       flex-wrap: wrap;
   }
 
-  .footer-text {
-    font-size: 0.8em;
-    text-align: justify;
-
-    a {
-      &:hover,
-      &:focus {
-        color: $aaf-yellow;
-        text-decoration: none;
-      }
-    }
-
-    ul {
-      list-style: none;
-    }
-  }
-
   ul.list-unstyled li {
     margin-bottom: 0.5em;
   }
 
-  h6 {
+  h3 {
     text-transform: uppercase;
     font-family: "Inter", sans-serif;
-    font-weight: 300;
+    font-weight: 200;
     font-style: normal;
     color: #ffffff;
     margin-top: 0.8em;
@@ -145,13 +157,16 @@ header {
     }
   }
 
-  .footer-content {
+  .footer-link {
     a {
       color: $info;
       text-decoration: none;
-      &:hover {
-        color: $aaf-orange;
-      }
+      padding-bottom: 2px;
+      border-bottom: 1px solid $info;
+        &:hover {
+          color: $info;
+          border-bottom-color: $aaf-orange;
+        }
     }
   }
 
@@ -272,6 +287,7 @@ header {
     transition: background 0.2s;
     width: 2em;
     height: 2em;
+    text-decoration: none;
   }
 
   .socials a i {
@@ -298,6 +314,10 @@ header {
   .list-group-item.active {
     color: #000000;
   }
+}
+
+.sidebar-btn-link a {
+  color: $link-color !important;
 }
 
 
@@ -362,6 +382,14 @@ code {
 /*
  * Search
  */
+#search-filter-button {
+  background-color: #522f74 !important;
+  color: #EEEEEE !important;
+  border: 1px solid #522f74 !important;
+  box-shadow: none !important;
+  border-radius: 0.25rem 0 0 0.25rem !important;
+}
+
 #search-input.form-control {
   &:focus {
     outline: 0 !important;
@@ -437,18 +465,18 @@ code {
     position: absolute;
     top: -12px;
     right: -12px;
-    font-size: 16px;
-    width: 24px;
-    height: 24px;
+    font-size: 22px;
+    width: 32px;
+    height: 32px;
     text-align: center;
     vertical-align: middle;
-    line-height: 24px;
-    color: #fff;
-    background: $success;
-    border-radius: 12px;
+    line-height: 32px;
+    border-radius: 50%;
     &:after {
-      font-family: 'Font Awesome 5 Free';
-      content: "\f00c";
+      font-family: 'Font Awesome 6 Free';
+      content: "\f058";
+      font-weight: 900;
+      color: $success;
     }
   }
 }

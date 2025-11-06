@@ -2,7 +2,7 @@
 title: Overview
 order: 1
 duration: 1
-last_updated: 13 February, 2024
+last_updated: 21 March, 2025
 ---
 
 This tutorial contains important instructions if you are new to using the AAF Test Federation Manager and have not registered a service before.

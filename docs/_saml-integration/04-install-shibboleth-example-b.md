@@ -2,7 +2,7 @@
 title: Install Shibboleth - Example B
 order: 4
 duration: 1
-last_updated: 10 May, 2024
+last_updated: 20 October, 2025
 ---
 
 <br>
@@ -18,7 +18,7 @@ Please note, this is a proof of concept and only configures Shibboleth SP. Apach
 
 A Dockerfile is a text file that contains a set of instructions for building a Docker image. In this case, we are creating a Dockerfile for a Shibboleth-Service Provider application.
 
-```dockerfile
+```
 # Use Amazon Linux 2 as base image (alternative lightweight distributions include Debian, CentOS, Fedora or Ubuntu).
 FROM amazonlinux:2
 

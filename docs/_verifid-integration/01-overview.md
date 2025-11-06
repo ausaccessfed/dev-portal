@@ -2,7 +2,7 @@
 title: Overview
 order: 1
 duration: 1
-last_updated: 12 April, 2024
+last_updated: 20 October, 2025
 ---
 
 VerifID is a service that allows staff and students from qualifying institutions to receive discounts at various retailers. VerifID works by verifying that a User belonging to an Organisation has a certain desired Affiliation with the institution.
@@ -17,10 +17,10 @@ The VerifID service will:
 For more information about VerifID and how it works, refer to the [VerifID Global website](https://verifid.com.au/#focus).
 <br>
 
-### What you'll learn
+## What you'll learn
 
 - How to use an API for user verification
 
-### What you'll need
+## What you'll need
 
 - Integration experience

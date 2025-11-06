@@ -2,7 +2,7 @@
 title: Skipping Discovery Service
 order: 5
 duration: 1
-last_updated: 25 July, 2024
+last_updated: 17 October, 2025
 ---
 
 AAF's implementation of OpenID Connect allows service administrators to configure their service to skip discovery service and login directly through a specified IdP.
@@ -12,7 +12,7 @@ AAF's implementation of OpenID Connect allows service administrators to configur
 
 Find the **entityID** of the IdP that you wish to directly login through. This can be done by looking through the AAF metadata or your own registrations.
 
-<a href="https://md.test.aaf.edu.au/" class="btn btn-outline-primary mb-3">AAF Test Metadata</a>
+<a href="https://md.test.aaf.edu.au/" class="btn btn-primary mb-3">AAF Test Metadata</a>
 <br>
 For Example, the AAF Virtual Home: `https://vho.aaf.edu.au/idp/shibboleth`
 
@@ -32,7 +32,7 @@ Add the new param `entityID=<idp-entityID>` where the entityID has been URL enco
 Note: Request paramaters should be URL encoded. The following is for demonstration purposes only.
 {: .callout-info}
 
-```ruby
+```
 GET /oidc/authorize?
     client_id=123456789&
     redirect_uri=https://example.com/aaf/callback&

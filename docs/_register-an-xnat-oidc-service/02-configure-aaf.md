@@ -2,7 +2,7 @@
 title: Configure AAF as the OpenID Provider
 order: 2
 duration: 1
-last_updated: 11 April, 2025
+last_updated: 22 October, 2025
 ---
 
 Follow the instructions in the [XNAT documentation](https://wiki.xnat.org/documentation/configuring-authentication-providers) to configure an authentication provider. 
@@ -15,7 +15,7 @@ This process consists of two steps as follows:
 ### 2) Configure the OpenID authentication provider with your AAF credentials
 * Once you have created a file named `openid-provider.properties` in the `/data/xnat/home/config/auth` directory of your XNAT installation, copy the contents of the following code block into it.
 
-```shell
+```
 #
 # xnat-openid-auth-plugin: openid-provider-sample-AAF.properties
 #

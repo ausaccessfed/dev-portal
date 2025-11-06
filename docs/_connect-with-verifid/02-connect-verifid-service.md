@@ -2,7 +2,7 @@
 title: Register with VerifID Global
 order: 2
 duration: 1
-last_updated: 16 May, 2024
+last_updated: 03 October, 2025
 ---
 
 To register as a new client with VerifID Global:

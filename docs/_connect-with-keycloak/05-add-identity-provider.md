@@ -2,7 +2,7 @@
 title: Add an identity provider
 order: 5
 duration: 5
-last_updated: 20 February, 2025
+last_updated: 17 October, 2025
 ---
 
 * Once in the selected realm (in this example, it is called 'myrealm'), click on 'Identity providers' (at the bottom of the left hand menu bar).
@@ -74,7 +74,7 @@ If you click on the 'Identity providers' option (in the left-hand menu bar), you
 
 ![OpenID connect provider](/assets/images/connect-with-keycloak/keycloak-new-identity-provider.png)
 
-### Logging in with the new identity provider
+## Logging in with the new identity provider
 
 * First ensure that the users you wish to authenticate with this identity provider have been added to the selected realm.
 * To do this, click on 'Users' in the left-hand menu bar.
