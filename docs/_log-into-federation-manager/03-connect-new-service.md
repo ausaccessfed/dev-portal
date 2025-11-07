@@ -9,6 +9,7 @@ last_updated: 03 October, 2025
 
 ![FM Dashboard](/assets/images/log-into-federation-manager/FM-dashboard-test.png)
 
-- Click on the protocol with which you would like to connect your service, i.e. OpenID Connect, Rapid Connect or SAML.
+- Click on the protocol with which you would like to connect your service, i.e. OpenID Connect, Rapid Connect or 
+  SAML. Alternatively, if you are after a verification solution, click on 'VerifID' at the bottom of the page.
 
 ![Connect service](/assets/images/log-into-federation-manager/connect-service.png)
