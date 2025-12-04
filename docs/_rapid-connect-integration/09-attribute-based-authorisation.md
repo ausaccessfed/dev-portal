@@ -26,7 +26,8 @@ Below is an example of a decoded JWS for the user "John Doe" sent by Rapid Conne
     "edupersonorcid": "0000-0000-0000-0000",
     "edupersonscopedaffiliation": "affiliate@hsww.wiz.edu.au",
     "edupersonprincipalname": "jdoe@hsww.wiz.edu.au",
-    "edupersontargetedid": "https://someuni.edu.au!https://someuni.edu.au/some_connections/1!7bVg9m6p/JI3i/JZ76YCZ7k6pQJ="
+    "edupersontargetedid": "https://someuni.edu.au!https://someuni.edu.au/some_connections/1!7bVg9m6p/JI3i/JZ76YCZ7k6pQJ=",
+    "edupersonentitlement": "urn:mace:dir:entitlement:common-lib-terms"
   },
   "iss": "https://someuni.edu.au",
   "aud": "https://someuni.edu.au/some_connections/1",
@@ -55,6 +56,12 @@ Attributes that can be utilised for authorisation are contained within the claim
       <th scope="row"><a href="https://validator.aaf.edu.au/documentation/attributes/oid:1.3.6.1.4.1.5923.1.1.1.9">eduPersonScopedAffiliation</a></th>
       <td><ul><li>Used to authorise users based on their affiliation/s in their home organisation.</li><li>Should be used when the Service Provider <strong>does not</strong> need confirmation of the security domain of the user.
 </li></ul></td>
+    </tr>
+    <tr>
+      <th scope="row"><a href="https://validator.aaf.edu.au/documentation/attributes/oid:1.3.6.1.4.1.5923.1.1.1.
+7">eduPersonEntitlement</a></th>
+      <td><ul><li>Used to assert user entitlements over and above those enjoyed by other members of the organisation.
+</li><li>Should only be used by Service Providers with a legitimate need for this value and will only have that value released back to them.</li></ul></td>
     </tr>
     <tr>
       <th scope="row"><a href="https://validator.aaf.edu.au/documentation/attributes/oid:0.9.2342.19200300.100.1.3">mail</a></th>

@@ -36,6 +36,8 @@ The following attributes are available to Rapid Connect and the AAF recommends:
 
 - `eduPersonScopedAffiliation` — Only collect if there is a need to identify the user's organisation and their affiliation or position within their organisation.
 
+- `eduPersonEntitlement` — Only collect if there is a need to identify specific entitlements assigned to the user.
+
 See the [Support Portal Attributes page](https://support.aaf.edu.au/support/solutions/folders/19000156050) for complete information and definitions of the AAF attributes available.
 
 The AAF strongly recommends that `eduPersonTargetedID` is chosen as the primary identifier rather than `email`. `Email` addresses change on an irregular basis for numerous reasons. When they inevitably do change, users experience service disruption while manual remediation work is undertaken to update primary identifiers. Home institutions will invariably not communicate email addresses updates to external parties.

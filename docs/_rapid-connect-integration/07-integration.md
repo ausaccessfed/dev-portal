@@ -180,6 +180,7 @@ The following optional AAF attributes MAY be available at the discretion of the 
     2. givenname: A person's first name or preferred name
     3. surname: A person's surname
     4. edupersonorcid: A person's ORCID (https://orcid.org/) identifier, if they have provided one.
+    5. edupersonentitlement: A person's entitlement(s) within their home organisation.
 
 You may also be provided with the **auedupersonsharedtoken** attribute if your use case requires it. For more information on **auedupersonsharedtoken**, see this [support article](https://support.aaf.edu.au/support/solutions/articles/19000035966-why-is-auedupersonsharedtoken-no-longer-available-).
 
