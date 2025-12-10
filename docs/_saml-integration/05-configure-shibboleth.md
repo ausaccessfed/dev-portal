@@ -78,13 +78,13 @@ Update the **discoveryURL** configuration value so the **`<SSO>`** element has t
 ```
 <SSO
   discoveryProtocol="SAMLDS"
-  discoveryURL="https://ds.test.aaf.edu.au/discovery/DS">
+  discoveryURL="https://ds.test.aaf.edu.au/discovery/aaf">
     SAML2
 </SSO>
 ```
 
 When connecting the service to the **PRODUCTION** Federation, use the following value instead:
->   `discoveryURL="https://ds.aaf.edu.au/discovery/DS"`
+>   `discoveryURL="https://ds.aaf.edu.au/discovery/aaf"`
 
 [Read the details on the **`<SSO>`** element configurable options](https://wiki.shibboleth.net/confluence/display/SP3/SSO).
 
