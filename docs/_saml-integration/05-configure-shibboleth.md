@@ -88,10 +88,8 @@ When connecting the service to the **PRODUCTION** Federation, use the following 
 
 [Read the details on the **`<SSO>`** element configurable options](https://wiki.shibboleth.net/confluence/display/SP3/SSO).
 
-Note that the Discovery Service URL is different for EduGAIN-enabled services. It is `/edugain` trailing rather 
-than `/aaf`. Refer to the [EduGAIN Integration documentation](https://tutorials.aaf.edu.au/edugain-integration/06-discovery-service) for more information.
+Note that the Discovery Service URL is different for EduGAIN-enabled services. Refer to the [EduGAIN Integration documentation](https://tutorials.aaf.edu.au/edugain-integration/06-discovery-service) for more information.
 {: .callout-info}
-
 #### 5 `<MetadataProvider>` Element
 
 The **`<MetadataProvider>`** element provides the core functionality which establishes the trust relationships with
