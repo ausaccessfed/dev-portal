@@ -118,7 +118,7 @@ task :tutorial do
     f.puts '    difficulty: 1 # number from 1 to 5'
     f.puts '    duration: 10 # number of minutes'
     f.puts "    published: #{Time.now.strftime('%Y-%m-%d')}"
-    f.puts '    author: Your Name <your.name@email.domain>'
+    f.puts '    author: Your Name'
     f.puts ''
   end
 

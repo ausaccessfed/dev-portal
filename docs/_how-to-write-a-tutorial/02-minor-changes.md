@@ -21,11 +21,10 @@ Click on the "Get started" button for "Request Minor Changes".
 
 ![Get Started Button](/assets/images/how-to-write-a-tutorial/get-started-button-minor.png)
 
-- Provide a title and a clear description of your suggestion. Make sure to include the tutorial name and page to which your suggestion applies, as well as your email address.
+- Provide a title and a clear description of your suggestion. Make sure to include the tutorial name and page to which your suggestion applies.
 
-- When you are finished, click on "Submit new issue". Our technical team will review your issue and resolve it if they can. They may contact you if they need more clarification.
+- When you are finished, click on "Submit new issue". Our technical team will review your issue and resolve it if they can. They may follow up with you in GitHub if they need more clarification.
 
-![Raise an Issue](/assets/images/how-to-write-a-tutorial/raise-an-issue-minor.png)
 
 ## Opening a Pull Request (PR)
 
