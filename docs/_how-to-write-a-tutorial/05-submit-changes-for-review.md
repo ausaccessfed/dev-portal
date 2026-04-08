@@ -22,7 +22,6 @@ last_updated: 21 March, 2025
   - include enough context for reviewers to follow up with you in GitHub if they need more information.
 - Click "Create pull request".
 
-
 - When you are ready, click on "Ready for review".
 
 ![Ready for review](/assets/images/how-to-write-a-tutorial/ready-for-review.png)
