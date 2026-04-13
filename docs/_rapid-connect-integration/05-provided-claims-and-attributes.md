@@ -169,4 +169,7 @@ Though `auEduPersonSharedToken` is a core attribute, it is not recommended for g
 
 <br>
 
-See the [Support Portal Attributes page](https://support.aaf.edu.au/support/solutions/folders/19000156050) for complete information and definitions of the core, optional and conditional AAF attributes available.
+See the following links for complete information and definitions of the core, optional and conditional AAF attributes available:
+
+- [Support Portal Attributes page](https://support.aaf.edu.au/support/solutions/folders/19000156050)
+- [Validator Service](https://validator.aaf.edu.au/documentation/categories)
