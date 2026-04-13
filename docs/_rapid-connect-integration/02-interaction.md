@@ -27,24 +27,7 @@ Once user session management is under control, additional flow controls can be i
 
 The AAF offers a set of core attributes each with varying uses. Although it is tempting to request a wide range of attributes to capture as much information as possible about users, only consider what is truly necessary to provide a service.
 
-The following attributes are available to Rapid Connect and the AAF recommends:
-- `eduPersonTargetedID` — This should be used as the primary identifier, to match an incoming user against an existing record in an application's data store. This attribute is guaranteed to never change for a user.
-
-- `displayName` — This is the most appropriate name to show in the web interface, to identify the user and show that they are logged in. Do not rely on any specific format for displayName. Attempts to validate names will create problems for those users who do not fit the chosen patterns and this will invariably occur.
-
-- `mail` — Only collect if there is a need to message the user, or use as a secondary identifier. 
-
-- `eduPersonScopedAffiliation` — Only collect if there is a need to identify the user's organisation and their affiliation or position within their organisation.
-
-- `eduPersonEntitlement` — Only collect if there is a need to identify specific entitlements assigned to the user.
-
-See the [Support Portal Attributes page](https://support.aaf.edu.au/support/solutions/folders/19000156050) for complete information and definitions of the AAF attributes available.
-
-The AAF strongly recommends that `eduPersonTargetedID` is chosen as the primary identifier rather than `email`. `Email` addresses change on an irregular basis for numerous reasons. When they inevitably do change, users experience service disruption while manual remediation work is undertaken to update primary identifiers. Home institutions will invariably not communicate email addresses updates to external parties.
-{: .callout-info}
-Though `auEduPersonSharedToken` is a core attribute, it is not recommended for general use or as a primary identifier. `auEduPersonSharedToken` is only useful in grid-computing environments, or to share user data or access rules across security domains or separate Service Providers.
-{: .callout-info}
-
+Refer to [Section 5](/rapid-connect-integration/05-provided-claims-and-attributes) of this tutorial for a list of claims and attributes provided by Rapid Connect.
 
 ### Consuming attributes injected by the SP
 
