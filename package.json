@@ -14,7 +14,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "markdownlint-cli": "^0.32.1",
     "pa11y-ci": "^4.0.1"
   },
   "packageManager": "yarn@4.13.0"
