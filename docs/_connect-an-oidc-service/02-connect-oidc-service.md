@@ -25,7 +25,7 @@ Once you have clicked on 'OpenID Connect' on the ['Connect a New Service'](https
 - Secret: Recommended for server-side applications that can securely store client secrets.
 - Secret and PKCE: Recommended for applications that can securely store secrets and require extra security.
 
-1. Organisation - Responsible for the operation of the service, must be an **AAF** subscriber.
+6. Organisation - Responsible for the operation of the service, must be an **AAF** subscriber.
 
 Note: In the development environment, make sure to use `http` for both the URL and Redirect URL.
 {: .callout-info }
