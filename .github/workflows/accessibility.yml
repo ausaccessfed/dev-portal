@@ -9,10 +9,10 @@ jobs:
 
     steps:
       - name: Checkout source.
-        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
 
       - name: Install jekyll site dependencies.
-        uses: ruby/setup-ruby@v1
+        uses: ruby/setup-ruby@4c56a21280b36d862b5fc31348f463d60bdc55d5 # v1.301.0
         with:
           ruby-version: .ruby-version
           bundler-cache: true
@@ -35,7 +35,7 @@ jobs:
 
       - name: Read pa11y_output file.
         id: pa11y_output
-        uses: juliangruber/read-file-action@v1
+        uses: juliangruber/read-file-action@271ff311a4947af354c6abcd696a306553b9ec18 # v1.1.8
         with:
           path: ./pa11y_output.txt
 
