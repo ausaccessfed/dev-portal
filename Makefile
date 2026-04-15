@@ -7,4 +7,4 @@ up:
 down:
 	docker-compose down
 lint:
-	markdownlint-cli2 --fix "docs/**/*.md"  "!docs/assets/**" "!docs/_sass/**"
+	markdownlint-cli2 --fix "docs/**/*.md"  "!docs/assets/**" "!docs/_sass/**" "!docs/vendor/**"

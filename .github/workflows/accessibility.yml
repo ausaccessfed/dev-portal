@@ -4,7 +4,7 @@ on: [push]
 
 jobs:
   build:
-    name: Building site and running pa11y-ci tests
+    name: Run
     runs-on: ubuntu-latest
     steps:
       - name: Checkout source.
@@ -36,6 +36,7 @@ jobs:
             docs/**/*.md
             !docs/assets/**
             !docs/_sass/**
+            !docs/vendor/**
 
       - name: Start up jekyll server.
         run: yarn start-detached
