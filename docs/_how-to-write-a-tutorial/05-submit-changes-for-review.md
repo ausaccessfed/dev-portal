@@ -7,7 +7,8 @@ last_updated: 21 March, 2025
 
 <br>
 
-### Opening a Pull Request (PR)
+## Opening a Pull Request (PR)
+
 - When you are happy with your tutorial content, commit your changes to your branch.
 - Push your commits to your remote branch `git push -u origin <your-branch-name>`.
 - Navigate to the [Dev Portal GitHub repository](https://github.com/ausaccessfed/dev-portal) where you will be prompted to create a pull request (PR).
@@ -16,7 +17,7 @@ last_updated: 21 March, 2025
 ![Create a PR](/assets/images/how-to-write-a-tutorial/create-a-pr.png)
 
 - Provide a clear description of your pull request. Make sure to:
-  - include the title of the tutorial and a reason for your suggested changes/additions. 
+  - include the title of the tutorial and a reason for your suggested changes/additions.
   - reference the issue number if your pull request is related to an existing issue.
   - test your tutorial content (including any links/images) to ensure it is accurate and easy to follow.
   - provide your email address so we can contact you if we need more information.

@@ -26,16 +26,16 @@ Choose which protocol your service will use to connect. Each protocol has its ow
   <div class="card-header text-black bg-primary">Rapid Connect</div>
   <div class="card-body">
     <ul class="list-group list-group-flush">
-      <li class="list-group-item"><i class="fa fa-check-circle" style="color:green"></i> Simple: Easy to test 
+      <li class="list-group-item"><i class="fa fa-check-circle" style="color:green"></i> Simple: Easy to test
 and deploy</li>
-      <li class="list-group-item"><i class="fa fa-check-circle" style="color:green"></i> Connect your service to our test 
+      <li class="list-group-item"><i class="fa fa-check-circle" style="color:green"></i> Connect your service to our test
           environment, straight away, for free. There's no need to wait for an approval process.</li>
-      <li class="list-group-item"><i class="fa fa-check-circle" style="color:green"></i> Deploy your 
+      <li class="list-group-item"><i class="fa fa-check-circle" style="color:green"></i> Deploy your
 services anywhere: connect on-premise services, or use cloud providers like AWS, Azure, Google, or Heroku.</li>
-      <li class="list-group-item"><i class="fa fa-check-circle" style="color:green"></i> Wide language 
+      <li class="list-group-item"><i class="fa fa-check-circle" style="color:green"></i> Wide language
 support: Rapid Connect integrates natively into commonly used development languages like Python, PHP, Java, and Ruby.
       </li>
-      <li class="list-group-item"><i class="fa fa-check-circle" style="color:green"></i> Low code: Set up 
+      <li class="list-group-item"><i class="fa fa-check-circle" style="color:green"></i> Low code: Set up
 authentication in as few as 20 lines of Ruby. Implementations in other languages are similarly slim.
       </li>
       <li class="list-group-item"><i class="fa fa-ban" style="color:red"></i> Narrow feature set
@@ -52,11 +52,11 @@ authentication in as few as 20 lines of Ruby. Implementations in other languages
     <div class="card-body">
       <ul class="list-group list-group-flush">
         <li class="list-group-item"><i class="fa fa-check-circle" style="color:green"></i> Feature rich</li>
-        <li class="list-group-item"><i class="fa fa-check-circle" style="color:green"></i> Many open-source 
+        <li class="list-group-item"><i class="fa fa-check-circle" style="color:green"></i> Many open-source
 libraries</li>
-        <li class="list-group-item"><i class="fa fa-check-circle" style="color:green"></i> Allows participation in 
+        <li class="list-group-item"><i class="fa fa-check-circle" style="color:green"></i> Allows participation in
 eduGAIN</li>
-        <li class="list-group-item"><i class="fa fa-check-circle" style="color:green"></i> Uses the SAML 
+        <li class="list-group-item"><i class="fa fa-check-circle" style="color:green"></i> Uses the SAML
 protocols which are implemented using <a href="https://www.shibboleth.net/">Shibboleth</a> or <a href="https://simplesamlphp.org/">SimpleSAMLphp</a> as open source options</li>
         <li class="list-group-item"><i class="fa fa-ban" style="color:red"></i> Complex</li>
       </ul>

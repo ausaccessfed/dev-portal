@@ -8,6 +8,7 @@ last_updated: 21 March, 2025
 This section which will show you how to request minor changes to the tutorial documentation.
 
 ## Raising an issue
+
 The easiest way to request a change is to raise an issue. To do this, you will require a [GitHub account](https://github.com) so that your suggestion can be tracked and prioritised.
 
 First, have a look through the [list of existing issues](https://github.com/ausaccessfed/dev-portal/issues) to see whether your issue hasn't already been reported.

@@ -5,13 +5,13 @@ duration: 1
 last_updated: 21 March, 2025
 ---
 
-Once the service has been enabled, it can be tested. 
+Once the service has been enabled, it can be tested.
 
 * To test the new service, click on the 'Test settings' in the OAuth 2 row.
 
 ![Test OAuth 2](/assets/images/set-up-moodle-via-aaf-authn/test-settings.png)
 
-Your new service should now be listed in the 'Plugins' section. 
+Your new service should now be listed in the 'Plugins' section.
 
 * Click the new service button to proceed.
 
@@ -30,5 +30,3 @@ If authentication is successful, you will be redirected to your Moodle home page
 When you next log on to Moodle, your new service will be available for use:
 
 ![New Login](/assets/images/set-up-moodle-via-aaf-authn/new-login.png)
-
-

@@ -140,7 +140,7 @@ Though `auEduPersonSharedToken` is a core attribute, it is not recommended for g
     </tr>
     <tr>
     <th scope="row">organizationName</th>
-      <td>The standard name of the top-level organization (institution) with which this person is associated. 
+      <td>The standard name of the top-level organization (institution) with which this person is associated.
 </td>
     </tr>
 <tr>
@@ -155,17 +155,17 @@ Though `auEduPersonSharedToken` is a core attribute, it is not recommended for g
 
 [^1] The value has the following qualities:
 
-  - unique
-  - opaque
-  - non-targeted
-  - persistent
-  - resolvable (only by an IdP that has supplied it)
-  - not re-assignable
-  - not mutable (refreshing the value is equivalent to creating a new identity)
-  - permitted to be displayed
-    - (Note: the value is somewhat display friendly, and may be appended to the displayName with a separating space, 
+- unique
+- opaque
+- non-targeted
+- persistent
+- resolvable (only by an IdP that has supplied it)
+- not re-assignable
+- not mutable (refreshing the value is equivalent to creating a new identity)
+- permitted to be displayed
+  - (Note: the value is somewhat display friendly, and may be appended to the displayName with a separating space,
       and used as a unique display name to be included in PKI Certificate DNs and as a resource ownership label, e.g. John Citizen ZsiAvfxa0BXULgcz7QXknbGtfxk)
-  - portable
+- portable
 
 <br>
 

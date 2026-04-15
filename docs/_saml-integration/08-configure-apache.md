@@ -25,19 +25,17 @@ Shibboleth.
 
 > Details on the configuration options for Apache are available here:
 >
->  - [https://httpd.apache.org/docs/2.4/](https://httpd.apache.org/docs/2.4/)
+> - [https://httpd.apache.org/docs/2.4/](https://httpd.apache.org/docs/2.4/)
 >
->  - [https://httpd.apache.org/docs/current/sections.html](https://httpd.apache.org/docs/current/sections.html)
+> - [https://httpd.apache.org/docs/current/sections.html](https://httpd.apache.org/docs/current/sections.html)
 >
->  - [https://wiki.shibboleth.net/confluence/display/SP3/Apache](https://wiki.shibboleth.net/confluence/display/SP3/Apache)
+> - [https://wiki.shibboleth.net/confluence/display/SP3/Apache](https://wiki.shibboleth.net/confluence/display/SP3/Apache)
 >
->  - [https://wiki.shibboleth.net/confluence/display/SP3/WebServers](https://wiki.shibboleth.net/confluence/display/SP3/WebServers)
+> - [https://wiki.shibboleth.net/confluence/display/SP3/WebServers](https://wiki.shibboleth.net/confluence/display/SP3/WebServers)
 >
->  - [https://wiki.shibboleth.net/confluence/display/SP3/Clustering](https://wiki.shibboleth.net/confluence/display/SP3/Clustering)
+> - [https://wiki.shibboleth.net/confluence/display/SP3/Clustering](https://wiki.shibboleth.net/confluence/display/SP3/Clustering)
 >
->  - [https://wiki.shibboleth.net/confluence/display/SP3/OneOrMany](https://wiki.shibboleth.net/confluence/display/SP3/OneOrMany)
-
-
+> - [https://wiki.shibboleth.net/confluence/display/SP3/OneOrMany](https://wiki.shibboleth.net/confluence/display/SP3/OneOrMany)
 > Details on the configuration options for IIS are available here:
 >
 > - [https://wiki.shibboleth.net/confluence/display/SP3/IIS](https://wiki.shibboleth.net/confluence/display/SP3/IIS)

@@ -9,7 +9,6 @@ AAF's implementation of OpenID Connect allows service administrators to configur
 
 ## Getting started
 
-
 Find the **entityID** of the IdP that you wish to directly login through. This can be done by looking through the AAF metadata or your own registrations.
 
 <a href="https://md.test.aaf.edu.au/" class="btn btn-primary mb-3">AAF Test Metadata</a>

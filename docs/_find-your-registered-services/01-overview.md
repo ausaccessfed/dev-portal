@@ -7,11 +7,11 @@ last_updated: 21 March, 2025
 
 Once you have connected your service, log in to Federation Manager (FM) to confirm that your service has been registered.
 
-### What you'll learn
+## What you'll learn
 
 - How to confirm if your service has been registered in FM
 
-### What you'll need
+## What you'll need
 
 - Completion of the steps for connecting your service:
   - [Connect an OIDC Service](/connect-an-oidc-service/01-overview)

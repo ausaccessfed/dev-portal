@@ -12,10 +12,10 @@ The AAF login credentials are generally the same as what you use for an associat
 You can check the list of subscribers from the [AAF website](https://aaf.edu.au/subscribers/) to see whether your organisation is AAF enabled.
 If your organisation is not AAF enabled, please visit [AAF Support](https://support.aaf.edu.au/support/solutions/articles/19000036105-how-to-join-the-australian-access-federation) for information on how to join or [contact us](mailto:support@aaf.edu.au), and we'll set you up.
 
-# What you'll learn
+## What you'll learn
 
 - How to authenticate to Federation Manager (Test)
 
-# What you'll need
+## What you'll need
 
 - AAF login credentials

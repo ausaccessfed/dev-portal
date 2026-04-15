@@ -24,7 +24,8 @@ Click on the "Get started" button for "Request Tutorial".
 To contribute to the content or create a new tutorial, we recommend that you set up a local development environment, so you can visualise and fine tune your work before you submit it for review.
 <br>
 
-### Checking out the code
+## Checking out the code
+
 The source code for the site is hosted in the [AAF dev-portal repository](https://github.com/ausaccessfed/dev-portal).
 
 To get started with this GitHub repository, go to your terminal or command prompt and run the following command to clone the repository:

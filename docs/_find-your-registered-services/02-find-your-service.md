@@ -24,6 +24,3 @@ last_updated: 21 March, 2025
 - Look for services with an active status to confirm that your service has been registered.
 
 ![Services Page](/assets/images/find-your-registered-services/services-page.png)
-
-
-
