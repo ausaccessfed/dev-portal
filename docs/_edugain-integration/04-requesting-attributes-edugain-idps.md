@@ -13,7 +13,7 @@ Once approved, these attributes are converted into technical attribute requireme
 
 This process of using Federation Manager will continue for services that are part of eduGAIN. As a Service Provider you will use Federation Manager to assert the attributes your service requires.
 
-The Research and Scholarly categories will form a fundamental attribute set which guarantees a higher success rate when requesting attributes from the R&S attribute bundle. 
+The Research and Scholarly categories will form a fundamental attribute set which guarantees a higher success rate when requesting attributes from the R&S attribute bundle.
 <br>
 
 The R&S attribute bundle consists (abstractly) of the following **required** data elements:
@@ -25,7 +25,6 @@ The R&S attribute bundle consists (abstractly) of the following **required** dat
 </ul>
 <br>
 and one **optional** element:
-
 
 1. affiliation
 
@@ -41,5 +40,3 @@ and where **person name** is defined to be either (or both) of the following:
 - givenName + sn
 
 **Email address** is defined to be the mail attribute, and **Affiliation** is defined to be the eduPersonScopedAffiliation attribute. All attributes in the R&S attribute bundle are also part of the AAF Core attribute set.
-
-

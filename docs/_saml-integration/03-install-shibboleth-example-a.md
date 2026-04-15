@@ -7,17 +7,16 @@ last_updated: 21 March, 2025
 
 <br>
 
-### A Simple PHP Server installed on Linux
+## A Simple PHP Server installed on Linux
 
 The following is a sequence of steps to protect a service (in this instance, a simple PHP script) by deploying a **Shibboleth SP** with Apache running on Linux.
 {: .callout-info}
 
 For supported Linux distributions, the **Shibboleth Consortium** provides a web service which generates the appropriate package management configuration file. [Read about this service](https://shibboleth.net/downloads/service-provider/RPMS/).
 
-
 Copy the configuration into a file in the repository directory, on CentOS/RedHat for example, the file can be labelled `/etc/yum.repos.d/shibboleth.repo`
 
-### 1. Install Shibboleth
+## 1. Install Shibboleth
 
 Install **Shibboleth**, Apache and the SSL libraries for the architecture of the OS: x86_64 or i386, to ensure the installation of the appropriate versions of mod_shib.so and other pluggable modules. This demonstration will use Shibboleth SP 3.1.x, Apache 2.4 and the current SSL libraries, and PHP to demonstrate the protection of a simple application and passing user attributes to the application.
 

@@ -6,7 +6,7 @@ last_updated: 21 March, 2025
 ---
 <br>
 
-#### Follow the steps below to request attributes from Federation Manager:
+## Follow the steps below to request attributes from Federation Manager
 
 1. Login to <a href="https://manager.aaf.edu.au/welcome">Federation Manager</a> as the Administrator of the Service (contact <a href="mailto:support@aaf.edu.au">AAF Support</a> if you need to assign an administrator to your service).
 
@@ -16,7 +16,7 @@ last_updated: 21 March, 2025
 
     ![My services](/assets/images/edugain-integration/FM-dashboard-services.png)
 
-4. Select "SAML" as the protocol from the dropdown list on the right-hand side of the dashboard. Then select your 
+4. Select "SAML" as the protocol from the dropdown list on the right-hand side of the dashboard. Then select your
 service from the “Services” list.
 
     ![SAML Protocol](/assets/images/edugain-integration/saml-protocol.png)

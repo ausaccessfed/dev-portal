@@ -13,7 +13,6 @@ The OpenID Connect protocol, in abstract, follows the following steps.
 - The RP can send a request with the Access Token to the UserInfo Endpoint.
 - The UserInfo Endpoint returns Claims about the End-User.
 
-
 ![OIDC Flow](/assets/images/openid-connect-integration/oidc-flow.png)
 
 **Figure 1.** OpenID Connect Protocol

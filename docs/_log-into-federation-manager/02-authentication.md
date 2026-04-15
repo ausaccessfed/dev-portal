@@ -15,7 +15,6 @@ You will be taken to the Federation Manager Welcome page.
 
 ![Log into FM](/assets/images/log-into-federation-manager/FM-login.png)
 
-
 You will be prompted to select your Organisation as shown below.
 
 - Then click 'Continue to your organisation'.

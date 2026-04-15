@@ -10,7 +10,7 @@ Await review by the AAF Support team. After approval, test your service and go-l
 
 <br>
 
-### After Joining
+## After Joining
 
 After successfully joining eduGAIN, advertise the service to a wider audience, potential avenues include:
 

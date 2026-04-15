@@ -12,4 +12,3 @@ To enable the new service, click on the 'Site Administration' page, and navigate
 On the 'Manage authentication' page, scroll down to 'OAuth 2' and click on the eye icon to enable it.
 
 ![OAuth 2 Enabled](/assets/images/set-up-moodle-via-aaf-authn/enabled-oauth2.png)
-

@@ -13,7 +13,7 @@ Before gaining access to the Verification result, the Client uses the Authorizat
 
 The parameters passed to this endpoint must be passed using a POST request with an application/x-www-form-urlencoded body. This HTTP request is authenticated(6) using HTTP basic authentication in the manner described by the OAuth 2.0 specification, with the client ID as username and client secret as password.
 
-```
+```text
 POST /oauth/token
 Host: example.edu
 Authorization: Basic
@@ -32,7 +32,8 @@ The request fields must be populated as follows:
 | **code**  | The authorization code returned in the Verification response. |
 
 The response will be in JSON format, for example:
-```
+
+```json
 {
 "access_token": "2YotnFZFEjr1zCsicMWpAA",
 "token_type": "bearer",
@@ -46,7 +47,6 @@ The response fields shall be populated as follows:
 | **token_type** | The fixed string “bearer”, which describes how the access token can be used.  |
 | **expires_in** | The number of seconds after which the access token will expire.  |
 
-
 ## Retrieving the Verification result
 
 As indicated by the token_type value, the access token retrieved above is used as a “bearer” token(7) as described by the OAuth 2.0 specification. To access the Verification result, the Client makes a request to the protected resource endpoint:
@@ -55,7 +55,7 @@ As indicated by the token_type value, the access token retrieved above is used a
 
 The HTTP request is authenticated using this bearer token, for example:
 
-```
+```text
 GET /verify/verificationinfo
 Host: example.edu
 Authorization: Bearer 2YotnFZFEjr1zCsicMWpAA 

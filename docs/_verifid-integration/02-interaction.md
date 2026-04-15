@@ -19,7 +19,7 @@ A Client identifies a need to verify the User’s Affiliation values
 
 1. VerifID issues a Verification response and a redirect back to the User's browser as specified in the [Section 6](/verifid-integration/06-verification-request-and-response) of this tutorial
 
-1. The Verification response is redirected through by User's browser to the Client. 
+1. The Verification response is redirected through by User's browser to the Client.
 
 1. On receiving the Verfication Response, the Client makes an authenticated request to retrieve an access token which is used to retrieve the Verification result
 

@@ -9,7 +9,7 @@ Specific claims within the ID token can be utilised to make authorisation decisi
 
 Below is an example of a decoded JWS for the user "John Doe" sent by Rapid Connect.
 
-```
+```json
 {
   "iat": 1516239022,
   "nbf": 1516239022,
@@ -81,4 +81,3 @@ Attributes that can be utilised for authorisation are contained within the claim
 
 The claim `organizationname` should not be used for authorisation decisions.
 {: .callout-info}
-

@@ -118,7 +118,7 @@ This will take you to the AAF Discovery Service (note that the name and descript
 
 ![Log in to organisation](/assets/images/connect-with-keycloak/keycloak-login-to-organisation.png)
 
-Your attributes will be displayed, and you will be asked to confirm that you wish to share these with the service you are logging into. 
+Your attributes will be displayed, and you will be asked to confirm that you wish to share these with the service you are logging into.
 
 * Click one of the options and then click 'Approve'.
 
