@@ -63,7 +63,7 @@ To determine the version you are currently running:
 
 SimpleSAML_Configuration-class:
 
-```php
+```
 require_once('.../lib/_autoload.php');
 
 $cfg = SimpleSAML_Configuration::loadFromArray(array());

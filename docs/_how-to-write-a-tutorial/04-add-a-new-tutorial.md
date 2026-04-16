@@ -9,7 +9,7 @@ last_updated: 17 October, 2025
 
 On the command line, the following rake task will set up the initial tutorial structure for you:
 
-```bash
+```
 bundle exec rake tutorial "Title of your tutorial"
 ```
 
@@ -26,7 +26,7 @@ bundle exec rake tutorial "Title of your tutorial"
 - You may want to include a "Next Steps" page at the end of your tutorial, which will be named `06-next-steps.md`. This page will guide the user on what to do next after completing your tutorial.
 - Each page needs to have the following front matter:
 
-    ```markdown
+    ```
     ---
     title: <page title>
     order: <number 1 to n for each page>
@@ -48,7 +48,7 @@ bundle exec rake tutorial "Title of your tutorial"
 - You will need to edit the metadata for your new tutorial in this file.
 - Add the following details to the new entry as shown below:
 
-    ```yaml
+    ```
       your-tutorial-id:
         output: true # do not change
         permalink: /:collection/:name # do not change

@@ -33,7 +33,7 @@ The request fields must be populated as follows:
 
 The response will be in JSON format, for example:
 
-```json
+```
 {
 "access_token": "2YotnFZFEjr1zCsicMWpAA",
 "token_type": "bearer",
