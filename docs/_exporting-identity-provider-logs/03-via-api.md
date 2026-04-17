@@ -8,7 +8,7 @@ last_updated: 15 April, 2026
 If you have not done so already, please [Setup to use the API](/log-into-federation-manager/04-using-the-api) to get started.
 {: .callout-info }
 
-- use the identity providers api endpoint to find the ID of the identity provider you would like to get the logs of <https://manager.test.aaf.edu.au/identity_providers>.
+- Use the Identity Provider API endpoint to retrieve the ID of the Identity Provider you want to export logs for <https://manager.test.aaf.edu.au/identity_providers>.
 
 - Once you have the id of the identity provider you would like the logs of provide it to the logs endpoint <https://manager.test.aaf.edu.au/identity_providers/{ID}/logs>.
 
