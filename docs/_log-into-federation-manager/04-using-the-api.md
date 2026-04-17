@@ -2,7 +2,7 @@
 title: Using API
 order: 4
 duration: 1
-last_updated: April 15, 2026
+last_updated: 15 April, 2026
 ---
 
 - At the moment the API is feature gated, if you would like access please email <mailto:support@aaf.edu.au>
