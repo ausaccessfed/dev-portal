@@ -5,7 +5,7 @@ duration: 1
 last_updated: 15 April, 2026
 ---
 
-- At the moment the API is feature gated, if you would like access please email <mailto:support@aaf.edu.au>
+- At the moment the API is not generally available, if you would like access please email <mailto:support@aaf.edu.au>
 
 - Once you have access, log into the Federation Manager Dashboard, click on 'Api Access' in the user menu.
 
