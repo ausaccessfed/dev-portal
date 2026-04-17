@@ -5,7 +5,7 @@ duration: 1
 last_updated: 15 April, 2026
 ---
 
-- At the moment the API is feature gated, if you would like access please email <mailto:support@aaf.edu.au>
+- At the moment the API is not generally available, if you would like access please email <mailto:support@aaf.edu.au>
 
 - Once you have access, log into the Federation Manager Dashboard, click on 'Api Access' in the user menu.
 
@@ -40,4 +40,4 @@ curl -X GET "https://manager.test.aaf.edu.au/identity_providers" \
  -H 'x-api-version: 1' 
 ```
 
-- Test it is all working by requesting identity Providers and verify you can see the identity providers you can see in the dashboard.
+- Verify the curl response lists the same identity providers that you can see in the dashboard.
