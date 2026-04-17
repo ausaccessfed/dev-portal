@@ -40,4 +40,4 @@ curl -X GET "https://manager.test.aaf.edu.au/identity_providers" \
  -H 'x-api-version: 1' 
 ```
 
-- Test it is all working by requesting identity Providers and verify you can see the identity providers you can see in the dashboard.
+- Verify the curl response lists the same identity providers that you can see in the dashboard.
