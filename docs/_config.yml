@@ -446,7 +446,7 @@ collections:
     title: Exporting Identity Provider Logs
     summary: A tutorial for ways to export identity provider logs
     category: Identity Management Solutions
-    level: Intermediate
+    level: Advanced
     tags:
       - tutorial
     difficulty: 6
