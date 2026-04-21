@@ -20,7 +20,7 @@ last_updated: 21 March, 2025
   - include the title of the tutorial and a reason for your suggested changes/additions.
   - reference the issue number if your pull request is related to an existing issue.
   - test your tutorial content (including any links/images) to ensure it is accurate and easy to follow.
-  - provide your email address so we can contact you if we need more information.
+  - be ready to respond to follow-up questions in the pull request if more information is needed.
 - Click "Create pull request".
 
 ![Open a PR](/assets/images/how-to-write-a-tutorial/open-pr.png)
