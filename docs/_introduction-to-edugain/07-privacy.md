@@ -7,7 +7,7 @@ last_updated: 21 March, 2025
 
 The AAF recommends reviewing relevant legislation before connecting to eduGAIN.
 
-### Australian Privacy Principles (APPs)
+## Australian Privacy Principles (APPs)
 
 The Privacy Act 1988 includes 13 Australian Privacy Principles (APPs) defined at:
 <a href="https://www.oaic.gov.au/privacy-law/privacy-act/australian-privacy-principles"> www.oaic.gov.au/privacy-law/privacy-act/australian-privacy-principles </a>
@@ -29,7 +29,8 @@ Key privacy principles subscribers should consider:
 
 AAF Subscribers should review their obligations as they prepare to connect to eduGAIN. AAF Subscribers should consider other privacy principles that may apply to them.
 
-### State and Territory Privacy Legislation
+## State and Territory Privacy Legislation
+
 Identity Providers and Service Providers may be subject to other state-based requirements.
 The AAF recommends reviewing relevant legislation for applicability before connecting to eduGAIN.
 

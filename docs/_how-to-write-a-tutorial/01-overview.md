@@ -11,7 +11,7 @@ To suggest updates to the documentation (minor/major changes or new tutorials), 
 
 Prior to opening a PR, you will need to set up a local development environment.
 
-### What you'll learn
+## What you'll learn
 
 - How to request minor changes to the tutorial documentation
 - How to contribute new tutorial content:
@@ -20,7 +20,7 @@ Prior to opening a PR, you will need to set up a local development environment.
   - Tips for writing and formatting your tutorial content
   - Submit your content to the AAF for review
 
-### What you'll need
+## What you'll need
 
 - Knowledge of Git concepts
 - A GitHub account

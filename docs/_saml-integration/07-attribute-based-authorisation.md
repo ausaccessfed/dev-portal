@@ -5,7 +5,7 @@ duration: 1
 last_updated: 21 March, 2025
 ---
 
-Released attributes can be utilised to make authorisation decisions within an application. 
+Released attributes can be utilised to make authorisation decisions within an application.
 
 Below are the core attributes that can be released by the AAF Identity Provider (IdP) to a Service Provider (SP) using SAML:
 

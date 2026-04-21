@@ -9,7 +9,7 @@ If you'd like to commit substantial changes or even whole **new tutorials**, you
 
 ## Raise an issue
 
-The easiest way to help improve the dev-portal tutorials is by raising an issue in our repository at https://github.com/ausaccessfed/dev-portal/issues.
+The easiest way to help improve the dev-portal tutorials is by raising an issue in our repository at <https://github.com/ausaccessfed/dev-portal/issues>.
 
 If you find an issue that needs to be resolved, please have a look through the [list of existing issues](https://github.com/ausaccessfed/dev-portal/issues) to see whether your issue hasn't already been reported.
 If it has, or a closely related issue exists, please add your comments to the existing issue.
@@ -18,7 +18,6 @@ If your issue isn't already listed, then create a New Issue.
 Provide details of your suggestion and include the tutorial name and page to which your suggestion applies.
 One of our technical team will review your suggestion and resolve it if they can.
 They may follow up with you in GitHub if they need some more clarification.
-
 
 ## Making substantial changes and adding new tutorials
 
@@ -33,7 +32,7 @@ You'll need a basic understanding of `git` to do this. Please refer to the `READ
 - Push your commits to your remote branch `git push -u origin <your-branch-name>`.
 - Navigate to the [Dev Portal GitHub repository](https://github.com/ausaccessfed/dev-portal) where you will be prompted to create a pull request (PR).
 
-### Adding a new tutorial
+## Adding a new tutorial
 
 A rake task will set up a skeleton tutorial for you, by typing:
 
@@ -82,11 +81,11 @@ last_updated: <do not change this value, it will be automatically generated>
 
 You will need to restart the preview process for Jekyll to render your new tutorial, but once it's done, it will be available from the `docs` folder of the site.
 
-### Markdown style guide principles
+## Markdown style guide principles
 
 On the tutorial site, there are a few styling basics to be aware of in Markdown/Liquid.
 
-**Numbering lists**
+### Numbering lists
 
 To enter a numbered list for a series of steps, use 1. (number one) for each of your numbered steps, and markdown will convert these into the number order:
 
@@ -95,8 +94,7 @@ To enter a numbered list for a series of steps, use 1. (number one) for each of 
 1.
 1.
 
-
-**Highlighting important information**
+### Highlighting important information
 
 Important information can be highlighted for users through the use of callouts. There are different types of callouts available producing slightly different formatting (e.g. colours, etc.), depending on the type of message you want to highlight.
 
@@ -116,11 +114,11 @@ Important information can be highlighted for users through the use of callouts. 
 
 <br>
 
-**Preventing broken home page links**
+### Preventing broken home page links
 
 When adding any links for the tutorial site, which contain tutorials.aaf.edu.au, use  {{ site.baseurl }} in its place instead.
 
-For example https://tutorials.aaf.edu.au/openid-connect-series/02-tutorials will be:
+For example <https://tutorials.aaf.edu.au/openid-connect-series/02-tutorials> will be:
 
 {{ site.baseurl }}/openid-connect-series/02-tutorials
 

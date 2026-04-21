@@ -1,18 +1,24 @@
-name: pa11y tests
+name: Build, Lint and Tests
 
-on: [push]
+on:
+  push:
 
 jobs:
   build:
-    name: Building site and running pa11y-ci tests
+    name: Run
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout source.
-        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+
+      - run: corepack enable
+      - uses: actions/setup-node@53b83947a5a98c8d113130e565377fae1a50d02f # v6.3.0
+        with:
+          node-version-file: .nvmrc
+          cache: yarn
 
       - name: Install jekyll site dependencies.
-        uses: ruby/setup-ruby@v1
+        uses: ruby/setup-ruby@4c56a21280b36d862b5fc31348f463d60bdc55d5 # v1.301.0
         with:
           ruby-version: .ruby-version
           bundler-cache: true
@@ -21,8 +27,14 @@ jobs:
       - name: Install pa11y-ci dependencies.
         run: yarn install
 
-      - name: Install Ruby gems.
-        run: cd docs && bundle install
+      - name: markdown lint
+        uses: DavidAnson/markdownlint-cli2-action@ce4853d43830c74c1753b39f3cf40f71c2031eb9 # v23.0.0
+        with:
+          globs: |
+            docs/**/*.md
+            !docs/assets/**
+            !docs/_sass/**
+            !docs/vendor/**
 
       - name: Start up jekyll server.
         run: yarn start-detached
@@ -32,7 +44,7 @@ jobs:
 
       - name: Read pa11y_output file.
         id: pa11y_output
-        uses: juliangruber/read-file-action@v1
+        uses: juliangruber/read-file-action@271ff311a4947af354c6abcd696a306553b9ec18 # v1.1.8
         with:
           path: ./pa11y_output.txt
 
@@ -40,15 +52,6 @@ jobs:
         id: finder
         with:
           state: all
-
-      - name: Summarise and post PR comment
-        uses: ausaccessfed/workflows/.github/actions/summarise@main
-        with:
-          OUTPUT_FILES: pa11y_output.txt
-          ENABLE_PR: 'true'
-          PR_NUMBER: ${{ steps.finder.outputs.pr }}
-          TITLE: 'Accessibility Report'
-          SUCCESS: ${{ !contains(steps.pa11y_output.outputs.content, 'errno 2') }}
 
       - name: Check for pa11y failures.
         if: contains(steps.pa11y_output.outputs.content, 'errno 2')

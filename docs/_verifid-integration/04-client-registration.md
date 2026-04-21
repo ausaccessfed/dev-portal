@@ -25,12 +25,11 @@ When a Client registers with VerifID, the Client shall be registered with the fo
     </tr>
     <tr>
       <td><code>redirect_uris</code></td>
-      <td>A list of all values permitted for the redirect_uri parameter in the Verification request. Each value must 
-not be longer than 255 characters. Each <code>redirect_uri</code> value must be a <code>https://</code> endpoint, 
+      <td>A list of all values permitted for the redirect_uri parameter in the Verification request. Each value must
+not be longer than 255 characters. Each <code>redirect_uri</code> value must be a <code>https://</code> endpoint,
 with plaintext <code>http://</code> endpoints explicitly disallowed in all environments.</td>
     </tr>
   </tbody>
 </table>
 
 Please refer to [Connecting with VerifID](/connect-with-verifid/02-connect-verifid-service) for details on how to securely undertake Client registration.
-

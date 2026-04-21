@@ -9,7 +9,7 @@ last_updated: 11 April, 2025
 
 ![Administer Tab](/assets/images/register-an-xnat-oidc-service/administer-tab.png)
 
-Once on the **Security** page, scroll down to the **User Authentication Settings** section and add `aaf` to the 
+Once on the **Security** page, scroll down to the **User Authentication Settings** section and add `aaf` to the
 **Enabled Authentication Providers** list. This will enable the AAF authentication provider.
 
 Note: the authentication providers need to be separated by commas if there are more than one.

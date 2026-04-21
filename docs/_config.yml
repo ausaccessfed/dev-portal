@@ -104,7 +104,7 @@ collections:
     duration: 15
     published: 2024-02-06
     author: Kelley Foster
-  
+
   rapid-connect-integration:
     output: true
     permalink: /:collection/:name
@@ -440,3 +440,16 @@ collections:
     published: 2025-06-17
     author: Kelley Foster
 
+  exporting-identity-provider-logs:
+    output: true
+    permalink: /:collection/:name
+    title: Exporting Identity Provider Logs
+    summary: A tutorial for ways to export identity provider logs
+    category: Identity Management Solutions
+    level: Advanced
+    tags:
+      - tutorial
+    difficulty: 6
+    duration: 20
+    published: 2026-04-17
+    author: Jack Carpenter

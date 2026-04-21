@@ -17,5 +17,4 @@ The metadata at this URL shall contain the following:
 
 Other values shall be provided within this metadata as needed, and their meaning shall be as defined in the draft standard.
 
-**Reminder:** All URLs described in this document are examples, and the information in the authorization server metadata must be considered authoritative for which URLs should be used. 
-
+**Reminder:** All URLs described in this document are examples, and the information in the authorization server metadata must be considered authoritative for which URLs should be used.

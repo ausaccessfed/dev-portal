@@ -13,7 +13,7 @@ In the past, the only way to authenticate these applications was to use the impl
 
 Due to this lack of security, the AAF has made the decision **not to** support the implicit flow for SPAs.
 
-![Implicit flow](/assets/images/connect-a-single-page-oidc-service/implicit-flow.png)   
+![Implicit flow](/assets/images/connect-a-single-page-oidc-service/implicit-flow.png)
 
 ## Authorization Code flow with PKCE
 

@@ -7,7 +7,7 @@ last_updated: 21 March, 2025
 
 This payload describes the result of Verification, and takes the following format:
 
-```
+```json
 {
   "user": {
     "identifier": "1CeCQp231k7...", 
@@ -39,9 +39,9 @@ The fields in the Verification result shall be populated as follows:
         </tr>
         <tr>
             <td><code>user.&lt;affiliation&gt;</code></td>
-            <td>A boolean value indicating whether the User has the given Affiliation. Only present if the 
-<code>verify:&lt;affiliation&gt;</code> scope was granted. 
-            <br> The Affiliation value is substituted for “<code>&lt;affiliation&gt;</code>”, from the following list 
+            <td>A boolean value indicating whether the User has the given Affiliation. Only present if the
+<code>verify:&lt;affiliation&gt;</code> scope was granted.
+            <br> The Affiliation value is substituted for “<code>&lt;affiliation&gt;</code>”, from the following list
     defined by the eduPerson schema(8):
             <ul>
                 <li><code>faculty</code></li>
@@ -53,7 +53,7 @@ The fields in the Verification result shall be populated as follows:
                 <li><code>alum</code></li>
                 <li><code>library-walk-in</code></li>
             </ul>
-            e.g. When the <code>verify:staff</code> and <code>verify:student</code> scopes are granted, the 
+            e.g. When the <code>verify:staff</code> and <code>verify:student</code> scopes are granted, the
 Verification result will contain “<code>user.staff</code>” and “<code>user.student</code>” fields.
             </td>
         </tr>
@@ -63,14 +63,14 @@ Verification result will contain “<code>user.staff</code>” and “<code>user
         </tr>
         <tr>
             <td><code>verification_id</code></td>
-            <td>A unique identifier for this verification. It is recommended that the Client store this for auditing 
-        purposes, alongside the original “<code>state</code>” provided in the Verification request. This value shall not be 
+            <td>A unique identifier for this verification. It is recommended that the Client store this for auditing
+        purposes, alongside the original “<code>state</code>” provided in the Verification request. This value shall not be
         longer than 128 characters.
             </td>
         </tr>
         <tr>
             <td><code>verification_timestamp</code></td>
-            <td>A timestamp at which this verification was undertaken. This shall be formatted according to the W3 
+            <td>A timestamp at which this verification was undertaken. This shall be formatted according to the W3
             Consortium profile of ISO 8601, in the <code>YYYY-MM-DDThh:mm:ssTZD</code> format(9).
             </td>
         </tr>

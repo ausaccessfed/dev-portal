@@ -10,9 +10,10 @@ last_updated: 20 October, 2025
 
 To initiate Verification, the Client shall issue a request which is an Authorization Request(3) per the OAuth 2.0 specification. This request takes the form of redirecting the User’s browser to VerifID’s “authorization_endpoint” with a query string of the following format:
 
-```
+```text
 https://example.edu/oauth/authorize?response_type=code&client_id=CLIENT_ID&redirect_uri=REDIRECT_URL&scope=verify:student&state=STATE
 ```
+
 <br>
 
 **Required parameters:**
@@ -35,16 +36,16 @@ https://example.edu/oauth/authorize?response_type=code&client_id=CLIENT_ID&redir
     </tr>
     <tr>
       <td><code>redirect_uri</code></td>
-      <td>A callback URL for the Verification response to be delivered. This must be one of the URLs stored with the 
+      <td>A callback URL for the Verification response to be delivered. This must be one of the URLs stored with the
 Client registration. We require <code>redirect_uri</code> values to be encoded according to <a href="https://datatracker.ietf.org/doc/html/rfc3986#section-2.1">RFC 3986, Section 2.1</a>. This is commonly known as percent or URL encoding. Not using this encoding method may result in HTTP 403, resource forbidden, errors.</td>
     </tr>
     <tr>
       <td><code>scope</code></td>
-      <td>A space-separated list of scopes requested for Verification. The supported values for VerifID 
+      <td>A space-separated list of scopes requested for Verification. The supported values for VerifID
         are:<ul><li><code>verify:faculty<li>verify:student</li><li>verify:staff</li><li>verify:employee</li><li>verify:member
         </li><li>verify:affiliate</li><li>verify:alum</li><li>verify:library-walk-in</li><li>verify:*</li></code></li></ul>
-        <br>The scope <code>verify:*</code> is interpreted specially by VerifID, and is expanded to all verification types 
-        granted to the client. When requesting this scope, the verification response will indicate the true set of scopes 
+        <br>The scope <code>verify:*</code> is interpreted specially by VerifID, and is expanded to all verification types
+        granted to the client. When requesting this scope, the verification response will indicate the true set of scopes
         that are granted.
         <br><br>Other scopes may be listed among the supported scopes in the authorization server metadata. These are not described in this document and not required for VerifID integration.
       </td>
@@ -86,7 +87,7 @@ A suggested method of generating a suitable <code>state</code> value is: Generat
 
 After authenticating to their Organisation via the VerifID Service Operator federation, the result of Verification will be a “protected resource”(4) as described in the OAuth 2.0 specification. An authorization response shall be returned by redirecting the User’s browser to the Client’s redirect_uri, with query parameters:
 
-```
+```text
 [redirect_uri]?code=AUTHORIZATION_CODE&
 scope=verify:student&state=STATE
 ```
@@ -107,9 +108,9 @@ The parameters shall be completed as follows:
     </tr>
     <tr>
       <td><code>scope</code></td>
-      <td>The list of scopes which have been granted for Verification. Clients must allow for a space-separated list 
+      <td>The list of scopes which have been granted for Verification. Clients must allow for a space-separated list
 of values to be returned here per the OAuth 2.0 specification, even if they only anticipate receiving a single scope.
-<br><br> The <code>verify:*</code> scope will not appear in this list. If it was requested, it will instead be 
+<br><br> The <code>verify:*</code> scope will not appear in this list. If it was requested, it will instead be
 expanded to the true set of scopes that are granted.</td>
     </tr>
     <tr>

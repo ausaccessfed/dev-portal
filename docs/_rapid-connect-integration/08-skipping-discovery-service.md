@@ -9,13 +9,11 @@ AAF's implementation of Rapid Connect allows service administrators to configure
 
 ## Getting started
 
-
 Find the **entityID** of the IdP that you wish to directly login through. This can be done by looking through the AAF metadata or your own registrations.
 
 <a href="https://md.test.aaf.edu.au/" class="btn btn-primary mb-3">AAF Test Metadata</a>
 <br>
 For Example, the entityID for AAF Virtual Home is: `https://vho.aaf.edu.au/idp/shibboleth`
-
 
 ## Sending the request
 

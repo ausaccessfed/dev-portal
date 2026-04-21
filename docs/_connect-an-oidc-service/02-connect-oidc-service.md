@@ -21,8 +21,8 @@ Once you have clicked on 'OpenID Connect' on the ['Connect a New Service'](https
 3. URL - The primary URL of your application where users will initiate the authentication.
 4. Redirect URL - The endpoint which will receive the OIDC responses from AAF. Additional redirect URIs can be added after registration via the client details page.
 5. Authentication Methods - Select the authentication method that your service will support:
- - Secret: Recommended for server-side applications that can securely store client secrets.
- - Secret and PKCE: Recommended for applications that can securely store secrets and require extra security.
+   - Secret: Recommended for server-side applications that can securely store client secrets.
+   - Secret and PKCE: Recommended for applications that can securely store secrets and require extra security.
 6. Organisation - Responsible for the operation of the service, must be an **AAF** subscriber.
 
 Note: In the development environment, make sure to use `http` for both the URL and Redirect URL.
@@ -37,10 +37,11 @@ You only have one opportunity to copy the Secret, it cannot be recovered later. 
 
 ![Service details](/assets/images/connect-an-oidc-service/service-details.png)
 
-Your service will be automatically registered in the Test Federation and you will receive an email confirming this. However, there will be a two-hour delay before you can use the service. 
+Your service will be automatically registered in the Test Federation and you will receive an email confirming this. However, there will be a two-hour delay before you can use the service.
 {: .callout-info }
 
 This delay includes:
+
 - Generating and publishing new SAML metadata for your service
 - Background jobs setting up the required configuration changes for your new service
 

@@ -23,11 +23,11 @@ To participate in eduGAIN, AAF Service Providers and Identity Providers must:
 
 <h3>Production Federation</h3>
 
-Service Providers in the Production federation will use the <a href="https://md.aaf.edu.au">AAF eduGAIN MDQ endpoint</a>. 
+Service Providers in the Production federation will use the <a href="https://md.aaf.edu.au">AAF eduGAIN MDQ endpoint</a>.
 
 The AAF digitally signs the eduGAIN metadata. A service MUST use the <a href="https://md.aaf.edu.au/aaf-metadata-certificate.pem">public key</a> to verify metadata documents whenever they are retrieved. To confirm that you have obtained the correct key, ensure the PEM file you have downloaded conforms to the following:
 
-```
+```bash
 $> openssl x509 -subject -dates -fingerprint -in aaf-metadata-certificate.pem
          subject= /O=Australian Access Federation/CN=AAF Metadata
          notBefore=Nov 24 04:27:20 2015 GMT
@@ -43,7 +43,7 @@ For a service provider using the Shibboleth SP software, the following changes t
 
 Add the following configuration element as a child element of the element:
 
-```
+```xml
 <MetadataProvider
 type="MDQ" id="mdq" ignoreTransport="true" cacheDirectory="metadata" baseUrl="https://md.test.aaf.edu.au/mdq/aaf_and_edugain/"
 reloadInterval="1800">
@@ -65,7 +65,7 @@ The Shibboleth log files should indicate any issues if the software does not loa
 
 If the SP does not successfully load the metadata and the logs fail to highlight the cause of the failure, contact <a href="mailto:support@aaf.edu.au">AAF Support</a> for assistance.
 
-#### Non-Shibboleth Service Providers
+## Non-Shibboleth Service Providers
 
 For non-shibboleth SAML service providers, consult the relevant documentation for the software on how to consume federation metadata. AAF Support can provide some support for non-shibboleth software at this time.
 

@@ -6,13 +6,15 @@ last_updated: 22 October, 2025
 ---
 <br>
 
-### What is R&S?
+## What is R&S?
+
 The Research and Scholarship (R&S) Entity Category establishes a baseline attribute set that all research-related IdPs and SPs agree to exchange. The R&S Entity Category is an initiative of the international Research and Education Federations (REFEDS) community.
 
-### Why does my service need to assert R&S?
+## Why does my service need to assert R&S?
+
 If your service qualifies for [R&S](https://refeds.org/category/research-and-scholarship), we recommend that SPs request the AAF to assert R&S on the SP’s behalf. Service Providers asserting R&S can trust they will receive the attributes they need to authorise access. If an SP does not qualify for R&S they will need to develop an SP integration guide to distribute to international IdPs that want to use the service.
 
-### How do I assert R&S?
+## How do I assert R&S?
 
 Asserting R&S means:
 <ul class="list-group">
@@ -24,7 +26,7 @@ If an SP meets the [R&S Registration Criteria](https://refeds.org/category/resea
 
 <br>
 
-### R&S Attribute Bundle
+## R&S Attribute Bundle
 
 The R&S attribute bundle consists of the following data elements. "Affiliation" is optional.
 

@@ -21,7 +21,7 @@ requirements outside this range, [please contact us to discuss](mailto:support@a
   <tbody>
     <tr>
     <th scope="row">openid</th>
-      <td>Returns the subclaim, which uniquely identifies the user. In an ID Token, iss, aud, exp, iat, and at_hash 
+      <td>Returns the subclaim, which uniquely identifies the user. In an ID Token, iss, aud, exp, iat, and at_hash
 claims will also be present.</td>
     </tr>
     <tr>
@@ -76,6 +76,6 @@ claims will also be present.</td>
 </table>
 <br>
 
-A claim for a user will only be provided if their home organisation provides the specific attribute. For example 
+A claim for a user will only be provided if their home organisation provides the specific attribute. For example
 most universities will *not* provide phone numbers for their users.
 {: .callout-info}

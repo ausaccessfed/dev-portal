@@ -7,7 +7,7 @@ last_updated: 21 March, 2025
 
 <br>
 
-### Shibboleth SP3
+## Shibboleth SP3
 
 <ul class="list-group list-group-flush">
   <li class="list-group-item"><a href="https://wiki.shibboleth.net/confluence/display/SP3/ReleaseNotes">ReleaseNotes</a></li>
@@ -19,7 +19,7 @@ last_updated: 21 March, 2025
 
 <br>
 
-### Starting point for installation on Linux, Windows and Mac
+## Starting point for installation on Linux, Windows and Mac
 
 <ul class="list-group list-group-flush">
   <li class="list-group-item"><a href="https://wiki.shibboleth.net/confluence/display/SP3/SystemRequirements">System Requirements</a></li>
@@ -29,7 +29,7 @@ last_updated: 21 March, 2025
 
 <br>
 
-### SP Configuration
+## SP Configuration
 
 <ul class="list-group list-group-flush">
   <li class="list-group-item"><a href="https://wiki.shibboleth.net/confluence/display/SP3/SPConfig">Elements and Components</a></li>
@@ -37,25 +37,25 @@ last_updated: 21 March, 2025
 
 <br>
 
-### Install SP on other web platforms
+## Install SP on other web platforms
 
 <ul class="list-group list-group-flush">
   <li class="list-group-item"><a href="https://wiki.shibboleth.net/confluence/display/SP3/GettingStarted">Getting Started</a></li>
-  <li class="list-group-item"><a href="https://wiki.shibboleth.net/confluence/display/SP3/WebServers">Web Servers</a></li> 
+  <li class="list-group-item"><a href="https://wiki.shibboleth.net/confluence/display/SP3/WebServers">Web Servers</a></li>
 </ul>
 
 <br>
 
-### `<ApplicationDefaults>` element configuration options
+## `<ApplicationDefaults>` element configuration options
 
 <ul class="list-group list-group-flush">
   <li class="list-group-item"><a href="https://wiki.shibboleth.net/confluence/display/SP3/ApplicationDefaults">Application Defaults</a></li>
-  <li class="list-group-item"><a href="https://wiki.shibboleth.net/confluence/display/SP3/AttributeAccess">Attribute Access</a></li> 
+  <li class="list-group-item"><a href="https://wiki.shibboleth.net/confluence/display/SP3/AttributeAccess">Attribute Access</a></li>
 </ul>
 
 <br>
 
-### `<Sessions>` element configuration options
+## `<Sessions>` element configuration options
 
 <ul class="list-group list-group-flush">
   <li class="list-group-item"><a href="https://wiki.shibboleth.net/confluence/display/SP3/Sessions">Sessions</a></li>
@@ -63,7 +63,7 @@ last_updated: 21 March, 2025
 
 <br>
 
-### `<SSO>` element configuration options
+## `<SSO>` element configuration options
 
 <ul class="list-group list-group-flush">
   <li class="list-group-item"><a href="https://wiki.shibboleth.net/confluence/display/SP3/SSO">SSO</a></li>
@@ -71,8 +71,7 @@ last_updated: 21 March, 2025
 
 <br>
 
-
-### `<MetadataProvider>` elements configuration options
+## `<MetadataProvider>` elements configuration options
 
 <ul class="list-group list-group-flush">
   <li class="list-group-item"><a href="https://wiki.shibboleth.net/confluence/display/SP3/MetadataProvider">Metadata Provider</a></li>
@@ -81,7 +80,7 @@ last_updated: 21 March, 2025
 
 <br>
 
-### Attribute filter configuration options
+## Attribute filter configuration options
 
 <ul class="list-group list-group-flush">
   <li class="list-group-item"><a href="https://wiki.shibboleth.net/confluence/display/SP3/XMLAttributeExtractor">XMLAttributeExtractor</a></li>
@@ -89,7 +88,7 @@ last_updated: 21 March, 2025
 
 <br>
 
-### `<Status>` Handler configuration options
+## `<Status>` Handler configuration options
 
 <ul class="list-group list-group-flush">
   <li class="list-group-item"><a href="https://shibboleth.atlassian.net/wiki/spaces/SP3/pages/2065334870/Status+Handler">Status Handler</a></li>
@@ -97,7 +96,7 @@ last_updated: 21 March, 2025
 
 <br>
 
-### Logging configuration options
+## Logging configuration options
 
 <ul class="list-group list-group-flush">
   <li class="list-group-item"><a href="https://wiki.shibboleth.net/confluence/display/SP3/Logging">Logging</a></li>
@@ -105,9 +104,9 @@ last_updated: 21 March, 2025
 
 <br>
 
-### Apache
+## Apache
 
-#### Documentation
+### Documentation
 
 <ul class="list-group list-group-flush">
   <li class="list-group-item"><a href="https://httpd.apache.org/docs/2.4/">Apache HTTP Server Version 2.4 Documentation</a></li>
@@ -116,7 +115,7 @@ last_updated: 21 March, 2025
 
 <br>
 
-#### Shibboleth Configuration options
+### Shibboleth Configuration options
 
 <ul class="list-group list-group-flush">
   <li class="list-group-item"><a href="https://wiki.shibboleth.net/confluence/display/SP3/Apache">Apache</a></li>
@@ -127,7 +126,7 @@ last_updated: 21 March, 2025
 
 <br>
 
-### Microsoft IIS configuration options
+## Microsoft IIS configuration options
 
 <ul class="list-group list-group-flush">
   <li class="list-group-item"><a href="https://wiki.shibboleth.net/confluence/display/SP3/IIS">IIS</a></li>

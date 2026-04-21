@@ -7,9 +7,11 @@ last_updated: 21 March, 2025
 <br>
 
 ## What is SIRTFI?
+
 SIRTFI (Security Incident Response Trust Framework for Federated Identity) provides a lightweight framework to request and provide security incident response assistance, publish security incident contact information and review your service’s security incident capability.
 
 ## Why does my organisation need to use SIRTFI?
+
 SIRTFI is an important global framework covering good practice for communicating about security incidents in an effective and timely manner. SIRTFI helps security contacts know who to contact in other organisations and the best channels to use.
 The SIRTFI framework is an initiative of REFEDS.
 
@@ -28,9 +30,11 @@ The SIRTFI framework is an initiative of REFEDS.
 <br>
 
 ## SIRTFI Framework
+
 The <a href="https://refeds.org/wp-content/uploads/2016/01/Sirtfi-1.0.pdfSIRTFI">SRTFI framework</a> requires organisations to self-assess against the following areas:
 
 ![Assessment Areas](/assets/images/connect-to-edugain/assessment_areas.png)
 
 ## Traffic Light Protocol
+
 Organisations within the SIRTFI community agree to provide a coordinated response to security incidents, including assisting other organisations as required. SIRTFI requires organisations to understand and use the Traffic Light Protocol (TLP) for security incident communications. For more information about TLP, go to the <a href="https://www.cisa.gov/news-events/news/traffic-light-protocol-tlp-definitions-and-usage">Cybersecurity & Infrastructure Security Agency</a>
