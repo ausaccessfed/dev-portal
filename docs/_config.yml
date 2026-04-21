@@ -440,10 +440,10 @@ collections:
     published: 2025-06-17
     author: Kelley Foster <kelley.foster@aaf.edu.au>
 
-  exporting-identity-provider-logs:
+  export-identity-provider-logs:
     output: true
     permalink: /:collection/:name
-    title: Exporting Identity Provider Logs
+    title: Export Identity Provider Logs
     summary: A tutorial for ways to export identity provider logs
     category: Identity Management Solutions
     level: Advanced

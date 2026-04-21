@@ -23,15 +23,15 @@ If you have not done so already, please [Setup to use the API](/log-into-federat
 
 Simply provide the url of the latest release found at <https://github.com/ausaccessfed/log_export_azure_function/releases>, i.e <https://github.com/ausaccessfed/log_export_azure_function/releases/download/v0.2.0/dist.zip> to your azure app function and configure the environment variable listed above
 
-![upload source zip](/assets/images/exporting-identity-provider-logs/upload-source-zip.png)
-![set environment variables](/assets/images/exporting-identity-provider-logs/set-environment-variables.png)
+![upload source zip](/assets/images/export-identity-provider-logs/upload-source-zip.png)
+![set environment variables](/assets/images/export-identity-provider-logs/set-environment-variables.png)
 
 - Once this is done you should be able to review the logs in the invocations tab of the cron function
 
-![Invocation overview](/assets/images/exporting-identity-provider-logs/invocation-overview.png)
+![Invocation overview](/assets/images/export-identity-provider-logs/invocation-overview.png)
 
 - It should have an example output like the following
 
-![example output](/assets/images/exporting-identity-provider-logs/example-invocation-output.png)
+![example output](/assets/images/export-identity-provider-logs/example-invocation-output.png)
 
 - If it does you should end up seeing your results in your sentinel instance in the provided SENTINEL_STREAM_NAME
