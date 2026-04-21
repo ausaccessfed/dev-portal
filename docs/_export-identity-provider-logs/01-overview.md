@@ -2,7 +2,7 @@
 title: Overview
 order: 1
 duration: 1
-last_updated: 15 April, 2026
+last_updated: 21 April, 2026
 ---
 
 This tutorial shows how to export an identity providers logs and import them into certain services.
