@@ -70,6 +70,18 @@ pre, pre code {
   color: #ffe082 !important;
 }
 
+.highlight .mi { color: #FEB0FF !important; }
+
+.highlight .cp { color: #A8B5C8 !important; }
+
+.highlight .bp,
+.highlight .nb,
+.highlight .nc,
+.highlight .nf,
+.highlight .nn {
+  color: #5AF2FF !important;
+}
+
 .navbar {
   background-color: $aaf-dark-grey;
 }
