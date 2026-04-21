@@ -17,7 +17,7 @@ If it has, or a closely related issue exists, please add your comments to the ex
 If your issue isn't already listed, then create a New Issue.
 Provide details of your suggestion and include the tutorial name and page to which your suggestion applies.
 One of our technical team will review your suggestion and resolve it if they can.
-They may follow up with you in the issue if they need some more clarification.
+They may follow up with you if they need some more clarification.
 
 ## Making substantial changes and adding new tutorials
 

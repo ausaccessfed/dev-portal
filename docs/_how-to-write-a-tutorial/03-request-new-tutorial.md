@@ -15,7 +15,7 @@ Click on the "Get started" button for "Request Tutorial".
 
 - Provide a title and a clear description of your suggested tutorial.
 
-- When you are finished, click on "Submit new issue". Our technical team will review your issue and may follow up with you in the issue for more information.
+- When you are finished, click on "Submit new issue". Our technical team will review your issue and may follow up with you for more information.
 
 ![Raise an Issue](/assets/images/how-to-write-a-tutorial/raise-an-issue-tutorial.png)
 

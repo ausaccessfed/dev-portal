@@ -6,4 +6,3 @@
 
 - [ ] I have confirmed that the content is not already covered in the tutorials available on the AAF Support Tutorials website 
 - [ ] I have tested the tutorial's content (including spelling, grammar and readability), links and images, and have not found any issues
-- [ ] I have reviewed the tutorial metadata and removed any unnecessary contact details
