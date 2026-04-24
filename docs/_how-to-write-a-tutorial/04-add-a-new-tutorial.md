@@ -62,7 +62,6 @@ bundle exec rake tutorial "Title of your tutorial"
         duration: <number of minutes (in 5 minute intervals) your tutorial might take>
         status: <draft or published> # do not change
         published: YYYY-MM-DD # do not change
-        author: Your Name <your email address>
     ```
 
 <br>
