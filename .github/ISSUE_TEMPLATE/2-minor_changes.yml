@@ -17,12 +17,3 @@ body:
       description: "Enter a brief summary of your suggested changes. Make sure to include the tutorial name and page/s to which your changes apply."
     validations:
       required: true
-
-  - type: input
-    id: contact
-    attributes:
-      label: Contact Details
-      description: "How can we get in touch with you if we need more information?"
-      placeholder: e.g. email@example.com
-    validations:
-      required: true

@@ -66,7 +66,6 @@ bundle exec rake tutorial "Title of your tutorial"
         difficulty: <number 1-5> # see below for difficulty levels
         duration: <number of minutes (in 5 minute intervals) your tutorial might take>
         published: YYYY-MM-DD # do not change
-        author: Your Name <your email address>
     ```
 
 <br>

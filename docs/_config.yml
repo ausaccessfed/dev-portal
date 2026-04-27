@@ -57,7 +57,6 @@ collections:
     difficulty: 3
     duration: 20
     published: 2024-02-06
-    author: Kelley Foster <kelley.foster@aaf.edu.au>
 
   connection-types:
     output: true
@@ -72,7 +71,6 @@ collections:
     difficulty: 1
     duration: 5
     published: 2024-02-06
-    author: Kelley Foster <kelley.foster@aaf.edu.au>
 
   log-into-federation-manager:
     output: true
@@ -88,7 +86,6 @@ collections:
     difficulty: 1
     duration: 4
     published: 2024-02-06
-    author: Kelley Foster <kelley.foster@aaf.edu.au>
 
   openid-connect-integration:
     output: true
@@ -105,7 +102,6 @@ collections:
     difficulty: 3
     duration: 15
     published: 2024-02-06
-    author: Kelley Foster <kelley.foster@aaf.edu.au>
 
   rapid-connect-integration:
     output: true
@@ -122,7 +118,6 @@ collections:
     difficulty: 3
     duration: 30
     published: 2024-02-06
-    author: Kelley Foster <kelley.foster@aaf.edu.au>
 
   saml-integration:
     output: true
@@ -139,7 +134,6 @@ collections:
     difficulty: 5
     duration: 60
     published: 2024-02-06
-    author: Kelley Foster <kelley.foster@aaf.edu.au>
 
   connect-an-oidc-service:
     output: true
@@ -156,7 +150,6 @@ collections:
     difficulty: 3
     duration: 5
     published: 2024-02-06
-    author: Kelley Foster <kelley.foster@aaf.edu.au>
 
   connect-a-rapid-connect-service:
     output: true
@@ -173,7 +166,6 @@ collections:
     difficulty: 3
     duration: 15
     published: 2024-02-06
-    author: Kelley Foster <kelley.foster@aaf.edu.au>
 
   connect-a-saml-service:
     output: true
@@ -190,7 +182,6 @@ collections:
     difficulty: 3
     duration: 10
     published: 2024-02-06
-    author: Kelley Foster <kelley.foster@aaf.edu.au>
 
   verifid-integration:
     output: true
@@ -207,7 +198,6 @@ collections:
     difficulty: 3
     duration: 30
     published: 2024-02-14
-    author: Kelley Foster <kelley.foster@aaf.edu.au>
 
   connect-with-verifid:
     output: true
@@ -224,7 +214,6 @@ collections:
     difficulty: 3
     duration: 15
     published: 2024-02-16
-    author: Kelley Foster <kelley.foster@aaf.edu.au>
 
   openid-connect-series:
     output: true
@@ -240,7 +229,6 @@ collections:
     difficulty: 3
     duration: 50
     published: 2024-02-28
-    author: Kelley Foster <kelley.foster@aaf.edu.au>
 
   rapid-connect-series:
     output: true
@@ -256,7 +244,6 @@ collections:
     difficulty: 3
     duration: 55
     published: 2024-02-29
-    author: Kelley Foster <kelley.foster@aaf.edu.au>
 
   verifid-series:
     output: true
@@ -272,7 +259,6 @@ collections:
     difficulty: 3
     duration: 55
     published: 2024-02-29
-    author: Kelley Foster <kelley.foster@aaf.edu.au>
 
   saml-series:
     output: true
@@ -288,7 +274,6 @@ collections:
     difficulty: 4
     duration: 80
     published: 2024-02-29
-    author: Kelley Foster <kelley.foster@aaf.edu.au>
 
   connect-to-edugain:
     output: true
@@ -307,7 +292,6 @@ collections:
     difficulty: 1
     duration: 5
     published: 2024-03-05
-    author: Kelley Foster <kelley.foster@aaf.edu.au>
 
   edugain-integration:
     output: true
@@ -324,7 +308,6 @@ collections:
     difficulty: 4
     duration: 30
     published: 2024-03-06
-    author: Kelley Foster <kelley.foster@aaf.edu.au>
 
   edugain-series:
     output: true
@@ -340,7 +323,6 @@ collections:
     difficulty: 4
     duration: 47
     published: 2024-03-08
-    author: Kelley Foster <kelley.foster@aaf.edu.au>
 
   introduction-to-edugain:
     output: true
@@ -357,7 +339,6 @@ collections:
     difficulty: 3
     duration: 10
     published: 2024-03-08
-    author: Kelley Foster <kelley.foster@aaf.edu.au>
 
   how-to-write-a-tutorial:
     output: true
@@ -371,7 +352,6 @@ collections:
     difficulty: 1
     duration: 10
     published: 2024-05-23
-    author: Kelley Foster <kelley.foster@aaf.edu.au>
 
   set-up-sp-in-multiple-federations:
     output: true
@@ -385,7 +365,6 @@ collections:
     difficulty: 5
     duration: 10
     published: 2024-06-14
-    author: Kelley Foster <kelley.foster@aaf.edu.au>
 
   find-your-registered-services:
     output: true
@@ -399,7 +378,6 @@ collections:
     difficulty: 1
     duration: 5
     published: 2024-06-21
-    author: Kelley Foster <kelley.foster@aaf.edu.au>
 
   set-up-moodle-via-aaf-authentication:
     output: true
@@ -413,7 +391,6 @@ collections:
     difficulty: 3
     duration: 30
     published: 2025-02-27
-    author: Kelley Foster <kelley.foster@aaf.edu.au>
 
   connect-a-single-page-oidc-service:
     output: true
@@ -430,7 +407,6 @@ collections:
     difficulty: 3
     duration: 10
     published: 2025-02-28
-    author: Kelley Foster <kelley.foster@aaf.edu.au>
 
   register-an-xnat-oidc-service:
     output: true
@@ -444,7 +420,6 @@ collections:
     difficulty: 3
     duration: 10
     published: 2025-04-08
-    author: Kelley Foster <kelley.foster@aaf.edu.au>
 
   include-service-in-service-catalogue:
     output: true
@@ -458,7 +433,6 @@ collections:
     difficulty: 1
     duration: 1
     published: 2025-06-17
-    author: Kelley Foster <kelley.foster@aaf.edu.au>
 
   export-identity-provider-logs:
     output: true
@@ -472,4 +446,3 @@ collections:
     difficulty: 6
     duration: 20
     published: 2026-04-17
-    author: Jack Carpenter <jack.carpenter@aaf.edu.au>

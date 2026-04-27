@@ -13,9 +13,9 @@ Click on the "Get started" button for "Request Tutorial".
 
 ![Get Started Button](/assets/images/how-to-write-a-tutorial/get-started-button-tutorial.png)
 
-- Provide a title and a clear description of your suggested tutorial. Make sure to include your email address.
+- Provide a title and a clear description of your suggested tutorial.
 
-- When you are finished, click on "Submit new issue". Our technical team will review your issue and may contact you for more information.
+- When you are finished, click on "Submit new issue". Our technical team will review your issue and may follow up with you for more information.
 
 ![Raise an Issue](/assets/images/how-to-write-a-tutorial/raise-an-issue-tutorial.png)
 
