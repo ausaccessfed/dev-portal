@@ -54,13 +54,17 @@ bundle exec rake tutorial "Title of your tutorial"
         permalink: /:collection/:name # do not change
         title: <your tutorial title> # in less than 10 words
         summary: <tutorial description> # in less than 10 words
-        category: <choose one of Beginner, Intermediate, Advanced, Non-Technical or Curriculum>
+        category: <one of the values in `tutorial_categories` in `_config.yml`>
+        level: <Beginner|Intermediate|Advanced>
+        # Optional: include the tutorial in one-or-more Series pages
+        curricula:
+          - <e.g. SAML>
+          - <e.g. OpenID Connect>
         tags:
           - <keyword>
           - <keyword>
         difficulty: <number 1-5> # see below for difficulty levels
         duration: <number of minutes (in 5 minute intervals) your tutorial might take>
-        status: <draft or published> # do not change
         published: YYYY-MM-DD # do not change
         author: Your Name <your email address>
     ```
@@ -77,7 +81,7 @@ Use the following difficulty levels to categorise your tutorial:
 | 4     | Advanced (applied theory)            |
 | 5     | Advanced (recognized authority)      |
 
-After modifying the `config.yml` file, you will need to restart the preview process for Jekyll to render your new tutorial, but once it's done, it will be available from the `docs` folder of the site.
+After modifying the `_config.yml` file, you will need to restart the preview process for Jekyll to render your new tutorial, but once it's done, it will be available from the `docs` folder of the site.
 
 <br>
 

@@ -7,7 +7,7 @@ last_updated: 24 October, 2025
 
 {% include tutorials.html -%}
 
-{% assign curriculum = "SAML" %}
+{% assign series_name = "SAML" %}
 
 {% comment %}
 To facilitate proper ordering of tutorials for saml series pages, we loop through our ordered list of categories and build the list of tutorials from there
@@ -16,12 +16,13 @@ To facilitate proper ordering of tutorials for saml series pages, we loop throug
 {% assign sortcategories = "" | split: "" %}
 
 {% comment %}
-Add categories used by tutorials with the assigned curriculum in the order
+Add categories used by tutorials with the assigned series in the order
 specified in the site config
 {% endcomment %}
 {% for category in site.tutorial_categories %}
 {% for tutorial in tutorials %}
-{% if tutorial.curriculum == curriculum and tutorial.category == category %}
+{% assign tutorial_curricula = tutorial.curricula | default: "" %}
+{% if tutorial_curricula contains series_name and tutorial.category == category %}
 {% unless sortcategories contains category %}
 {% assign sortcategories = sortcategories | push: category %}
 {% endunless %}
@@ -33,9 +34,10 @@ specified in the site config
 Add any missing categories to the end of the list
 {% endcomment %}
 {% for tutorial in tutorials %}
-{% if tutorial.curriculum == curriculum %}
+{% assign tutorial_curricula = tutorial.curricula | default: "" %}
+{% if tutorial_curricula contains series_name %}
 {% unless sortcategories contains tutorial.category %}
-{% assign sortcategories = sortcategories | push: category %}
+{% assign sortcategories = sortcategories | push: tutorial.category %}
 {% endunless %}
 {% endif %}
 {% endfor %}
@@ -50,7 +52,8 @@ The SAML Series consists of the following tutorials, which you can work through 
 ## {{ category }}
 
 {% for tutorial in tutorials reversed %}
-{% if tutorial.curriculum == curriculum and tutorial.category == category %}
+{% assign tutorial_curricula = tutorial.curricula | default: "" %}
+{% if tutorial_curricula contains series_name and tutorial.category == category %}
 <div data-label="{{ tutorial.label }}" class="series-tutorial" markdown="1">
 #### [{{ tutorial.title }}]({{ tutorial.label | relative_url }})
 {{ tutorial.summary }}  
