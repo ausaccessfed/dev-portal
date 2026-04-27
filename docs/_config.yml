@@ -279,7 +279,7 @@ collections:
     output: true
     permalink: /:collection/:name
     title: Connect to eduGAIN
-    summary: A tutorial for connecting to eduGAIN
+    summary: A tutorial for connecting a service to eduGAIN
     category: Connect a Service
     curricula:
       - eduGAIN
