@@ -28,7 +28,7 @@ defaults:
     values:
       layout: tutorial
 
-# Ordered by how they should appear in the curriculum list
+# Ordered by how they should appear in the curricula list
 tutorial_categories:
   - AAF Connection Types
   - Getting Started
