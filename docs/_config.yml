@@ -28,7 +28,7 @@ defaults:
     values:
       layout: tutorial
 
-# Ordered by how they should appear in the curriculum list
+# Ordered by how they should appear in the curricula list
 tutorial_categories:
   - AAF Connection Types
   - Getting Started
@@ -47,7 +47,8 @@ collections:
     title: Connect with Keycloak
     summary: A tutorial for connecting with Keycloak
     category: Identity Management Solutions
-    curriculum: OpenID Connect
+    curricula:
+      - OpenID Connect
     level: Intermediate
     tags:
       - keycloak
@@ -92,7 +93,8 @@ collections:
     title: OpenID Connect Integration
     summary: A tutorial for OpenID Connect integration
     category: Integration
-    curriculum: OpenID Connect
+    curricula:
+      - OpenID Connect
     level: Intermediate
     tags:
       - openid connect
@@ -107,7 +109,8 @@ collections:
     title: Rapid Connect Integration
     summary: A tutorial for Rapid Connect integration
     category: Integration
-    curriculum: Rapid Connect
+    curricula:
+      - Rapid Connect
     level: Intermediate
     tags:
       - rapid connect
@@ -122,7 +125,8 @@ collections:
     title: SAML Integration
     summary: A tutorial for SAML integration
     category: Integration
-    curriculum: SAML
+    curricula:
+      - SAML
     level: Advanced
     tags:
       - saml
@@ -137,7 +141,8 @@ collections:
     title: Connect an OIDC Service
     summary: A tutorial for connecting an OIDC Service
     category: Connect a Service
-    curriculum: OpenID Connect
+    curricula:
+      - OpenID Connect
     level: Intermediate
     tags:
       - openid connect
@@ -152,7 +157,8 @@ collections:
     title: Connect a Rapid Connect Service
     summary: A tutorial for connecting a Rapid Connect service
     category: Connect a Service
-    curriculum: Rapid Connect
+    curricula:
+      - Rapid Connect
     level: Intermediate
     tags:
       - rapid connect
@@ -167,7 +173,8 @@ collections:
     title: Connect a SAML Service
     summary: A tutorial for connecting a SAML service
     category: Connect a Service
-    curriculum: SAML
+    curricula:
+      - SAML
     level: Intermediate
     tags:
       - saml
@@ -182,7 +189,8 @@ collections:
     title: VerifID Integration
     summary: A tutorial for VerifID integration
     category: Integration
-    curriculum: VerifID
+    curricula:
+      - VerifID
     level: Intermediate
     tags:
       - tutorial
@@ -197,7 +205,8 @@ collections:
     title: Connect with VerifID
     summary: A tutorial for connecting with VerifID
     category: Connect a Service
-    curriculum: VerifID
+    curricula:
+      - VerifID
     level: Intermediate
     tags:
       - tutorial
@@ -211,7 +220,8 @@ collections:
     permalink: /:collection/:name
     title: OpenID Connect Series
     summary: Integrate and connect with OIDC
-    curriculum: OpenID Connect
+    curricula:
+      - OpenID Connect
     level: Series
     tags:
       - series
@@ -225,7 +235,8 @@ collections:
     permalink: /:collection/:name
     title: Rapid Connect Series
     summary: Integrate and connect with Rapid Connect
-    curriculum: Rapid Connect
+    curricula:
+      - Rapid Connect
     level: Series
     tags:
       - series
@@ -239,7 +250,8 @@ collections:
     permalink: /:collection/:name
     title: VerifID Series
     summary: Integrate and connect with VerifID
-    curriculum: VerifID
+    curricula:
+      - VerifID
     level: Series
     tags:
       - series
@@ -253,7 +265,8 @@ collections:
     permalink: /:collection/:name
     title: SAML Series
     summary: Integrate and connect with SAML
-    curriculum: SAML
+    curricula:
+      - SAML
     level: Series
     tags:
       - series
@@ -266,9 +279,12 @@ collections:
     output: true
     permalink: /:collection/:name
     title: Connect to eduGAIN
-    summary: A tutorial for connecting to eduGAIN
+    summary: A tutorial for connecting a service to eduGAIN
     category: Connect a Service
-    curriculum: eduGAIN
+    curricula:
+      - eduGAIN
+      - SAML
+      - OpenID Connect
     level: Beginner
     tags:
       - tutorial
@@ -283,7 +299,8 @@ collections:
     title: eduGAIN Integration
     summary: A tutorial for eduGAIN integration
     category: Integration
-    curriculum: eduGAIN
+    curricula:
+      - eduGAIN
     level: Advanced
     tags:
       - tutorial
@@ -297,7 +314,8 @@ collections:
     permalink: /:collection/:name
     title: eduGAIN Series
     summary: Integrate and connect with eduGAIN
-    curriculum: eduGAIN
+    curricula:
+      - eduGAIN
     level: Series
     tags:
       - series
@@ -312,7 +330,8 @@ collections:
     title: Introduction to eduGAIN
     summary: An overview of eduGAIN
     category: Getting Started
-    curriculum: eduGAIN
+    curricula:
+      - eduGAIN
     level: Intermediate
     tags:
       - tutorial
@@ -379,7 +398,8 @@ collections:
     title: Connect a single page OIDC service
     summary: A tutorial for connecting a single page OIDC service
     category: Connect a Service
-    curriculum: OpenID Connect
+    curricula:
+      - OpenID Connect
     level: Intermediate
     tags:
       - openid connect
