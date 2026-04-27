@@ -34,14 +34,15 @@ desc "Run check"
 task :check do
   system("bundle exec jekyll build") or raise
   system("bundle exec htmlproofer \
-            --checks-to-ignore LinkCheck \
+            --checks Images,Scripts \
             --log-level debug ./_site") or raise
   system("bundle exec htmlproofer \
-            --checks-to-ignore ScriptCheck,ImageCheck \
+            --checks Links \
+            --disable-external \
+            --no-enforce-https \
             --allow-hash-href \
-            --url-ignore '/localhost/' \
-            --assume_extension \
-            --typhoeus_config '{ \"ssl_verifyhost\": 0, \"ssl_verifypeer\": false }' \
+            --ignore-urls '/localhost/' \
+            --assume-extension .html \
             --log-level debug ./_site")
 end # task :check
 
