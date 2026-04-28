@@ -19,14 +19,14 @@ layout: default
 {% endfor %}
 
 {%- comment -%}
-`curricula` is the canonical way to include a tutorial/collection in one-or-more
-Series curricula.
+To include a tutorial/collection in one-or-more Series curricula, edit `curricula` in the tutorial's front matter.
 
 Example:
   curricula:
     - OpenID Connect
     - SAML
 {%- endcomment -%}
+
 {% assign curricula = "" | split: "" %}
 {% if collection.curricula %}
   {% assign curricula = collection.curricula %}
