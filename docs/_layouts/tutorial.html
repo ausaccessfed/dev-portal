@@ -63,24 +63,32 @@ Example:
                 <p class="mb-1"><i class="fa fa-info-circle"></i> This tutorial is part of these series: {{ curricula | join: ", " }}.</p>
               {% endif %}
 
+              {%- comment -%}
+              Render a single "Go Back" link even if the tutorial belongs to multiple curricula.
+              {%- endcomment -%}
+              {% assign back_url = nil %}
               {% for curr in curricula %}
-                {% if curr == "OpenID Connect" %}
-                  <a class="btn btn-link btn-md m-1 p-0 d-block"
-                     href="{{ '/openid-connect-series/02-tutorials' | prepend: site.baseurl }}"><i class="fa fa-arrow-left"></i> Back to OpenID Connect</a>
-                {% elsif curr == "Rapid Connect" %}
-                  <a class="btn btn-link btn-md m-1 p-0 d-block"
-                     href="{{ '/rapid-connect-series/02-tutorials' | prepend: site.baseurl }}"><i class="fa fa-arrow-left"></i> Back to Rapid Connect</a>
-                {% elsif curr == "SAML" %}
-                  <a class="btn btn-link btn-md m-1 p-0 d-block"
-                     href="{{ '/saml-series/02-tutorials' | prepend: site.baseurl }}"><i class="fa fa-arrow-left"></i> Back to SAML</a>
-                {% elsif curr == "VerifID" %}
-                  <a class="btn btn-link btn-md m-1 p-0 d-block"
-                     href="{{ '/verifid-series/02-tutorials' | prepend: site.baseurl }}"><i class="fa fa-arrow-left"></i> Back to VerifID</a>
-                {% elsif curr == "eduGAIN" %}
-                  <a class="btn btn-link btn-md m-1 p-0 d-block"
-                     href="{{ '/edugain-series/02-tutorials' | prepend: site.baseurl }}"><i class="fa fa-arrow-left"></i> Back to eduGAIN</a>
+                {% if back_url == nil %}
+                  {% case curr %}
+                    {% when "OpenID Connect" %}
+                      {% assign back_url = '/openid-connect-series/02-tutorials' %}
+                    {% when "Rapid Connect" %}
+                      {% assign back_url = '/rapid-connect-series/02-tutorials' %}
+                    {% when "SAML" %}
+                      {% assign back_url = '/saml-series/02-tutorials' %}
+                    {% when "VerifID" %}
+                      {% assign back_url = '/verifid-series/02-tutorials' %}
+                    {% when "eduGAIN" %}
+                      {% assign back_url = '/edugain-series/02-tutorials' %}
+                  {% endcase %}
                 {% endif %}
               {% endfor %}
+
+              {% if back_url %}
+                <a class="btn btn-link btn-md m-1 p-0 d-block" href="{{ back_url | prepend: site.baseurl }}">
+                  <i class="fa fa-arrow-left"></i> Go Back
+                </a>
+              {% endif %}
             </div>
           {% endif %}
           <div class="card mb-3 bg-dark shadow">
