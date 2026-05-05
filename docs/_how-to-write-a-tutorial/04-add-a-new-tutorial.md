@@ -182,6 +182,7 @@ This helps prevent any broken links in the future, if the central URL of the sit
 To easily generate a mailto link, go to this url: `https://mailtolinkgenerator.com/` and paste the generated link into the text using markdown syntax:
 
 Example:
+
 ```markdown
 <a href="mailto:hello@example.com?subject=Hello&body=Hi there!">Email us</a>
 ```
