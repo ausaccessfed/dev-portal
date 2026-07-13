@@ -17,3 +17,5 @@ If you have not done so already, please [Setup to use the API](/log-into-federat
 - The logs endpoint will only return a maximum of 1000 logs at a time, this means even if you asked for 1 month of logs it may only return part of the furthest day.
 - In the response there is an etag this will represent the next `date_start` epoch checkpoint for scanning up the logs.
 - Simply continue to request logs given the same `date_end` epoch while using each etag returned until `date_start >= date_end` or no results are returned anymore.
+
+Note: At this time we only have a working example for azure sentinel, if you require assistance integrating with another SIEM please send an email to <support@aaf.edu.au> and we will see if we can help
