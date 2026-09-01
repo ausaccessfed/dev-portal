@@ -6,6 +6,10 @@ duration: 1
 
 Service Providers (SPs) can use a signal defined within the [REFEDS MFA Profile](https://refeds.org/profile/mfa) to request multi-factor authentication (MFA) from an Identity Provider (IdP).
 
+Not all Identity Providers (IdPs) within AAF currently support signalling MFA.
+{: .callout-info}
+
+
 The IdP responds to the SP's request by ensuring that the user is authenticated using MFA. If the user is not authenticated using MFA, the IdP will return an error message to the SP.
 
 This tutorial will guide you through the process of configuring a Shibboleth Service Provider (SP) to use the [REFEDS MFA Profile](https://refeds.org/profile/mfa) for MFA.
