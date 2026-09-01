@@ -2,7 +2,7 @@
 title: Summary
 order: 2
 duration: 1
-last_updated: 21 March, 2025
+last_updated: 15 April, 2026
 ---
 
 The AAF provides two Federations, a Test Federation and a Production Federation.

@@ -2,7 +2,7 @@
 title: Research and Scholarship Entity Category
 order: 5
 duration: 1
-last_updated: 22 October, 2025
+last_updated: 15 April, 2026
 ---
 <br>
 

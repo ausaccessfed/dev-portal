@@ -2,7 +2,7 @@
 title: Overview
 order: 1
 duration: 1
-last_updated: 21 March, 2025
+last_updated: 15 April, 2026
 ---
 
 This tutorial shows you how to register a new service with eduGAIN through the AAF.

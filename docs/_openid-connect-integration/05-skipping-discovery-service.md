@@ -2,7 +2,7 @@
 title: Skipping Discovery Service
 order: 5
 duration: 1
-last_updated: 17 October, 2025
+last_updated: 15 April, 2026
 ---
 
 AAF's implementation of OpenID Connect allows service administrators to configure their service to skip discovery service and login directly through a specified IdP.

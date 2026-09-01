@@ -2,7 +2,7 @@
 title: Verification request and response
 order: 6
 duration: 1
-last_updated: 20 October, 2025
+last_updated: 15 April, 2026
 ---
 <br>
 

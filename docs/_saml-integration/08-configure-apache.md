@@ -2,7 +2,7 @@
 title: Configure Apache
 order: 8
 duration: 1
-last_updated: 21 March, 2025
+last_updated: 15 April, 2026
 ---
 
 The default Apache installation creates a self-signed certificate which is sufficient for this demonstration. A
