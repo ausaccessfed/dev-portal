@@ -46,6 +46,13 @@ task :check do
             --log-level debug ./_site")
 end # task :check
 
+desc "Lint Markdown files"
+task :markdown_lint do
+  Dir.chdir(File.expand_path("..", __dir__)) do
+    sh "yarn markdownlint-cli2 --fix 'docs/**/*.md' '!docs/assets/**' '!docs/_sass/**' '!docs/vendor/**'"
+  end
+end
+
 desc "Create a new tutorial"
 task :tutorial do
   abort("Error: tutorial title not given, or too many arguments.") if ARGV.length != 2
