@@ -49,7 +49,7 @@ end # task :check
 desc "Lint Markdown files"
 task :markdown_lint do
   Dir.chdir(File.expand_path("..", __dir__)) do
-    sh "yarn markdownlint-cli2 --fix 'docs/**/*.md' '!docs/assets/**' '!docs/_sass/**' '!docs/vendor/**'"
+    sh "yarn markdownlint-cli2 --fix 'docs/**/*.md' '!docs/assets/**' '!docs/_sass/**' '!docs/vendor/**' '!docs/_site/**'"
   end
 end
 
