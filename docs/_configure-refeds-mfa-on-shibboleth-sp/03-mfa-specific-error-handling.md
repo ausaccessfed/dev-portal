@@ -6,25 +6,34 @@ duration: 1
 
 The next step in the configuration process is error handling (refer to the [SAML Integration Tutorial for Shibboleth error handling](/saml-integration/05-configure-shibboleth/#6-errors-element)).
 
-If the IdP does not support the requested `authnContextClassRef` it will respond with a redirect to an error page (at the url configured within shibboleth2.xml), with status code: `opensaml::FatalProfileException`.
+If the IdP does not support the requested `authnContextClassRef`, it will respond with a redirect to an error page (at the URL configured within `shibboleth2.xml`) with the status code `opensaml::FatalProfileException`.
 
-The following query paramaters are sent to the configured errorURL when an MFA related error occurs:
+## Example error request parameters
 
-```shell
-now: Thu Oct  3 04:39:30 2024
-requestURL: https://validator.test.aaf.edu.au/Shibboleth.sso/SAML2/POST
-errorType: opensaml::FatalProfileException
-errorText: SAML response reported an IdP error.
-RelayState: https://validator.test.aaf.edu.au/mfa/auth/login
-contactEmail: mailto:support@aaf.edu.au
-contactName: AAF Support
-entityID: https://vho.test.aaf.edu.au/idp/shibboleth
-eventType: Login
-statusCode: urn:oasis:names:tc:SAML:2.0:status:Requester
-statusCode2: urn:oasis:names:tc:SAML:2.0:status:NoAuthnContext
-statusMessage: An error occurred.
-```
+The following example shows the request parameters sent to the configured `errorURL` when an MFA-related error occurs:
 
+<table class="table table-striped" style="--bs-table-color: #000;">
+  <thead class="thead-light">
+    <tr>
+      <th scope="col">Parameter</th>
+      <th scope="col">Example value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><th scope="row">now</th><td>Thu Oct 3 04:39:30 2024</td></tr>
+    <tr><th scope="row">requestURL</th><td>https://validator.test.aaf.edu.au/Shibboleth.sso/SAML2/POST</td></tr>
+    <tr><th scope="row">errorType</th><td>opensaml::FatalProfileException</td></tr>
+    <tr><th scope="row">errorText</th><td>SAML response reported an IdP error.</td></tr>
+    <tr><th scope="row">RelayState</th><td>https://validator.test.aaf.edu.au/mfa/auth/login</td></tr>
+    <tr><th scope="row">contactEmail</th><td>mailto:support@aaf.edu.au</td></tr>
+    <tr><th scope="row">contactName</th><td>AAF Support</td></tr>
+    <tr><th scope="row">entityID</th><td>https://vho.test.aaf.edu.au/idp/shibboleth</td></tr>
+    <tr><th scope="row">eventType</th><td>Login</td></tr>
+    <tr><th scope="row">statusCode</th><td>urn:oasis:names:tc:SAML:2.0:status:Requester</td></tr>
+    <tr><th scope="row">statusCode2</th><td>urn:oasis:names:tc:SAML:2.0:status:NoAuthnContext</td></tr>
+    <tr><th scope="row">statusMessage</th><td>An error occurred.</td></tr>
+  </tbody>
+</table>
 <br>
 
 For more information on requiring MFA and error handling, refer to the links below:
