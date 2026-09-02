@@ -14,7 +14,7 @@ for file in docs/**/*.md; do
   last_modified=$(git log -1 --format="%ad" --date=format:"%d %B, %Y" -- "$file")
 
   if grep -q "^last_updated:" "$file"; then
-    changed_lines=$(git diff --unified=0 "${last_commit}^" "$last_commit" -- "$file" |
+    changed_lines=$(git diff-tree --root --unified=0 --no-commit-id "$last_commit" -- "$file" |
       grep -E '^[+-]' |
       grep -v -E '^(---|\+\+\+)' || true)
     if [[ -n "$changed_lines" ]] &&
