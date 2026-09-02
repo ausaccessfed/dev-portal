@@ -2,7 +2,7 @@
 title: Azure function implementation
 order: 4
 duration: 1
-last_updated: 15 April, 2026
+last_updated: 21 April, 2026
 ---
 
 If you have not done so already, please [Setup to use the API](/log-into-federation-manager/04-using-the-api) to get started.

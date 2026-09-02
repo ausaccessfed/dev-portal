@@ -11,4 +11,5 @@ run:
 down:
 	docker-compose down
 lint:
-	markdownlint-cli2 --fix "docs/**/*.md"  "!docs/assets/**" "!docs/_sass/**" "!docs/vendor/**"
+	cd docs && \
+	rake lint

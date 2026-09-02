@@ -2,7 +2,7 @@
 title: Via API
 order: 3
 duration: 1
-last_updated: 15 April, 2026
+last_updated: 14 July, 2026
 ---
 
 If you have not done so already, please [Setup to use the API](/log-into-federation-manager/04-using-the-api) to get started.

@@ -2,7 +2,7 @@
 title: Authentication
 order: 2
 duration: 1
-last_updated: 21 March, 2025
+last_updated: 15 April, 2026
 ---
 
 This section will show you how to authenticate to the AAF Test Federation Manager Dashboard to register a new service.

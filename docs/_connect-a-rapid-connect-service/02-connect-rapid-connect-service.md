@@ -2,7 +2,7 @@
 title: Register service
 order: 2
 duration: 1
-last_updated: 19 May, 2025
+last_updated: 27 April, 2026
 ---
 
 If you have not done so already, please [log in to Federation Manager](/log-into-federation-manager/01-overview) to get started.

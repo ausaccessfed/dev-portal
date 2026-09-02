@@ -2,7 +2,7 @@
 title: OpenID Configuration
 order: 3
 duration: 1
-last_updated: 17 October, 2025
+last_updated: 15 April, 2026
 ---
 
 The **AAF OIDC** service supports querying the **OP** Configuration Information endpoint to retrieve the features and capabilities of the **OIDC** service. The **AAF OP** provides two endpoints, one for **Production Federation** and one for **Test Federation**.

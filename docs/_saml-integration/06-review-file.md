@@ -2,7 +2,7 @@
 title: Review SP attribute-filter.xml file
 order: 6
 duration: 1
-last_updated: 21 March, 2025
+last_updated: 15 April, 2026
 ---
 
 For this demonstration, the uncommented default attributes are sufficient. A deployer selects those attributes a web

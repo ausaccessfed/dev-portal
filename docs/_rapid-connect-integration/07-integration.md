@@ -2,7 +2,7 @@
 title: Integration
 order: 7
 duration: 1
-last_updated: 20 October, 2025
+last_updated: 02 September, 2026
 ---
 
 Before you get started with AAF Rapid Connect, you MUST meet all the following high level requirements:
@@ -19,7 +19,7 @@ Before you get started with AAF Rapid Connect, you MUST meet all the following h
 To get started with AAF Rapid Connect integration, select a suitable JWT library from the following table for your
 application. These libraries will assist developers in quickly implementing JWT support. Libraries are not listed in
 any particular order and not endorsed by us. You should evaluate them individually to determine which best suits
-your needs. Found a useful JWT library not listed here? [Please let us know about it](mailto:support@aaf.edu.au?subject=New JWT library).
+your needs. Found a useful JWT library not listed here? [Please let us know about it](mailto:support%40aaf.edu.au?subject=New%20JWT%20library).
 
 <table class="table">
    <thead>

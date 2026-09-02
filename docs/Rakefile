@@ -46,6 +46,13 @@ task :check do
             --log-level debug ./_site")
 end # task :check
 
+desc "Lint Markdown files"
+task :markdown_lint do
+  Dir.chdir(File.expand_path("..", __dir__)) do
+    sh "yarn markdownlint-cli2 --fix 'docs/**/*.md' '!docs/assets/**' '!docs/_sass/**' '!docs/vendor/**' '!docs/_site/**'"
+  end
+end
+
 desc "Create a new tutorial"
 task :tutorial do
   abort("Error: tutorial title not given, or too many arguments.") if ARGV.length != 2
@@ -153,4 +160,11 @@ Dir['_rake/*.rake'].each { |r| load r }
 desc "Update last modified date"
 task :update_last_modified do
   sh "../bin/update_last_modified.sh"
+end
+
+task update_last_updated: :update_last_modified
+
+task :lint do
+  Rake::Task["update_last_modified"].invoke
+  Rake::Task["markdown_lint"].invoke
 end
