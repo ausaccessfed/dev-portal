@@ -161,3 +161,8 @@ desc "Update last modified date"
 task :update_last_modified do
   sh "../bin/update_last_modified.sh"
 end
+
+task :lint do
+  Rake::Task["update_last_modified"].invoke
+  Rake::Task["markdown_lint"].invoke
+end

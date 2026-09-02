@@ -12,4 +12,4 @@ down:
 	docker-compose down
 lint:
 	cd docs && \
-	rake markdown_lint
+	rake lint
