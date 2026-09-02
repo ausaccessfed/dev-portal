@@ -1,4 +1,5 @@
 ---
+last_updated: 02 September, 2026
 title: Requesting REFEDS MFA
 order: 2
 duration: 1
@@ -6,7 +7,7 @@ duration: 1
 
 To signal the MFA requirement, the SP must include an `<AuthnContextClassRef>` element in the AuthnRequest message. This element must contain the URI of the REFEDS MFA Profile:
 
-```
+```text
 https://refeds.org/profile/mfa
 ```
 
@@ -18,19 +19,19 @@ If redirecting to the SessionInitiator, the SP must include the `<AuthnContextCl
 
 For example, include the query string parameter `authnContextClassRef` in the URL of the Session Initiator (e.g. `/Shibboleth/Login`):
 
-```
+```text
 https://validator.aaf.edu.au/Shibboleth.sso/Login?target=/auth/login&authnContextClassRef=https://refeds.org/profile/mfa
 ```
-<br>
 
+<br>
 
 ## Implicitly initiated sessions
 
-If the session is initiated implicitly, that is by accessing a page requiring a Shibboleth session, the [content setting](https://shibboleth.atlassian.net/wiki/spaces/SP3/pages/2065334723/ContentSettings) `authnContextClassRef` should be added to the Apache config file requesting a Shibboleth session. 
+If the session is initiated implicitly, that is by accessing a page requiring a Shibboleth session, the [content setting](https://shibboleth.atlassian.net/wiki/spaces/SP3/pages/2065334723/ContentSettings) `authnContextClassRef` should be added to the Apache config file requesting a Shibboleth session.
 
 For example, add the following:
 
-```
+```apache
 <Location /auth/login>
     AuthType shibboleth
     require shibboleth

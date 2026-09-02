@@ -1,4 +1,5 @@
 ---
+last_updated: 02 September, 2026
 title: MFA-specific error handling
 order: 3
 duration: 1

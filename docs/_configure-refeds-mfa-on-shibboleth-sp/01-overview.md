@@ -1,4 +1,5 @@
 ---
+last_updated: 02 September, 2026
 title: Overview
 order: 1
 duration: 1
@@ -9,17 +10,16 @@ Service Providers (SPs) can use a signal defined within the [REFEDS MFA Profile]
 Not all Identity Providers (IdPs) within AAF currently support signalling MFA.
 {: .callout-info}
 
-
 The IdP responds to the SP's request by ensuring that the user is authenticated using MFA. If the user is not authenticated using MFA, the IdP will return an error message to the SP.
 
 This tutorial will guide you through the process of configuring a Shibboleth Service Provider (SP) to use the [REFEDS MFA Profile](https://refeds.org/profile/mfa) for MFA.
 
-### What you'll learn
+## What you'll learn
 
 - How to request REFEDS MFA
 - Error handling
 
-### What you'll need
+## What you'll need
 
 - To have [integrated your application](/saml-integration) with the SAML protocol
 - To have [connected your service](/connect-a-saml-service) with AAF using SAML
