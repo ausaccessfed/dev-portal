@@ -24,12 +24,14 @@ for file in docs/**/*.md; do
     fi
 
     # Update the existing last_updated field
-    sed -i '' "s/^last_updated:.*/last_updated: $last_modified/" "$file"
+    sed -i.bak "s/^last_updated:.*/last_updated: $last_modified/" "$file"
+     rm "$file.bak"
   else
     # Insert last_updated into YAML front matter (after ---)
-    sed -i '' "2i\\
+    sed -i.bak "2i\\
 last_updated: $last_modified
 " "$file"
+   rm "$file.bak"
   fi
   echo "Updated last_updated field in $file"
 done
