@@ -9,7 +9,7 @@ The Authentication Context Class Reference (ACR) is a string that specifies the 
 
 By specifying the required authentication context, you can ensure that users are authenticated using stronger methods, such as multi-factor authentication (MFA).
 
-Currently, the only supported ACR value is the [`https://refeds.org/profile/mfa`](https://refeds.org/profile/mfa) value. This value is used to request the REFEDS MFA profile for the user. If the user's IdP supports the REFEDS MFA profile, the AAF OpenID Provider will return the REFEDS MFA profile attributes in the ID Token. If the user's IdP does not support the REFEDS MFA profile, the AAF OpenID Provider will return an error to your service.
+Currently, the only supported authentication context is [`https://refeds.org/profile/mfa`](https://refeds.org/profile/mfa), the REFEDS MFA profile. The AAF OpenID Provider uses the AAF-specific `acr` authorization request parameter to request this context; standard OpenID Connect uses `acr_values` instead. When the requested context is satisfied, the ID Token includes an `acr` claim with its value. If the user's IdP cannot satisfy the requested context, the AAF OpenID Provider redirects to your service with an authorization error.
 
 ## Example OIDC Request
 
@@ -45,12 +45,11 @@ nonce=n-0S6_WzA2Mj
 
 ## Example Error Response
 
-If the users' IdP does not support the REFEDS MFA profile, the following error response will be returned:
+If the user's IdP cannot satisfy the requested REFEDS MFA authentication context, the AAF OpenID Provider redirects to the client's redirect URI with the error details as query parameters:
 
-```json
-{
-  "error": "insufficient_authentication_level",
-  "error_description": "A different level of authentication is required",
-  "acr": "https://refeds.org/profile/mfa"
-}
+```http
+HTTP/1.1 302 Found
+Location: https://your-app.example.com/callback?error=insufficient_authentication_level&error_description=A%20different%20level%20of%20authentication%20is%20required&acr=https%3A%2F%2Frefeds.org%2Fprofile%2Fmfa
 ```
+
+The error redirect omits `state` because the current Federation Manager behavior does not return it for this error. The request's `state` will round-trip only after the companion Federation Manager fix has landed.
