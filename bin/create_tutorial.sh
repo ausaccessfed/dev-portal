@@ -8,4 +8,4 @@ if [ -z "$title" ]; then
 fi
 
 RUBY_VERSION="$(cat docs/.ruby-version)" docker-compose run --rm --no-deps -T \
-  --user "$(id -u):$(id -g)" jekyll ruby _rake/tutorial.rb "$title"
+  jekyll ruby _rake/tutorial.rb "$title"
