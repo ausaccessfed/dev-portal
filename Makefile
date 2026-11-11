@@ -9,7 +9,7 @@ run:
 	bundle exec rake setup && \
 	bundle exec rake preview
 down:
-	docker-compose down
+	RUBY_VERSION="$$(cat docs/.ruby-version)" docker-compose down
 lint:
 	cd docs && \
 	rake lint
