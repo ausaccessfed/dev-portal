@@ -1,6 +1,6 @@
 services:
   jekyll:
-    image: ruby:3.4.8
+    image: ruby:${RUBY_VERSION:?Run make up to load docs/.ruby-version}
     volumes:
       - ./docs:/site
     ports:
