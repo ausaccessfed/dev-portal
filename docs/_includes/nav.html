@@ -1,24 +1,26 @@
-<nav class="navbar navbar-expand-md navbar-dark">
-  <div class="container mx-0">
-    <a class="navbar-brand" href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/assets/images/aaf_logo.png" height="60" class="mr-2" alt="AAF Tutorials"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+<nav class="site-nav bg-[#2d2d2d] text-white">
+  <div class="mx-0 flex flex-wrap items-center justify-between px-4 md:flex-nowrap">
+    <a class="py-2" href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/assets/images/aaf_logo.png" height="60" class="mr-2" alt="AAF Tutorials"></a>
+    <button id="nav-toggle" class="rounded border border-gray-500 px-3 py-2 text-white md:hidden" type="button" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span aria-hidden="true">☰</span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarContent">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item {% if page.title == 'Home' %}active{% endif %}">
-          <a class="nav-link" href="{{ site.baseurl }}/">Home <span class="sr-only">(current)</span></a>
+    <div class="hidden w-full md:block md:w-auto" id="navbarContent">
+      <ul class="flex flex-col pt-2 uppercase md:flex-row md:items-center md:gap-6 md:pt-0">
+        <li class="{% if page.title == 'Home' %}font-semibold{% endif %}">
+          <a class="block py-2 text-white hover:text-primary" href="{{ site.baseurl }}/">Home <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://aaf.freshdesk.com/support/home/">Support Centre</a>
+        <li>
+          <a class="block py-2 text-white hover:text-primary" href="https://aaf.freshdesk.com/support/home/">Support Centre</a>
         </li>
-        <li class="nav-item dropdown nectar-menu">
-          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Services</a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="https://manager.aaf.edu.au/">Federation Manager</a>
-            <a class="dropdown-item" href="https://validator.aaf.edu.au/">Validator Service</a>
-            <a class="dropdown-item" href="https://status.aaf.edu.au/">Federation Status</a>
-          </div>
+        <li>
+          <details class="relative">
+            <summary class="cursor-pointer list-none py-2 hover:text-primary">Services</summary>
+            <div class="absolute right-0 z-20 min-w-48 rounded border border-gray-200 bg-white py-1 text-gray-900 shadow-lg">
+              <a class="block px-4 py-2 hover:bg-gray-100" href="https://manager.aaf.edu.au/">Federation Manager</a>
+              <a class="block px-4 py-2 hover:bg-gray-100" href="https://validator.aaf.edu.au/">Validator Service</a>
+              <a class="block px-4 py-2 hover:bg-gray-100" href="https://status.aaf.edu.au/">Federation Status</a>
+            </div>
+          </details>
         </li>
       </ul>
     </div>

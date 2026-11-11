@@ -1,56 +1,12 @@
-// Bootstrap overrides
-
-$font-family-sans-serif: 'Inter', sans-serif;
-$font-family-base: 'Inter', sans-serif;
-$font-size-base: 1rem;
-$form-label-font-weight: 600;
-
-// AAF colours
-$aaf-blue:   #0066CC;
-$aaf-pink:   #E51875;
+$aaf-blue: #0066CC;
 $aaf-orange: #F08528;
 $aaf-yellow: #F39D44;
 $aaf-indigo: #5F368A;
 $aaf-purple: #2A004A;
-$aaf-grey:   #969696;
 $aaf-dark-grey: #2d2d2d;
 
-// Override bootstrap colours
-$dark: #000000;
-$blue: $aaf-blue;
-$pink: $aaf-pink;
-$orange: $aaf-orange;
-$yellow: $aaf-yellow;
-$indigo: $aaf-indigo;
-$purple: $aaf-purple;
-$gray: $aaf-grey;
-
-$gray-100: #f3f3f3;
-$gray-200: #efefef;
-$gray-300: #e7e7e7;
-$gray-400: #c6c6c6;
-$gray-500: #999999;
-$gray-600: #707070;
-$gray-700: #2d2d2d;
-$gray-800: #222222;
-$gray-900: #111111;
-
-$primary:       $yellow;
-$secondary:     $indigo;
-$success:       #62C400;
-$info:          #00A2C4;
-$warning:       $orange;
-$danger:        $pink;
-
-$body-bg:                   $gray-100;
-$body-color:                $gray-900;
-$link-color:                $blue;
-
-$min-contrast-ratio: 1.5;
-$navbar-brand-padding-y: 0;
-$input-btn-padding-y-lg: .75rem;
-$input-btn-padding-x-lg: 1.25rem;
-// Bootstrap shadows
-$enable-shadows: true;
-
-$spacer: 1.25rem;
+$primary: $aaf-yellow;
+$secondary: $aaf-indigo;
+$success: #62C400;
+$info: #00A2C4;
+$link-color: $aaf-blue;

@@ -32,29 +32,27 @@ Example:
   {% assign curricula = collection.curricula %}
 {% endif %}
 
-<div id="tutorial-page" class="container py-3 {% unless next %}last-page{% endunless %}" data-tut-name="{{ collection.label }}">
+<div id="tutorial-page" class="mx-auto max-w-screen-xl px-4 py-3 {% unless next %}last-page{% endunless %}" data-tut-name="{{ collection.label }}">
 
-    <div class="d-block d-md-flex justify-content-between align-items-center pb-2 mb-3 border-bottom">
-	    <h1 class="display-4">{{ collection.title }}</h1>
-      <div class="btn-toolbar mb-2 mb-md-0">
-        <div class="btn-group mr-2">
+    <div class="mb-3 flex flex-col items-center justify-between border-b border-gray-300 pb-2 md:flex-row">
+	    <h1 class="text-4xl">{{ collection.title }}</h1>
+      <div class="mb-2 flex gap-2 md:mb-0">
           {% if prev -%}
-            <a href="{{ prev.url | prepend: site.baseurl }}" class="btn btn-sm btn-primary" role="button">Previous</a>
+            <a href="{{ prev.url | prepend: site.baseurl }}" class="rounded bg-primary px-3 py-2 text-sm font-semibold text-black uppercase" role="button">Previous</a>
           {% else -%}
-                  <a href="#" class="btn btn-sm btn-primary disabled" role="button" aria-disabled="true">Previous</a>
+                  <a href="#" class="rounded bg-primary px-3 py-2 text-sm font-semibold text-black uppercase opacity-50" role="button" aria-disabled="true">Previous</a>
           {% endif -%}
           {% if next -%}
-                  <a href="{{ next.url | prepend: site.baseurl }}" class="btn btn-sm btn-primary" role="button">Next</a>
+                  <a href="{{ next.url | prepend: site.baseurl }}" class="rounded bg-primary px-3 py-2 text-sm font-semibold text-black uppercase" role="button">Next</a>
           {% else -%}
-                  <a href="#" class="btn btn-sm btn-primary disabled" role="button" aria-disabled="true">Next</a>
+                  <a href="#" class="rounded bg-primary px-3 py-2 text-sm font-semibold text-black uppercase opacity-50" role="button" aria-disabled="true">Next</a>
           {% endif -%}
-        </div>
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-md-3 d-none d-md-block">
-        <div class="sidebar py-3 sticky-top">
+    <div class="grid grid-cols-1 gap-6 md:grid-cols-12">
+      <div class="hidden md:col-span-3 md:block">
+        <div class="sidebar sticky top-4 py-3">
           {% if curricula.size > 0 %}
             <div class="sidebar-btn-link p-2">
               {% if curricula.size == 1 %}
@@ -85,28 +83,26 @@ Example:
               {% endfor %}
 
               {% if back_url %}
-                <a class="btn btn-link btn-md m-1 p-0 d-block" href="{{ back_url | prepend: site.baseurl }}">
+                <a class="m-1 block p-0 text-secondary no-underline hover:text-primary" href="{{ back_url | prepend: site.baseurl }}">
                   <i class="fa fa-arrow-left"></i> Go Back
                 </a>
               {% endif %}
             </div>
           {% endif %}
-          <div class="card mb-3 bg-dark shadow">
-            <div class="card-body text-white">
-              <p class="d-block d-lg-flex align-items-end"><small class="mr-auto text-uppercase">Category: </small>{{ collection.level }}</p>
-              <p class="d-block d-lg-flex align-items-end"><small class="mr-auto text-uppercase">Difficulty: </small>
+          <div class="mb-3 rounded bg-black p-4 text-white shadow">
+              <p class="flex flex-col items-start lg:flex-row lg:items-end"><small class="mr-auto uppercase">Category: </small>{{ collection.level }}</p>
+              <p class="flex flex-col items-start lg:flex-row lg:items-end"><small class="mr-auto uppercase">Difficulty: </small>
                 <span class="difficulty-indicator difficulty-indicator-{{ collection.difficulty }}">
                   {{ collection.difficulty }} out of 5
                 </span>
               </p>
-              <p class="d-block d-lg-flex align-items-end mb-0"><small class="mr-auto text-uppercase">Duration: </small>{{ collection.duration }} minutes</p>
-            </div>
+              <p class="mb-0 flex flex-col items-start lg:flex-row lg:items-end"><small class="mr-auto uppercase">Duration: </small>{{ collection.duration }} minutes</p>
           </div>
-          <div class="list-group shadow">
+          <div class="overflow-hidden rounded border border-gray-200 shadow">
             {% for item in pages -%}
               {% if item.title != null -%}
                 {% if item.order != null -%}
-                  <a href="{{ item.url | prepend: site.baseurl }}" class="list-group-item list-group-item-action{% if item.url == page.url %} active{% endif %}">
+                  <a href="{{ item.url | prepend: site.baseurl }}" class="block border-b border-gray-200 px-3 py-2 hover:bg-gray-100{% if item.url == page.url %} bg-secondary text-white{% endif %}">
                     <span>{{ item.order }}.</span> {{ item.title }}
                   </a>
                 {% endif -%}
@@ -114,12 +110,12 @@ Example:
             {% endfor -%}
           </div>
           <div class="p-2">
-            <p>Find a mistake? Let us know <a href="https://github.com/ausaccessfed/dev-portal/issues/new" class="text-dark">the issue here</a>.</p>
+            <p>Find a mistake? Let us know <a href="https://github.com/ausaccessfed/dev-portal/issues/new" class="text-gray-900">the issue here</a>.</p>
           </div>
         </div>
       </div>
 
-      <div class="md-content col-md-9 ml-sm-auto py-3 px-4">
+      <div class="md-content md:col-span-9 py-3 px-4">
         <small style="font-size: small;">Last updated: {{ page.last_updated | date: "%-d %B %Y" }}</small>
         <br>
         <br>
@@ -128,38 +124,38 @@ Example:
       </div>
     </div> <!-- row -->
 </div>
-<section id="up-next" class="p-5 bg-primary text-center">
-  <div class="container pb-5">
-    <div class="row">
-      <div class="col-sm-12 col-md-8 offset-md-2">
+<section id="up-next" class="bg-primary p-5 text-center">
+  <div class="mx-auto max-w-screen-xl pb-5">
+    <div class="grid grid-cols-1">
+      <div class="md:col-span-8 md:col-start-3">
         {% if next %}
           <h2>Up Next:</h2>
-          <p class="lead"><a href="{{ next.url | prepend: site.baseurl }}" class="text-dark">{{ next.order }}. {{
+          <p class="text-lg"><a href="{{ next.url | prepend: site.baseurl }}" class="text-gray-900">{{ next.order }}. {{
             next.title }} <i class="fa fa-arrow-right"></i></a></p>
         {% else %}
           {% if collection.level == 'Series' %}
             <h2>Series Complete!</h2>
             <p>You have completed this Series of Tutorials. Return to the tutorials home page to explore other tutorials.</p>
-            <a href="{{ site.baseurl }}/" class="btn bg-secondary text-white m-1" role="button">Return Home</a>
+            <a href="{{ site.baseurl }}/" class="m-1 inline-block rounded bg-secondary px-4 py-2 text-white" role="button">Return Home</a>
           {% else %}
             <h2>Tutorial Complete!</h2>
             <p>You have completed this tutorial. Continue with the other tutorials in the {{ page.category }} Series or return to the tutorials home page.</p>
             {% if curricula.size > 0 %}
               {% for curr in curricula %}
                 {% if curr == "OpenID Connect" %}
-                  <a class="btn btn-secondary m-1" href="{{ '/openid-connect-series/02-tutorials' | prepend: site.baseurl }}">Continue OpenID Connect Series</a>
+                  <a class="m-1 inline-block rounded bg-secondary px-4 py-2 text-white" href="{{ '/openid-connect-series/02-tutorials' | prepend: site.baseurl }}">Continue OpenID Connect Series</a>
                 {% elsif curr == "Rapid Connect" %}
-                  <a class="btn btn-secondary m-1" href="{{ '/rapid-connect-series/02-tutorials' | prepend: site.baseurl }}">Continue Rapid Connect Series</a>
+                  <a class="m-1 inline-block rounded bg-secondary px-4 py-2 text-white" href="{{ '/rapid-connect-series/02-tutorials' | prepend: site.baseurl }}">Continue Rapid Connect Series</a>
                 {% elsif curr == "SAML" %}
-                  <a class="btn btn-secondary m-1" href="{{ '/saml-series/02-tutorials' | prepend: site.baseurl }}">Continue SAML Series</a>
+                  <a class="m-1 inline-block rounded bg-secondary px-4 py-2 text-white" href="{{ '/saml-series/02-tutorials' | prepend: site.baseurl }}">Continue SAML Series</a>
                 {% elsif curr == "VerifID" %}
-                  <a class="btn btn-secondary m-1" href="{{ '/verifid-series/02-tutorials' | prepend: site.baseurl }}">Continue VerifID Series</a>
+                  <a class="m-1 inline-block rounded bg-secondary px-4 py-2 text-white" href="{{ '/verifid-series/02-tutorials' | prepend: site.baseurl }}">Continue VerifID Series</a>
                 {% elsif curr == "eduGAIN" %}
-                  <a class="btn btn-secondary m-1" href="{{ '/edugain-series/02-tutorials' | prepend: site.baseurl }}">Continue eduGAIN Series</a>
+                  <a class="m-1 inline-block rounded bg-secondary px-4 py-2 text-white" href="{{ '/edugain-series/02-tutorials' | prepend: site.baseurl }}">Continue eduGAIN Series</a>
                 {% endif %}
               {% endfor %}
             {% endif %}
-            <a href="{{ site.baseurl }}/" class="btn btn-secondary m-1" role="button">Return Home</a>
+            <a href="{{ site.baseurl }}/" class="m-1 inline-block rounded bg-secondary px-4 py-2 text-white" role="button">Return Home</a>
           {% endif %}
         {% endif %}
       </div>

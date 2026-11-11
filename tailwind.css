@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center rounded border-2 px-4 py-2 text-center font-semibold uppercase tracking-wider no-underline;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-black;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-white;
+  }
+
+  .btn-sm {
+    @apply px-3 py-1 text-sm;
+  }
+
+  .btn-lg {
+    @apply px-5 py-3;
+  }
+
+  .btn-link {
+    @apply bg-transparent p-0 text-secondary no-underline;
+  }
+
+  .card {
+    @apply overflow-hidden rounded border border-gray-200 bg-white shadow;
+  }
+
+  .card-header,
+  .card-body,
+  .card-footer {
+    @apply p-3;
+  }
+
+  .card-footer {
+    @apply border-t border-gray-200;
+  }
+
+  .list-group {
+    @apply my-4 list-none rounded border border-gray-200 p-0;
+  }
+
+  .list-group-flush {
+    @apply border-0;
+  }
+
+  .list-group-item {
+    @apply border-b border-gray-200 px-4 py-2;
+    list-style: none;
+  }
+
+  .list-group-item:last-child {
+    @apply border-0;
+  }
+
+  .table {
+    @apply w-full;
+  }
+
+  .table-striped > tbody > tr:nth-of-type(odd) {
+    @apply bg-gray-100;
+  }
+
+  .table-active {
+    @apply bg-gray-200;
+  }
+
+  .thead-light {
+    @apply bg-gray-100;
+  }
+
+  .border-dark {
+    @apply border-gray-900;
+  }
+
+  .fw-bold {
+    @apply font-bold;
+  }
+}

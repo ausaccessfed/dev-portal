@@ -1,10 +1,8 @@
 $(function() {
-    // Apply Bootstrap CSS styles to plain rendered markdown
-    $('.md-content table').addClass('table');
-    $('.md-content img').addClass('img-fluid');
-    $('.md-content img').addClass('shadow');
-    $('.md-content img').addClass('my-4');
-    $('.md-content blockquote').addClass('blockquote');
+  // Apply Tailwind CSS styles to plain rendered markdown
+  $('.md-content table').addClass('w-full');
+  $('.md-content img').addClass('shadow');
+  $('.md-content img').addClass('my-4');
 });
 
 $(function() {
@@ -12,11 +10,6 @@ $(function() {
     datumTokenizer: Bloodhound.tokenizers.obj.whitespace('title', 'summary'),
     queryTokenizer: Bloodhound.tokenizers.whitespace,
     prefetch: baseurl + '/search.json?q=' + Date.now(), /* remove Date for production caching */
-  });
-
-  $('.search-filter-menu a').click(function(){
-    $('#search-filter-button').text($(this).text());
-    searchResults();
   });
 
   $('#search-input').on('keyup keypress blur change', function() {
@@ -29,8 +22,14 @@ $(function() {
     searchResults();
   });
 
-  $('#search-filter').on('change', function() {
+  $('#search-filter-button').on('change', function() {
     searchResults();
+  });
+
+  $('#nav-toggle').on('click', function() {
+    var expanded = $(this).attr('aria-expanded') === 'true';
+    $(this).attr('aria-expanded', !expanded);
+    $('#navbarContent').toggleClass('hidden', expanded);
   });
 
   $('#search-clear').click(function(){
@@ -49,7 +48,7 @@ $(function() {
   }
 
   function filterResults(results) {
-    var filter = $('#search-filter-button').text();
+    var filter = $('#search-filter-button').val();
     var filteredResults = [];
     for (i in results) {
       var result = results[i];
@@ -65,32 +64,32 @@ $(function() {
     if(results.length) {
       var result = '';
       $.each(results, function(i, tutorial) {
-        result += '<div class="card-container mx-auto" style="width: 18rem;">';
+        result += '<div class="card-container mx-auto w-72">';
         result += '  <a class="card-tut-link" href="' + tutorial.url + '">';
-        result += '    <div class="card shadow h-100">';
-        result += '      <div class="card-header text-light" style="background-color: #5F368A">';
+        result += '    <div class="flex h-full flex-col overflow-hidden rounded border border-gray-200 bg-white shadow">';
+        result += '      <div class="p-3 text-white" style="background-color: #5F368A">';
         result += '        <div class="card-category">';
-        result += '          <small class="title text-uppercase">' + tutorial.level + '</small>';
+        result += '          <small class="title uppercase">' + tutorial.level + '</small>';
         if (tutorial.level == 'Series') {
           result += '            <img src="' + baseurl + '/assets/images/aaflogo.png" class="series float-right"' + ' alt="AAF Series">';
         }
         result += '        </div>';
-        result += '        <h5 class="card-title mb-0">' + tutorial.title + '</h5>';
+        result += '        <h5 class="mb-0 text-lg font-semibold">' + tutorial.title + '</h5>';
         result += '      </div>';
-        result += '      <div class="card-body">';
-        result += '        <small class="text-muted">' + tutorial.published + '</small>';
-        result += '        <p class="card-text py-2">' + tutorial.summary + '</p>';
+        result += '      <div class="flex-1 p-3">';
+        result += '        <small class="text-gray-500">' + tutorial.published + '</small>';
+        result += '        <p class="py-2">' + tutorial.summary + '</p>';
         result += '      </div>';
-        result += '      <div class="card-footer">';
-        result += '        <div class="row no-gutters">';
-        result += '          <div class="col-xs-auto">';
-        result += '            <small class="text-muted">Difficulty: </small>';
+        result += '      <div class="border-t border-gray-200 p-3">';
+        result += '        <div class="flex justify-between">';
+        result += '          <div>';
+        result += '            <small class="text-gray-500">Difficulty: </small>';
         result += '            <span class="difficulty-indicator difficulty-indicator-' + tutorial.difficulty + '">';
         result += '              ' + tutorial.difficulty + ' out of 5';
         result += '            </span>';
         result += '          </div>';
-        result += '          <div class="col text-right">';
-        result += '            <small class="text-muted">Duration: ' + tutorial.duration + '</small>';
+        result += '          <div class="text-right">';
+        result += '            <small class="text-gray-500">Duration: ' + tutorial.duration + '</small>';
         result += '          </div>';
         result += '        </div>';
         result += '      </div>';
@@ -101,8 +100,8 @@ $(function() {
       tutorialList.html(result);
     }
     else {
-      var noResults = '<div class="card-container col-sm-12 col-lg-10 offset-lg-1 mx-auto">';
-          noResults += '  <div class="card shadow p-lg-5 text-center">';
+      var noResults = '<div class="card-container mx-auto lg:col-span-10 lg:col-start-2">';
+          noResults += '  <div class="rounded bg-white p-4 text-center shadow lg:p-12">';
           noResults += '    <h2 class="my-3">No Matches</h2>';
           noResults += '    <h3 class="mb-4"><small>Can\'t find what you\'re looking for?</small></h3>';
           noResults += '    <p>Make a suggestion or ask our support team for help by submitting a ' +

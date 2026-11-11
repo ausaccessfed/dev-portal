@@ -4,11 +4,11 @@ title: Home
 order: 0
 ---
   <header class="pt-5">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-12 col-md-12 col-lg-8 offset-lg-1 col-xl-5 offset-xl-1">
+    <div class="w-full px-4">
+      <div class="grid grid-cols-1">
+        <div class="lg:col-span-8 lg:col-start-2 xl:col-span-5 xl:col-start-2">
           <div class="banner-hero-card">
-            <h1 class="mb-4 display-3">AAF Support Tutorials</h1>
+            <h1 class="mb-4 text-5xl">AAF Support Tutorials</h1>
             <p class="mb-3">There are a number of ways to connect your service to the federation technically. This site provides documentation and tutorials on how to connect your service to the AAF.</p>
             <p>Whether you are getting started, or increasing your efficiency, our technical tutorials are for beginner, intermediate and advanced users.</p>
             <hr>
@@ -19,23 +19,18 @@ order: 0
       </div>
     </div>
   </header>
-  <div class="container pt-4 mt-4">
-    <div class="row">
-      <div class="col-md-6 offset-md-3">
-      <div class="input-group shadow">
-        <div class="input-group-prepend">
-          <button id="search-filter-button" class="btn dropdown-toggle py-1" type="button"
-                  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Categories</button>
-          <div class="dropdown-menu search-filter-menu">
-            <a class="dropdown-item" href="#">All Categories</a>
-            <a class="dropdown-item" href="#">Beginner</a>
-            <a class="dropdown-item" href="#">Intermediate</a>
-            <a class="dropdown-item" href="#">Advanced</a>
-            <a class="dropdown-item" href="#">Non-technical</a>
-            <a class="dropdown-item" href="#">Series</a>
-          </div>
-        </div>
-        <input id="search-input" type="search" class="form-control py-1 border-right-0" placeholder="Search tutorials..." aria-label="Search tutorials">
+  <div class="mx-auto mt-4 max-w-screen-xl px-4 pt-4">
+    <div class="mx-auto max-w-2xl">
+      <div class="flex overflow-hidden rounded shadow">
+        <select id="search-filter-button" class="border border-gray-300 bg-secondary px-3 py-2 text-white" aria-label="Filter by category">
+          <option>All Categories</option>
+          <option>Beginner</option>
+          <option>Intermediate</option>
+          <option>Advanced</option>
+          <option>Non-technical</option>
+          <option>Series</option>
+        </select>
+        <input id="search-input" type="search" class="min-w-0 flex-1 border border-l-0 border-gray-300 px-3 py-2" placeholder="Search tutorials..." aria-label="Search tutorials">
       </div>
     </div>
 
@@ -44,35 +39,35 @@ order: 0
       Any changes you make here should be replicated exactly to the showResults
       function in /assets/javascript/main.js
     {% endcomment %}
-    <div id="tutorial-list" class="card-group flex-direction-row mt-3 py-4">
+    <div id="tutorial-list" class="mt-3 grid grid-cols-1 gap-4 py-4 sm:grid-cols-2 lg:grid-cols-3">
       {% include tutorials.html %}
       {% for tutorial in all_tutorials %}
-        <div class="card-container mx-auto" style="width: 18rem;">
+        <div class="card-container mx-auto w-72">
           <a class="card-tut-link" href="{{ tutorial.label | relative_url }}">
-            <div class="card shadow h-100">
-              <div class="card-header text-light" style="background-color: #522f74">
+            <div class="flex h-full flex-col overflow-hidden rounded border border-gray-200 bg-white shadow">
+              <div class="p-3 text-white" style="background-color: #522f74">
                 <div class="card-category">
-                  <small class="title text-uppercase">{{ tutorial.level }}</small>
+                  <small class="title uppercase">{{ tutorial.level }}</small>
                   {% if tutorial.level == "Series" -%}
-                    <img src="{{ '/assets/images/aaflogo.png' | relative_url }}" class="series float-end" alt="AAF Series">
+                    <img src="{{ '/assets/images/aaflogo.png' | relative_url }}" class="series float-right" alt="AAF Series">
                   {% endif -%}
                 </div>
-                <p class="lead card-title mb-0"><strong>{{ tutorial.title }}</strong></p>
+                <p class="mb-0 text-lg font-semibold">{{ tutorial.title }}</p>
               </div>
-              <div class="card-body">
-                <small class="text-muted">Date published: {{ tutorial.published | date: "%-d %B %Y" }}</small>
-                <p class="card-text py-2">{{ tutorial.summary }}</p>
+              <div class="flex-1 p-3">
+                <small class="text-gray-500">Date published: {{ tutorial.published | date: "%-d %B %Y" }}</small>
+                <p class="py-2">{{ tutorial.summary }}</p>
               </div>
-              <div class="card-footer">
-                <div class="row no-gutters">
-                  <div class="col-xs-auto">
-                    <small class="text-muted">Difficulty: </small>
+              <div class="border-t border-gray-200 p-3">
+                <div class="flex justify-between">
+                  <div>
+                    <small class="text-gray-500">Difficulty: </small>
                     <span class="difficulty-indicator difficulty-indicator-{{ tutorial.difficulty }}">
                       {{ tutorial.difficulty }} out of 5
                     </span>
                   </div>
-                  <div class="col text-right">
-                    <small class="text-muted">Duration: {{ tutorial.duration }} minutes</small>
+                  <div class="text-right">
+                    <small class="text-gray-500">Duration: {{ tutorial.duration }} minutes</small>
                   </div>
                 </div>
               </div>
@@ -84,15 +79,15 @@ order: 0
     </div>
   </div>
 
-  <section class="footer-callout bg-primary py-5 mt-4">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 col-lg-10 offset-lg-1">
-          <div class="card text-center shadow">
-            <div class="card-body px-lg-5">
+  <section class="footer-callout mt-4 bg-primary py-5">
+    <div class="mx-auto max-w-screen-xl px-4">
+      <div class="grid grid-cols-1">
+        <div class="lg:col-span-10 lg:col-start-2">
+          <div class="rounded bg-white p-4 text-center shadow">
+            <div class="px-4 lg:px-12">
               <h2 class="my-3">Need more help?</h2>
               <h3 class="mb-4">Reach out to our friendly support team!</h3>
-              <a class="learn-more-button btn btn-lg mb-3" href="https://aaf.freshdesk.com/support/home/">Learn More</a>
+              <a class="learn-more-button mb-3 inline-block rounded border-2 border-secondary px-5 py-3 font-semibold uppercase tracking-wider" href="https://aaf.freshdesk.com/support/home/">Learn More</a>
             </div>
           </div>
         </div>
