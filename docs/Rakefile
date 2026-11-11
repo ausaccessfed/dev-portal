@@ -80,7 +80,7 @@ Dir['_rake/*.rake'].each { |r| load r }
 
 desc "Update last modified date"
 task :update_last_modified do
-  system("make", "-C", "..", "update-last-modified") or raise "Docker last-updated date update failed"
+  sh "../bin/update_last_modified.sh"
 end
 
 task update_last_updated: :update_last_modified

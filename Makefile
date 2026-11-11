@@ -5,8 +5,6 @@ up:
 	@echo "jekyll site is running at http://localhost:4000"
 tutorial:
 	bash bin/create_tutorial.sh "$(TITLE)"
-update-last-modified:
-	bash bin/update_last_modified_in_docker.sh
 run:
 	cd docs && \
 	bundle install && \
