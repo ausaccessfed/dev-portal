@@ -2,7 +2,7 @@
 
 up:
 	RUBY_VERSION="$$(cat docs/.ruby-version)" docker-compose up -d
-	@echo "jekyll site is running at http://localhost:4000"
+	@echo "jekyll site is running at http://localhost:4000 and watching docs/ for changes"
 run:
 	cd docs && \
 	bundle install && \

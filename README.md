@@ -25,7 +25,7 @@ git@github.com:ausaccessfed/dev-portal.git
 
 If you prefer a Docker-based setup, follow these steps:
 
-1. **Build and run Docker Image**: Run the following command to build a new image of your Jekyll site:
+1. **Run the Jekyll site**: Run the following command to start the site. Jekyll watches `docs/` and rebuilds the site when files change:
 
     ```bash
     make up
