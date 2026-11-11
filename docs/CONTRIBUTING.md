@@ -34,11 +34,13 @@ You'll need a basic understanding of `git` to do this. Please refer to the `READ
 
 ## Adding a new tutorial
 
-A rake task will set up a skeleton tutorial for you, by typing:
+A Docker-based command will set up a skeleton tutorial for you, by typing this from the repository root:
 
 ```sh
-rake tutorial "Title of my new tutorial"
+make tutorial TITLE="Title of my new tutorial"
 ```
+
+Docker must be installed and running. The files are generated in the Docker image, so you do not need to install or configure Ruby, Rake, or the site's gems locally. The equivalent rake task, when running from `docs`, is `rake tutorial "Title of my new tutorial"`.
 
 This command will create you:
 

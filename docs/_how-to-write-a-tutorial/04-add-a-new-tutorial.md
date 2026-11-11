@@ -7,11 +7,13 @@ last_updated: 05 May, 2026
 
 <br>
 
-On the command line, the following rake task will set up the initial tutorial structure for you:
+From the repository root, run this command to set up the initial tutorial structure:
 
 ```bash
-bundle exec rake tutorial "Title of your tutorial"
+make tutorial TITLE="Title of your tutorial"
 ```
+
+The files are generated in Docker, so Docker must be installed and running. No local Ruby, Rake, or site gems are needed. If you already have Rake installed, the equivalent task from the `docs` directory is `rake tutorial "Title of your tutorial"`.
 
 **This command will create:**
 
