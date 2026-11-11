@@ -21,6 +21,16 @@ git@github.com:ausaccessfed/dev-portal.git
 
 [Jekyll](https://jekyllrb.com/) is a static site generator built as a Ruby gem. It requires Ruby and a Ruby version manager, such as [rbenv](https://github.com/rbenv/rbenv) or [chruby](https://github.com/postmodern/chruby), for installation. You can refer to the [Jekyll documentation](https://jekyllrb.com/docs/installation/macos/) for detailed installation instructions tailored to your operating system.
 
+## Building Tailwind CSS
+
+Tailwind CSS is built from the repository root with:
+
+```sh
+corepack yarn build:css
+```
+
+Regenerate `docs/assets/tailwind.css` after changing Tailwind classes. The generated stylesheet is committed so GitHub Pages can serve it through Jekyll without running a Node.js build.
+
 ## Using Docker Compose
 
 If you prefer a Docker-based setup, follow these steps:
