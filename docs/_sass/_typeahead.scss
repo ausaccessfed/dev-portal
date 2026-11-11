@@ -1,59 +1,37 @@
-//http://stackoverflow.com/questions/21749179/typeahead-js-v0-10-1-and-bootstrap-3/33177315#33177315
-@mixin typeahead-active() {
-    // mimics  @extend .dropdown-menu > .active > a;
-    color: $dropdown-link-active-color;
-    text-decoration: none;
-    outline: 0;
-    background-color: $dropdown-link-active-bg;
-}
-
-//https://github.com/corejavascript/typeahead.js/blob/master/doc/jquery_typeahead.md#class-names
 span.twitter-typeahead {
-    // this is the suggested matches dropdown
-    .tt-menu {
-        @extend .dropdown-menu;
+  display: block;
+  width: 100%;
+
+  .tt-menu {
+    position: absolute;
+    z-index: 20;
+    width: 100%;
+    margin-top: 0.25rem;
+    overflow: hidden;
+    border: 1px solid #c6c6c6;
+    border-radius: 0.25rem;
+    background: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  }
+
+  .tt-hint {
+    color: #999;
+  }
+
+  .tt-suggestion {
+    padding: 0.5rem 0.75rem;
+    line-height: 1.5;
+    cursor: pointer;
+
+    p {
+      margin: 0;
     }
 
-    .tt-hint {
-        color: #999;
+    &:focus,
+    &:hover,
+    &.tt-cursor {
+      color: #fff;
+      background: $secondary;
     }
-    // Added to suggestion elements.
-    .tt-suggestion {
-        // mimic .dropdown-menu > li > a
-        padding: 3px 20px;
-        line-height: $line-height-base;
-        // Added to suggestion element when menu cursor moves to said suggestion.
-        &.tt-cursor {
-            @include typeahead-active;
-        }
-        // Hover/focus on suggestion
-        &:focus,
-        &:hover {
-            @include typeahead-active;
-        }
-
-        p {
-            margin: 0;
-        }
-    }
-
-    .input-group & {
-        display: block !important;
-
-        .tt-dropdown-menu {
-            top: 32px !important;
-        }
-    }
-
-    .input-group.input-group-lg & {
-        .tt-dropdown-menu {
-            top: 44px !important;
-        }
-    }
-
-    .input-group.input-group-sm & {
-        .tt-dropdown-menu {
-            top: 28px !important;
-        }
-    }
+  }
 }
