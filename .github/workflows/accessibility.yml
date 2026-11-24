@@ -60,11 +60,6 @@ jobs:
         with:
           path: ./pa11y_output.txt
 
-      - uses: jwalton/gh-find-current-pr@89ee5799558265a1e0e31fab792ebb4ee91c016b # v1.3.3
-        id: finder
-        with:
-          state: all
-
       - name: Check for pa11y failures.
         if: contains(steps.pa11y_output.outputs.content, 'errno 2')
         run: |
