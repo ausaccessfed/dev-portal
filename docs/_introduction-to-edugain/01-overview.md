@@ -2,6 +2,7 @@
 title: Overview
 order: 1
 duration: 1
+last_updated: 15 April, 2026
 ---
 <br>
 
@@ -18,12 +19,10 @@ Adding a Service Provider (SP) to eduGAIN, via the AAF, potentially enables acce
 
 If your service would benefit from international access, this tutorial outlines the steps required to connect to eduGAIN.
 
-
-### What you'll learn
+## What you'll learn
 
 - The prerequisites (e.g. software, attributes, metadata) prior to connecting a service to eduGAIN
 
-
-### What you'll need
+## What you'll need
 
 - Experience with integration work

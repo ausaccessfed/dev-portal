@@ -2,11 +2,12 @@
 title: Install Shibboleth - Example B
 order: 4
 duration: 1
+last_updated: 15 April, 2026
 ---
 
 <br>
 
-### Dockerizing Shib-SP
+## Dockerizing Shib-SP
 
 This tutorial will guide you through how to create a Docker image for a Shibboleth Service Provider (SP) application and configure it to run in a container.
 

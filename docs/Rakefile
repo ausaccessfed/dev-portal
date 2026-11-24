@@ -34,16 +34,24 @@ desc "Run check"
 task :check do
   system("bundle exec jekyll build") or raise
   system("bundle exec htmlproofer \
-            --checks-to-ignore LinkCheck \
+            --checks Images,Scripts \
             --log-level debug ./_site") or raise
   system("bundle exec htmlproofer \
-            --checks-to-ignore ScriptCheck,ImageCheck \
+            --checks Links \
+            --disable-external \
+            --no-enforce-https \
             --allow-hash-href \
-            --url-ignore '/localhost/' \
-            --assume_extension \
-            --typhoeus_config '{ \"ssl_verifyhost\": 0, \"ssl_verifypeer\": false }' \
+            --ignore-urls '/localhost/' \
+            --assume-extension .html \
             --log-level debug ./_site")
 end # task :check
+
+desc "Lint Markdown files"
+task :markdown_lint do
+  Dir.chdir(File.expand_path("..", __dir__)) do
+    sh "yarn markdownlint-cli2 --fix 'docs/**/*.md' '!docs/assets/**' '!docs/_sass/**' '!docs/vendor/**' '!docs/_site/**'"
+  end
+end
 
 desc "Create a new tutorial"
 task :tutorial do
@@ -87,6 +95,7 @@ task :tutorial do
     f.puts 'title: Overview'
     f.puts 'order: 1'
     f.puts 'duration: 1'
+    f.puts "last_updated: #{Time.now.strftime('%d-%m-%Y')}"
     f.puts '---'
     f.puts ''
     f.puts 'This tutorial... (replace this) '
@@ -117,7 +126,6 @@ task :tutorial do
     f.puts '    difficulty: 1 # number from 1 to 5'
     f.puts '    duration: 10 # number of minutes'
     f.puts "    published: #{Time.now.strftime('%Y-%m-%d')}"
-    f.puts '    author: Your Name <your.name@email.domain>'
     f.puts ''
   end
 
@@ -148,3 +156,15 @@ end
 
 #Load custom rake scripts
 Dir['_rake/*.rake'].each { |r| load r }
+
+desc "Update last modified date"
+task :update_last_modified do
+  sh "../bin/update_last_modified.sh"
+end
+
+task update_last_updated: :update_last_modified
+
+task :lint do
+  Rake::Task["update_last_modified"].invoke
+  Rake::Task["markdown_lint"].invoke
+end

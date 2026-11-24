@@ -2,9 +2,10 @@
 title: Add discovery services
 order: 2
 duration: 1
+last_updated: 15 April, 2026
 ---
 
-Add the discovery services to your shibboleth2.xml file. This allows users to select their home institution from a list of federations. 
+Add the discovery services to your shibboleth2.xml file. This allows users to select their home institution from a list of federations.
 
 ```xml
 <SSO

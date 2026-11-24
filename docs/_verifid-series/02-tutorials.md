@@ -2,11 +2,12 @@
 title: Tutorials
 order: 2
 duration: 1
+last_updated: 05 May, 2026
 ---
 
 {% include tutorials.html -%}
 
-{% assign curriculum = "VerifID" %}
+{% assign series_name = "VerifID" %}
 
 {% comment %}
 To facilitate proper ordering of tutorials for verifid series pages, we loop through our ordered list of categories and build the list of tutorials from there
@@ -15,11 +16,12 @@ To facilitate proper ordering of tutorials for verifid series pages, we loop thr
 {% assign sortcategories = "" | split: "" %}
 
 {% comment %}
-Add categories used by tutorials with the assigned curriculum in the order specified in the site config
+Add categories used by tutorials with the assigned series in the order specified in the site config
 {% endcomment %}
 {% for category in site.tutorial_categories %}
 {% for tutorial in tutorials %}
-{% if tutorial.curriculum == curriculum and tutorial.category == category %}
+{% assign tutorial_curricula = tutorial.curricula | default: "" %}
+{% if tutorial_curricula contains series_name and tutorial.category == category %}
 {% unless sortcategories contains category %}
 {% assign sortcategories = sortcategories | push: category %}
 {% endunless %}
@@ -31,9 +33,10 @@ Add categories used by tutorials with the assigned curriculum in the order speci
 Add any missing categories to the end of the list
 {% endcomment %}
 {% for tutorial in tutorials %}
-{% if tutorial.curriculum == curriculum %}
+{% assign tutorial_curricula = tutorial.curricula | default: "" %}
+{% if tutorial_curricula contains series_name %}
 {% unless sortcategories contains tutorial.category %}
-{% assign sortcategories = sortcategories | push: category %}
+{% assign sortcategories = sortcategories | push: tutorial.category %}
 {% endunless %}
 {% endif %}
 {% endfor %}
@@ -44,15 +47,17 @@ Page content starts here
 The VerifID Series consists of the following tutorials, which you can work through at your own pace.
 
 {% for category in sortcategories %}
-### {{ category }}
+
+## {{ category }}
+
 {% for tutorial in tutorials reversed %}
-{% if tutorial.curriculum == curriculum and tutorial.category == category %}
-<div id="{{ tutorial.label }}" class="series-tutorial" markdown="1">
-##### [{{ tutorial.title }}]({{ tutorial.label | relative_url }})
+{% assign tutorial_curricula = tutorial.curricula | default: "" %}
+{% if tutorial_curricula contains series_name and tutorial.category == category %}
+<div data-label="{{ tutorial.label }}" class="series-tutorial" markdown="1">
+#### [{{ tutorial.title }}]({{ tutorial.label | relative_url }})
 {{ tutorial.summary }}  
 <small>Duration: {{ tutorial.duration }} minutes</small>
 </div>
 {% endif %}
 {% endfor %}
 {% endfor %}
-

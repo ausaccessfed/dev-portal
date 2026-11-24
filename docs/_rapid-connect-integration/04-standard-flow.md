@@ -2,6 +2,7 @@
 title: Standard Flow
 order: 4
 duration: 1
+last_updated: 15 April, 2026
 ---
 
 1. The user accesses your application and is provided access to any public content you wish them to see.

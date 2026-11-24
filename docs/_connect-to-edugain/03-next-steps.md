@@ -2,14 +2,15 @@
 title: Next Steps
 order: 3
 duration: 1
+last_updated: 15 April, 2026
 ---
 
-Await review by the **AAF Support team**. After approval, test your service and go-live.
+Await review by the AAF Support team. After approval, test your service and go-live.
 {: .callout-success }
 
 <br>
 
-### After Joining
+## After Joining
 
 After successfully joining eduGAIN, advertise the service to a wider audience, potential avenues include:
 

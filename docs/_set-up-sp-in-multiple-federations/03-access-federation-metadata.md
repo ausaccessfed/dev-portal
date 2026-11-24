@@ -2,9 +2,10 @@
 title: Access federation metadata
 order: 3
 duration: 1
+last_updated: 15 April, 2026
 ---
 
-Ensure your service provider has access to the metadata from each federation by editing the shibboleth.xml file. 
+Ensure your service provider has access to the metadata from each federation by editing the shibboleth.xml file.
 
 ```xml
 <MetadataProvider type="XML" uri="http://manager.test.aaf.edu.au/metadata/metadata.aaf.signed.complete.xml"

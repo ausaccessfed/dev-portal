@@ -1,0 +1,8 @@
+// Example markdownlint configuration with all properties set to their default value
+{
+  // Default state for all rules
+  "default": true,
+
+  "MD033": false,
+  "MD013": false
+}

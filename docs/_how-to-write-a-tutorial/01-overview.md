@@ -2,6 +2,7 @@
 title: Overview
 order: 1
 duration: 1
+last_updated: 15 April, 2026
 ---
 
 We welcome contributions to our AAF tutorials. If you'd like to help us, a great way to start is by **raising an issue** on GitHub, which will require a [GitHub account](https://github.com). This will allow our team to track and prioritise your suggestion.
@@ -10,7 +11,7 @@ To suggest updates to the documentation (minor/major changes or new tutorials), 
 
 Prior to opening a PR, you will need to set up a local development environment.
 
-### What you'll learn
+## What you'll learn
 
 - How to request minor changes to the tutorial documentation
 - How to contribute new tutorial content:
@@ -19,7 +20,7 @@ Prior to opening a PR, you will need to set up a local development environment.
   - Tips for writing and formatting your tutorial content
   - Submit your content to the AAF for review
 
-### What you'll need
+## What you'll need
 
 - Knowledge of Git concepts
 - A GitHub account

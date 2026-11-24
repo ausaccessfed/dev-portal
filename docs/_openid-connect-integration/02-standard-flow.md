@@ -2,6 +2,7 @@
 title: Standard Flow
 order: 2
 duration: 1
+last_updated: 15 April, 2026
 ---
 
 The OpenID Connect protocol, in abstract, follows the following steps.
@@ -11,7 +12,6 @@ The OpenID Connect protocol, in abstract, follows the following steps.
 - The OP responds with an ID Token and usually an Access Token.
 - The RP can send a request with the Access Token to the UserInfo Endpoint.
 - The UserInfo Endpoint returns Claims about the End-User.
-
 
 ![OIDC Flow](/assets/images/openid-connect-integration/oidc-flow.png)
 

@@ -2,6 +2,7 @@
 title: OpenID Configuration
 order: 3
 duration: 1
+last_updated: 15 April, 2026
 ---
 
 The **AAF OIDC** service supports querying the **OP** Configuration Information endpoint to retrieve the features and capabilities of the **OIDC** service. The **AAF OP** provides two endpoints, one for **Production Federation** and one for **Test Federation**.
@@ -9,9 +10,9 @@ The **AAF OIDC** service supports querying the **OP** Configuration Information 
 <br>
 Details for the **Test Federation** are here:
 
-<a href="https://central.test.aaf.edu.au/.well-known/openid-configuration" class="btn btn-outline-primary mb-3">Test Federation</a>
+<a href="https://central.test.aaf.edu.au/.well-known/openid-configuration" class="btn btn-primary mb-3">Test Federation</a>
 
-```shell
+```bash
 curl https://central.test.aaf.edu.au/.well-known/openid-configuration | jq
 
 {

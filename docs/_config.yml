@@ -28,7 +28,7 @@ defaults:
     values:
       layout: tutorial
 
-# Ordered by how they should appear in the curriculum list
+# Ordered by how they should appear in the curricula list
 tutorial_categories:
   - AAF Connection Types
   - Getting Started
@@ -36,6 +36,8 @@ tutorial_categories:
   - Federation Manager Authentication
   - Connect a Service
   - Identity Management Solutions
+  - Learning Platforms
+  - Multi-factor Authentication
 
 # New tutorials should be added by running:
 #   $ rake tutorial "My tutorial title"
@@ -46,7 +48,8 @@ collections:
     title: Connect with Keycloak
     summary: A tutorial for connecting with Keycloak
     category: Identity Management Solutions
-    curriculum: OpenID Connect
+    curricula:
+      - OpenID Connect
     level: Intermediate
     tags:
       - keycloak
@@ -55,7 +58,6 @@ collections:
     difficulty: 3
     duration: 20
     published: 2024-02-06
-    author: Kelley Foster <kelley.foster@aaf.edu.au>
 
   connection-types:
     output: true
@@ -70,7 +72,6 @@ collections:
     difficulty: 1
     duration: 5
     published: 2024-02-06
-    author: Kelley Foster <kelley.foster@aaf.edu.au>
 
   log-into-federation-manager:
     output: true
@@ -86,7 +87,6 @@ collections:
     difficulty: 1
     duration: 4
     published: 2024-02-06
-    author: Kelley Foster <kelley.foster@aaf.edu.au>
 
   openid-connect-integration:
     output: true
@@ -94,7 +94,8 @@ collections:
     title: OpenID Connect Integration
     summary: A tutorial for OpenID Connect integration
     category: Integration
-    curriculum: OpenID Connect
+    curricula:
+      - OpenID Connect
     level: Intermediate
     tags:
       - openid connect
@@ -102,15 +103,15 @@ collections:
     difficulty: 3
     duration: 15
     published: 2024-02-06
-    author: Kelley Foster <kelley.foster@aaf.edu.au>
-  
+
   rapid-connect-integration:
     output: true
     permalink: /:collection/:name
     title: Rapid Connect Integration
     summary: A tutorial for Rapid Connect integration
     category: Integration
-    curriculum: Rapid Connect
+    curricula:
+      - Rapid Connect
     level: Intermediate
     tags:
       - rapid connect
@@ -118,7 +119,6 @@ collections:
     difficulty: 3
     duration: 30
     published: 2024-02-06
-    author: Kelley Foster <kelley.foster@aaf.edu.au>
 
   saml-integration:
     output: true
@@ -126,7 +126,8 @@ collections:
     title: SAML Integration
     summary: A tutorial for SAML integration
     category: Integration
-    curriculum: SAML
+    curricula:
+      - SAML
     level: Advanced
     tags:
       - saml
@@ -134,7 +135,6 @@ collections:
     difficulty: 5
     duration: 60
     published: 2024-02-06
-    author: Kelley Foster <kelley.foster@aaf.edu.au>
 
   connect-an-oidc-service:
     output: true
@@ -142,7 +142,8 @@ collections:
     title: Connect an OIDC Service
     summary: A tutorial for connecting an OIDC Service
     category: Connect a Service
-    curriculum: OpenID Connect
+    curricula:
+      - OpenID Connect
     level: Intermediate
     tags:
       - openid connect
@@ -150,7 +151,6 @@ collections:
     difficulty: 3
     duration: 5
     published: 2024-02-06
-    author: Kelley Foster <kelley.foster@aaf.edu.au>
 
   connect-a-rapid-connect-service:
     output: true
@@ -158,7 +158,8 @@ collections:
     title: Connect a Rapid Connect Service
     summary: A tutorial for connecting a Rapid Connect service
     category: Connect a Service
-    curriculum: Rapid Connect
+    curricula:
+      - Rapid Connect
     level: Intermediate
     tags:
       - rapid connect
@@ -166,7 +167,6 @@ collections:
     difficulty: 3
     duration: 15
     published: 2024-02-06
-    author: Kelley Foster <kelley.foster@aaf.edu.au>
 
   connect-a-saml-service:
     output: true
@@ -174,7 +174,8 @@ collections:
     title: Connect a SAML Service
     summary: A tutorial for connecting a SAML service
     category: Connect a Service
-    curriculum: SAML
+    curricula:
+      - SAML
     level: Intermediate
     tags:
       - saml
@@ -182,7 +183,6 @@ collections:
     difficulty: 3
     duration: 10
     published: 2024-02-06
-    author: Kelley Foster <kelley.foster@aaf.edu.au>
 
   verifid-integration:
     output: true
@@ -190,7 +190,8 @@ collections:
     title: VerifID Integration
     summary: A tutorial for VerifID integration
     category: Integration
-    curriculum: VerifID
+    curricula:
+      - VerifID
     level: Intermediate
     tags:
       - tutorial
@@ -198,7 +199,6 @@ collections:
     difficulty: 3
     duration: 30
     published: 2024-02-14
-    author: Kelley Foster <kelley.foster@aaf.edu.au>
 
   connect-with-verifid:
     output: true
@@ -206,7 +206,8 @@ collections:
     title: Connect with VerifID
     summary: A tutorial for connecting with VerifID
     category: Connect a Service
-    curriculum: VerifID
+    curricula:
+      - VerifID
     level: Intermediate
     tags:
       - tutorial
@@ -214,14 +215,14 @@ collections:
     difficulty: 3
     duration: 15
     published: 2024-02-16
-    author: Kelley Foster <kelley.foster@aaf.edu.au>
 
   openid-connect-series:
     output: true
     permalink: /:collection/:name
     title: OpenID Connect Series
     summary: Integrate and connect with OIDC
-    curriculum: OpenID Connect
+    curricula:
+      - OpenID Connect
     level: Series
     tags:
       - series
@@ -229,14 +230,14 @@ collections:
     difficulty: 3
     duration: 50
     published: 2024-02-28
-    author: Kelley Foster <kelley.foster@aaf.edu.au>
 
   rapid-connect-series:
     output: true
     permalink: /:collection/:name
     title: Rapid Connect Series
     summary: Integrate and connect with Rapid Connect
-    curriculum: Rapid Connect
+    curricula:
+      - Rapid Connect
     level: Series
     tags:
       - series
@@ -244,14 +245,14 @@ collections:
     difficulty: 3
     duration: 55
     published: 2024-02-29
-    author: Kelley Foster <kelley.foster@aaf.edu.au>
 
   verifid-series:
     output: true
     permalink: /:collection/:name
     title: VerifID Series
     summary: Integrate and connect with VerifID
-    curriculum: VerifID
+    curricula:
+      - VerifID
     level: Series
     tags:
       - series
@@ -259,14 +260,14 @@ collections:
     difficulty: 3
     duration: 55
     published: 2024-02-29
-    author: Kelley Foster <kelley.foster@aaf.edu.au>
 
   saml-series:
     output: true
     permalink: /:collection/:name
     title: SAML Series
     summary: Integrate and connect with SAML
-    curriculum: SAML
+    curricula:
+      - SAML
     level: Series
     tags:
       - series
@@ -274,15 +275,17 @@ collections:
     difficulty: 4
     duration: 80
     published: 2024-02-29
-    author: Kelley Foster <kelley.foster@aaf.edu.au>
 
   connect-to-edugain:
     output: true
     permalink: /:collection/:name
     title: Connect to eduGAIN
-    summary: A tutorial for connecting to eduGAIN
+    summary: A tutorial for connecting a service to eduGAIN
     category: Connect a Service
-    curriculum: eduGAIN
+    curricula:
+      - eduGAIN
+      - SAML
+      - OpenID Connect
     level: Beginner
     tags:
       - tutorial
@@ -290,7 +293,6 @@ collections:
     difficulty: 1
     duration: 5
     published: 2024-03-05
-    author: Kelley Foster <kelley.foster@aaf.edu.au>
 
   edugain-integration:
     output: true
@@ -298,7 +300,8 @@ collections:
     title: eduGAIN Integration
     summary: A tutorial for eduGAIN integration
     category: Integration
-    curriculum: eduGAIN
+    curricula:
+      - eduGAIN
     level: Advanced
     tags:
       - tutorial
@@ -306,14 +309,14 @@ collections:
     difficulty: 4
     duration: 30
     published: 2024-03-06
-    author: Kelley Foster <kelley.foster@aaf.edu.au>
 
   edugain-series:
     output: true
     permalink: /:collection/:name
     title: eduGAIN Series
     summary: Integrate and connect with eduGAIN
-    curriculum: eduGAIN
+    curricula:
+      - eduGAIN
     level: Series
     tags:
       - series
@@ -321,7 +324,6 @@ collections:
     difficulty: 4
     duration: 47
     published: 2024-03-08
-    author: Kelley Foster <kelley.foster@aaf.edu.au>
 
   introduction-to-edugain:
     output: true
@@ -329,7 +331,8 @@ collections:
     title: Introduction to eduGAIN
     summary: An overview of eduGAIN
     category: Getting Started
-    curriculum: eduGAIN
+    curricula:
+      - eduGAIN
     level: Intermediate
     tags:
       - tutorial
@@ -337,7 +340,6 @@ collections:
     difficulty: 3
     duration: 10
     published: 2024-03-08
-    author: Kelley Foster <kelley.foster@aaf.edu.au>
 
   how-to-write-a-tutorial:
     output: true
@@ -351,7 +353,6 @@ collections:
     difficulty: 1
     duration: 10
     published: 2024-05-23
-    author: Kelley Foster <kelley.foster@aaf.edu.au>
 
   set-up-sp-in-multiple-federations:
     output: true
@@ -365,7 +366,6 @@ collections:
     difficulty: 5
     duration: 10
     published: 2024-06-14
-    author: Kelley Foster <kelley.foster@aaf.edu.au>
 
   find-your-registered-services:
     output: true
@@ -379,4 +379,85 @@ collections:
     difficulty: 1
     duration: 5
     published: 2024-06-21
-    author: Kelley Foster <kelley.foster@aaf.edu.au>
+
+  set-up-moodle-via-aaf-authentication:
+    output: true
+    permalink: /:collection/:name
+    title: Connect with Moodle via AAF Authentication
+    summary: A tutorial for Setting up Moodle via AAF Authentication
+    category: Learning Platforms
+    level: Intermediate
+    tags:
+      - tutorial
+    difficulty: 3
+    duration: 30
+    published: 2025-02-27
+
+  connect-a-single-page-oidc-service:
+    output: true
+    permalink: /:collection/:name
+    title: Connect a single page OIDC service
+    summary: A tutorial for connecting a single page OIDC service
+    category: Connect a Service
+    curricula:
+      - OpenID Connect
+    level: Intermediate
+    tags:
+      - openid connect
+      - tutorial
+    difficulty: 3
+    duration: 10
+    published: 2025-02-28
+
+  register-an-xnat-oidc-service:
+    output: true
+    permalink: /:collection/:name
+    title: Register an XNAT OIDC Service
+    summary: A tutorial for registering an XNAT OIDC Service
+    category: Learning Platforms
+    level: Intermediate
+    tags:
+      - tutorial
+    difficulty: 3
+    duration: 10
+    published: 2025-04-08
+
+  include-service-in-service-catalogue:
+    output: true
+    permalink: /:collection/:name
+    title: Add a Service to the Service Catalogue
+    summary: A tutorial for adding your service to the service catalogue
+    category: Connect a Service
+    level: Beginner
+    tags:
+      - tutorial
+    difficulty: 1
+    duration: 1
+    published: 2025-06-17
+
+  export-identity-provider-logs:
+    output: true
+    permalink: /:collection/:name
+    title: Export Identity Provider Logs
+    summary: A tutorial for ways to export identity provider logs
+    category: Identity Management Solutions
+    level: Advanced
+    tags:
+      - tutorial
+    difficulty: 6
+    duration: 20
+    published: 2026-04-17
+
+  configure-refeds-mfa-on-shibboleth-sp:
+    output: true
+    permalink: /:collection/:name
+    title: Configure REFEDS MFA on Shibboleth SP
+    summary: A tutorial for Configuring REFEDS MFA on Shibboleth SP
+    category: Multi-factor Authentication
+    level: Intermediate
+    tags:
+      - tutorial
+    difficulty: 3
+    duration: 10
+    published: 2024-12-18
+

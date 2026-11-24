@@ -2,6 +2,7 @@
 title: Endpoint discovery
 order: 5
 duration: 1
+last_updated: 15 April, 2026
 ---
 
 VerifID is an OAuth 2.0 authorization server, and provides authorization server metadata per the draft standard(2) at the following URL:
@@ -16,5 +17,4 @@ The metadata at this URL shall contain the following:
 
 Other values shall be provided within this metadata as needed, and their meaning shall be as defined in the draft standard.
 
-**Reminder:** All URLs described in this document are examples, and the information in the authorization server metadata must be considered authoritative for which URLs should be used. 
-
+**Reminder:** All URLs described in this document are examples, and the information in the authorization server metadata must be considered authoritative for which URLs should be used.

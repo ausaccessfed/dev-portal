@@ -2,11 +2,13 @@
 title: Overview
 order: 1
 duration: 1
+last_updated: 15 April, 2026
 ---
 
 Welcome to the OpenID Connect Tutorials. We've put together all the tutorials that you will need to connect a new service to the AAF using OpenID Connect.
 
 ## What you'll learn
+
 - Integration
   - How to integrate your application with the OpenID Connect protocol
 - Federation Manager Authentication
@@ -16,5 +18,6 @@ Welcome to the OpenID Connect Tutorials. We've put together all the tutorials th
   - How to register a new service using OpenID Connect (OIDC) and Keycloak
 
 ## What you'll need
+
 - AAF login credentials
 - Experience undertaking integration work

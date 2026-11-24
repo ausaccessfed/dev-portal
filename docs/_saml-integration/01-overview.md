@@ -2,31 +2,34 @@
 title: Overview
 order: 1
 duration: 1
+last_updated: 27 April, 2026
 ---
 
 This tutorial will assist with standing up a simple application protected by **Shibboleth** and add the application
 to the **AAF’s TEST Federation** to evaluate basic functionality.
 
-### What you'll learn
+## What you'll learn
+
 - How to install Shibboleth (on desktop or using Dockerfile)
 - How to configure Shibboleth
 - How to configure Apache
 - How to integrate Shibboleth SP with an application
 
-### What you'll need
+## What you'll need
 
-The prerequisites for this tutorial require elevated privileges to one of the supported platforms and the installation 
+The prerequisites for this tutorial require elevated privileges to one of the supported platforms and the installation
 and/or configuration of the following components:
 
-- a supported web server, 
+- a supported web server,
 - SSL libraries suitable for the web server,
 - open firewall port HTTPS/443 that permits inbound and outbound traffic,
 - NTP service and active time synchronisation - SAML transactions are time-sensitive,
 - allocation of a DNS name for the service,
-- where available, SELinux is disabled, as it may interfere with communication between the Apache web server and 
+- where available, SELinux is disabled, as it may interfere with communication between the Apache web server and
 the Shibboleth process.
 
 Optional requirements include:
+
 - Docker container platform
 - Knowledge running a container platform in a local development environment
 
@@ -47,11 +50,10 @@ the following platforms:
 - Windows 2008 and later with Apache 2.2, 2.4 or IIS;
 - additional information on building packages from source for other RPM-supporting Linux versions.
 
-
 The **Shibboleth Consortium** has considerably streamlined the **SP** installation process for Linux and Apache, and
 this guide reflects that approach. Other combinations of platform and web server require additional steps to install
 the **SP**, configure the web server and protect content. For these, links in this guide will refer deployers to
 additional **Shibboleth documentation**.
 
-All links in this tutorial are collated on the [Links Page](/saml-integration/10-links).
+All links in this tutorial are collated on the [Links Page](/saml-integration/11-links).
 {: .callout-info}

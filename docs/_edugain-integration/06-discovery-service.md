@@ -2,10 +2,10 @@
 title: Discovery Service Mechanism for SPs
 order: 6
 duration: 1
+last_updated: 15 April, 2026
 ---
 
 When a service can be accessed by users from multiple organisations from multiple federations, it must ensure that the user can find and select their organisation so that they can authenticate during the login process. This process is called **Identity Provider Discovery**. There are multiple open-source implementations (Shibboleth Discovery Service) that allow a Service Provider to operate their own Discovery Service. Alternatively, the AAF provides a central discovery service.
-
 
 There are two Discovery Service options, a local discovery mechanism or the central AAF Discovery Service.
 
@@ -29,5 +29,6 @@ To update your Shibboleth Service Provider to use the "all of eduGAIN" discovery
                     SAML2 SAML1
   </SSO>
 ```
+
 <br>
 After a *restart* of the Service provider, users will be taken to the "all of eduGAIN" discovery section of the AAF Central Discovery Service.

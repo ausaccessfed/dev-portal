@@ -2,6 +2,7 @@
 title: Requesting Scopes and Access to eduGAIN
 order: 3
 duration: 1
+last_updated: 15 April, 2026
 ---
 
 <br>

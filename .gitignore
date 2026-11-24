@@ -61,3 +61,4 @@ docs/vendor/bundle
 docs/node_modules
 docs/package-lock.json
 docs/Gemfile.lock
+.yarn

@@ -1,7 +1,9 @@
 services:
   jekyll:
-    image: bretfisher/jekyll-serve
+    image: ruby:${RUBY_VERSION:?Run make up to load docs/.ruby-version}
     volumes:
       - ./docs:/site
     ports:
       - '4000:4000'
+    working_dir: /site
+    command: sh -c 'bundle install && bundle exec jekyll serve --force_polling -H 0.0.0.0 -P 4000'

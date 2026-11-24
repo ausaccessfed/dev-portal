@@ -2,14 +2,16 @@
 title: Integration Examples
 order: 6
 duration: 1
+last_updated: 15 April, 2026
 ---
 <br>
 
-### 1. **JWT Code Examples**
-The following code examples have been developed by AAF and may assist your understanding when writing your own 
+## JWT Code Examples
+
+The following code examples have been developed by AAF and may assist your understanding when writing your own
 integration code. We have provided code written in Ruby, Python and PHP.
 
-#### Ruby
+## Ruby
 
 ```ruby
   require 'sinatra'
@@ -64,7 +66,7 @@ integration code. We have provided code written in Ruby, Python and PHP.
 ```
 
 <br>
-#### Python
+## Python
 
 ```python
   import webapp2
@@ -143,7 +145,7 @@ integration code. We have provided code written in Ruby, Python and PHP.
 
 <br>
 
-#### PHP
+## PHP
 
 ```php
   <?php
@@ -189,6 +191,7 @@ integration code. We have provided code written in Ruby, Python and PHP.
 
 <br>
 
-### 2. AAF Rapid Connect - Ruby Sample App
+## AAF Rapid Connect - Ruby Sample App
+
 For a more developed example, [refer to this Ruby sample application](https://github.com/ausaccessfed/rapidconnect-sample-ruby). It is provided purely for illustrative
 purposes. It should be noted that the code presented here should not be used as a base to build your application, but is provided to give you an idea of the concepts behind connecting a service, so you can pick it apart (everybody’s requirements are different and just cutting and pasting the code won’t generally work if you decide to do that). No effort has been made to audit the code's security, or make it production-ready.

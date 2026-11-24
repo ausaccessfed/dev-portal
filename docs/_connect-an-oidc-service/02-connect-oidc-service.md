@@ -2,6 +2,7 @@
 title: Register service
 order: 2
 duration: 1
+last_updated: 15 April, 2026
 ---
 
 The **AAF OpenID Provider (OP)** satisfies the **OIDC** conformance testing framework and passes the Authorization Code flow. The **AAF** monitors the **OP** during business hours and responds to service interruption issues promptly.
@@ -9,7 +10,7 @@ The **AAF OpenID Provider (OP)** satisfies the **OIDC** conformance testing fram
 ---
 If you have not done so already, please [log into Federation Manager](/log-into-federation-manager/01-overview) to get started.
 
-Once you have clicked on 'OpenID Connect' on the ['Connect a New Service'](https://manager.test.aaf.edu.au/connected_services/new) page in Federation Manager, you will then be taken to the **Register a New Service** page:
+Once you have clicked on 'OpenID Connect' on the ['Connect a New Service'](https://manager.test.aaf.edu.au/services/new) page in Federation Manager, you will then be taken to the **Register a New Service** page:
 
 ![Register new service](/assets/images/connect-an-oidc-service/register-oidc-service.png)
 
@@ -19,8 +20,13 @@ Once you have clicked on 'OpenID Connect' on the ['Connect a New Service'](https
 2. Description - A meaningful description to help users of this service understand its purpose.
 3. URL - The primary URL of your application where users will initiate the authentication.
 4. Redirect URL - The endpoint which will receive the OIDC responses from AAF. Additional redirect URIs can be added after registration via the client details page.
-5. Organisation - Responsible for the operation of the service, must be an **AAF** subscriber.
+5. Authentication Methods - Select the authentication method that your service will support:
+   - Secret: Recommended for server-side applications that can securely store client secrets.
+   - Secret and PKCE: Recommended for applications that can securely store secrets and require extra security.
+6. Organisation - Responsible for the operation of the service, must be an **AAF** subscriber.
 
+Note: In the development environment, make sure to use `http` for both the URL and Redirect URL.
+{: .callout-info }
 
 - Click **Register Service** to complete the registration step.
 
@@ -29,12 +35,17 @@ You will be provided with the Identifier and Secret used by your **RP** service 
 You only have one opportunity to copy the Secret, it cannot be recovered later. You can however generate a new secret later.
 {: .callout-warning }
 
-Your service will be automatically registered in the Test Federation. However, there will be a delay before you can use the service. 
+![Service details](/assets/images/connect-an-oidc-service/service-details.png)
+
+Your service will be automatically registered in the Test Federation and you will receive an email confirming this. However, there will be a two-hour delay before you can use the service.
 {: .callout-info }
 
 This delay includes:
+
 - Generating and publishing new SAML metadata for your service
 - Background jobs setting up the required configuration changes for your new service
+
+![OIDC service registration email](/assets/images/connect-an-oidc-service/oidc-service-email.png)
 
 You will see an error message if you attempt to log into the service while it is being processed.
 {: .callout-warning }
