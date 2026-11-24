@@ -22,7 +22,7 @@ response_type=code&
 client_id=your-client-id&
 redirect_uri=https://your-app.example.com/callback&
 scope=openid%20profile&
-acr=https://refeds.org/profile/mfa&
+acr_values=https://refeds.org/profile/mfa&
 state=af0ifjsldkj&
 nonce=n-0S6_WzA2Mj
 ```
