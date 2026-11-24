@@ -2,7 +2,7 @@
 title: Next Steps
 order: 9
 duration: 1
-last_updated: 15 April, 2026
+last_updated: 24 November, 2026
 ---
 
 Once you have completed the OpenID configuration, you are ready to connect your service!
