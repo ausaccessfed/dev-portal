@@ -1,5 +1,5 @@
 ---
-last_updated: 24 November, 2026
+last_updated: 27 November, 2026
 title: Supported ACR Requests
 order: 7
 duration: 1
@@ -10,7 +10,10 @@ The Authentication Context Class Reference (ACR) is a string that specifies the 
 
 By specifying the required authentication context, you can ensure that users are authenticated using stronger methods, such as multi-factor authentication (MFA).
 
-Currently, the only supported ACR value is the [`https://refeds.org/profile/mfa`](https://refeds.org/profile/mfa) value. This value is used to request the REFEDS MFA profile for the user. If the user's IdP supports the REFEDS MFA profile, the AAF OpenID Provider will return the REFEDS MFA profile attributes in the ID Token. If the user's IdP does not support the REFEDS MFA profile, the AAF OpenID Provider will return an error to your service.
+The [development federation's OpenID Configuration](https://central.dev.aaf.edu.au/.well-known/openid-configuration) advertises these supported ACR values:
+
+- [`https://refeds.org/profile/mfa`](https://refeds.org/profile/mfa) requests the REFEDS MFA profile for the user. If the user's IdP supports the REFEDS MFA profile, the AAF OpenID Provider will return the REFEDS MFA profile attributes in the ID Token. If the user's IdP does not support the REFEDS MFA profile, the AAF OpenID Provider will return an error to your service.
+- `urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport` is the SAML 2.0 `PasswordProtectedTransport` authentication context class.
 
 ## Example OIDC Request
 
