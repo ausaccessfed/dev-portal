@@ -14,7 +14,6 @@ The [OpenID Configuration](https://central.aaf.edu.au/.well-known/openid-configu
 
 - [`https://refeds.org/profile/mfa`](https://refeds.org/profile/mfa) requests the REFEDS MFA profile for the user. If the user's IdP supports the REFEDS MFA profile, the AAF OpenID Provider will return the REFEDS MFA profile attributes in the ID Token. If the user's IdP does not support the REFEDS MFA profile, the AAF OpenID Provider will return an error to your service.
 - `urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport` is the SAML 2.0 `PasswordProtectedTransport` authentication context class.
-- 
 
 If the user's IdP supports the REFEDS MFA profile, the AAF OpenID Provider will return the REFEDS MFA profile attributes in the ID Token. If the user's IdP does not support the REFEDS MFA profile, the AAF OpenID Provider will return an error to your service.
 
