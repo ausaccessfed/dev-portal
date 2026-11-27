@@ -2,7 +2,7 @@
 title: Overview
 order: 1
 duration: 1
-last_updated: 27 April, 2026
+last_updated: 27 November, 2026
 ---
 
 The **AAF** supports **OpenID Connect (OIDC)** connectivity and operates an **OpenID Provider (OP)** which authenticates users who have an account at any **AAF** subscriber **Identity Provider (IdP)**. This service is a production choice available to AAF subscribers to connect their OIDC services to the Federation.
@@ -22,5 +22,5 @@ The **AAF** supports **OpenID Connect (OIDC)** connectivity and operates an **Op
 The AAF *does not* offer support or advice in this area, and the choice depends on the subscriber’s strengths and existing knowledge of OIDC integration.
 {: .callout-info}
 
-All links in this tutorial are collated on the [Links Page](/openid-connect-integration/07-links).
+All links in this tutorial are collated on the [Links Page](/openid-connect-integration/08-links).
 {: .info}
