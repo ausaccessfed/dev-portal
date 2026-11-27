@@ -16,11 +16,11 @@ The values are case-sensitive:
 
 ## Request UserInfo
 
-Send the access token from the OIDC flow to the UserInfo endpoint:
+Send the access token from the OIDC flow over HTTPS to the `userinfo_endpoint` advertised by the same provider's OpenID Configuration. For the production provider used in the preceding ACR example:
 
 ```http
 GET /oidc/userinfo HTTP/1.1
-Host: central.dev.aaf.edu.au
+Host: central.aaf.edu.au
 Authorization: Bearer <access-token>
 ```
 
