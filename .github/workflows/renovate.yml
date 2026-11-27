@@ -1,0 +1,37 @@
+name: "Renovate Dependency Check"
+on:
+  workflow_dispatch:
+    inputs:
+      FORCE_RECREATE:
+        description: "If you should recreate all prs (this is break glass)"
+        type: boolean
+        required: false
+        default: false
+      FORCE_ONBOARDING:
+        description: "If you should recreate onboarding tasks (this is break glass)"
+        type: boolean
+        required: false
+        default: false
+      LOG_LEVEL:
+        description: "Log level"
+        type: choice
+        default: "info"
+        options:
+          - info
+          - debug
+  schedule:
+    - cron: "0 * * * *"
+jobs:
+  renovate:
+    runs-on: ubuntu-latest
+    environment: privileged
+    permissions:
+      id-token: write
+    steps:
+      - uses: ausaccessfed/workflows/.github/actions/renovate@main
+        with:
+          GITHUB_TOKEN: ${{ secrets.DEVPORTAL_REPO_SCOPED_TOKEN }}
+          GPG_PRIVATE_KEY: ${{ secrets.RENOVATE_GPG_PRIVATE_KEY }}
+          LOG_LEVEL: ${{ github.event.inputs.LOG_LEVEL }}
+          FORCE_RECREATE: ${{ github.event.inputs.FORCE_RECREATE }}
+          FORCE_ONBOARDING: ${{ github.event.inputs.FORCE_ONBOARDING }}
